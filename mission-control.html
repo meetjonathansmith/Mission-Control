@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOXA Mission Control | Alfred</title>
+    <title>MISSION CONTROL — DOXA Operating System</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -12,700 +14,1421 @@
         }
         
         body {
-            background: #000000;
-            color: #00ff00;
-            font-family: 'Monaco', 'Courier New', monospace;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+            background: #1C1C1E;
+            color: #FFFFFF;
+            padding: 16px;
+            line-height: 1.4;
             overflow-x: hidden;
         }
         
         .container {
-            max-width: 1920px;
+            max-width: 1600px;
             margin: 0 auto;
-            padding: 20px;
         }
         
-        .header {
-            text-align: center;
-            padding: 20px;
-            border-bottom: 2px solid #00ff00;
-            margin-bottom: 20px;
-            position: relative;
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #2C2C2E;
         }
         
-        .header h1 {
-            font-size: 2rem;
-            color: #00ff00;
-            text-shadow: 0 0 10px #00ff00;
-            letter-spacing: 3px;
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
         
-        .timestamp {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: #00ff00;
-            font-size: 0.9rem;
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: #98989D;
         }
         
+        .heartbeat {
+            width: 8px;
+            height: 8px;
+            background: #30D158;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        
+        /* Grid Layout */
         .grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-bottom: 20px;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 12px;
         }
         
+        /* Panel Base */
         .panel {
-            background: #0a0a0a;
-            border: 1px solid #00ff00;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+            background: #2C2C2E;
+            border-radius: 12px;
+            padding: 16px;
+            border: 1px solid #3A3A3C;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
         
         .panel-header {
-            color: #00ff00;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #00ff00;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        .status-dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            margin-right: 8px;
-        }
-        
-        .green { background: #00ff00; box-shadow: 0 0 5px #00ff00; }
-        .yellow { background: #ffff00; box-shadow: 0 0 5px #ffff00; }
-        .red { background: #ff0000; box-shadow: 0 0 5px #ff0000; }
-        
-        .stat-row {
             display: flex;
             justify-content: space-between;
-            padding: 8px 0;
-            border-bottom: 1px solid #003300;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #3A3A3C;
         }
         
-        .stat-label {
-            color: #00cc00;
+        .panel-title {
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #007AFF;
         }
         
-        .stat-value {
-            color: #00ff00;
-            font-weight: bold;
+        .panel-badge {
+            font-size: 11px;
+            padding: 2px 8px;
+            background: rgba(0, 122, 255, 0.15);
+            color: #007AFF;
+            border-radius: 6px;
+            font-weight: 600;
         }
         
-        .kanban-board {
+        /* Alfred Status - Top Left */
+        .alfred-status {
             grid-column: span 3;
         }
         
-        .kanban-columns {
+        .status-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
+            gap: 8px;
         }
         
-        .kanban-column {
-            background: #0a0a0a;
-            border: 1px solid #00ff00;
-            border-radius: 8px;
-            padding: 15px;
-        }
-        
-        .column-header {
-            color: #00ff00;
-            font-weight: bold;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #00ff00;
-        }
-        
-        .task-card {
-            background: #001100;
-            border: 1px solid #00ff00;
-            border-radius: 4px;
-            padding: 10px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        
-        .task-card:hover {
-            background: #002200;
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
-        }
-        
-        .task-title {
-            color: #00ff00;
-            font-size: 0.9rem;
-            margin-bottom: 5px;
-        }
-        
-        .task-meta {
-            font-size: 0.75rem;
-            color: #00cc00;
-        }
-        
-        .activity-feed {
-            max-height: 300px;
-            overflow-y: auto;
-        }
-        
-        .activity-item {
-            padding: 8px 0;
-            border-bottom: 1px solid #003300;
+        .status-item {
             display: flex;
+            justify-content: space-between;
             align-items: center;
+            font-size: 12px;
+            padding: 6px 0;
         }
         
-        .activity-time {
-            color: #00cc00;
-            font-size: 0.75rem;
-            margin-right: 10px;
+        .status-label {
+            color: #98989D;
         }
         
-        .activity-text {
-            color: #00ff00;
-            font-size: 0.85rem;
+        .status-value {
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+        
+        .status-value.active {
+            color: #30D158;
+        }
+        
+        .status-value.warning {
+            color: #FFD60A;
+        }
+        
+        .status-value.info {
+            color: #007AFF;
+        }
+        
+        .status-value.error {
+            color: #FF453A;
+        }
+        
+        /* KPI Dashboard - Top Center */
+        .kpi-dashboard {
+            grid-column: span 6;
         }
         
         .kpi-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
         }
         
-        .kpi-box {
-            background: #001100;
-            border: 1px solid #00ff00;
-            border-radius: 4px;
-            padding: 15px;
-            text-align: center;
-        }
-        
-        .kpi-value {
-            font-size: 2rem;
-            color: #00ff00;
-            font-weight: bold;
-            text-shadow: 0 0 10px #00ff00;
+        .kpi-card {
+            background: #1C1C1E;
+            border-radius: 8px;
+            padding: 12px;
+            border: 1px solid #3A3A3C;
         }
         
         .kpi-label {
-            font-size: 0.8rem;
-            color: #00cc00;
-            margin-top: 5px;
+            font-size: 11px;
+            color: #98989D;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        
+        .kpi-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1;
+        }
+        
+        .kpi-card.good .kpi-value {
+            color: #30D158;
+        }
+        
+        .kpi-card.warning .kpi-value {
+            color: #FFD60A;
+        }
+        
+        .kpi-card.bad .kpi-value {
+            color: #FF453A;
+        }
+        
+        .kpi-card.info .kpi-value {
+            color: #007AFF;
+        }
+        
+        .kpi-trend {
+            font-size: 11px;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+        
+        .kpi-trend.up {
+            color: #30D158;
+        }
+        
+        .kpi-trend.down {
+            color: #FF453A;
+        }
+        
+        .kpi-trend.neutral {
+            color: #98989D;
+        }
+        
+        .kpi-card.warning {
+            border-color: #FFD60A;
+        }
+        
+        .kpi-card.alert {
+            border-color: #FF453A;
+        }
+        
+        /* Live Activity - Top Right */
+        .live-activity {
+            grid-column: span 3;
+            max-height: 400px;
+        }
+        
+        .activity-feed {
+            max-height: 340px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #3A3A3C #2C2C2E;
+        }
+        
+        .activity-feed::-webkit-scrollbar {
+            width: 4px;
+        }
+        
+        .activity-feed::-webkit-scrollbar-track {
+            background: #2C2C2E;
+        }
+        
+        .activity-feed::-webkit-scrollbar-thumb {
+            background: #3A3A3C;
+            border-radius: 4px;
+        }
+        
+        .activity-item {
+            display: flex;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: 12px;
+            border-bottom: 1px solid #3A3A3C;
+        }
+        
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+        
+        .activity-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-top: 4px;
+            flex-shrink: 0;
+            box-shadow: 0 0 8px currentColor;
+        }
+        
+        .activity-dot.success { 
+            background: #30D158;
+            color: #30D158;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .activity-dot.info { 
+            background: #007AFF;
+            color: #007AFF;
+        }
+        .activity-dot.warning { 
+            background: #FFD60A;
+            color: #FFD60A;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .activity-dot.error { 
+            background: #FF453A;
+            color: #FF453A;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        
+        .activity-content {
+            flex: 1;
+        }
+        
+        .activity-text {
+            color: #FFFFFF;
+            line-height: 1.4;
+        }
+        
+        .activity-time {
+            color: #98989D;
+            font-size: 10px;
+            margin-top: 2px;
+        }
+        
+        /* Task Board - Middle Section */
+        .task-board {
+            grid-column: span 12;
+        }
+        
+        .task-columns {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+        }
+        
+        .task-column {
+            background: #1C1C1E;
+            border-radius: 8px;
+            padding: 12px;
+            border: 1px solid #3A3A3C;
+        }
+        
+        .column-header {
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .task-column:nth-child(1) .column-header {
+            color: #007AFF;
+            border-bottom-color: #007AFF;
+        }
+        
+        .task-column:nth-child(2) .column-header {
+            color: #FFD60A;
+            border-bottom-color: #FFD60A;
+        }
+        
+        .task-column:nth-child(3) .column-header {
+            color: #FF9F0A;
+            border-bottom-color: #FF9F0A;
+        }
+        
+        .task-column:nth-child(4) .column-header {
+            color: #FF453A;
+            border-bottom-color: #FF453A;
+        }
+        
+        .task-column:nth-child(5) .column-header {
+            color: #30D158;
+            border-bottom-color: #30D158;
+        }
+        
+        .column-count {
+            font-size: 11px;
+            color: #98989D;
+            font-weight: 500;
+        }
+        
+        .task-card {
+            background: #2C2C2E;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #3A3A3C;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .task-card:hover {
+            border-color: #007AFF;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.2);
+        }
+        
+        .task-card:last-child {
+            margin-bottom: 0;
+        }
+        
+        .task-title {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 4px;
+            color: #FFFFFF;
+        }
+        
+        .task-meta {
+            font-size: 10px;
+            color: #98989D;
+        }
+        
+        .task-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        
+        .tag-revenue { background: rgba(255, 59, 48, 0.15); color: #FF3B30; }
+        .tag-content { background: rgba(0, 122, 255, 0.15); color: #007AFF; }
+        .tag-infra { background: rgba(98, 98, 102, 0.25); color: #D1D1D6; }
+        .tag-kingdom { background: rgba(175, 82, 222, 0.15); color: #AF52DE; }
+        
+        /* Strategic Intel - Bottom Left */
+        .strategic-intel {
+            grid-column: span 4;
         }
         
         .intel-item {
-            background: #001100;
-            border-left: 3px solid #00ff00;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 4px;
+            padding: 10px 0;
+            border-bottom: 1px solid #3A3A3C;
         }
         
-        .intel-tag {
-            display: inline-block;
-            background: #003300;
-            color: #00ff00;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 0.7rem;
-            margin-right: 5px;
+        .intel-item:last-child {
+            border-bottom: none;
+        }
+        
+        .intel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        
+        .intel-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+        
+        .intel-status {
+            font-size: 10px;
+            padding: 2px 6px;
+            background: rgba(0, 122, 255, 0.15);
+            color: #007AFF;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .intel-status.alert {
+            background: rgba(255, 214, 10, 0.15);
+            color: #FFD60A;
+        }
+        
+        .intel-body {
+            font-size: 11px;
+            color: #98989D;
+            line-height: 1.4;
+        }
+        
+        /* Sub-Agent Roster - Bottom Center */
+        .sub-agent-roster {
+            grid-column: span 4;
+        }
+        
+        .agent-list {
+            display: grid;
+            gap: 8px;
         }
         
         .agent-card {
-            background: #001100;
-            border: 1px solid #00ff00;
-            border-radius: 4px;
+            background: #1C1C1E;
+            border-radius: 6px;
             padding: 10px;
-            margin-bottom: 10px;
+            border: 1px solid #3A3A3C;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .agent-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .agent-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .agent-details {
+            font-size: 12px;
         }
         
         .agent-name {
-            color: #00ff00;
-            font-weight: bold;
-            margin-bottom: 5px;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+        
+        .agent-task {
+            font-size: 10px;
+            color: #98989D;
+            margin-top: 2px;
         }
         
         .agent-status {
-            font-size: 0.8rem;
-            color: #00cc00;
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 600;
         }
         
-        .cron-item {
+        .agent-status.active {
+            background: rgba(48, 209, 88, 0.15);
+            color: #30D158;
+        }
+        
+        .agent-status.idle {
+            background: rgba(152, 152, 157, 0.15);
+            color: #98989D;
+        }
+        
+        /* Content Factory - Bottom Right */
+        .content-factory {
+            grid-column: span 4;
+        }
+        
+        .factory-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .factory-stat {
+            background: #1C1C1E;
+            border-radius: 6px;
+            padding: 10px;
+            border: 1px solid #3A3A3C;
+        }
+        
+        .factory-stat-label {
+            font-size: 10px;
+            color: #98989D;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-bottom: 4px;
+        }
+        
+        .factory-stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #007AFF;
+        }
+        
+        .content-queue {
+            font-size: 11px;
+        }
+        
+        .queue-item {
             display: flex;
             justify-content: space-between;
-            padding: 8px 0;
-            border-bottom: 1px solid #003300;
+            padding: 6px 0;
+            border-bottom: 1px solid #3A3A3C;
         }
         
-        .progress-bar {
-            width: 100%;
-            height: 20px;
-            background: #001100;
-            border: 1px solid #00ff00;
-            border-radius: 4px;
-            overflow: hidden;
-            margin: 10px 0;
+        .queue-item:last-child {
+            border-bottom: none;
         }
         
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #00ff00, #00cc00);
-            transition: width 0.3s;
+        .queue-title {
+            color: #FFFFFF;
         }
         
-        .roadmap-item {
-            margin-bottom: 15px;
+        .queue-status {
+            color: #007AFF;
+            font-weight: 500;
         }
         
-        .roadmap-title {
-            color: #00ff00;
-            margin-bottom: 5px;
+        /* SC Campaign Monitor */
+        .sc-campaign-monitor {
+            grid-column: span 6;
         }
         
+        .campaign-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        
+        .campaign-card {
+            background: #1C1C1E;
+            border-radius: 8px;
+            padding: 12px;
+            border: 1px solid #3A3A3C;
+        }
+        
+        .campaign-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #3A3A3C;
+        }
+        
+        .campaign-market {
+            font-size: 14px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        
+        .campaign-status {
+            font-size: 9px;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 0 8px currentColor;
+        }
+        
+        .campaign-status.active {
+            background: rgba(48, 209, 88, 0.2);
+            color: #30D158;
+        }
+        
+        .campaign-status.warning {
+            background: rgba(255, 214, 10, 0.2);
+            color: #FFD60A;
+        }
+        
+        .campaign-status.success {
+            background: rgba(0, 122, 255, 0.2);
+            color: #007AFF;
+        }
+        
+        .campaign-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        
+        .campaign-stat {
+            text-align: center;
+        }
+        
+        .stat-label {
+            display: block;
+            font-size: 10px;
+            color: #98989D;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        
+        .stat-value {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        
+        .campaign-card:nth-child(1) .stat-value {
+            color: #30D158;
+        }
+        
+        .campaign-card:nth-child(2) .stat-value {
+            color: #FFD60A;
+        }
+        
+        .campaign-card:nth-child(3) .stat-value {
+            color: #007AFF;
+        }
+        
+        /* Implementation Roadmap */
+        .implementation-roadmap {
+            grid-column: span 6;
+        }
+        
+        .roadmap-timeline {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        
+        .roadmap-phase {
+            background: #1C1C1E;
+            border-radius: 8px;
+            padding: 12px;
+            border: 1px solid #3A3A3C;
+        }
+        
+        .phase-header {
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #3A3A3C;
+        }
+        
+        .phase-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-bottom: 4px;
+        }
+        
+        .phase-progress {
+            font-size: 10px;
+            color: #98989D;
+        }
+        
+        .phase-goals {
+            margin-bottom: 12px;
+        }
+        
+        .goal-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 0;
+            font-size: 11px;
+            color: #FFFFFF;
+        }
+        
+        .goal-icon {
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        
+        .goal-item.complete .goal-icon {
+            color: #30D158;
+        }
+        
+        .goal-item.active .goal-icon {
+            color: #007AFF;
+        }
+        
+        .goal-item.pending .goal-icon {
+            color: #98989D;
+        }
+        
+        .goal-item.pending {
+            color: #98989D;
+        }
+        
+        .phase-target {
+            font-size: 11px;
+            padding: 8px;
+            background: #2C2C2E;
+            border-radius: 6px;
+            color: #007AFF;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        /* Responsive */
         @media (max-width: 1200px) {
             .grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            
+            .alfred-status,
+            .live-activity,
+            .strategic-intel,
+            .sub-agent-roster,
+            .content-factory,
+            .sc-campaign-monitor,
+            .implementation-roadmap {
+                grid-column: span 6;
+            }
+            
+            .kpi-dashboard {
+                grid-column: span 6;
+            }
+            
+            .task-board {
+                grid-column: span 6;
+            }
+            
+            .task-columns {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .campaign-grid,
+            .roadmap-timeline {
+                grid-template-columns: 1fr;
             }
         }
         
         @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            
             .grid {
                 grid-template-columns: 1fr;
             }
-            .kanban-columns {
+            
+            .alfred-status,
+            .kpi-dashboard,
+            .live-activity,
+            .task-board,
+            .strategic-intel,
+            .sub-agent-roster,
+            .content-factory,
+            .sc-campaign-monitor,
+            .implementation-roadmap {
+                grid-column: span 1;
+            }
+            
+            .task-columns {
                 grid-template-columns: 1fr;
+            }
+            
+            .kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .campaign-grid,
+            .roadmap-timeline {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 22px;
             }
         }
         
-        ::-webkit-scrollbar {
-            width: 8px;
+        /* Utility */
+        .text-muted {
+            color: #98989D;
         }
         
-        ::-webkit-scrollbar-track {
-            background: #000;
+        .text-success {
+            color: #30D158;
         }
         
-        ::-webkit-scrollbar-thumb {
-            background: #00ff00;
-            border-radius: 4px;
+        .text-warning {
+            color: #FFD60A;
+        }
+        
+        .text-error {
+            color: #FF453A;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>⚡ DOXA MISSION CONTROL ⚡</h1>
-            <div class="timestamp" id="timestamp"></div>
-        </div>
+        <header>
+            <h1>MISSION CONTROL</h1>
+            <div class="status-indicator">
+                <div class="heartbeat"></div>
+                <span>System Online • Alfred Active • Last Updated: 10:16 EST</span>
+            </div>
+        </header>
         
         <div class="grid">
-            <!-- Panel 1: Alfred Status -->
-            <div class="panel">
+            <!-- Alfred Status -->
+            <div class="panel alfred-status">
                 <div class="panel-header">
-                    <span class="status-dot green"></span>Alfred Status
+                    <div class="panel-title">Alfred Status</div>
+                    <div class="panel-badge">ONLINE</div>
                 </div>
-                <div class="stat-row">
-                    <span class="stat-label">State:</span>
-                    <span class="stat-value">OPERATIONAL</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Current Task:</span>
-                    <span class="stat-value">Mission Control Build</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Token Spend:</span>
-                    <span class="stat-value">134K / 200K</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Bandwidth:</span>
-                    <span class="stat-value">67% Available</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Sub-Agents:</span>
-                    <span class="stat-value">0 Active</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Last Active:</span>
-                    <span class="stat-value">09:20 EST</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Next Check:</span>
-                    <span class="stat-value">6:00 AM Tomorrow</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Load Level:</span>
-                    <span class="stat-value">HIGH</span>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="status-label">Mode</span>
+                        <span class="status-value active">Observation</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Model</span>
+                        <span class="status-value">Claude Sonnet 4.5</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Thinking</span>
+                        <span class="status-value">Low</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Sessions</span>
+                        <span class="status-value">1 active</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Token Usage</span>
+                        <span class="status-value">76K / 200K</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">API Spend MTD</span>
+                        <span class="status-value active">$45.66 / $200</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Alert Thresholds</span>
+                        <span class="status-value info">$100 | $150</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Daily Burn Rate</span>
+                        <span class="status-value info">$3.26/day</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Projected MTD</span>
+                        <span class="status-value active">$97.80</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Last Heartbeat</span>
+                        <span class="status-value">2m ago</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Next Action</span>
+                        <span class="status-value active">Monitor SC campaigns</span>
+                    </div>
                 </div>
             </div>
             
-            <!-- Panel 3: Live Activity Feed -->
-            <div class="panel">
+            <!-- KPI Dashboard -->
+            <div class="panel kpi-dashboard">
                 <div class="panel-header">
-                    <span class="status-dot green"></span>Live Activity Feed
+                    <div class="panel-title">Revenue KPIs</div>
+                    <div class="panel-badge">LIVE</div>
+                </div>
+                <div class="kpi-grid">
+                    <div class="kpi-card good">
+                        <div class="kpi-label">Response Rate</div>
+                        <div class="kpi-value">3.4%</div>
+                        <div class="kpi-trend up">↑ 265% from Feb avg</div>
+                    </div>
+                    <div class="kpi-card info">
+                        <div class="kpi-label">Ratifications</div>
+                        <div class="kpi-value">4</div>
+                        <div class="kpi-trend neutral">This week</div>
+                    </div>
+                    <div class="kpi-card warning">
+                        <div class="kpi-label">Closed MTD</div>
+                        <div class="kpi-value">4</div>
+                        <div class="kpi-trend neutral">Target: 10/mo</div>
+                    </div>
+                    <div class="kpi-card good">
+                        <div class="kpi-label">API Spend</div>
+                        <div class="kpi-value">$45.66</div>
+                        <div class="kpi-trend neutral">23% of $200 budget • $3.26/day</div>
+                    </div>
+                    <div class="kpi-card info">
+                        <div class="kpi-label">Off-Market</div>
+                        <div class="kpi-value">67</div>
+                        <div class="kpi-trend neutral">This week</div>
+                    </div>
+                    <div class="kpi-card info">
+                        <div class="kpi-label">Texts Sent</div>
+                        <div class="kpi-value">11.2K</div>
+                        <div class="kpi-trend neutral">This week</div>
+                    </div>
+                    <div class="kpi-card info">
+                        <div class="kpi-label">Pipeline</div>
+                        <div class="kpi-value">6</div>
+                        <div class="kpi-trend neutral">Active deals</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Live Activity Feed -->
+            <div class="panel live-activity">
+                <div class="panel-header">
+                    <div class="panel-title">Live Activity</div>
+                    <div class="panel-badge">REAL-TIME</div>
                 </div>
                 <div class="activity-feed">
                     <div class="activity-item">
-                        <span class="status-dot green"></span>
-                        <span class="activity-time">09:20</span>
-                        <span class="activity-text">Building Mission Control dashboard</span>
+                        <div class="activity-dot success"></div>
+                        <div class="activity-content">
+                            <div class="activity-text">SC Operations Manual updated (108KB) — 8 appendices added</div>
+                            <div class="activity-time">2m ago</div>
+                        </div>
                     </div>
                     <div class="activity-item">
-                        <span class="status-dot green"></span>
-                        <span class="activity-time">09:06</span>
-                        <span class="activity-text">Created Word document (sc-operations-manual.docx)</span>
+                        <div class="activity-dot success"></div>
+                        <div class="activity-content">
+                            <div class="activity-text">Sample morning brief delivered for review</div>
+                            <div class="activity-time">5m ago</div>
+                        </div>
                     </div>
                     <div class="activity-item">
-                        <span class="status-dot green"></span>
-                        <span class="activity-time">09:04</span>
-                        <span class="activity-text">Generated HTML manual with dark theme</span>
+                        <div class="activity-dot info"></div>
+                        <div class="activity-content">
+                            <div class="activity-text">Mission Control dashboard rebuilt — Apple aesthetic applied</div>
+                            <div class="activity-time">8m ago</div>
+                        </div>
                     </div>
                     <div class="activity-item">
-                        <span class="status-dot green"></span>
-                        <span class="activity-time">09:03</span>
-                        <span class="activity-text">Delivered SC Operations Manual (67KB)</span>
+                        <div class="activity-dot warning"></div>
+                        <div class="activity-content">
+                            <div class="activity-text">NOVA delivery rate at 92% (below 95% threshold) — spam audit completed</div>
+                            <div class="activity-time">15m ago</div>
+                        </div>
                     </div>
                     <div class="activity-item">
-                        <span class="status-dot yellow"></span>
-                        <span class="activity-time">06:16</span>
-                        <span class="activity-text">Morning brief ran (Todoist error)</span>
+                        <div class="activity-dot success"></div>
+                        <div class="activity-content">
+                            <div class="activity-text">Kayak property ratified (Friday) — deal moving forward</div>
+                            <div class="activity-time">1d ago</div>
+                        </div>
                     </div>
                     <div class="activity-item">
-                        <span class="status-dot green"></span>
-                        <span class="activity-time">FEB 13</span>
-                        <span class="activity-text">Completed 6-month SC performance analysis</span>
+                        <div class="activity-dot info"></div>
+                        <div class="activity-content">
+                            <div class="activity-text">MD response rate: 3.6% (102 responses from 2,840 texts)</div>
+                            <div class="activity-time">1d ago</div>
+                        </div>
                     </div>
                     <div class="activity-item">
-                        <span class="status-dot green"></span>
-                        <span class="activity-time">FEB 13</span>
-                        <span class="activity-text">GHL API configured (DOXA + DPV)</span>
+                        <div class="activity-dot success"></div>
+                        <div class="activity-content">
+                            <div class="activity-text">18 off-market properties received Friday</div>
+                            <div class="activity-time">1d ago</div>
+                        </div>
                     </div>
                     <div class="activity-item">
-                        <span class="status-dot green"></span>
-                        <span class="activity-time">FEB 13</span>
-                        <span class="activity-text">Deal Pipeline Tracker created</span>
+                        <div class="activity-dot info"></div>
+                        <div class="activity-content">
+                            <div class="activity-text">Weekend Reel scripts ready (3 videos queued for filming)</div>
+                            <div class="activity-time">2d ago</div>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Panel 4: KPI Dashboard -->
-            <div class="panel">
+            <!-- Task Board -->
+            <div class="panel task-board">
                 <div class="panel-header">
-                    <span class="status-dot green"></span>KPI Dashboard
+                    <div class="panel-title">Task Pipeline</div>
+                    <div class="panel-badge">31 ACTIVE</div>
                 </div>
-                <div class="kpi-grid">
-                    <div class="kpi-box">
-                        <div class="kpi-value">445</div>
-                        <div class="kpi-label">Conversations (MTD)</div>
+                <div class="task-columns">
+                    <!-- Queued -->
+                    <div class="task-column">
+                        <div class="column-header">
+                            <span>Queued</span>
+                            <span class="column-count">10</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">Agent relationship tracker</div>
+                            <div class="task-meta">5,100+ agents database</div>
+                            <span class="task-tag tag-revenue">Revenue</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">Reddit audience research</div>
+                            <div class="task-meta">Requires Brave API</div>
+                            <span class="task-tag tag-content">Content</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">7-day content calendar</div>
+                            <div class="task-meta">Built from research</div>
+                            <span class="task-tag tag-content">Content</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">Discord bot setup</div>
+                            <div class="task-meta">Content factory structure</div>
+                            <span class="task-tag tag-infra">Infra</span>
+                        </div>
                     </div>
-                    <div class="kpi-box">
-                        <div class="kpi-value">47.8K</div>
-                        <div class="kpi-label">Texts Sent (MTD)</div>
+                    
+                    <!-- This Week -->
+                    <div class="task-column">
+                        <div class="column-header">
+                            <span>This Week</span>
+                            <span class="column-count">4</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">Film 3 weekend Reels</div>
+                            <div class="task-meta">Scripts ready</div>
+                            <span class="task-tag tag-content">Content</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">API Setup Checklist</div>
+                            <div class="task-meta">Due: Sunday</div>
+                            <span class="task-tag tag-infra">Infra</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">VA Beach campaign analysis</div>
+                            <div class="task-meta">9.28% success factors</div>
+                            <span class="task-tag tag-revenue">Revenue</span>
+                        </div>
                     </div>
-                    <div class="kpi-box">
-                        <div class="kpi-value">107</div>
-                        <div class="kpi-label">Off-Markets (MTD)</div>
+                    
+                    <!-- In Flight -->
+                    <div class="task-column">
+                        <div class="column-header">
+                            <span>In Flight</span>
+                            <span class="column-count">6</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">Daily Morning Brief</div>
+                            <div class="task-meta">Testing 6 AM format</div>
+                            <span class="task-tag tag-infra">Infra</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">SC Operations Manual</div>
+                            <div class="task-meta">Complete (108KB)</div>
+                            <span class="task-tag tag-revenue">Revenue</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">Mission Control redesign</div>
+                            <div class="task-meta">Apple aesthetic</div>
+                            <span class="task-tag tag-infra">Infra</span>
+                        </div>
                     </div>
-                    <div class="kpi-box">
-                        <div class="kpi-value">33</div>
-                        <div class="kpi-label">Offers Sent (MTD)</div>
+                    
+                    <!-- Blocked -->
+                    <div class="task-column">
+                        <div class="column-header">
+                            <span>Blocked</span>
+                            <span class="column-count">4</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">Discord Content Factory</div>
+                            <div class="task-meta">Needs bot setup</div>
+                            <span class="task-tag tag-content">Content</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">Automated Morning Brief</div>
+                            <div class="task-meta">Awaiting approval</div>
+                            <span class="task-tag tag-infra">Infra</span>
+                        </div>
                     </div>
-                    <div class="kpi-box">
-                        <div class="kpi-value">4</div>
-                        <div class="kpi-label">Closed Deals (MTD)</div>
-                    </div>
-                    <div class="kpi-box">
-                        <div class="kpi-value">4,200</div>
-                        <div class="kpi-label">Agents in DPV</div>
+                    
+                    <!-- Done -->
+                    <div class="task-column">
+                        <div class="column-header">
+                            <span>Done</span>
+                            <span class="column-count">7</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">YouTube framework library</div>
+                            <div class="task-meta">20 frameworks delivered</div>
+                            <span class="task-tag tag-content">Content</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">3 Reel scripts</div>
+                            <div class="task-meta">Ready to film</div>
+                            <span class="task-tag tag-content">Content</span>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-title">Deal Pipeline Tracker</div>
+                            <div class="task-meta">CSV + instructions</div>
+                            <span class="task-tag tag-revenue">Revenue</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Kanban Board (Full Width) -->
-        <div class="panel kanban-board">
-            <div class="panel-header">📋 Task Board</div>
-            <div class="kanban-columns">
-                <div class="kanban-column">
-                    <div class="column-header">⏭️ Up Next</div>
-                    <div class="task-card">
-                        <div class="task-title">Update Manual with 8 Sections</div>
-                        <div class="task-meta">Alfred | 90 min | HIGH</div>
-                    </div>
-                    <div class="task-card">
-                        <div class="task-title">VA Beach Message Pull</div>
-                        <div class="task-meta">Jonathan | 15 min | MEDIUM</div>
-                    </div>
-                    <div class="task-card">
-                        <div class="task-title">Sept Offer Analysis</div>
-                        <div class="task-meta">Jonathan | 30 min | HIGH</div>
-                    </div>
+            
+            <!-- Strategic Intel -->
+            <div class="panel strategic-intel">
+                <div class="panel-header">
+                    <div class="panel-title">Strategic Intel</div>
                 </div>
-                
-                <div class="kanban-column">
-                    <div class="column-header">🔄 In Progress</div>
-                    <div class="task-card">
-                        <div class="task-title">Mission Control Dashboard</div>
-                        <div class="task-meta">Alfred | 45 min | HIGH</div>
-                    </div>
-                    <div class="task-card">
-                        <div class="task-title">GitHub Pages Deploy</div>
-                        <div class="task-meta">Alfred | 15 min | MEDIUM</div>
-                    </div>
-                </div>
-                
-                <div class="kanban-column">
-                    <div class="column-header">✅ Done</div>
-                    <div class="task-card">
-                        <div class="task-title">SC Operations Manual (67KB)</div>
-                        <div class="task-meta">Alfred | Completed 09:03</div>
-                    </div>
-                    <div class="task-card">
-                        <div class="task-title">HTML Manual Dark Theme</div>
-                        <div class="task-meta">Alfred | Completed 09:06</div>
-                    </div>
-                    <div class="task-card">
-                        <div class="task-title">Word Doc Export</div>
-                        <div class="task-meta">Alfred | Completed 09:07</div>
-                    </div>
-                    <div class="task-card">
-                        <div class="task-title">GHL API Setup</div>
-                        <div class="task-meta">Alfred | Completed FEB 13</div>
-                    </div>
-                </div>
-                
-                <div class="kanban-column">
-                    <div class="column-header">🚫 Blocked</div>
-                    <div class="task-card">
-                        <div class="task-title">Automated Morning Briefs</div>
-                        <div class="task-meta">Todoist CLI syntax issue</div>
-                    </div>
-                    <div class="task-card">
-                        <div class="task-title">Reddit Research Agent</div>
-                        <div class="task-meta">Waiting: API setup Sunday</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="grid">
-            <!-- Panel 5: Strategic Intel Feed -->
-            <div class="panel">
-                <div class="panel-header">🧠 Strategic Intel</div>
                 <div class="intel-item">
-                    <span class="intel-tag">OPERATIONS</span>
-                    <div style="color: #00ff00; margin-top: 5px;">
-                        VA Beach campaign 9.28% response (10x better) - likely list freshness + market size
+                    <div class="intel-header">
+                        <div class="intel-title">Response Rate Recovery</div>
+                        <div class="intel-status">TRENDING UP</div>
+                    </div>
+                    <div class="intel-body">
+                        3.4% this week (up 265% from 0.93% Feb avg). Message refresh + list rotation working.
                     </div>
                 </div>
                 <div class="intel-item">
-                    <span class="intel-tag">REVENUE</span>
-                    <div style="color: #00ff00; margin-top: 5px;">
-                        Sept selectivity model: 50% offer-to-ratified vs current 11% - restore quality>quantity
+                    <div class="intel-header">
+                        <div class="intel-title">VA Beach Campaign Success</div>
+                        <div class="intel-status alert">ANALYZE</div>
+                    </div>
+                    <div class="intel-body">
+                        9.28% response vs 0.93% overall. Need to isolate factors for replication across MD/NOVA.
                     </div>
                 </div>
                 <div class="intel-item">
-                    <span class="intel-tag">GROWTH</span>
-                    <div style="color: #00ff00; margin-top: 5px;">
-                        DMV can support 10 deals/month WITHOUT Houston if Sept efficiency restored
+                    <div class="intel-header">
+                        <div class="intel-title">Houston Expansion Decision</div>
+                        <div class="intel-status">PENDING</div>
+                    </div>
+                    <div class="intel-body">
+                        DMV can support 10 deals/month if Sept efficiency restored. Recommend: Fix DMV first, expand Q3.
                     </div>
                 </div>
                 <div class="intel-item">
-                    <span class="intel-tag">OPERATIONS</span>
-                    <div style="color: #00ff00; margin-top: 5px;">
-                        8-week rest periods for MD/NOVA will restore response rates from 0.93% to 1.5%+
+                    <div class="intel-header">
+                        <div class="intel-title">Offer-to-Ratified Target</div>
+                        <div class="intel-status alert">BELOW TARGET</div>
+                    </div>
+                    <div class="intel-body">
+                        Currently 8%, target 30%. LM training on September selectivity model in progress.
                     </div>
                 </div>
             </div>
             
-            <!-- Panel 6: Sub-Agent Roster -->
-            <div class="panel">
-                <div class="panel-header">🤖 Sub-Agent Roster</div>
-                <div class="agent-card">
-                    <div class="agent-name">Research Agent (Scout)</div>
-                    <div class="agent-status">
-                        <span class="status-dot red"></span>
-                        INACTIVE - Awaiting API setup
-                    </div>
+            <!-- Sub-Agent Roster -->
+            <div class="panel sub-agent-roster">
+                <div class="panel-header">
+                    <div class="panel-title">Sub-Agent Roster</div>
+                    <div class="panel-badge">0 ACTIVE</div>
                 </div>
-                <div class="agent-card">
-                    <div class="agent-name">Script Agent (Writer)</div>
-                    <div class="agent-status">
-                        <span class="status-dot red"></span>
-                        INACTIVE - Content on hold
+                <div class="agent-list">
+                    <div style="text-align: center; padding: 40px 20px; color: #98989D; font-size: 12px;">
+                        No sub-agents spawned yet.<br>
+                        Use sessions_spawn to delegate tasks.
                     </div>
-                </div>
-                <div class="agent-card">
-                    <div class="agent-name">Visual Agent (Designer)</div>
-                    <div class="agent-status">
-                        <span class="status-dot red"></span>
-                        INACTIVE - Content on hold
-                    </div>
-                </div>
-                <div style="color: #00cc00; margin-top: 10px; font-size: 0.85rem;">
-                    Note: Content factory on hold per Jonathan's direction (no content until he provides real stories)
                 </div>
             </div>
             
-            <!-- Panel 7: Content Factory Status -->
-            <div class="panel">
-                <div class="panel-header">📹 Content Factory</div>
-                <div class="stat-row">
-                    <span class="stat-label">Content Queued:</span>
-                    <span class="stat-value">0</span>
+            <!-- Content Factory -->
+            <div class="panel content-factory">
+                <div class="panel-header">
+                    <div class="panel-title">Content Factory</div>
+                    <div class="panel-badge">BUILDING</div>
                 </div>
-                <div class="stat-row">
-                    <span class="stat-label">Posted (MTD):</span>
-                    <span class="stat-value">Daily since Dec 15</span>
+                <div class="factory-stats">
+                    <div class="factory-stat">
+                        <div class="factory-stat-label">Scripts Ready</div>
+                        <div class="factory-stat-value">3</div>
+                    </div>
+                    <div class="factory-stat">
+                        <div class="factory-stat-label">Frameworks</div>
+                        <div class="factory-stat-value">20</div>
+                    </div>
+                    <div class="factory-stat">
+                        <div class="factory-stat-label">Published MTD</div>
+                        <div class="factory-stat-value">0</div>
+                    </div>
+                    <div class="factory-stat">
+                        <div class="factory-stat-label">Target/Day</div>
+                        <div class="factory-stat-value">1</div>
+                    </div>
                 </div>
-                <div class="stat-row">
-                    <span class="stat-label">Needs Approval:</span>
-                    <span class="stat-value">0</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Status:</span>
-                    <span class="stat-value" style="color: #ffff00;">PAUSED</span>
-                </div>
-                <div style="color: #00cc00; margin-top: 10px; font-size: 0.85rem;">
-                    Factory paused per Feb 13 directive. Resume when Jonathan initiates content interview with real stories.
+                <div class="content-queue">
+                    <div class="queue-item">
+                        <span class="queue-title">Why Agents Stay Broke</span>
+                        <span class="queue-status">Ready</span>
+                    </div>
+                    <div class="queue-item">
+                        <span class="queue-title">Masculine Jesus</span>
+                        <span class="queue-status">Ready</span>
+                    </div>
+                    <div class="queue-item">
+                        <span class="queue-title">First Wholesale Deal</span>
+                        <span class="queue-status">Ready</span>
+                    </div>
                 </div>
             </div>
             
-            <!-- Panel 8: Cron Jobs -->
-            <div class="panel">
-                <div class="panel-header">⏰ Scheduled Tasks</div>
-                <div class="cron-item">
-                    <div>
-                        <div style="color: #00ff00;">Daily Morning Brief</div>
-                        <div style="font-size: 0.75rem; color: #00cc00;">6:00 AM EST daily</div>
-                    </div>
-                    <div>
-                        <span class="status-dot yellow"></span>
-                        <span style="color: #ffff00;">PARTIAL</span>
-                    </div>
+            <!-- SC Campaign Monitor -->
+            <div class="panel sc-campaign-monitor">
+                <div class="panel-header">
+                    <div class="panel-title">SC Campaign Monitor</div>
+                    <div class="panel-badge">LIVE</div>
                 </div>
-                <div class="cron-item">
-                    <div>
-                        <div style="color: #00ff00;">Travis Call Reminder</div>
-                        <div style="font-size: 0.75rem; color: #00cc00;">Mon Feb 16, 9:00 AM</div>
+                <div class="campaign-grid">
+                    <div class="campaign-card">
+                        <div class="campaign-header">
+                            <div class="campaign-market">MD</div>
+                            <div class="campaign-status active">ACTIVE</div>
+                        </div>
+                        <div class="campaign-stats">
+                            <div class="campaign-stat">
+                                <span class="stat-label">Response</span>
+                                <span class="stat-value">4.09%</span>
+                            </div>
+                            <div class="campaign-stat">
+                                <span class="stat-label">Delivery</span>
+                                <span class="stat-value">97%</span>
+                            </div>
+                            <div class="campaign-stat">
+                                <span class="stat-label">Agents</span>
+                                <span class="stat-value">22.3K</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <span class="status-dot green"></span>
-                        <span style="color: #00ff00;">ACTIVE</span>
+                    <div class="campaign-card">
+                        <div class="campaign-header">
+                            <div class="campaign-market">NOVA</div>
+                            <div class="campaign-status warning">WATCH</div>
+                        </div>
+                        <div class="campaign-stats">
+                            <div class="campaign-stat">
+                                <span class="stat-label">Response</span>
+                                <span class="stat-value">3.81%</span>
+                            </div>
+                            <div class="campaign-stat">
+                                <span class="stat-label">Delivery</span>
+                                <span class="stat-value">92%</span>
+                            </div>
+                            <div class="campaign-stat">
+                                <span class="stat-label">Agents</span>
+                                <span class="stat-value">25.1K</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="cron-item">
-                    <div>
-                        <div style="color: #00ff00;">Sandcastles.ai Review</div>
-                        <div style="font-size: 0.75rem; color: #00cc00;">Mon Feb 16, 5:20 PM</div>
+                    <div class="campaign-card">
+                        <div class="campaign-header">
+                            <div class="campaign-market">VA Beach</div>
+                            <div class="campaign-status success">WINNER</div>
+                        </div>
+                        <div class="campaign-stats">
+                            <div class="campaign-stat">
+                                <span class="stat-label">Response</span>
+                                <span class="stat-value">9.28%</span>
+                            </div>
+                            <div class="campaign-stat">
+                                <span class="stat-label">Delivery</span>
+                                <span class="stat-value">96%</span>
+                            </div>
+                            <div class="campaign-stat">
+                                <span class="stat-label">Agents</span>
+                                <span class="stat-value">6.8K</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <span class="status-dot green"></span>
-                        <span style="color: #00ff00;">ACTIVE</span>
-                    </div>
-                </div>
-                <div style="color: #00cc00; margin-top: 10px; font-size: 0.85rem;">
-                    Next: Daily Standup (7 AM) per today's directive
                 </div>
             </div>
             
-            <!-- Panel 9: SC Campaign Monitor -->
-            <div class="panel">
-                <div class="panel-header">📱 SC Campaign Monitor</div>
-                <div class="stat-row">
-                    <span class="stat-label">MD Send Rate:</span>
-                    <span class="stat-value">6/min → Target: 8/min</span>
+            <!-- Implementation Roadmap -->
+            <div class="panel implementation-roadmap">
+                <div class="panel-header">
+                    <div class="panel-title">90-Day Roadmap</div>
+                    <div class="panel-badge">Q1 2026</div>
                 </div>
-                <div class="stat-row">
-                    <span class="stat-label">NOVA Send Rate:</span>
-                    <span class="stat-value">4/min → Target: 6/min</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">RVA Send Rate:</span>
-                    <span class="stat-value">3/min → Target: 5/min</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Response Rate:</span>
-                    <span class="stat-value" style="color: #ffff00;">0.93% ⚠️</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">List Health:</span>
-                    <span class="stat-value" style="color: #ffff00;">FATIGUED</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Active Agents:</span>
-                    <span class="stat-value">54,132</span>
-                </div>
-                <div class="stat-row">
-                    <span class="stat-label">Next Action:</span>
-                    <span class="stat-value">8-week rest (MD/NOVA)</span>
-                </div>
-            </div>
-            
-            <!-- Panel 10: Implementation Roadmap -->
-            <div class="panel">
-                <div class="panel-header">🗺️ Implementation Roadmap</div>
-                <div class="roadmap-item">
-                    <div class="roadmap-title">Week 1: Foundation (Feb 17-23)</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 15%;"></div>
+                <div class="roadmap-timeline">
+                    <div class="roadmap-phase">
+                        <div class="phase-header">
+                            <div class="phase-title">March • Foundation</div>
+                            <div class="phase-progress">Week 2 of 4</div>
+                        </div>
+                        <div class="phase-goals">
+                            <div class="goal-item complete">
+                                <span class="goal-icon">✓</span>
+                                <span>Message refresh deployed</span>
+                            </div>
+                            <div class="goal-item complete">
+                                <span class="goal-icon">✓</span>
+                                <span>Attribution tracking live</span>
+                            </div>
+                            <div class="goal-item active">
+                                <span class="goal-icon">→</span>
+                                <span>LM training on selectivity</span>
+                            </div>
+                            <div class="goal-item pending">
+                                <span class="goal-icon">○</span>
+                                <span>Response rate to 1.2%</span>
+                            </div>
+                        </div>
+                        <div class="phase-target">
+                            Target: 6-8 ratifications
+                        </div>
                     </div>
-                    <div style="font-size: 0.75rem; color: #00cc00;">15% complete - Manual delivered, calendar building</div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-title">Week 2-3: Optimization (Feb 24 - Mar 9)</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%;"></div>
+                    <div class="roadmap-phase">
+                        <div class="phase-header">
+                            <div class="phase-title">April • Optimization</div>
+                            <div class="phase-progress">Not started</div>
+                        </div>
+                        <div class="phase-goals">
+                            <div class="goal-item pending">
+                                <span class="goal-icon">○</span>
+                                <span>Response rate to 1.5%</span>
+                            </div>
+                            <div class="goal-item pending">
+                                <span class="goal-icon">○</span>
+                                <span>Offer→ratified to 25%</span>
+                            </div>
+                            <div class="goal-item pending">
+                                <span class="goal-icon">○</span>
+                                <span>Scale to 80K texts/month</span>
+                            </div>
+                        </div>
+                        <div class="phase-target">
+                            Target: 8-10 ratifications
+                        </div>
                     </div>
-                    <div style="font-size: 0.75rem; color: #00cc00;">0% complete - Buyer pre-match + list segmentation</div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-title">Month 2: Restoration (April)</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%;"></div>
+                    <div class="roadmap-phase">
+                        <div class="phase-header">
+                            <div class="phase-title">May • Scale</div>
+                            <div class="phase-progress">Not started</div>
+                        </div>
+                        <div class="phase-goals">
+                            <div class="goal-item pending">
+                                <span class="goal-icon">○</span>
+                                <span>Response rate to 1.8%</span>
+                            </div>
+                            <div class="goal-item pending">
+                                <span class="goal-icon">○</span>
+                                <span>Offer→ratified to 30%</span>
+                            </div>
+                            <div class="goal-item pending">
+                                <span class="goal-icon">○</span>
+                                <span>Houston decision</span>
+                            </div>
+                        </div>
+                        <div class="phase-target">
+                            Target: 10+ ratifications ✓
+                        </div>
                     </div>
-                    <div style="font-size: 0.75rem; color: #00cc00;">0% complete - Sept selectivity model</div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-title">Month 3-4: Scale (May-June)</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%;"></div>
-                    </div>
-                    <div style="font-size: 0.75rem; color: #00cc00;">0% complete - 10 deals/month target</div>
                 </div>
             </div>
         </div>
     </div>
     
     <script>
-        // Update timestamp
-        function updateTimestamp() {
+        // Auto-refresh every 60 seconds
+        setTimeout(() => location.reload(), 60000);
+        
+        // Update last updated time
+        setInterval(() => {
             const now = new Date();
-            const options = { 
-                timeZone: 'America/New_York',
-                hour: '2-digit',
+            const timeStr = now.toLocaleTimeString('en-US', { 
+                hour: 'numeric', 
                 minute: '2-digit',
-                second: '2-digit',
-                month: 'short',
-                day: 'numeric'
-            };
-            document.getElementById('timestamp').textContent = 
-                now.toLocaleString('en-US', options) + ' EST';
-        }
-        
-        updateTimestamp();
-        setInterval(updateTimestamp, 1000);
-        
-        // Simulate activity feed updates (would be real WebSocket in production)
-        // For now, static display with latest activities
+                timeZone: 'America/New_York'
+            });
+            document.querySelector('.status-indicator span').textContent = 
+                `System Online • Alfred Active • Last Updated: ${timeStr} EST`;
+        }, 60000);
     </script>
 </body>
 </html>
