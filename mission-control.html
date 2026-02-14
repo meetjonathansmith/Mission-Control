@@ -15,8 +15,8 @@
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
-            background: #1C1C1E;
-            color: #FFFFFF;
+            background: #F5F7FA;
+            color: #1A1A2E;
             padding: 16px;
             line-height: 1.4;
             overflow-x: hidden;
@@ -34,13 +34,14 @@
             align-items: center;
             margin-bottom: 24px;
             padding-bottom: 16px;
-            border-bottom: 1px solid #2C2C2E;
+            border-bottom: 2px solid #E5E7EB;
         }
         
         h1 {
             font-size: 28px;
             font-weight: 700;
             letter-spacing: -0.5px;
+            color: #1A1A2E;
         }
         
         .status-indicator {
@@ -48,13 +49,13 @@
             align-items: center;
             gap: 8px;
             font-size: 13px;
-            color: #98989D;
+            color: #6B7280;
         }
         
         .heartbeat {
             width: 8px;
             height: 8px;
-            background: #30D158;
+            background: #22C55E;
             border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
         }
@@ -73,11 +74,11 @@
         
         /* Panel Base */
         .panel {
-            background: #2C2C2E;
+            background: #FFFFFF;
             border-radius: 12px;
             padding: 16px;
-            border: 1px solid #3A3A3C;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
         }
         
         .panel-header {
@@ -86,7 +87,7 @@
             align-items: center;
             margin-bottom: 12px;
             padding-bottom: 8px;
-            border-bottom: 1px solid #3A3A3C;
+            border-bottom: 1px solid #E5E7EB;
         }
         
         .panel-title {
@@ -94,16 +95,29 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            color: #007AFF;
+            color: #4ABDE8;
         }
         
         .panel-badge {
             font-size: 11px;
-            padding: 2px 8px;
-            background: rgba(0, 122, 255, 0.15);
-            color: #007AFF;
+            padding: 3px 8px;
+            background: rgba(74, 189, 232, 0.1);
+            color: #4ABDE8;
             border-radius: 6px;
-            font-weight: 600;
+            font-weight: 700;
+            box-shadow: 0 0 8px rgba(74, 189, 232, 0.15);
+        }
+        
+        .panel-badge.success {
+            background: rgba(34, 197, 94, 0.1);
+            color: #22C55E;
+            box-shadow: 0 0 8px rgba(34, 197, 94, 0.15);
+        }
+        
+        .panel-badge.warning {
+            background: rgba(245, 158, 11, 0.1);
+            color: #F59E0B;
+            box-shadow: 0 0 8px rgba(245, 158, 11, 0.15);
         }
         
         /* Alfred Status - Top Left */
@@ -125,28 +139,28 @@
         }
         
         .status-label {
-            color: #98989D;
+            color: #6B7280;
         }
         
         .status-value {
-            color: #FFFFFF;
+            color: #1A1A2E;
             font-weight: 500;
         }
         
         .status-value.active {
-            color: #30D158;
+            color: #22C55E;
         }
         
         .status-value.warning {
-            color: #FFD60A;
+            color: #F59E0B;
         }
         
         .status-value.info {
-            color: #007AFF;
+            color: #4ABDE8;
         }
         
         .status-value.error {
-            color: #FF453A;
+            color: #EF4444;
         }
         
         /* KPI Dashboard - Top Center */
@@ -161,15 +175,15 @@
         }
         
         .kpi-card {
-            background: #1C1C1E;
+            background: #F9FAFB;
             border-radius: 8px;
             padding: 12px;
-            border: 1px solid #3A3A3C;
+            border: 1px solid #E5E7EB;
         }
         
         .kpi-label {
             font-size: 11px;
-            color: #98989D;
+            color: #6B7280;
             margin-bottom: 4px;
             text-transform: uppercase;
             letter-spacing: 0.3px;
@@ -178,24 +192,24 @@
         .kpi-value {
             font-size: 36px;
             font-weight: 700;
-            color: #FFFFFF;
+            color: #1A1A2E;
             line-height: 1;
         }
         
         .kpi-card.good .kpi-value {
-            color: #30D158;
+            color: #22C55E;
         }
         
         .kpi-card.warning .kpi-value {
-            color: #FFD60A;
+            color: #F59E0B;
         }
         
         .kpi-card.bad .kpi-value {
-            color: #FF453A;
+            color: #EF4444;
         }
         
         .kpi-card.info .kpi-value {
-            color: #007AFF;
+            color: #4ABDE8;
         }
         
         .kpi-trend {
@@ -205,23 +219,35 @@
         }
         
         .kpi-trend.up {
-            color: #30D158;
+            color: #22C55E;
         }
         
         .kpi-trend.down {
-            color: #FF453A;
+            color: #EF4444;
         }
         
         .kpi-trend.neutral {
-            color: #98989D;
+            color: #6B7280;
+        }
+        
+        .kpi-card.good {
+            border-color: #22C55E;
+            box-shadow: 0 0 12px rgba(34, 197, 94, 0.15);
         }
         
         .kpi-card.warning {
-            border-color: #FFD60A;
+            border-color: #F59E0B;
+            box-shadow: 0 0 12px rgba(245, 158, 11, 0.15);
         }
         
-        .kpi-card.alert {
-            border-color: #FF453A;
+        .kpi-card.bad {
+            border-color: #EF4444;
+            box-shadow: 0 0 12px rgba(239, 68, 68, 0.15);
+        }
+        
+        .kpi-card.info {
+            border-color: #4ABDE8;
+            box-shadow: 0 0 12px rgba(74, 189, 232, 0.15);
         }
         
         /* Live Activity - Top Right */
@@ -234,7 +260,7 @@
             max-height: 340px;
             overflow-y: auto;
             scrollbar-width: thin;
-            scrollbar-color: #3A3A3C #2C2C2E;
+            scrollbar-color: #E5E7EB #F9FAFB;
         }
         
         .activity-feed::-webkit-scrollbar {
@@ -242,11 +268,11 @@
         }
         
         .activity-feed::-webkit-scrollbar-track {
-            background: #2C2C2E;
+            background: #F9FAFB;
         }
         
         .activity-feed::-webkit-scrollbar-thumb {
-            background: #3A3A3C;
+            background: #E5E7EB;
             border-radius: 4px;
         }
         
@@ -255,7 +281,7 @@
             gap: 10px;
             padding: 8px 0;
             font-size: 12px;
-            border-bottom: 1px solid #3A3A3C;
+            border-bottom: 1px solid #E5E7EB;
         }
         
         .activity-item:last-child {
@@ -272,22 +298,22 @@
         }
         
         .activity-dot.success { 
-            background: #30D158;
-            color: #30D158;
+            background: #22C55E;
+            color: #22C55E;
             animation: pulse 2s ease-in-out infinite;
         }
         .activity-dot.info { 
-            background: #007AFF;
-            color: #007AFF;
+            background: #4ABDE8;
+            color: #4ABDE8;
         }
         .activity-dot.warning { 
-            background: #FFD60A;
-            color: #FFD60A;
+            background: #F59E0B;
+            color: #F59E0B;
             animation: pulse 2s ease-in-out infinite;
         }
         .activity-dot.error { 
-            background: #FF453A;
-            color: #FF453A;
+            background: #EF4444;
+            color: #EF4444;
             animation: pulse 1.5s ease-in-out infinite;
         }
         
@@ -296,12 +322,12 @@
         }
         
         .activity-text {
-            color: #FFFFFF;
+            color: #1A1A2E;
             line-height: 1.4;
         }
         
         .activity-time {
-            color: #98989D;
+            color: #6B7280;
             font-size: 10px;
             margin-top: 2px;
         }
@@ -318,10 +344,10 @@
         }
         
         .task-column {
-            background: #1C1C1E;
+            background: #F9FAFB;
             border-radius: 8px;
             padding: 12px;
-            border: 1px solid #3A3A3C;
+            border: 1px solid #E5E7EB;
         }
         
         .column-header {
@@ -336,50 +362,73 @@
         }
         
         .task-column:nth-child(1) .column-header {
-            color: #007AFF;
-            border-bottom-color: #007AFF;
+            color: #4ABDE8;
+            border-bottom-color: #4ABDE8;
         }
         
         .task-column:nth-child(2) .column-header {
-            color: #FFD60A;
-            border-bottom-color: #FFD60A;
+            color: #F59E0B;
+            border-bottom-color: #F59E0B;
         }
         
         .task-column:nth-child(3) .column-header {
-            color: #FF9F0A;
-            border-bottom-color: #FF9F0A;
+            color: #F97316;
+            border-bottom-color: #F97316;
         }
         
         .task-column:nth-child(4) .column-header {
-            color: #FF453A;
-            border-bottom-color: #FF453A;
+            color: #EF4444;
+            border-bottom-color: #EF4444;
         }
         
         .task-column:nth-child(5) .column-header {
-            color: #30D158;
-            border-bottom-color: #30D158;
+            color: #22C55E;
+            border-bottom-color: #22C55E;
         }
         
         .column-count {
             font-size: 11px;
-            color: #98989D;
-            font-weight: 500;
+            font-weight: 700;
+            padding: 2px 6px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+        }
+        
+        .task-column:nth-child(1) .column-count {
+            color: #4ABDE8;
+        }
+        
+        .task-column:nth-child(2) .column-count {
+            color: #F59E0B;
+        }
+        
+        .task-column:nth-child(3) .column-count {
+            color: #F97316;
+        }
+        
+        .task-column:nth-child(4) .column-count {
+            color: #EF4444;
+        }
+        
+        .task-column:nth-child(5) .column-count {
+            color: #22C55E;
         }
         
         .task-card {
-            background: #2C2C2E;
+            background: #FFFFFF;
             border-radius: 6px;
             padding: 10px;
             margin-bottom: 8px;
-            border: 1px solid #3A3A3C;
+            border: 1px solid #E5E7EB;
             cursor: pointer;
             transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
         }
         
         .task-card:hover {
-            border-color: #007AFF;
+            border-color: #4ABDE8;
             transform: translateY(-1px);
-            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.2);
+            box-shadow: 0 4px 12px rgba(74, 189, 232, 0.15);
         }
         
         .task-card:last-child {
@@ -390,12 +439,12 @@
             font-size: 12px;
             font-weight: 500;
             margin-bottom: 4px;
-            color: #FFFFFF;
+            color: #1A1A2E;
         }
         
         .task-meta {
             font-size: 10px;
-            color: #98989D;
+            color: #6B7280;
         }
         
         .task-tag {
@@ -410,10 +459,10 @@
             margin-top: 4px;
         }
         
-        .tag-revenue { background: rgba(255, 59, 48, 0.15); color: #FF3B30; }
-        .tag-content { background: rgba(0, 122, 255, 0.15); color: #007AFF; }
-        .tag-infra { background: rgba(98, 98, 102, 0.25); color: #D1D1D6; }
-        .tag-kingdom { background: rgba(175, 82, 222, 0.15); color: #AF52DE; }
+        .tag-revenue { background: rgba(239, 68, 68, 0.1); color: #EF4444; }
+        .tag-content { background: rgba(74, 189, 232, 0.1); color: #4ABDE8; }
+        .tag-infra { background: rgba(107, 114, 128, 0.1); color: #6B7280; }
+        .tag-kingdom { background: rgba(168, 85, 247, 0.1); color: #A855F7; }
         
         /* Strategic Intel - Bottom Left */
         .strategic-intel {
@@ -422,7 +471,7 @@
         
         .intel-item {
             padding: 10px 0;
-            border-bottom: 1px solid #3A3A3C;
+            border-bottom: 1px solid #E5E7EB;
         }
         
         .intel-item:last-child {
@@ -439,26 +488,28 @@
         .intel-title {
             font-size: 12px;
             font-weight: 600;
-            color: #FFFFFF;
+            color: #1A1A2E;
         }
         
         .intel-status {
             font-size: 10px;
             padding: 2px 6px;
-            background: rgba(0, 122, 255, 0.15);
-            color: #007AFF;
+            background: rgba(74, 189, 232, 0.1);
+            color: #4ABDE8;
             border-radius: 4px;
-            font-weight: 600;
+            font-weight: 700;
+            box-shadow: 0 0 6px rgba(74, 189, 232, 0.2);
         }
         
         .intel-status.alert {
-            background: rgba(255, 214, 10, 0.15);
-            color: #FFD60A;
+            background: rgba(245, 158, 11, 0.1);
+            color: #F59E0B;
+            box-shadow: 0 0 6px rgba(245, 158, 11, 0.2);
         }
         
         .intel-body {
             font-size: 11px;
-            color: #98989D;
+            color: #6B7280;
             line-height: 1.4;
         }
         
@@ -473,10 +524,10 @@
         }
         
         .agent-card {
-            background: #1C1C1E;
+            background: #F9FAFB;
             border-radius: 6px;
             padding: 10px;
-            border: 1px solid #3A3A3C;
+            border: 1px solid #E5E7EB;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -492,12 +543,13 @@
             width: 32px;
             height: 32px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #007AFF, #5856D6);
+            background: linear-gradient(135deg, #4ABDE8, #6366F1);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 12px;
             font-weight: 600;
+            color: #FFFFFF;
         }
         
         .agent-details {
@@ -506,12 +558,12 @@
         
         .agent-name {
             font-weight: 600;
-            color: #FFFFFF;
+            color: #1A1A2E;
         }
         
         .agent-task {
             font-size: 10px;
-            color: #98989D;
+            color: #6B7280;
             margin-top: 2px;
         }
         
@@ -519,17 +571,18 @@
             font-size: 10px;
             padding: 3px 8px;
             border-radius: 6px;
-            font-weight: 600;
+            font-weight: 700;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
         }
         
         .agent-status.active {
-            background: rgba(48, 209, 88, 0.15);
-            color: #30D158;
+            background: rgba(34, 197, 94, 0.1);
+            color: #22C55E;
         }
         
         .agent-status.idle {
-            background: rgba(152, 152, 157, 0.15);
-            color: #98989D;
+            background: rgba(107, 114, 128, 0.1);
+            color: #6B7280;
         }
         
         /* Content Factory - Bottom Right */
@@ -545,15 +598,15 @@
         }
         
         .factory-stat {
-            background: #1C1C1E;
+            background: #F9FAFB;
             border-radius: 6px;
             padding: 10px;
-            border: 1px solid #3A3A3C;
+            border: 1px solid #E5E7EB;
         }
         
         .factory-stat-label {
             font-size: 10px;
-            color: #98989D;
+            color: #6B7280;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             margin-bottom: 4px;
@@ -562,7 +615,7 @@
         .factory-stat-value {
             font-size: 24px;
             font-weight: 700;
-            color: #007AFF;
+            color: #4ABDE8;
         }
         
         .content-queue {
@@ -573,7 +626,7 @@
             display: flex;
             justify-content: space-between;
             padding: 6px 0;
-            border-bottom: 1px solid #3A3A3C;
+            border-bottom: 1px solid #E5E7EB;
         }
         
         .queue-item:last-child {
@@ -581,11 +634,11 @@
         }
         
         .queue-title {
-            color: #FFFFFF;
+            color: #1A1A2E;
         }
         
         .queue-status {
-            color: #007AFF;
+            color: #4ABDE8;
             font-weight: 500;
         }
         
@@ -601,10 +654,10 @@
         }
         
         .campaign-card {
-            background: #1C1C1E;
+            background: #F9FAFB;
             border-radius: 8px;
             padding: 12px;
-            border: 1px solid #3A3A3C;
+            border: 1px solid #E5E7EB;
         }
         
         .campaign-header {
@@ -613,13 +666,13 @@
             align-items: center;
             margin-bottom: 12px;
             padding-bottom: 8px;
-            border-bottom: 1px solid #3A3A3C;
+            border-bottom: 1px solid #E5E7EB;
         }
         
         .campaign-market {
             font-size: 14px;
             font-weight: 700;
-            color: #FFFFFF;
+            color: #1A1A2E;
         }
         
         .campaign-status {
@@ -629,22 +682,22 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            box-shadow: 0 0 8px currentColor;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
         }
         
         .campaign-status.active {
-            background: rgba(48, 209, 88, 0.2);
-            color: #30D158;
+            background: rgba(34, 197, 94, 0.1);
+            color: #22C55E;
         }
         
         .campaign-status.warning {
-            background: rgba(255, 214, 10, 0.2);
-            color: #FFD60A;
+            background: rgba(245, 158, 11, 0.1);
+            color: #F59E0B;
         }
         
         .campaign-status.success {
-            background: rgba(0, 122, 255, 0.2);
-            color: #007AFF;
+            background: rgba(74, 189, 232, 0.1);
+            color: #4ABDE8;
         }
         
         .campaign-stats {
@@ -660,7 +713,7 @@
         .stat-label {
             display: block;
             font-size: 10px;
-            color: #98989D;
+            color: #6B7280;
             margin-bottom: 4px;
             text-transform: uppercase;
             letter-spacing: 0.3px;
@@ -670,19 +723,19 @@
             display: block;
             font-size: 20px;
             font-weight: 700;
-            color: #FFFFFF;
+            color: #1A1A2E;
         }
         
         .campaign-card:nth-child(1) .stat-value {
-            color: #30D158;
+            color: #22C55E;
         }
         
         .campaign-card:nth-child(2) .stat-value {
-            color: #FFD60A;
+            color: #F59E0B;
         }
         
         .campaign-card:nth-child(3) .stat-value {
-            color: #007AFF;
+            color: #4ABDE8;
         }
         
         /* Implementation Roadmap */
@@ -697,28 +750,28 @@
         }
         
         .roadmap-phase {
-            background: #1C1C1E;
+            background: #F9FAFB;
             border-radius: 8px;
             padding: 12px;
-            border: 1px solid #3A3A3C;
+            border: 1px solid #E5E7EB;
         }
         
         .phase-header {
             margin-bottom: 12px;
             padding-bottom: 8px;
-            border-bottom: 1px solid #3A3A3C;
+            border-bottom: 1px solid #E5E7EB;
         }
         
         .phase-title {
             font-size: 13px;
             font-weight: 600;
-            color: #FFFFFF;
+            color: #1A1A2E;
             margin-bottom: 4px;
         }
         
         .phase-progress {
             font-size: 10px;
-            color: #98989D;
+            color: #6B7280;
         }
         
         .phase-goals {
@@ -731,44 +784,47 @@
             gap: 8px;
             padding: 6px 0;
             font-size: 11px;
-            color: #FFFFFF;
+            color: #1A1A2E;
         }
         
         .goal-icon {
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 10px;
-            font-weight: 600;
+            font-size: 12px;
+            font-weight: 700;
             flex-shrink: 0;
         }
         
         .goal-item.complete .goal-icon {
-            color: #30D158;
+            color: #22C55E;
+            text-shadow: 0 0 8px rgba(34, 197, 94, 0.3);
         }
         
         .goal-item.active .goal-icon {
-            color: #007AFF;
+            color: #4ABDE8;
+            text-shadow: 0 0 8px rgba(74, 189, 232, 0.3);
         }
         
         .goal-item.pending .goal-icon {
-            color: #98989D;
+            color: #6B7280;
         }
         
         .goal-item.pending {
-            color: #98989D;
+            color: #6B7280;
         }
         
         .phase-target {
-            font-size: 11px;
+            font-size: 12px;
             padding: 8px;
-            background: #2C2C2E;
+            background: rgba(74, 189, 232, 0.08);
             border-radius: 6px;
-            color: #007AFF;
-            font-weight: 500;
+            color: #4ABDE8;
+            font-weight: 700;
             text-align: center;
+            border: 1px solid #4ABDE8;
         }
         
         /* Responsive */
@@ -846,19 +902,19 @@
         
         /* Utility */
         .text-muted {
-            color: #98989D;
+            color: #6B7280;
         }
         
         .text-success {
-            color: #30D158;
+            color: #22C55E;
         }
         
         .text-warning {
-            color: #FFD60A;
+            color: #F59E0B;
         }
         
         .text-error {
-            color: #FF453A;
+            color: #EF4444;
         }
     </style>
 </head>
@@ -877,7 +933,7 @@
             <div class="panel alfred-status">
                 <div class="panel-header">
                     <div class="panel-title">Alfred Status</div>
-                    <div class="panel-badge">ONLINE</div>
+                    <div class="panel-badge success">ONLINE</div>
                 </div>
                 <div class="status-grid">
                     <div class="status-item">
@@ -931,7 +987,7 @@
             <div class="panel kpi-dashboard">
                 <div class="panel-header">
                     <div class="panel-title">Revenue KPIs</div>
-                    <div class="panel-badge">LIVE</div>
+                    <div class="panel-badge success">LIVE</div>
                 </div>
                 <div class="kpi-grid">
                     <div class="kpi-card good">
@@ -1212,7 +1268,7 @@
                     <div class="panel-badge">0 ACTIVE</div>
                 </div>
                 <div class="agent-list">
-                    <div style="text-align: center; padding: 40px 20px; color: #98989D; font-size: 12px;">
+                    <div style="text-align: center; padding: 40px 20px; color: #6B7280; font-size: 12px;">
                         No sub-agents spawned yet.<br>
                         Use sessions_spawn to delegate tasks.
                     </div>
@@ -1223,7 +1279,7 @@
             <div class="panel content-factory">
                 <div class="panel-header">
                     <div class="panel-title">Content Factory</div>
-                    <div class="panel-badge">BUILDING</div>
+                    <div class="panel-badge warning">BUILDING</div>
                 </div>
                 <div class="factory-stats">
                     <div class="factory-stat">
@@ -1263,7 +1319,7 @@
             <div class="panel sc-campaign-monitor">
                 <div class="panel-header">
                     <div class="panel-title">SC Campaign Monitor</div>
-                    <div class="panel-badge">LIVE</div>
+                    <div class="panel-badge success">LIVE</div>
                 </div>
                 <div class="campaign-grid">
                     <div class="campaign-card">
