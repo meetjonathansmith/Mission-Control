@@ -104,25 +104,37 @@
             margin-top: 4px;
         }
         
-        .constraint-box {
-            background: #FEF3C7;
-            border-left: 4px solid #F59E0B;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-radius: 4px;
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            background: #F9FAFB;
         }
         
-        .constraint-box h4 {
-            margin: 0 0 8px 0;
-            font-size: 14px;
-            font-weight: 600;
-            color: #92400E;
-        }
-        
-        .constraint-box p {
+        .data-table th {
+            background: #E5E7EB;
+            padding: 12px;
+            text-align: left;
             font-size: 13px;
-            color: #78350F;
-            margin: 0;
+            font-weight: 600;
+            color: #374151;
+            border-bottom: 2px solid #D1D5DB;
+        }
+        
+        .data-table td {
+            padding: 10px 12px;
+            font-size: 14px;
+            color: #4B5563;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .highlight-row {
+            background: #FEF3C7 !important;
+            font-weight: 600;
         }
         
         .question-box {
@@ -227,14 +239,14 @@
                 <div class="metric-trend">Ratified in pipeline</div>
             </div>
             <div class="metric">
-                <div class="metric-label">Off-Markets/Mo</div>
-                <div class="metric-value">67</div>
-                <div class="metric-trend">Target: 200 (3x gap)</div>
+                <div class="metric-label">Off-Markets MTD</div>
+                <div class="metric-value">107</div>
+                <div class="metric-trend">Target: 200/mo (need 2x)</div>
             </div>
             <div class="metric">
-                <div class="metric-label">Conversion</div>
-                <div class="metric-value">13:1</div>
-                <div class="metric-trend">ELITE (beats 18-24:1)</div>
+                <div class="metric-label">Conversion (Lifetime)</div>
+                <div class="metric-value">20.5:1</div>
+                <div class="metric-trend">Oct-Jan: 450 leads → 22 signed</div>
             </div>
             <div class="metric">
                 <div class="metric-label">Weight</div>
@@ -253,87 +265,108 @@
             </div>
         </div>
         
-        <h3>Habit System (Daily/Weekly)</h3>
-        <ul>
-            <li><strong>20 agent conversations/day</strong></li>
-            <li><strong>3 offers/day</strong> (Mon-Fri)</li>
-            <li><strong>15 off-market submissions/day</strong> (target, not current)</li>
-            <li><strong>5K outbound texts/day</strong></li>
-            <li><strong>3 new buyers/day</strong></li>
-            <li><strong>20 agents added to world/day</strong></li>
-            <li><strong>Daily social post</strong> (Instagram, building to 10K followers)</li>
-            <li><strong>Weekly review:</strong> What is the single constraint limiting deal closures right now?</li>
-        </ul>
+        <h2>📈 Off-Market Lead Trend (Oct 2025 - Feb 2026)</h2>
         
-        <h2>🚧 Main Constraints (Council Analysis)</h2>
+        <p style="margin-bottom: 16px;">The constraint is clear: <strong>volume, not conversion</strong>. I'm converting at 20.5:1 lifetime (industry standard is 18-24:1). I'm starving the funnel.</p>
         
-        <div class="constraint-box">
-            <h4>🦅 HAWK — Volume Constraint (Top Priority)</h4>
-            <p><strong>67 → 200 off-markets/month needed.</strong> Conversion is elite (13:1). We're starving the funnel, not broken. Current: 48K texts/month. Target: 70K texts/month by Week 5-8. Week 1 focus: Spam audit, dormant purge, send rate scaling, message refresh.</p>
-        </div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Off-Markets</th>
+                    <th>Signed Deals</th>
+                    <th>Conversion Ratio</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>September 2025</td>
+                    <td>183</td>
+                    <td>11</td>
+                    <td>16.6:1</td>
+                    <td>Best month (volume)</td>
+                </tr>
+                <tr>
+                    <td>October 2025</td>
+                    <td>108</td>
+                    <td>8</td>
+                    <td>13.5:1</td>
+                    <td>-41% drop from Sept</td>
+                </tr>
+                <tr>
+                    <td>November 2025</td>
+                    <td>124</td>
+                    <td>5</td>
+                    <td>24.8:1</td>
+                    <td>Bounce back (volume)</td>
+                </tr>
+                <tr>
+                    <td>December 2025</td>
+                    <td>125</td>
+                    <td>6</td>
+                    <td>20.8:1</td>
+                    <td>Steady</td>
+                </tr>
+                <tr>
+                    <td>January 2026</td>
+                    <td>93</td>
+                    <td>3</td>
+                    <td>31:1</td>
+                    <td>-26% drop from Dec</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td><strong>February 2026 (MTD)</strong></td>
+                    <td><strong>107</strong></td>
+                    <td><strong>2</strong></td>
+                    <td><strong>TBD</strong></td>
+                    <td><strong>Tracking to ~140-150/mo</strong></td>
+                </tr>
+                <tr style="background: #F0FDF4; font-weight: 600;">
+                    <td><strong>TARGET (200/mo)</strong></td>
+                    <td><strong>200</strong></td>
+                    <td><strong>10</strong></td>
+                    <td><strong>20:1</strong></td>
+                    <td><strong>Need 2x current pace</strong></td>
+                </tr>
+            </tbody>
+        </table>
         
-        <div class="constraint-box">
-            <h4>🛡️ SHIELD — Team Capacity</h4>
-            <p>VA: 38 responses/day (capacity: 45). LM: 7 properties/day (capacity: 10). As volume scales 3x, will current team handle load? When do we add second LM?</p>
-        </div>
+        <p style="margin-top: 16px; font-size: 14px; color: #6B7280;"><em><strong>Source:</strong> KPI Tracker tabs: September, October, November, December, January 2026, Feb 2026</em></p>
         
-        <div class="constraint-box">
-            <h4>✒️ QUILL — Content Consistency</h4>
-            <p>114 followers → 10K by EOY = need ~900 new followers/month. Daily posting required. Agent Freedom pillar (25% of content) = strategic priority. Launches this week.</p>
-        </div>
-        
-        <div class="constraint-box">
-            <h4>💪 ATLAS — Sleep/Recovery Consistency</h4>
-            <p>Current: 6-7 hrs/night. Target: 7+ hrs fixed (9:30 PM bed, 5:00 AM wake). Weight loss on track. Training smart. Sleep is lagging constraint for sustained performance.</p>
-        </div>
-        
-        <div class="constraint-box">
-            <h4>⚓ HARBOR — Family Presence</h4>
-            <p>Jenni flagged: Distracted at dinner this week. Business ramping up (4 ratified deals, Week 1 sprint). Risk: Overwork bleeding into home. Harbor watching for 7 PM+ work nights.</p>
-        </div>
-        
-        <h2>❓ Questions for DTA Mastermind</h2>
-        
-        <p style="margin-bottom: 16px;"><em>These are constraints the council can't solve without external DTA expertise. Your experience fills the gaps.</em></p>
+        <h2>❓ Question for DTA Mastermind</h2>
         
         <div class="question-box">
-            <h4>1. Off-Market Volume: How do YOU hit 200+ off-markets/month?</h4>
-            <p>I'm at 67/month. My conversion is elite (13:1). I need 3x volume. What's working in YOUR markets? SC scaling tips? Agent relationship systems? Content driving inbound? What am I missing?</p>
-        </div>
-        
-        <div class="question-box">
-            <h4>2. Agent Conversations: How do you maintain 20/day without burnout?</h4>
-            <p>My habit system calls for 20 agent conversations/day. How do you structure this? Scripts? CRM workflow? Time blocks? VA pre-qualification? What makes this sustainable vs. exhausting?</p>
-        </div>
-        
-        <div class="question-box">
-            <h4>3. LM/VA Scaling: When did you add your second LM?</h4>
-            <p>Current: 1 LM at 7 properties/day (capacity 10). When volume hits 200 off-markets/month, that's 15-20 properties/day to review. At what volume did YOU add LM #2? How do you train for speed + selectivity?</p>
-        </div>
-        
-        <div class="question-box">
-            <h4>4. Content → Deal Flow: Is anyone using content successfully?</h4>
-            <p>I made $120K from ONE Instagram video (agent saw it, sent deal). Now targeting 10K followers by EOY with "Agent Freedom" content pillar. Are any of you doing this? What's the ROI? Worth the time investment?</p>
-        </div>
-        
-        <div class="question-box">
-            <h4>5. Habit Consistency: How do you maintain systems when deals cluster?</h4>
-            <p>I have 4 ratified deals right now. When deals cluster, habits slip (sleep, workouts, family presence). How do you stay consistent when business gets hot? Systems? Boundaries? Team support?</p>
+            <h4>How do I get to 200 off-markets/month consistently?</h4>
+            <p><strong>My situation:</strong> Currently at 107 MTD (tracking to ~140-150/mo full month). Need 200/month to hit 10 deals/month. Conversion is solid (20.5:1 lifetime). I'm not broken — I'm starved.</p>
+            <p style="margin-top: 12px;"><strong>Current lead sources:</strong></p>
+            <ul style="margin-top: 8px;">
+                <li>SmartContacts (SC): ~48K texts/month, 0.94% response rate (down from 1.82% Oct peak)</li>
+                <li>Content: Made $120K from ONE Instagram video — but only 114 followers currently</li>
+                <li>Agent world: Adding ~20 agents/day to CRM, but conversion lag unknown</li>
+            </ul>
+            <p style="margin-top: 12px;"><strong>What I need to know from you:</strong></p>
+            <ul style="margin-top: 8px;">
+                <li>What's working in YOUR market to hit 200+ off-markets/month consistently?</li>
+                <li>SC best practices: How do you keep response rates >1.5% at scale?</li>
+                <li>Content ROI: Anyone seeing measurable lead flow from Instagram/social?</li>
+                <li>Agent relationships: What's your system for keeping agents feeding you deals?</li>
+                <li>What am I missing? What channels should I be prioritizing?</li>
+            </ul>
         </div>
         
         <h2>📋 What I'm Bringing to the Table</h2>
         
         <ul>
-            <li><strong>Elite conversion:</strong> 13:1 off-market-to-deal ratio (beats 18-24:1 industry standard)</li>
+            <li><strong>Solid conversion:</strong> 20.5:1 off-market-to-deal ratio (Oct-Jan lifetime, industry standard 18-24:1)</li>
             <li><strong>AI council system:</strong> 9 advisors across 5 domains (Kingdom, Health, Family, Deal Flow, Operations, Content, Growth, Finance, Chief of Staff)</li>
-            <li><strong>Agent Freedom content strategy:</strong> Targeting agents directly as warm inbound (vs. cold SC outreach)</li>
+            <li><strong>Agent Freedom content strategy:</strong> Targeting agents directly as warm inbound (proven: $120K from ONE video)</li>
             <li><strong>Profit First system:</strong> 60% Owner's Pay, 15% Profit, 10% Tax, 15% OpEx (locked allocations)</li>
             <li><strong>17 rental units:</strong> Building to 75 units by 2035 ($22,950/mo passive net income target)</li>
         </ul>
         
         <div class="footer">
-            <p><strong>Prepared by:</strong> Alfred (AI Chief of Staff) | <strong>Council:</strong> 9 advisors | <strong>Date:</strong> February 15, 2026</p>
-            <p>This document partners with the AI council system. External DTA expertise fills gaps the council can't solve alone.</p>
+            <p><strong>Prepared by:</strong> Alfred (AI Chief of Staff) | <strong>Data Source:</strong> KPI Tracker (Oct 2025 - Feb 2026) | <strong>Date:</strong> February 16, 2026</p>
         </div>
     </div>
 </body>
