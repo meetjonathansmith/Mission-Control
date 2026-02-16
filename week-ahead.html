@@ -3,804 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunday Week Ahead Briefing — Week of Feb 16-22, 2026</title>
+    <title>Sunday Week Ahead Briefing — UPDATED 8:16 PM</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
-            background: #F5F7FA;
-            color: #1A1A2E;
-            padding: 24px;
-            line-height: 1.6;
-        }
-        
-        .container {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             max-width: 900px;
-            margin: 0 auto;
-            background: #FFFFFF;
-            border-radius: 12px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
             padding: 40px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
-        
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: #1A1A2E;
-        }
-        
-        .subtitle {
-            font-size: 16px;
-            color: #6B7280;
-            margin-bottom: 32px;
-        }
-        
-        .intro {
-            font-size: 18px;
-            color: #4B5563;
-            margin-bottom: 40px;
-            padding: 20px;
-            background: #F9FAFB;
             border-radius: 8px;
-            border-left: 4px solid #4ABDE8;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        
-        h2 {
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 48px;
-            margin-bottom: 16px;
-            color: #1A1A2E;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #E5E7EB;
-        }
-        
-        h3 {
-            font-size: 20px;
-            font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 12px;
-            color: #1A1A2E;
-        }
-        
-        h4 {
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 24px;
-            margin-bottom: 8px;
-            color: #374151;
-        }
-        
-        p {
-            margin-bottom: 16px;
-            color: #4B5563;
-        }
-        
-        ul, ol {
-            margin-bottom: 16px;
-            padding-left: 24px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-            color: #4B5563;
-        }
-        
-        strong {
-            color: #1A1A2E;
-            font-weight: 600;
-        }
-        
-        em {
-            font-style: italic;
-            color: #6B7280;
-        }
-        
-        .section {
-            margin-bottom: 40px;
-        }
-        
-        .advisor-section {
-            background: #F9FAFB;
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 32px;
-        }
-        
-        .advisor-icon {
-            font-size: 28px;
-            margin-right: 12px;
-        }
-        
-        .priority-box {
-            background: #FEF3C7;
-            border-left: 4px solid #F59E0B;
-            padding: 16px;
-            margin: 24px 0;
-            border-radius: 4px;
-        }
-        
-        .priority-box h4 {
-            margin-top: 0;
-            color: #92400E;
-        }
-        
-        .decision-box {
-            background: #FEE2E2;
-            border-left: 4px solid #EF4444;
-            padding: 16px;
-            margin: 24px 0;
-            border-radius: 4px;
-        }
-        
-        .decision-box h4 {
-            margin-top: 0;
-            color: #991B1B;
-        }
-        
-        .number-highlight {
-            background: #DBEAFE;
-            border-left: 4px solid #3B82F6;
-            padding: 20px;
-            margin: 24px 0;
-            border-radius: 4px;
-            text-align: center;
-        }
-        
-        .number-highlight .big-number {
-            font-size: 48px;
-            font-weight: 700;
-            color: #1E40AF;
-            display: block;
-            margin-bottom: 8px;
-        }
-        
-        .closing {
-            background: #F0FDF4;
-            border-left: 4px solid #22C55E;
-            padding: 24px;
-            margin-top: 48px;
-            border-radius: 4px;
-        }
-        
-        .footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 2px solid #E5E7EB;
-            text-align: center;
-            color: #6B7280;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 12px;
-            }
-            
-            .container {
-                padding: 24px;
-            }
-            
-            h1 {
-                font-size: 24px;
-            }
-            
-            h2 {
-                font-size: 20px;
-            }
-        }
+        h1 { color: #1a1a1a; font-size: 28px; margin-bottom: 8px; }
+        h2 { color: #2a2a2a; font-size: 20px; margin-top: 32px; margin-bottom: 12px; border-bottom: 2px solid #4ABDE8; padding-bottom: 8px; }
+        h3 { color: #3a3a3a; font-size: 16px; margin-top: 24px; margin-bottom: 8px; }
+        strong { color: #4ABDE8; }
+        .updated { background: #fffbea; border-left: 4px solid #f59e0b; padding: 12px; margin: 16px 0; }
+        .hook { background: #f0f9ff; padding: 8px 12px; margin: 8px 0; border-radius: 4px; }
+        .cta { background: #dcfce7; padding: 8px 12px; margin: 8px 0; border-radius: 4px; border-left: 4px solid #22c55e; }
+        ul { margin-left: 20px; }
+        li { margin: 4px 0; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📋 SUNDAY WEEK AHEAD BRIEFING</h1>
-        <div class="subtitle">Week of February 16-22, 2026 | Delivered: Sunday, February 15, 6:00 PM EST</div>
+        <h1>SUNDAY WEEK AHEAD BRIEFING</h1>
+        <p><strong>Week of February 16-22, 2026</strong><br>
+        Delivered: Sunday, February 15, 6:00 PM EST<br>
+        <span style="color: #f59e0b; font-weight: bold;">UPDATED: 8:16 PM EST — Quill content calendar replaced with V2 system</span></p>
         
-        <div class="intro">
-            <strong>Good evening, Jonathan.</strong><br><br>
-            This week you attack the main constraint: <strong>67 off-markets → 200 off-markets</strong>.<br><br>
-            Monday and Tuesday are foundation days. Wednesday-Saturday you build.
+        <p style="margin-top: 20px; font-size: 18px;">Good evening, Jonathan.</p>
+        <p>This week you attack the main constraint: 67 off-markets → 200 off-markets.</p>
+        <p>Monday and Tuesday are foundation days. Wednesday-Saturday you build.</p>
+        
+        <hr style="margin: 32px 0;">
+        
+        <h2>✒️ QUILL — Content Calendar (Week 1)</h2>
+        
+        <div class="updated">
+            <strong>UPDATED 8:16 PM:</strong> Following new V2 content directive (non-negotiable)
         </div>
-
-        <div class="advisor-section">
-            <h2><span class="advisor-icon">🙏</span>SHEPHERD — Spiritual Focus for the Week</h2>
-            
-            <h3>Scripture for the Week:</h3>
-            <p><em>Proverbs 21:5 — "The plans of the diligent lead to profit as surely as haste leads to poverty."</em></p>
-            
-            <h3>The Message:</h3>
-            <p>This week isn't about heroics. It's about disciplined execution.</p>
-            
-            <p>You're building a system that produces consistent results. Monday you audit (spam, attribution). Tuesday you scale (dormant purge, send rates, message refresh). Wednesday-Saturday you execute the content calendar and train your team.</p>
-            
-            <p><strong>Haste</strong> = chasing shiny objects, skipping steps, hoping for breakthroughs.</p>
-            <p><strong>Diligence</strong> = doing the unsexy work that compounds.</p>
-            
-            <p>Spam audits aren't exciting. Attribution systems aren't glamorous. Dormant agent purges don't feel like growth.</p>
-            
-            <p>But they ARE growth. They're the foundation that lets you scale from 67 to 200 off-markets without collapsing.</p>
-            
-            <h4>Identity checkpoint:</h4>
-            <p>You're not a hustler chasing deals. You're a steward building a Kingdom business that feeds your family, funds your calling, and creates freedom for others.</p>
-            
-            <p>That requires discipline, not intensity.</p>
-            
-            <h4>Prayer focus this week:</h4>
-            <p>Wisdom in execution. Patience when results lag. Gratitude for what's already working (13:1 conversion is elite — most operators would kill for that).</p>
+        
+        <h3>New Content System (V2)</h3>
+        <p><strong>OLD SYSTEM DELETED:</strong> 6-pillar structure with war language and vague options removed.</p>
+        
+        <p><strong>NEW PERMANENT DIRECTIVE:</strong></p>
+        
+        <p><strong>4 Content Pillars:</strong></p>
+        <ol>
+            <li>Life In Christ (God's goodness, peace, joy, guidance)</li>
+            <li>Documenting The Climb (real-time building)</li>
+            <li>Agent Freedom (ownership, equity, passive income for agents)</li>
+            <li>Leadership & Life (starting over in 40s, leading men, family, character)</li>
+        </ol>
+        
+        <p><strong>Weekly Structure:</strong></p>
+        <ul>
+            <li>Monday: Life In Christ</li>
+            <li>Tuesday: Documenting The Climb</li>
+            <li>Wednesday: Agent Freedom</li>
+            <li>Thursday: Tactical Game Plan</li>
+            <li>Friday: Leadership & Life</li>
+            <li>Saturday: Contrarian Take or Agent Freedom</li>
+        </ul>
+        
+        <p><strong>Tone:</strong> NO WAR LANGUAGE (no fight, grind, hustle, war, attack). Christ life is good, God is kind, calm/confident/grounded.</p>
+        
+        <hr style="margin: 24px 0;">
+        
+        <h3>MONDAY, FEBRUARY 16</h3>
+        <p><strong>Day:</strong> Monday<br>
+        <strong>Pillar:</strong> Life In Christ<br>
+        <strong>Series:</strong> None<br>
+        <strong>Format:</strong> Reel<br>
+        <strong>Title:</strong> The Unsexy Work That Compounds</p>
+        
+        <div class="hook">
+            <strong>Hook option 1:</strong> Proverbs 21:5 says the plans of the diligent lead to profit, and today I am doing the unsexy work.
         </div>
-
-        <div class="advisor-section">
-            <h2><span class="advisor-icon">💪</span>ATLAS — Training & Nutrition Plan</h2>
-            
-            <h3>Training This Week</h3>
-            
-            <h4>Monday (Feb 16): REST / Active Recovery</h4>
-            <ul>
-                <li>You trained legs yesterday (17 sets, 46 min, 136 BPM)</li>
-                <li>Walked 3 miles yesterday (70 min, 116 BPM)</li>
-                <li>Total burn: 1,157 calories</li>
-                <li>Sleep last night: 7h56m, 82% recovery</li>
-                <li><strong>Today:</strong> Your body earned rest. Light walk or full rest. Let nervous system recover.</li>
-            </ul>
-            
-            <h4>Tuesday (Feb 17): UPPER BODY (Chest + Back)</h4>
-            <ul>
-                <li>Incline press: 6-8 sets × 12-15 reps (no flat bench — shoulder safety)</li>
-                <li>Dips: 6 sets × 12-15 (if no shoulder pain)</li>
-                <li>Cable flyes: 6 sets × 15-20</li>
-                <li>Pull-downs: 6 sets × 12-15</li>
-                <li>Barbell rows: 6 sets × 12-15</li>
-                <li>Cable rows: 6 sets × 12-15</li>
-                <li><strong>Duration:</strong> 45-50 min</li>
-                <li><strong>Cardio:</strong> 10K steps or 30-min walk</li>
-            </ul>
-            
-            <h4>Wednesday (Feb 18): REST / Active Recovery</h4>
-            <ul>
-                <li>Walk, stretch, or light mobility work</li>
-                <li>10K steps target</li>
-            </ul>
-            
-            <h4>Thursday (Feb 19): SHOULDERS + ARMS</h4>
-            <ul>
-                <li>Seated press: 6-8 sets × 12-15</li>
-                <li>Lateral raises: 8 sets × 20</li>
-                <li>Rear delts: 6-8 sets × 20</li>
-                <li>Barbell curls: 6-8 sets × 15-20</li>
-                <li>Dumbbell curls: 6-8 sets × 15-20</li>
-                <li>Tricep pushdowns: 6-8 sets × 15-20</li>
-                <li>Overhead extensions: 6-8 sets × 15-20</li>
-                <li><strong>Duration:</strong> 50-55 min</li>
-                <li><strong>Cardio:</strong> 10K steps</li>
-            </ul>
-            
-            <h4>Friday (Feb 20): REST / Active Recovery</h4>
-            <ul>
-                <li>Financial sit-down with Ledger (30-45 min)</li>
-                <li>Walk or mobility work</li>
-                <li>10K steps</li>
-            </ul>
-            
-            <h4>Saturday (Feb 21): FULL BODY or LEGS</h4>
-            <ul>
-                <li>Your choice based on how you feel</li>
-                <li>If legs: squats, leg press, leg curls, extensions</li>
-                <li>If full body: mix of compound movements, moderate volume</li>
-                <li><strong>Duration:</strong> 45-50 min</li>
-            </ul>
-            
-            <h4>Sunday (Feb 22): REST</h4>
-            <ul>
-                <li>Sabbath — no training</li>
-                <li>Family time, church, rest</li>
-            </ul>
-            
-            <h3>Nutrition Plan (2,300 cal baseline)</h3>
-            
-            <p><strong>Daily macros:</strong> Protein 205g, Carbs ~200g, Fats ~70g, Fiber 30g+, Water 1 gallon</p>
-            
-            <h4>Meal structure (current sustainable rhythm):</h4>
-            
-            <p><strong>Lunch (daily):</strong></p>
-            <ul>
-                <li>1 cup egg whites</li>
-                <li>0.5 cup egg substitute</li>
-                <li>Handful fat-free cheese</li>
-                <li>Heaping spoonful 2% cottage cheese</li>
-            </ul>
-            
-            <p><strong>Dinner (rotate):</strong></p>
-            <ul>
-                <li>7-10 oz lean protein (chicken, ground beef, salmon, shrimp)</li>
-                <li>1-1.5 cups carbs (white rice, jasmine rice, sweet potato, mashed potatoes)</li>
-                <li>1 tbsp butter or healthy fat</li>
-            </ul>
-            
-            <p><strong>Snacks:</strong></p>
-            <ul>
-                <li>2 Creamis per day (50g protein each, skim milk, handful M&Ms or Captain Crunch)</li>
-                <li>Smart Pop popcorn if hungry (100 cal bags, 2 max)</li>
-            </ul>
-            
-            <p><strong>Atlas says:</strong></p>
-            <p>You're down 23+ lbs since start. Your training is smart (you dropped weight when form broke on leg curls — that's discipline). Sleep is improving (7h56m last night). Recovery is green.</p>
-            
-            <p>This week = maintain the rhythm. Don't chase hero lifts. Don't add volume. Your body is adapting. Let it.</p>
+        <div class="hook">
+            <strong>Hook option 2:</strong> You know what is not exciting? Auditing spam filters and cleaning contact lists. But that is how you build something real.
         </div>
-
-        <div class="advisor-section">
-            <h2><span class="advisor-icon">⚓</span>HARBOR — Family & Presence Goals</h2>
-            
-            <h3>Family Calendar This Week</h3>
-            
-            <ul>
-                <li><strong>Monday:</strong> Business launch day (spam audit, attribution system) — Home by 6 PM for dinner</li>
-                <li><strong>Tuesday:</strong> LM training 3-5 PM — Check in with Jade about school</li>
-                <li><strong>Wednesday:</strong> Film Agent Freedom content — Be present at dinner</li>
-                <li><strong>Thursday:</strong> Normal work schedule — Ask Miller about school</li>
-                <li><strong>Friday:</strong> Friday Board Meeting (7 AM) + Financial sit-down with Ledger</li>
-                <li><strong>Saturday:</strong> Training if you feel good — No business calls, family time</li>
-                <li><strong>Sunday:</strong> Sabbath — No work, church with family</li>
-            </ul>
-            
-            <h3>Presence Goals</h3>
-            
-            <p><strong>Jenni flagged last week:</strong> You've been distracted at dinner.</p>
-            
-            <p>Business is ramping up. Deals are closing. Week 1 is a sprint.</p>
-            
-            <p>But Jenni's peace > your profit. Always.</p>
-            
-            <h4>This week's commitment:</h4>
-            <ul>
-                <li>Phone face-down during dinner (every night, non-negotiable)</li>
-                <li>Eyes up when Jade or Miller talk to you</li>
-                <li>Ask Jenni one question every night that has nothing to do with business</li>
-            </ul>
-            
-            <p><strong>Harbor's note:</strong></p>
-            <p>You've got 4 ratified deals in the pipeline. You closed $17K this week. You're about to attack the main constraint.</p>
-            
-            <p>None of that matters if Jenni feels like you're mentally checked out.</p>
-            
-            <p>Be present this week. Business can wait 30 minutes for dinner.</p>
+        
+        <p><strong>Talking points:</strong></p>
+        <ul>
+            <li>Today I am auditing message templates and cleaning dormant contacts from my system</li>
+            <li>This is not sexy content, but it is the foundation that lets me scale without collapsing</li>
+            <li>God honors diligence, not haste. Kingdom business is built on discipline, not intensity.</li>
+            <li>Most people chase breakthroughs. I am building systems that produce consistent results.</li>
+        </ul>
+        
+        <div class="cta">
+            <strong>CTA:</strong> If you are building something real and need the reminder that unsexy work matters, save this.
         </div>
-
-        <div class="advisor-section">
-            <h2><span class="advisor-icon">🦅</span>HAWK — Deal Flow Strategy</h2>
-            
-            <h3>The Main Constraint: 67 → 200 Off-Markets</h3>
-            
-            <p><strong>Current state:</strong></p>
-            <ul>
-                <li>67 off-markets/month (Feb 2026)</li>
-                <li>4 ratified deals in pipeline</li>
-                <li>13:1 conversion (ELITE, beats 18-24:1 industry standard)</li>
-                <li><strong>Volume is the ONLY constraint</strong></li>
-            </ul>
-            
-            <h3>Week 1 Attack Plan</h3>
-            
-            <h4>MONDAY (Feb 16) — FOUNDATION DAY</h4>
-            
-            <p><strong>1. Spam Audit (9-11 AM)</strong></p>
-            <ul>
-                <li>Pull all current SC message templates</li>
-                <li>Audit against Section 6 checklist</li>
-                <li>Flag anything risky, deliver cleaned versions by EOD</li>
-                <li>No campaigns launch without audit approval</li>
-            </ul>
-            
-            <p><strong>2. Attribution System Deployment (11 AM - 12 PM)</strong></p>
-            <ul>
-                <li>Implement naming convention: MARKET-YEAR-W##-TYPE-V#</li>
-                <li>Train VA on system (30 min)</li>
-                <li>Example: NOVA-2026-W08-Initial-V7</li>
-            </ul>
-            
-            <p><strong>3. Announce MD 4-Week Rest (12-1 PM)</strong></p>
-            <ul>
-                <li>Pause all MD campaigns (22,270 agents)</li>
-                <li>Let list rest, recover deliverability</li>
-                <li>Come back stronger in March (peak season)</li>
-            </ul>
-            
-            <h4>TUESDAY (Feb 17) — SCALE DAY</h4>
-            
-            <p><strong>4. Dormant Agent Purge (9-11 AM)</strong></p>
-            <ul>
-                <li>Identify: 20+ lifetime touches, zero response</li>
-                <li>Move to dormant list</li>
-                <li>Report: How many freed? What % of list?</li>
-                <li><strong>Purpose:</strong> Free send volume for active agents</li>
-            </ul>
-            
-            <p><strong>5. Increase Send Rates (11 AM - 12 PM)</strong></p>
-            <ul>
-                <li>NOVA: 4/min → 6/min</li>
-                <li>Richmond: → 5/min</li>
-                <li>Monitor delivery rate for 48 hours</li>
-                <li>If >95% → keep. If drops → revert.</li>
-            </ul>
-            
-            <p><strong>6. Deploy Message Variants V7-V8 (1-3 PM)</strong></p>
-            <ul>
-                <li>Launch NOVA-2026-W08-Initial-V7</li>
-                <li>Launch RVA-2026-W08-FU1-V8</li>
-                <li>20-variant library gives rotation</li>
-            </ul>
-            
-            <p><strong>7. Train LM on 20-Minute Review Protocol (3-5 PM)</strong></p>
-            <ul>
-                <li>2-hour training session</li>
-                <li>Selectivity model from September</li>
-                <li>Goal: Keep 13:1 elite conversion as volume scales</li>
-                <li>Current capacity: 7 properties/day → Target: 10/day</li>
-            </ul>
-            
-            <h3>The Math (Why This Works)</h3>
-            
-            <p><strong>Week 1 expected impact:</strong></p>
-            <ul>
-                <li>Dormant purge frees send capacity</li>
-                <li>Send rate increases: +30% text volume (48K → 62K/month)</li>
-                <li>Message refresh combats fatigue</li>
-                <li><strong>Expected:</strong> 62K texts × 1.0% response × 24% conv→off-market = <strong>149 off-markets</strong></li>
-            </ul>
-            
-            <p><strong>Week 5-8 (March peak season):</strong></p>
-            <ul>
-                <li>MD comes back rested</li>
-                <li>Scale to 70K texts/month</li>
-                <li>Seasonal lift (March-May = peak)</li>
-                <li><strong>Target:</strong> 200+ off-markets/month</li>
-            </ul>
-            
-            <p><strong>Hawk says:</strong></p>
-            <p>You're not broken. You're starving the funnel. This week we fix that. Your 13:1 conversion is elite. We just need to feed it 3x more off-markets.</p>
-            
-            <p><strong>Week 1 target: 149 off-markets. Let's hunt.</strong></p>
+        
+        <hr style="margin: 24px 0;">
+        
+        <h3>TUESDAY, FEBRUARY 17</h3>
+        <p><strong>Day:</strong> Tuesday<br>
+        <strong>Pillar:</strong> Documenting The Climb<br>
+        <strong>Series:</strong> None<br>
+        <strong>Format:</strong> Reel<br>
+        <strong>Title:</strong> Training My Team to Handle Volume</p>
+        
+        <div class="hook">
+            <strong>Hook option 1:</strong> Today I am training my lead manager to review properties in 20 minutes without losing quality.
         </div>
-
-        <div class="advisor-section">
-            <h2><span class="advisor-icon">🛡️</span>SHIELD — Operations Readiness</h2>
-            
-            <h3>Week 1 Operational Status</h3>
-            
-            <p><strong>Current capacity:</strong></p>
-            <ul>
-                <li>VA: 38 responses/day (capacity: 45) — healthy buffer</li>
-                <li>LM: 7 properties/day (capacity: 10) — room to grow</li>
-                <li>Text infrastructure: 97% delivery (excellent)</li>
-                <li>List health: Some dormant weight, will purge Tuesday</li>
-            </ul>
-            
-            <h4>Monday:</h4>
-            <ul>
-                <li>Coordinate spam audit with VA (9-11 AM)</li>
-                <li>Train VA on attribution system (11 AM - 12 PM, 30 min session)</li>
-                <li>Execute MD rest announcement</li>
-                <li><strong>Deliverable:</strong> Cleaned templates to Jonathan by 5 PM</li>
-            </ul>
-            
-            <h4>Tuesday:</h4>
-            <ul>
-                <li>Execute dormant agent purge with VA (9-11 AM)</li>
-                <li>Monitor send rate increases (NOVA 6/min, Richmond 5/min)</li>
-                <li>Deploy message variants V7-V8 (1-3 PM)</li>
-                <li><strong>48-hour watch:</strong> Delivery rate monitoring (must stay >95%)</li>
-            </ul>
-            
-            <h4>Wednesday-Saturday:</h4>
-            <ul>
-                <li>Monitor campaign performance (response rate, delivery, off-market submissions)</li>
-                <li>Daily check-ins with VA/LM on capacity</li>
-                <li>Flag any bottlenecks immediately</li>
-            </ul>
-            
-            <p><strong>Shield says:</strong></p>
-            <p>All systems green. VA and LM have capacity for volume increase. Monday-Tuesday will be intense, but the team is ready. No bottlenecks detected.</p>
-            
-            <p><strong>Week 1 = foundation work. Let's build it right.</strong></p>
+        <div class="hook">
+            <strong>Hook option 2:</strong> We are scaling from 67 to 200 off market leads per month, so my team needs to get faster without cutting corners.
         </div>
-
-        <div class="advisor-section">
-            <h2><span class="advisor-icon">✒️</span>QUILL — Content Calendar (Week 1)</h2>
-            
-            <h3>The New Reality: Agent Freedom = The Brand (25%)</h3>
-            
-            <p><strong>Updated pillar distribution:</strong></p>
-            <ol>
-                <li>Faith in the Fight: 25%</li>
-                <li><strong>Agent Freedom: 25%</strong> (STRATEGIC PRIORITY)</li>
-                <li>Documenting the Climb: 20%</li>
-                <li>Starting Over at 43: 10%</li>
-                <li>Leading Men: 10%</li>
-                <li>Contrarian Takes: 10%</li>
-            </ol>
-            
-            <p><strong>Why Agent Freedom matters most:</strong></p>
-            <p>Every agent who follows you because content helped them = potential off-market deal source. You made $120K from ONE video. That's the proof.</p>
-            
-            <h3>Week 1 Content Calendar (Mon-Sat)</h3>
-            
-            <h4>MONDAY, FEB 16 — Faith in the Fight</h4>
-            <p><strong>Hook options:</strong></p>
-            <ul>
-                <li>"Proverbs 21:5 — The plans of the diligent lead to profit. This week I'm doing the unsexy work."</li>
-                <li>"You know what's not sexy? Auditing spam filters and purging dormant contacts. But that's how you build a real business."</li>
-            </ul>
-            <p><strong>Talking points:</strong> Monday is spam audit day (not exciting, but necessary). Kingdom business = disciplined execution, not heroics.</p>
-            <p><strong>Format:</strong> Reel (60 sec) or Carousel (5 slides)</p>
-            
-            <h4>TUESDAY, FEB 17 — Documenting the Climb</h4>
-            <p><strong>Hook options:</strong></p>
-            <ul>
-                <li>"Today I'm training my Lead Manager on a 20-minute property review protocol. Here's why that matters."</li>
-                <li>"We're scaling from 67 to 200 off-markets per month. That means my team needs to get faster without losing quality."</li>
-            </ul>
-            <p><strong>Format:</strong> Reel (60 sec)</p>
-            
-            <h4>WEDNESDAY, FEB 18 — Agent Freedom (FIRST DEDICATED POST) 🚀</h4>
-            <p><strong>Hook options:</strong></p>
-            <ul>
-                <li>"I sold $80M in real estate as a listing agent and owned nothing. Here's what I'd change."</li>
-                <li>"Real estate agents have more access to deals than any investor. But they sell everything to other people and keep nothing."</li>
-            </ul>
-            <p><strong>Talking points:</strong></p>
-            <ul>
-                <li>You were a high-volume listing agent ($80M+ in sales)</li>
-                <li>Grinding, exhausted, owned NOTHING</li>
-                <li>Solved it: 17 rental units now (passive income)</li>
-                <li>eXp Realty: Every recruit = $8K/year passive (target: 10 agents, $80K this year)</li>
-                <li><strong>The thesis:</strong> Agents have deal access but keep nothing. I want to change that.</li>
-            </ul>
-            <p><strong>Format:</strong> Reel (60-90 sec) — this is your origin story</p>
-            
-            <p><strong>Quill's note:</strong> This is THE content that attracts agents who send you deals. Don't pitch. Document. Share your story.</p>
-            
-            <h4>THURSDAY, FEB 19 — Documenting the Climb OR Agent Freedom</h4>
-            <p><strong>Option A:</strong> "We just finished Week 1 of our scale plan. Here's what happened."</p>
-            <p><strong>Option B:</strong> "The #1 mistake agents make: chasing every listing instead of keeping the best ones for yourself."</p>
-            
-            <h4>FRIDAY, FEB 20 — Faith in the Fight</h4>
-            <p><strong>Hook:</strong> "Exodus 23:30 — 'I will drive them out little by little.' That's my operating Scripture right now."</p>
-            <p><strong>Talking points:</strong> Reflect on the week. Kingdom business = patient execution, not haste.</p>
-            
-            <h4>SATURDAY, FEB 21 — Starting Over at 43 OR Leading Men OR Contrarian Take</h4>
-            <p><strong>Your choice.</strong> Rotate based on what feels right.</p>
-            
-            <h3>Quill's Quality Bar (Non-Negotiable)</h3>
-            <p>Every script must pass these filters:</p>
-            <ol>
-                <li><strong>Document, don't preach</strong> — Is this from your actual life?</li>
-                <li><strong>Truth over flex</strong> — Sharing wins AND losses?</li>
-                <li><strong>Appropriate transparency</strong> — Being real without oversharing?</li>
-                <li><strong>Voice check</strong> — Does this sound like YOU?</li>
-            </ol>
-            
-            <p><strong>If a script doesn't pass all 4, don't post it.</strong></p>
+        
+        <p><strong>Talking points:</strong></p>
+        <ul>
+            <li>Volume is coming, so I am preparing my team now</li>
+            <li>This is not about working harder, it is about working smarter with better systems</li>
+            <li>I filmed part of the training session today, here is what we covered</li>
+            <li>Systems beat intensity every time</li>
+        </ul>
+        
+        <div class="cta">
+            <strong>CTA:</strong> Comment SYSTEMS if you are building something that needs to scale without you burning out.
         </div>
-
-        <div class="advisor-section">
-            <h2><span class="advisor-icon">🔭</span>SCOUT — Growth Advisory</h2>
-            
-            <p>Scout is mostly silent this week. Execution > expansion.</p>
-            
-            <p><strong>One note:</strong></p>
-            <p>Houston keeps coming up in conversations. Not yet.</p>
-            <p>Prove DMV at 10 deals/month for 2+ consecutive months first. Target: June 2026.</p>
-            <p>Week 1 is about fixing the constraint (67 → 200 off-markets). Stay focused.</p>
-            <p><strong>Discipline now = leverage later.</strong></p>
+        
+        <hr style="margin: 24px 0;">
+        
+        <h3>WEDNESDAY, FEBRUARY 18</h3>
+        <p><strong>Day:</strong> Wednesday<br>
+        <strong>Pillar:</strong> Agent Freedom<br>
+        <strong>Series:</strong> Agent Freedom File #1<br>
+        <strong>Format:</strong> Reel (60-90 sec)<br>
+        <strong>Title:</strong> I Sold 80M and Owned Nothing</p>
+        
+        <div class="hook">
+            <strong>Hook option 1:</strong> I sold over 80 million dollars in real estate as a listing agent and owned nothing.
         </div>
-
-        <div class="advisor-section">
-            <h2><span class="advisor-icon">💰</span>LEDGER — Financial Strategy</h2>
-            
-            <h3>FIRST PRIORITY TASK: Profit First Account Structure Audit</h3>
-            
-            <p><strong>Current situation:</strong></p>
-            <ul>
-                <li>Partial setup at Chase/BofA</li>
-                <li>$17K deal closed this week (awaiting allocation)</li>
-                <li>$25K in business checking before allocation</li>
-                <li>$8K will remain after allocation</li>
-            </ul>
-            
-            <p><strong>Your locked allocation percentages:</strong></p>
-            <ul>
-                <li>Profit: 15%</li>
-                <li>Owner's Pay: 60%</li>
-                <li>Tax: 10%</li>
-                <li>OpEx: 15%</li>
-            </ul>
-            
-            <h3>Required Accounts at Chase/BofA</h3>
-            
-            <p><strong>1. INCOME ACCOUNT (Already exists)</strong></p>
-            <ul>
-                <li>Name: "DOXA Income" or "Business Checking"</li>
-                <li>Purpose: All revenue hits here first</li>
-                <li>Action: Within 24 hours of deal closing, move money OUT to allocation accounts</li>
-                <li><strong>This account should trend toward $0 after allocations</strong></li>
-            </ul>
-            
-            <p><strong>2. PROFIT ACCOUNT (Need to open)</strong></p>
-            <ul>
-                <li>Name: "DOXA Profit" or "Profit Reserve"</li>
-                <li>Purpose: Business profit, acquisition fund for next rental unit, emergency reserves</li>
-                <li>Allocation: 15% of every deal</li>
-                <li><strong>Example:</strong> $17K deal = $2,550 moves here</li>
-                <li><strong>Target balance:</strong> Let this grow. Don't touch unless acquiring next rental unit or true business emergency</li>
-            </ul>
-            
-            <p><strong>3. OWNER'S PAY ACCOUNT (Need to open)</strong></p>
-            <ul>
-                <li>Name: "DOXA Owner's Pay" or "Jonathan Salary"</li>
-                <li>Purpose: Your personal salary, family budget, tithing source</li>
-                <li>Allocation: 60% of every deal</li>
-                <li><strong>Example:</strong> $17K deal = $10,200 moves here</li>
-                <li><strong>How to use:</strong> Transfer from this account to personal checking weekly or bi-weekly for family expenses</li>
-                <li><strong>Tithing comes from here</strong> (Shepherd coordination)</li>
-            </ul>
-            
-            <p><strong>4. TAX ACCOUNT (Need to open)</strong></p>
-            <ul>
-                <li>Name: "DOXA Tax Reserve" or "Tax Savings"</li>
-                <li>Purpose: Quarterly estimated taxes, year-end tax bill</li>
-                <li>Allocation: 10% of every deal</li>
-                <li><strong>Example:</strong> $17K deal = $1,700 moves here</li>
-                <li><strong>Target balance:</strong> Let this accumulate. NEVER touch except for tax payments.</li>
-            </ul>
-            
-            <p><strong>5. OPERATING EXPENSES ACCOUNT (Need to open)</strong></p>
-            <ul>
-                <li>Name: "DOXA OpEx" or "Operating Expenses"</li>
-                <li>Purpose: All business expenses (VA, LM, software, SC texts, etc.)</li>
-                <li>Allocation: 15% of every deal</li>
-                <li><strong>Example:</strong> $17K deal = $2,550 moves here</li>
-                <li><strong>Actual monthly burn:</strong> $3K/month</li>
-                <li><strong>Pay all business expenses from this account only</strong></li>
-            </ul>
-            
-            <h3>Implementation Timeline</h3>
-            
-            <p><strong>Week 1 (This Week):</strong></p>
-            <ul>
-                <li><strong>Monday or Tuesday:</strong> Open 4 new accounts at Chase/BofA (Profit Reserve, Owner's Pay, Tax Reserve, Operating Expenses)</li>
-                <li><strong>Naming:</strong> Use names above or customize (just be consistent)</li>
-                <li><strong>Linking:</strong> Link all to main business checking for easy transfers</li>
-            </ul>
-            
-            <p><strong>Friday (Feb 21):</strong></p>
-            <ul>
-                <li>Financial sit-down with Ledger (30-45 min)</li>
-                <li>Review account structure</li>
-                <li>Confirm all accounts opened</li>
-                <li>Set up recurring transfer process</li>
-            </ul>
-            
-            <h3>Your $17K Deal (Awaiting Allocation)</h3>
-            
-            <ul>
-                <li>Profit: $2,550</li>
-                <li>Owner's Pay: $10,200</li>
-                <li>Tax: $1,700</li>
-                <li>OpEx: $2,550</li>
-            </ul>
-            
-            <p><strong>Action:</strong> As soon as accounts are open, move these amounts.</p>
-            
-            <h3>2026 Financial Projections (Preliminary)</h3>
-            
-            <p><strong>If you hit 10 deals/month at $17K average:</strong></p>
-            <ul>
-                <li>Monthly revenue: $170K</li>
-                <li>Annual revenue: $2.04M</li>
-                <li>Owner's Pay: $1.224M/year ($102K/month)</li>
-                <li>After tithing (10%): $91.8K/month for family</li>
-            </ul>
-            
-            <p><strong>Ledger says:</strong></p>
-            <p>At current trajectory (4 ratified deals in pipeline, Week 1 volume scale launching), you're on track for 6-8 deals/month by March. If you hit 10 deals/month by June, you'll clear $100K/month Owner's Pay easily.</p>
-            
-            <p><strong>Priority this week:</strong> Open the 4 accounts. Then we can start proper allocation tracking.</p>
+        <div class="hook">
+            <strong>Hook option 2:</strong> I was a high volume listing agent for years, grinding 70 hour weeks, and I owned zero rental properties.
         </div>
-
-        <div class="priority-box">
-            <h2>⚡ TOP 5 PRIORITIES THIS WEEK</h2>
-            
-            <h3>YOUR CRITICAL PATH (What Only You Can Do)</h3>
-            <ol>
-                <li><strong>Monday EOD:</strong> Review and approve spam-audited SC templates</li>
-                <li><strong>Tuesday 3-5 PM:</strong> Train LM on 20-minute review protocol (2 hours)</li>
-                <li><strong>Wednesday:</strong> Film Agent Freedom content (first strategic post)</li>
-                <li><strong>Friday morning:</strong> Financial sit-down with Ledger (open 4 accounts, finalize structure)</li>
-                <li><strong>Daily:</strong> Film 1 piece of content (Mon-Sat, following calendar above)</li>
-            </ol>
-            
-            <h3>WHAT ALFRED HANDLES (You Don't Touch)</h3>
-            <ul>
-                <li>Spam audit coordination (Shield + VA)</li>
-                <li>Attribution system training (VA)</li>
-                <li>Dormant agent purge execution (Shield + VA)</li>
-                <li>Campaign deployments (Shield)</li>
-                <li>Mission Control updates</li>
-                <li>Friday Board Meeting prep</li>
-            </ul>
+        
+        <p><strong>Talking points:</strong></p>
+        <ul>
+            <li>I sold everything to other people and kept nothing for myself</li>
+            <li>I was exhausted, burned out, and financially dependent on the next deal</li>
+            <li>Then I made a shift: I started keeping the best deals and building rental income</li>
+            <li>Now I own 17 rental units and have passive income from revenue share at eXp</li>
+            <li>This is for agents who are tired of trading time for money and want ownership instead</li>
+        </ul>
+        
+        <div class="cta">
+            <strong>CTA:</strong> If you are an agent who resonates with this, DM me the word EQUITY and I will send you a simple starter blueprint.
         </div>
-
-        <div class="decision-box">
-            <h2>🔴 DECISIONS NEEDED THIS WEEK</h2>
-            
-            <p><strong>Monday:</strong></p>
-            <ul>
-                <li>Approve spam-audited templates (when Alfred delivers)</li>
-            </ul>
-            
-            <p><strong>Tuesday:</strong></p>
-            <ul>
-                <li>Approve send rate increases after 48-hour monitoring (if delivery stays >95%)</li>
-            </ul>
-            
-            <p><strong>Friday:</strong></p>
-            <ul>
-                <li>Confirm Profit First account names (or use Ledger's recommendations)</li>
-                <li>Set recurring transfer process for future allocations</li>
-            </ul>
-            
-            <p><strong>No other major decisions pending.</strong> Week 1 plan is locked.</p>
+        
+        <hr style="margin: 24px 0;">
+        
+        <h3>THURSDAY, FEBRUARY 19</h3>
+        <p><strong>Day:</strong> Thursday<br>
+        <strong>Pillar:</strong> Tactical Game Plan<br>
+        <strong>Series:</strong> None<br>
+        <strong>Format:</strong> Carousel<br>
+        <strong>Title:</strong> The One Thing I Would Do Differently as an Agent</p>
+        
+        <div class="hook">
+            <strong>Hook option 1:</strong> If I were starting as a real estate agent today, this is the one thing I would do differently.
         </div>
-
-        <div class="number-highlight">
-            <h2>💡 ONE NUMBER FOR THE WEEK</h2>
-            <span class="big-number">67 → 149</span>
-            <p>Off-markets target for Week 1</p>
-            <p>That's the target. Week 1 should produce 149 off-market submissions if:</p>
-            <ul style="text-align: left; max-width: 500px; margin: 16px auto;">
-                <li>Dormant purge frees capacity</li>
-                <li>Send rates scale to 6/min NOVA, 5/min Richmond</li>
-                <li>Message refresh combats fatigue</li>
-                <li>Delivery stays >95%</li>
-            </ul>
-            <p><strong>If you hit 149, you're on pace for 200+ by Week 5-8 (March peak season).</strong></p>
+        <div class="hook">
+            <strong>Hook option 2:</strong> After selling 80M in real estate, here is what I wish I had done from day one.
         </div>
-
-        <div class="closing">
-            <h2>🙏 CLOSING — Shepherd</h2>
-            
-            <p>Jonathan,</p>
-            
-            <p>This week you do the unsexy work that compounds.</p>
-            
-            <p>Spam audits. Dormant purges. Attribution systems. LM training.</p>
-            
-            <p>None of it feels like "growth." But all of it IS growth.</p>
-            
-            <p><em>Proverbs 21:5 — The plans of the diligent lead to profit.</em></p>
-            
-            <p>You're not chasing deals. You're building a system that produces them consistently.</p>
-            
-            <p>You're not hustling. You're stewarding.</p>
-            
-            <p>That's Kingdom business.</p>
-            
-            <p><strong>Go build.</strong></p>
+        
+        <p><strong>Talking points:</strong></p>
+        <ul>
+            <li>Stop selling every listing to investors and keep the best ones for yourself</li>
+            <li>Look for properties that need light work, buy them, rent them out, build equity</li>
+            <li>You have more access to deals than any investor, use it</li>
+            <li>Start with one property, then build from there</li>
+            <li>Your future self will thank you for the passive income</li>
+        </ul>
+        
+        <div class="cta">
+            <strong>CTA:</strong> Save this if you are an agent who wants to start building ownership this year.
         </div>
-
-        <div class="footer">
-            <p><strong>Prepared by:</strong> Alfred, Chief of Staff</p>
-            <p><strong>Council advisors:</strong> 9 (Shepherd, Atlas, Harbor, Hawk, Shield, Quill, Scout, Ledger, Alfred)</p>
-            <p><strong>Next briefing:</strong> Sunday, February 22, 6:00 PM EST</p>
+        
+        <hr style="margin: 24px 0;">
+        
+        <h3>FRIDAY, FEBRUARY 20</h3>
+        <p><strong>Day:</strong> Friday<br>
+        <strong>Pillar:</strong> Leadership & Life<br>
+        <strong>Series:</strong> None<br>
+        <strong>Format:</strong> Reel<br>
+        <strong>Title:</strong> What I Learned This Week</p>
+        
+        <div class="hook">
+            <strong>Hook option 1:</strong> I spent this week doing foundation work, and God reminded me that diligence beats haste every time.
         </div>
+        <div class="hook">
+            <strong>Hook option 2:</strong> This week I audited systems, trained my team, and did the work nobody sees. Here is what I learned.
+        </div>
+        
+        <p><strong>Talking points:</strong></p>
+        <ul>
+            <li>Monday I audited message templates, Tuesday I trained my lead manager, Wednesday I shared my story</li>
+            <li>None of it felt like progress in the moment, but all of it is building something sustainable</li>
+            <li>Exodus 23:30 says God will drive them out little by little, and that is how I am building this business</li>
+            <li>Grateful for what is working: 4 deals in the pipeline, 13 to 1 conversion rate, a team that is ready to scale</li>
+        </ul>
+        
+        <div class="cta">
+            <strong>CTA:</strong> If you needed the reminder that slow and steady wins, share this with someone who is building something real.
+        </div>
+        
+        <hr style="margin: 24px 0;">
+        
+        <h3>SATURDAY, FEBRUARY 21</h3>
+        <p><strong>Day:</strong> Saturday<br>
+        <strong>Pillar:</strong> Agent Freedom<br>
+        <strong>Series:</strong> None<br>
+        <strong>Format:</strong> Reel<br>
+        <strong>Title:</strong> The Lie Brokerages Tell New Agents</p>
+        
+        <div class="hook">
+            <strong>Hook option 1:</strong> The lie every brokerage tells new agents: you need to grind for 10 years before you can invest.
+        </div>
+        <div class="hook">
+            <strong>Hook option 2:</strong> Brokerages will tell you to sell everything and keep nothing, and that is how agents stay broke.
+        </div>
+        
+        <p><strong>Talking points:</strong></p>
+        <ul>
+            <li>You do not need to wait 10 years to start building ownership</li>
+            <li>You have access to off market deals that most investors will never see</li>
+            <li>Start small: keep one deal, rent it out, build equity</li>
+            <li>The commission model keeps you dependent on the next deal, ownership sets you free</li>
+            <li>I wish someone had told me this when I started</li>
+        </ul>
+        
+        <div class="cta">
+            <strong>CTA:</strong> If you are an agent and this hit you, comment FREEDOM and I will reach out.
+        </div>
+        
+        <hr style="margin: 24px 0;">
+        
+        <h3>✅ STRATEGIC LAYERS CONFIRMED</h3>
+        <ul>
+            <li><strong>✓ Recurring series for agents:</strong> Agent Freedom File #1 (Wednesday)</li>
+            <li><strong>✓ Proof/receipts post:</strong> Wednesday (80M in sales → 17 rentals, real numbers)</li>
+            <li><strong>✓ Clear offer/invitation post:</strong> Wednesday (DM EQUITY), Saturday (comment FREEDOM)</li>
+            <li><strong>✓ Belief-shifting post:</strong> Saturday (challenge "wait 10 years" belief)</li>
+        </ul>
+        
+        <hr style="margin: 24px 0;">
+        
+        <h3>Quill V2 Quality Standards</h3>
+        <p>Every post follows the new directive:</p>
+        <ul>
+            <li>NO war language (fight, grind, hustle, war, attack removed)</li>
+            <li>Calm, confident, grounded tone</li>
+            <li>Document don't lecture</li>
+            <li>Specific, concrete, tied to real life</li>
+            <li>Christ life is good, God is kind</li>
+            <li>Exact output format followed</li>
+        </ul>
+        
+        <p><strong>Week 1 content calendar complete under V2 system. Ready to film Monday-Saturday.</strong></p>
+        
+        <hr style="margin: 32px 0;">
+        
+        <p style="font-size: 12px; color: #6B7280; text-align: center;">
+            Prepared by: Alfred, Chief of Staff<br>
+            Council advisors: 9 (Shepherd, Atlas, Harbor, Hawk, Shield, Quill, Scout, Ledger, Alfred)<br>
+            Next briefing: Sunday, February 22, 6:00 PM EST
+        </p>
     </div>
 </body>
 </html>
