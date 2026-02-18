@@ -6,6 +6,8 @@
     <title>MISSION CONTROL — DOXA Operating System</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
         * {
             margin: 0;
@@ -27,7 +29,7 @@
             min-height: 100vh;
         }
         
-        /* Sidebar Navigation */
+        /* Sidebar */
         .sidebar {
             width: 240px;
             background: #FFFFFF;
@@ -104,14 +106,14 @@
             text-align: center;
         }
         
-        /* Main Content Area */
+        /* Main Content */
         .main-content {
             margin-left: 240px;
             flex: 1;
             padding: 16px;
         }
         
-        /* Section containers */
+        /* Section switching */
         .content-section {
             display: none;
         }
@@ -120,7 +122,7 @@
             display: block;
         }
         
-        /* Coming Soon placeholder */
+        /* Coming Soon */
         .coming-soon {
             background: #FFFFFF;
             border-radius: 12px;
@@ -142,6 +144,8 @@
             color: #6B7280;
             line-height: 1.6;
         }
+        
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -1052,27 +1056,10 @@
         }
     </style>
 </head>
-        
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .sidebar {
-                transform: translateX(-240px);
-                transition: transform 0.3s ease;
-            }
-            
-            .sidebar.open {
-                transform: translateX(0);
-            }
-            
-            .main-content {
-                margin-left: 0;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="layout">
-        <!-- Sidebar Navigation -->
+        <!-- Sidebar -->
         <nav class="sidebar">
             <div class="sidebar-logo">
                 <h2>MISSION CONTROL</h2>
@@ -1129,9 +1116,8 @@
         
         <!-- Main Content -->
         <div class="main-content">
-            <!-- Main Dashboard Section -->
+            <!-- Main Section -->
             <div class="content-section active" id="main">
-<body>
     <div class="container">
         <header>
             <h1>MISSION CONTROL</h1>
@@ -1582,6 +1568,12 @@
                 </div>
             </div>
             
+            <!-- System Health -->
+            <div class="panel" style="grid-column: span 3;">
+                <div class="panel-header">
+                    <div class="panel-title">System Health</div>
+                    <div class="panel-badge success">OPERATIONAL</div>
+                </div>
                 <div class="kpi-grid" style="grid-template-columns: 1fr;">
                     <div class="kpi-card warning">
                         <div class="kpi-label">API Spend (Feb 1-16)</div>
@@ -1765,8 +1757,6 @@
             const timeStr = now.toLocaleTimeString('en-US', { 
                 hour: 'numeric', 
                 minute: '2-digit',
-                timeZone: 'America/New_York'
-            });
             </div>
             
             <!-- Tasks Section -->
@@ -1911,32 +1901,23 @@
         // Navigation switching
         document.querySelectorAll('.nav-item').forEach(item => {
             item.addEventListener('click', function() {
-                // Get section name
                 const sectionName = this.getAttribute('data-section');
                 
-                // Remove active class from all nav items
+                // Update nav active state
                 document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
-                
-                // Add active class to clicked item
                 this.classList.add('active');
                 
-                // Hide all sections
+                // Switch sections
                 document.querySelectorAll('.content-section').forEach(section => {
                     section.classList.remove('active');
                 });
-                
-                // Show selected section
                 document.getElementById(sectionName).classList.add('active');
             });
         });
-        
-        // Auto-refresh every 60 seconds (only on Main section)
-        setInterval(() => {
-            const mainSection = document.getElementById('main');
-            if (mainSection && mainSection.classList.contains('active')) {
-                location.reload();
-            }
+                timeZone: 'America/New_York'
+            });
+            document.querySelector('.status-indicator span').textContent = 
+                `System Online • Alfred Active • Last Updated: ${timeStr} EST`;
         }, 60000);
     </script>
 </body>
-</html>
