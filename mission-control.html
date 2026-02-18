@@ -17,18 +17,104 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
             background: #F5F7FA;
             color: #1A1A2E;
-            padding: 16px;
             line-height: 1.4;
             overflow-x: hidden;
         }
         
-        .container {
-            max-width: 1600px;
-            margin: 0 auto;
+        /* Layout */
+        .app-container {
+            display: flex;
+            height: 100vh;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background: #FFFFFF;
+            border-right: 1px solid #E5E7EB;
+            padding: 16px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .sidebar-header {
+            padding: 0 16px 16px 16px;
+            border-bottom: 1px solid #E5E7EB;
+            margin-bottom: 8px;
+        }
+        
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #4ABDE8;
+            letter-spacing: 0.5px;
+        }
+        
+        .sidebar-subtitle {
+            font-size: 11px;
+            color: #6B7280;
+            margin-top: 2px;
+        }
+        
+        .nav-section {
+            padding: 8px 0;
+        }
+        
+        .nav-section-label {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #9CA3AF;
+            padding: 4px 16px;
+            margin-bottom: 4px;
+        }
+        
+        .nav-item {
+            padding: 8px 16px;
+            font-size: 14px;
+            color: #4B5563;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .nav-item:hover {
+            background: #F3F4F6;
+            color: #1A1A2E;
+        }
+        
+        .nav-item.active {
+            background: #EBF8FF;
+            color: #4ABDE8;
+            font-weight: 600;
+            border-left: 3px solid #4ABDE8;
+            padding-left: 13px;
+        }
+        
+        .nav-icon {
+            font-size: 16px;
+        }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+        }
+        
+        .content-section {
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
         }
         
         /* Header */
-        header {
+        .content-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -37,7 +123,7 @@
             border-bottom: 2px solid #E5E7EB;
         }
         
-        h1 {
+        .content-title {
             font-size: 28px;
             font-weight: 700;
             letter-spacing: -0.5px;
@@ -65,2193 +151,640 @@
             50% { opacity: 0.3; }
         }
         
-        /* Grid Layout */
-        .grid {
+        /* Projects Grid */
+        .projects-grid {
             display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 12px;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
         }
         
-        /* Panel Base */
-        .panel {
+        .project-card {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
+        }
+        
+        .project-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 16px;
+        }
+        
+        .project-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 4px;
+        }
+        
+        .project-status {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .status-queued {
+            background: #FEF3C7;
+            color: #92400E;
+        }
+        
+        .status-in-progress {
+            background: #DBEAFE;
+            color: #1E40AF;
+        }
+        
+        .status-complete {
+            background: #D1FAE5;
+            color: #065F46;
+        }
+        
+        .status-live {
+            background: #D1FAE5;
+            color: #065F46;
+        }
+        
+        .project-meta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            font-size: 13px;
+            color: #6B7280;
+        }
+        
+        .project-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .project-description {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #4B5563;
+            margin-bottom: 16px;
+        }
+        
+        .project-details {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .project-detail-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+        
+        .detail-label {
+            color: #6B7280;
+            font-weight: 500;
+        }
+        
+        .detail-value {
+            color: #1A1A2E;
+            font-weight: 600;
+        }
+        
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .project-tag {
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        
+        .tag-revenue {
+            background: #DCFCE7;
+            color: #166534;
+        }
+        
+        .tag-brand {
+            background: #E0E7FF;
+            color: #3730A3;
+        }
+        
+        .tag-automation {
+            background: #FEE2E2;
+            color: #991B1B;
+        }
+        
+        .tag-research {
+            background: #FCE7F3;
+            color: #831843;
+        }
+        
+        /* Summary Stats */
+        .projects-summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        .summary-card {
             background: #FFFFFF;
             border-radius: 12px;
             padding: 16px;
             border: 1px solid #E5E7EB;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
         }
         
-        .panel-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #E5E7EB;
-        }
-        
-        .panel-title {
-            font-size: 15px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #4ABDE8;
-        }
-        
-        .panel-badge {
-            font-size: 11px;
-            padding: 3px 8px;
-            background: rgba(74, 189, 232, 0.1);
-            color: #4ABDE8;
-            border-radius: 6px;
-            font-weight: 700;
-            box-shadow: 0 0 8px rgba(74, 189, 232, 0.15);
-        }
-        
-        .panel-badge.success {
-            background: rgba(34, 197, 94, 0.1);
-            color: #22C55E;
-            box-shadow: 0 0 8px rgba(34, 197, 94, 0.15);
-        }
-        
-        .panel-badge.warning {
-            background: rgba(245, 158, 11, 0.1);
-            color: #F59E0B;
-            box-shadow: 0 0 8px rgba(245, 158, 11, 0.15);
-        }
-        
-        /* Alfred Status - Top Left */
-        .alfred-status {
-            grid-column: span 3;
-        }
-        
-        .status-grid {
-            display: grid;
-            gap: 8px;
-        }
-        
-        .status-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .summary-label {
             font-size: 12px;
-            padding: 6px 0;
-        }
-        
-        .status-label {
             color: #6B7280;
-        }
-        
-        .status-value {
-            color: #1A1A2E;
-            font-weight: 500;
-        }
-        
-        .status-value.active {
-            color: #22C55E;
-        }
-        
-        .status-value.warning {
-            color: #F59E0B;
-        }
-        
-        .status-value.info {
-            color: #4ABDE8;
-        }
-        
-        .status-value.error {
-            color: #EF4444;
-        }
-        
-        /* KPI Dashboard - Top Center */
-        .kpi-dashboard {
-            grid-column: span 6;
-        }
-        
-        .kpi-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-        }
-        
-        .kpi-card {
-            background: #F9FAFB;
-            border-radius: 8px;
-            padding: 12px;
-            border: 1px solid #E5E7EB;
-        }
-        
-        .kpi-label {
-            font-size: 11px;
-            color: #6B7280;
-            margin-bottom: 4px;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-        
-        .kpi-value {
-            font-size: 36px;
-            font-weight: 700;
-            color: #1A1A2E;
-            line-height: 1;
-        }
-        
-        .kpi-card.good .kpi-value {
-            color: #22C55E;
-        }
-        
-        .kpi-card.warning .kpi-value {
-            color: #F59E0B;
-        }
-        
-        .kpi-card.bad .kpi-value {
-            color: #EF4444;
-        }
-        
-        .kpi-card.info .kpi-value {
-            color: #4ABDE8;
-        }
-        
-        .kpi-trend {
-            font-size: 11px;
-            margin-top: 4px;
-            font-weight: 500;
-        }
-        
-        .kpi-trend.up {
-            color: #22C55E;
-        }
-        
-        .kpi-trend.down {
-            color: #EF4444;
-        }
-        
-        .kpi-trend.neutral {
-            color: #6B7280;
-        }
-        
-        .kpi-card.good {
-            border-color: #22C55E;
-            box-shadow: 0 0 12px rgba(34, 197, 94, 0.15);
-        }
-        
-        .kpi-card.warning {
-            border-color: #F59E0B;
-            box-shadow: 0 0 12px rgba(245, 158, 11, 0.15);
-        }
-        
-        .kpi-card.bad {
-            border-color: #EF4444;
-            box-shadow: 0 0 12px rgba(239, 68, 68, 0.15);
-        }
-        
-        .kpi-card.info {
-            border-color: #4ABDE8;
-            box-shadow: 0 0 12px rgba(74, 189, 232, 0.15);
-        }
-        
-        /* Live Activity - Top Right */
-        .live-activity {
-            grid-column: span 3;
-            max-height: 400px;
-        }
-        
-        .activity-feed {
-            max-height: 340px;
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: #E5E7EB #F9FAFB;
-        }
-        
-        .activity-feed::-webkit-scrollbar {
-            width: 4px;
-        }
-        
-        .activity-feed::-webkit-scrollbar-track {
-            background: #F9FAFB;
-        }
-        
-        .activity-feed::-webkit-scrollbar-thumb {
-            background: #E5E7EB;
-            border-radius: 4px;
-        }
-        
-        .activity-item {
-            display: flex;
-            gap: 10px;
-            padding: 8px 0;
-            font-size: 12px;
-            border-bottom: 1px solid #E5E7EB;
-        }
-        
-        .activity-item:last-child {
-            border-bottom: none;
-        }
-        
-        .activity-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            margin-top: 4px;
-            flex-shrink: 0;
-            box-shadow: 0 0 8px currentColor;
-        }
-        
-        .activity-dot.success { 
-            background: #22C55E;
-            color: #22C55E;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        .activity-dot.info { 
-            background: #4ABDE8;
-            color: #4ABDE8;
-        }
-        .activity-dot.warning { 
-            background: #F59E0B;
-            color: #F59E0B;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        .activity-dot.error { 
-            background: #EF4444;
-            color: #EF4444;
-            animation: pulse 1.5s ease-in-out infinite;
-        }
-        
-        .activity-content {
-            flex: 1;
-        }
-        
-        .activity-text {
-            color: #1A1A2E;
-            line-height: 1.4;
-        }
-        
-        .activity-time {
-            color: #6B7280;
-            font-size: 10px;
-            margin-top: 2px;
-        }
-        
-        /* Task Board - Middle Section */
-        .task-board {
-            grid-column: span 12;
-        }
-        
-        .task-columns {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 12px;
-        }
-        
-        .task-column {
-            background: #F9FAFB;
-            border-radius: 8px;
-            padding: 12px;
-            border: 1px solid #E5E7EB;
-        }
-        
-        .column-header {
-            font-size: 13px;
-            font-weight: 700;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .task-column:nth-child(1) .column-header {
-            color: #4ABDE8;
-            border-bottom-color: #4ABDE8;
-        }
-        
-        .task-column:nth-child(2) .column-header {
-            color: #F59E0B;
-            border-bottom-color: #F59E0B;
-        }
-        
-        .task-column:nth-child(3) .column-header {
-            color: #F97316;
-            border-bottom-color: #F97316;
-        }
-        
-        .task-column:nth-child(4) .column-header {
-            color: #EF4444;
-            border-bottom-color: #EF4444;
-        }
-        
-        .task-column:nth-child(5) .column-header {
-            color: #22C55E;
-            border-bottom-color: #22C55E;
-        }
-        
-        .column-count {
-            font-size: 11px;
-            font-weight: 700;
-            padding: 2px 6px;
-            background: rgba(0, 0, 0, 0.05);
-            border-radius: 4px;
-        }
-        
-        .task-column:nth-child(1) .column-count {
-            color: #4ABDE8;
-        }
-        
-        .task-column:nth-child(2) .column-count {
-            color: #F59E0B;
-        }
-        
-        .task-column:nth-child(3) .column-count {
-            color: #F97316;
-        }
-        
-        .task-column:nth-child(4) .column-count {
-            color: #EF4444;
-        }
-        
-        .task-column:nth-child(5) .column-count {
-            color: #22C55E;
-        }
-        
-        .task-card {
-            background: #FFFFFF;
-            border-radius: 6px;
-            padding: 10px;
-            margin-bottom: 8px;
-            border: 1px solid #E5E7EB;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-        }
-        
-        .task-card:hover {
-            border-color: #4ABDE8;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(74, 189, 232, 0.15);
-        }
-        
-        .task-card:last-child {
-            margin-bottom: 0;
-        }
-        
-        .task-title {
-            font-size: 12px;
-            font-weight: 500;
-            margin-bottom: 4px;
-            color: #1A1A2E;
-        }
-        
-        .task-meta {
-            font-size: 10px;
-            color: #6B7280;
-        }
-        
-        .task-tag {
-            display: inline-block;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 9px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-            margin-right: 4px;
-            margin-top: 4px;
-        }
-        
-        .tag-revenue { background: rgba(239, 68, 68, 0.1); color: #EF4444; }
-        .tag-content { background: rgba(74, 189, 232, 0.1); color: #4ABDE8; }
-        .tag-infra { background: rgba(107, 114, 128, 0.1); color: #6B7280; }
-        .tag-kingdom { background: rgba(168, 85, 247, 0.1); color: #A855F7; }
-        
-        /* Strategic Intel - Bottom Left */
-        .strategic-intel {
-            grid-column: span 4;
-        }
-        
-        .intel-item {
-            padding: 10px 0;
-            border-bottom: 1px solid #E5E7EB;
-        }
-        
-        .intel-item:last-child {
-            border-bottom: none;
-        }
-        
-        .intel-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             margin-bottom: 4px;
         }
         
-        .intel-title {
-            font-size: 12px;
-            font-weight: 600;
-            color: #1A1A2E;
-        }
-        
-        .intel-status {
-            font-size: 10px;
-            padding: 2px 6px;
-            background: rgba(74, 189, 232, 0.1);
-            color: #4ABDE8;
-            border-radius: 4px;
-            font-weight: 700;
-            box-shadow: 0 0 6px rgba(74, 189, 232, 0.2);
-        }
-        
-        .intel-status.alert {
-            background: rgba(245, 158, 11, 0.1);
-            color: #F59E0B;
-            box-shadow: 0 0 6px rgba(245, 158, 11, 0.2);
-        }
-        
-        .intel-body {
-            font-size: 11px;
-            color: #6B7280;
-            line-height: 1.4;
-        }
-        
-        /* Sub-Agent Roster - Bottom Center */
-        .sub-agent-roster {
-            grid-column: span 4;
-        }
-        
-        .agent-list {
-            display: grid;
-            gap: 8px;
-        }
-        
-        .agent-card {
-            background: #F9FAFB;
-            border-radius: 6px;
-            padding: 10px;
-            border: 1px solid #E5E7EB;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .agent-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .agent-avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #4ABDE8, #6366F1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 600;
-            color: #FFFFFF;
-        }
-        
-        .agent-details {
-            font-size: 12px;
-        }
-        
-        .agent-name {
-            font-weight: 600;
-            color: #1A1A2E;
-        }
-        
-        .agent-task {
-            font-size: 10px;
-            color: #6B7280;
-            margin-top: 2px;
-        }
-        
-        .agent-status {
-            font-size: 10px;
-            padding: 3px 8px;
-            border-radius: 6px;
-            font-weight: 700;
-            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .agent-status.active {
-            background: rgba(34, 197, 94, 0.1);
-            color: #22C55E;
-        }
-        
-        .agent-status.idle {
-            background: rgba(107, 114, 128, 0.1);
-            color: #6B7280;
-        }
-        
-        /* Content Factory - Bottom Right */
-        .content-factory {
-            grid-column: span 4;
-        }
-        
-        .factory-stats {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
-            margin-bottom: 12px;
-        }
-        
-        .factory-stat {
-            background: #F9FAFB;
-            border-radius: 6px;
-            padding: 10px;
-            border: 1px solid #E5E7EB;
-        }
-        
-        .factory-stat-label {
-            font-size: 10px;
-            color: #6B7280;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-            margin-bottom: 4px;
-        }
-        
-        .factory-stat-value {
+        .summary-value {
             font-size: 24px;
             font-weight: 700;
-            color: #4ABDE8;
-        }
-        
-        .content-queue {
-            font-size: 11px;
-        }
-        
-        .queue-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 6px 0;
-            border-bottom: 1px solid #E5E7EB;
-        }
-        
-        .queue-item:last-child {
-            border-bottom: none;
-        }
-        
-        .queue-title {
             color: #1A1A2E;
         }
-        
-        .queue-status {
-            color: #4ABDE8;
-            font-weight: 500;
-        }
-        
-        /* SC Campaign Monitor */
-        .sc-campaign-monitor {
-            grid-column: span 6;
-        }
-        
-        .campaign-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-        }
-        
-        .campaign-card {
-            background: #F9FAFB;
-            border-radius: 8px;
-            padding: 12px;
-            border: 1px solid #E5E7EB;
-        }
-        
-        .campaign-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #E5E7EB;
-        }
-        
-        .campaign-market {
-            font-size: 14px;
-            font-weight: 700;
-            color: #1A1A2E;
-        }
-        
-        .campaign-status {
-            font-size: 9px;
-            padding: 3px 8px;
-            border-radius: 6px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-        }
-        
-        .campaign-status.active {
-            background: rgba(34, 197, 94, 0.1);
-            color: #22C55E;
-        }
-        
-        .campaign-status.warning {
-            background: rgba(245, 158, 11, 0.1);
-            color: #F59E0B;
-        }
-        
-        .campaign-status.success {
-            background: rgba(74, 189, 232, 0.1);
-            color: #4ABDE8;
-        }
-        
-        .campaign-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-        }
-        
-        .campaign-stat {
-            text-align: center;
-        }
-        
-        .stat-label {
-            display: block;
-            font-size: 10px;
-            color: #6B7280;
-            margin-bottom: 4px;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-        
-        .stat-value {
-            display: block;
-            font-size: 20px;
-            font-weight: 700;
-            color: #1A1A2E;
-        }
-        
-        .campaign-card:nth-child(1) .stat-value {
-            color: #22C55E;
-        }
-        
-        .campaign-card:nth-child(2) .stat-value {
-            color: #F59E0B;
-        }
-        
-        .campaign-card:nth-child(3) .stat-value {
-            color: #4ABDE8;
-        }
-        
-        /* Implementation Roadmap */
-        .implementation-roadmap {
-            grid-column: span 6;
-        }
-        
-        .roadmap-timeline {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-        }
-        
-        .roadmap-phase {
-            background: #F9FAFB;
-            border-radius: 8px;
-            padding: 12px;
-            border: 1px solid #E5E7EB;
-        }
-        
-        .phase-header {
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #E5E7EB;
-        }
-        
-        .phase-title {
-            font-size: 13px;
-            font-weight: 600;
-            color: #1A1A2E;
-            margin-bottom: 4px;
-        }
-        
-        .phase-progress {
-            font-size: 10px;
-            color: #6B7280;
-        }
-        
-        .phase-goals {
-            margin-bottom: 12px;
-        }
-        
-        .goal-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 0;
-            font-size: 11px;
-            color: #1A1A2E;
-        }
-        
-        .goal-icon {
-            width: 18px;
-            height: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-        
-        .goal-item.complete .goal-icon {
-            color: #22C55E;
-            text-shadow: 0 0 8px rgba(34, 197, 94, 0.3);
-        }
-        
-        .goal-item.active .goal-icon {
-            color: #4ABDE8;
-            text-shadow: 0 0 8px rgba(74, 189, 232, 0.3);
-        }
-        
-        .goal-item.pending .goal-icon {
-            color: #6B7280;
-        }
-        
-        .goal-item.pending {
-            color: #6B7280;
-        }
-        
-        .phase-target {
-            font-size: 12px;
-            padding: 8px;
-            background: rgba(74, 189, 232, 0.08);
-            border-radius: 6px;
-            color: #4ABDE8;
-            font-weight: 700;
-            text-align: center;
-            border: 1px solid #4ABDE8;
-        }
-        
-        /* Responsive */
-        @media (max-width: 1200px) {
-            .grid {
-                grid-template-columns: repeat(6, 1fr);
-            }
-            
-            .alfred-status,
-            .live-activity,
-            .strategic-intel,
-            .sub-agent-roster,
-            .content-factory,
-            .sc-campaign-monitor,
-            .implementation-roadmap {
-                grid-column: span 6;
-            }
-            
-            .kpi-dashboard {
-                grid-column: span 6;
-            }
-            
-            .task-board {
-                grid-column: span 6;
-            }
-            
-            .task-columns {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .campaign-grid,
-            .roadmap-timeline {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 12px;
-            }
-            
-            .grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .alfred-status,
-            .kpi-dashboard,
-            .live-activity,
-            .task-board,
-            .strategic-intel,
-            .sub-agent-roster,
-            .content-factory,
-            .sc-campaign-monitor,
-            .implementation-roadmap {
-                grid-column: span 1;
-            }
-            
-            .task-columns {
-                grid-template-columns: 1fr;
-            }
-            
-            .kpi-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .campaign-grid,
-            .roadmap-timeline {
-                grid-template-columns: 1fr;
-            }
-            
-            h1 {
-                font-size: 22px;
-            }
-        }
-        
-        /* Utility */
-        .text-muted {
-            color: #6B7280;
-        }
-        
-        .text-success {
-            color: #22C55E;
-        }
-        
-        .text-warning {
-            color: #F59E0B;
-        }
-        
-        .text-error {
-            color: #EF4444;
-        }
-        
-        /* === NAVIGATION SYSTEM === */
-        body { padding: 0 !important; }
-        .layout { display: flex; min-height: 100vh; }
-        
-        .sidebar {
-            width: 240px; background: #FFFFFF; border-right: 1px solid #E5E7EB;
-            padding: 20px 0; position: fixed; left: 0; top: 0; bottom: 0;
-            overflow-y: auto; box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04); z-index: 1000;
-        }
-        .sidebar-logo { padding: 0 20px 20px 20px; border-bottom: 1px solid #E5E7EB; margin-bottom: 16px; }
-        .sidebar-logo h2 { font-size: 18px; font-weight: 700; color: #4ABDE8; letter-spacing: -0.3px; }
-        .sidebar-logo p { font-size: 11px; color: #6B7280; margin-top: 2px; }
-        .nav-section { margin-bottom: 24px; }
-        .nav-section-title {
-            padding: 0 20px 8px 20px; font-size: 11px; font-weight: 600;
-            text-transform: uppercase; letter-spacing: 0.5px; color: #9CA3AF;
-        }
-        .nav-item {
-            padding: 10px 20px; font-size: 14px; color: #4B5563; cursor: pointer;
-            transition: all 0.2s ease; display: flex; align-items: center; gap: 10px;
-            border-left: 3px solid transparent;
-        }
-        .nav-item:hover { background: #F9FAFB; color: #1A1A2E; }
-        .nav-item.active {
-            background: rgba(74, 189, 232, 0.08); color: #4ABDE8;
-            border-left-color: #4ABDE8; font-weight: 600;
-        }
-        .nav-icon { font-size: 16px; width: 20px; text-align: center; }
-        .main-content { margin-left: 240px; flex: 1; padding: 16px; }
-        .content-section { display: none; }
-        .content-section.active { display: block; }
-        .coming-soon {
-            background: #FFFFFF; border-radius: 12px; padding: 60px 40px;
-            text-align: center; border: 1px solid #E5E7EB;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); margin-top: 40px;
-        }
-        .coming-soon h2 { font-size: 24px; color: #1A1A2E; margin-bottom: 12px; }
-        .coming-soon p { font-size: 14px; color: #6B7280; line-height: 1.6; }
     </style>
 </head>
 <body>
-    <div class="layout">
-        <nav class="sidebar">
-            <div class="sidebar-logo">
-                <h2>MISSION CONTROL</h2>
-                <p>DOXA Operating System</p>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">MISSION CONTROL</div>
+                <div class="sidebar-subtitle">DOXA Operating System</div>
             </div>
+            
             <div class="nav-section">
                 <div class="nav-item active" data-section="main">
-                    <span class="nav-icon">🏠</span><span>Main</span>
+                    <span class="nav-icon">🏠</span>
+                    <span>Main</span>
                 </div>
             </div>
+            
             <div class="nav-section">
-                <div class="nav-section-title">Content</div>
-                <div class="nav-item" data-section="tasks"><span class="nav-icon">✓</span><span>Tasks</span></div>
-                <div class="nav-item" data-section="approvals"><span class="nav-icon">👁</span><span>Approvals</span></div>
-                <div class="nav-item" data-section="council"><span class="nav-icon">🎯</span><span>Council</span></div>
-                <div class="nav-item" data-section="calendar"><span class="nav-icon">📅</span><span>Calendar</span></div>
+                <div class="nav-section-label">Content</div>
+                <div class="nav-item" data-section="tasks">
+                    <span class="nav-icon">✓</span>
+                    <span>Tasks</span>
+                </div>
+                <div class="nav-item" data-section="approvals">
+                    <span class="nav-icon">👁</span>
+                    <span>Approvals</span>
+                </div>
+                <div class="nav-item" data-section="council">
+                    <span class="nav-icon">🎭</span>
+                    <span>Council</span>
+                </div>
+                <div class="nav-item" data-section="calendar">
+                    <span class="nav-icon">📅</span>
+                    <span>Calendar</span>
+                </div>
             </div>
+            
             <div class="nav-section">
-                <div class="nav-section-title">Workspace</div>
-                <div class="nav-item" data-section="projects"><span class="nav-icon">📂</span><span>Projects</span></div>
-                <div class="nav-item" data-section="memory"><span class="nav-icon">🧠</span><span>Memory</span></div>
-                <div class="nav-item" data-section="docs"><span class="nav-icon">📄</span><span>Docs</span></div>
-                <div class="nav-item" data-section="people"><span class="nav-icon">👥</span><span>People</span></div>
+                <div class="nav-section-label">Workspace</div>
+                <div class="nav-item" data-section="projects">
+                    <span class="nav-icon">🚀</span>
+                    <span>Projects</span>
+                </div>
+                <div class="nav-item" data-section="memory">
+                    <span class="nav-icon">🧠</span>
+                    <span>Memory</span>
+                </div>
+                <div class="nav-item" data-section="docs">
+                    <span class="nav-icon">📄</span>
+                    <span>Docs</span>
+                </div>
+                <div class="nav-item" data-section="people">
+                    <span class="nav-icon">👥</span>
+                    <span>People</span>
+                </div>
             </div>
-        </nav>
-        <div class="main-content">
-            <div class="content-section active" id="main">
-    <div class="container">
-        <header>
-            <h1>MISSION CONTROL</h1>
-            <div class="status-indicator">
-                <div class="heartbeat"></div>
-                <span>System Online • Alfred Active • Last Updated: 19:10 EST</span>
-            </div>
-        </header>
+        </div>
         
-        <div class="grid">
-            <!-- Alfred Status -->
-            <div class="panel alfred-status">
-                <div class="panel-header">
-                    <div class="panel-title">Alfred Status</div>
-                    <div class="panel-badge success">ONLINE</div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Main Section -->
+            <div class="content-section active" id="main">
+                <div class="content-header">
+                    <h1 class="content-title">Dashboard</h1>
+                    <div class="status-indicator">
+                        <div class="heartbeat"></div>
+                        <span>System Online • Alfred Active</span>
+                    </div>
                 </div>
-                <div class="status-grid">
-                    <div class="status-item">
-                        <span class="status-label">Mode</span>
-                        <span class="status-value active">Observation</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Model</span>
-                        <span class="status-value">Claude Sonnet 4.5</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Thinking</span>
-                        <span class="status-value">Low</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Sessions</span>
-                        <span class="status-value">1 active</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Token Usage</span>
-                        <span class="status-value">76K / 200K</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">API Spend MTD</span>
-                        <span class="status-value warning">$172 / $300</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Alert Thresholds</span>
-                        <span class="status-value info">$150 | $225</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Daily Burn Rate</span>
-                        <span class="status-value warning">$7.23/day</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Projected MTD</span>
-                        <span class="status-value warning">$217</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Last Heartbeat</span>
-                        <span class="status-value">2m ago</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Council Advisors</span>
-                        <span class="status-value active">9 live (Ledger added)</span>
-                    </div>
-                    <div class="status-item">
-                        <span class="status-label">Jonathan's Focus</span>
-                        <span class="status-value warning">Content calendar + LM training</span>
-                    </div>
+                <div style="padding: 40px; text-align: center; color: #6B7280;">
+                    Main dashboard content here (KPIs, revenue, pipeline, etc.)
                 </div>
             </div>
             
-            <!-- KPI Dashboard -->
-            <div class="panel kpi-dashboard">
-                <div class="panel-header">
-                    <div class="panel-title">Revenue KPIs</div>
-                    <div class="panel-badge success">LIVE</div>
-                </div>
-                <div class="kpi-grid">
-                    <div class="kpi-card warning">
-                        <div class="kpi-label">Response Rate (Feb MTD)</div>
-                        <div class="kpi-value">0.91%</div>
-                        <div class="kpi-trend down">↓ from Oct 1.82%</div>
-                    </div>
-                    <div class="kpi-card good">
-                        <div class="kpi-label">Ratifications</div>
-                        <div class="kpi-value">6</div>
-                        <div class="kpi-trend up">6 ratified MTD</div>
-                    </div>
-                    <div class="kpi-card good">
-                        <div class="kpi-label">Pipeline</div>
-                        <div class="kpi-value">5</div>
-                        <div class="kpi-trend neutral">Active deals moving forward</div>
-                    </div>
-                    <div class="kpi-card info">
-                        <div class="kpi-label">Off-Markets MTD</div>
-                        <div class="kpi-value">130</div>
-                        <div class="kpi-trend up">Target: 200/mo (65% there)</div>
-                    </div>
-                    <div class="kpi-card info">
-                        <div class="kpi-label">Conversion (Lifetime)</div>
-                        <div class="kpi-value">20:1</div>
-                        <div class="kpi-trend neutral">Industry standard</div>
-                    </div>
-                    <div class="kpi-card info">
-                        <div class="kpi-label">Target Goal</div>
-                        <div class="kpi-value">10</div>
-                        <div class="kpi-trend neutral">Deals/month</div>
-                    </div>
-                    <div class="kpi-card good">
-                        <div class="kpi-label">Projected Revenue (Feb)</div>
-                        <div class="kpi-value">$114,000</div>
-                        <div class="kpi-trend up">Includes $50K flip (Apr/May)</div>
-                    </div>
-                    <div class="kpi-card good">
-                        <div class="kpi-label">Cash Collected (Feb Actual)</div>
-                        <div class="kpi-value">$30,650</div>
-                        <div class="kpi-trend up">Collected MTD</div>
-                    </div>
-                    <div class="kpi-card good">
-                        <div class="kpi-label">Cash Collected (Feb Projected)</div>
-                        <div class="kpi-value">$64,600</div>
-                        <div class="kpi-trend up">Expected by month end</div>
-                    </div>
-                    <div class="kpi-card good">
-                        <div class="kpi-label">Closed Deals (Feb)</div>
-                        <div class="kpi-value">4</div>
-                        <div class="kpi-trend up">Closed this month</div>
-                    </div>
-                    <div class="kpi-card good">
-                        <div class="kpi-label">Closed Deals (YTD)</div>
-                        <div class="kpi-value">6</div>
-                        <div class="kpi-trend up">Jan: 2, Feb: 4</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Live Activity Feed -->
-            <div class="panel live-activity">
-                <div class="panel-header">
-                    <div class="panel-title">Live Activity</div>
-                    <div class="panel-badge">REAL-TIME</div>
-                </div>
-                <div class="activity-feed">
-                    <div class="activity-item">
-                        <div class="activity-dot success"></div>
-                        <div class="activity-content">
-                            <div class="activity-text">🎉 Deal #5 ratified — $86.5K projected February revenue</div>
-                            <div class="activity-time">Just now (10:38 AM)</div>
-                        </div>
-                    </div>
-                    <div class="activity-item">
-                        <div class="activity-dot success"></div>
-                        <div class="activity-content">
-                            <div class="activity-text">Highest ROI Analysis delivered for mastermind</div>
-                            <div class="activity-time">2m ago</div>
-                        </div>
-                    </div>
-                    <div class="activity-item">
-                        <div class="activity-dot info"></div>
-                        <div class="activity-content">
-                            <div class="activity-text">All Megan/Maria frameworks extracted (28 files)</div>
-                            <div class="activity-time">8m ago</div>
-                        </div>
-                    </div>
-                    <div class="activity-item">
-                        <div class="activity-dot success"></div>
-                        <div class="activity-content">
-                            <div class="activity-text">KPI tracker updated with latest deals</div>
-                            <div class="activity-time">Just now</div>
-                        </div>
-                    </div>
-                    <div class="activity-item">
-                        <div class="activity-dot info"></div>
-                        <div class="activity-content">
-                            <div class="activity-text">Agent Freedom pillar added (6th pillar, 20%)</div>
-                            <div class="activity-time">10m ago</div>
-                        </div>
-                    </div>
-                    <div class="activity-item">
-                        <div class="activity-dot warning"></div>
-                        <div class="activity-content">
-                            <div class="activity-text">Week 1 priorities added: Mon spam audit, Tue dormant purge</div>
-                            <div class="activity-time">15m ago</div>
-                        </div>
-                    </div>
-                    <div class="activity-item">
-                        <div class="activity-dot success"></div>
-                        <div class="activity-content">
-                            <div class="activity-text">Council system go-live confirmed for Monday Feb 17</div>
-                            <div class="activity-time">1h ago</div>
-                        </div>
-                    </div>
-                    <div class="activity-item">
-                        <div class="activity-dot info"></div>
-                        <div class="activity-content">
-                            <div class="activity-text">Facebook Personal baseline extracted (2K followers, 17% engagement)</div>
-                            <div class="activity-time">2h ago</div>
-                        </div>
-                    </div>
-                    <div class="activity-item">
-                        <div class="activity-dot success"></div>
-                        <div class="activity-content">
-                            <div class="activity-text">Discord war room deployed (35 channels, 8 council advisors)</div>
-                            <div class="activity-time">3h ago</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Task Board -->
-            <div class="panel task-board">
-                <div class="panel-header">
-                    <div class="panel-title">Task Pipeline</div>
-                    <div class="panel-badge">36 ACTIVE</div>
-                </div>
-                <div class="task-columns">
-                    <!-- Queued -->
-                    <div class="task-column">
-                        <div class="column-header">
-                            <span>Queued</span>
-                            <span class="column-count">8</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Week 1 content calendar</div>
-                            <div class="task-meta">Mon-Sat scripts (6 days)</div>
-                            <span class="task-tag tag-content">Content</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">LinkedIn posts 1-3</div>
-                            <div class="task-meta">Draft for #quill approval</div>
-                            <span class="task-tag tag-content">Content</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">YouTube Episode 1 outline</div>
-                            <div class="task-meta">AI Council System story</div>
-                            <span class="task-tag tag-content">Content</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">VA Beach campaign analysis</div>
-                            <div class="task-meta">9.28% success factors</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                    </div>
-                    
-                    <!-- This Week (Mon Feb 17) -->
-                    <div class="task-column">
-                        <div class="column-header">
-                            <span>Monday Week 1</span>
-                            <span class="column-count">4</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Spam audit ALL SC templates</div>
-                            <div class="task-meta">Section 6 checklist — cleaned by EOD</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Attribution system deployment</div>
-                            <div class="task-meta">MARKET-YEAR-W##-TYPE-V# convention</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Train VA on campaign naming</div>
-                            <div class="task-meta">30 min session</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Announce MD 4-week rest</div>
-                            <div class="task-meta">22,270 agents on pause</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Tuesday Week 1 -->
-                    <div class="task-column">
-                        <div class="column-header">
-                            <span>Tuesday Week 1</span>
-                            <span class="column-count">5</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Dormant agent purge</div>
-                            <div class="task-meta">20+ touches, zero response → inactive</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Increase send rates</div>
-                            <div class="task-meta">NOVA 6/min, Richmond 5/min</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Monitor delivery 48h</div>
-                            <div class="task-meta">Revert if <95%</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Deploy message variants V7-V8</div>
-                            <div class="task-meta">20-variant library (Appendix C)</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Train LM on 20-min review</div>
-                            <div class="task-meta">2 hour training session</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                    </div>
-                    
-                    <!-- In Flight -->
-                    <div class="task-column">
-                        <div class="column-header">
-                            <span>In Flight</span>
-                            <span class="column-count">6</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Daily Morning Brief</div>
-                            <div class="task-meta">7 days/week, 7 AM EST</div>
-                            <span class="task-tag tag-infra">Infra</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Council Digest automation</div>
-                            <div class="task-meta">8 advisors, 3 digest types</div>
-                            <span class="task-tag tag-infra">Infra</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">SC Operations Manual</div>
-                            <div class="task-meta">Complete (108KB, 8 appendices)</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Mission Control dashboard</div>
-                            <div class="task-meta">Updated (accurate)</div>
-                            <span class="task-tag tag-infra">Infra</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Done -->
-                    <div class="task-column">
-                        <div class="column-header">
-                            <span>Done</span>
-                            <span class="column-count">13</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Agent Freedom pillar created</div>
-                            <div class="task-meta">6th pillar (20%)</div>
-                            <span class="task-tag tag-content">Content</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Week 1 priorities defined</div>
-                            <div class="task-meta">Mon/Tue tasks mapped</div>
-                            <span class="task-tag tag-revenue">Revenue</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Council system configured</div>
-                            <div class="task-meta">8 advisors named + voiced</div>
-                            <span class="task-tag tag-infra">Infra</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Discord war room deployed</div>
-                            <div class="task-meta">35 channels live</div>
-                            <span class="task-tag tag-infra">Infra</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Facebook Personal baseline</div>
-                            <div class="task-meta">28 days extracted</div>
-                            <span class="task-tag tag-content">Content</span>
-                        </div>
-                        <div class="task-card">
-                            <div class="task-title">Metricool integration</div>
-                            <div class="task-meta">API credentials + 30-day baseline</div>
-                            <span class="task-tag tag-content">Content</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Jonathan's Plate -->
-            <div class="panel strategic-intel">
-                <div class="panel-header">
-                    <div class="panel-title">Jonathan's Plate</div>
-                    <div class="panel-badge warning">8 ITEMS</div>
-                </div>
-                <div class="intel-item">
-                    <div class="intel-header">
-                        <div class="intel-title">#1 Review Week 1 Content Calendar</div>
-                        <div class="intel-status alert">DUE SUN 6PM</div>
-                    </div>
-                    <div class="intel-body">
-                        Alfred delivers full Mon-Sat scripts to Discord #scripts. Review, edit, approve before Monday.
-                    </div>
-                </div>
-                <div class="intel-item">
-                    <div class="intel-header">
-                        <div class="intel-title">#2 Train LM on 20-Min Review</div>
-                        <div class="intel-status alert">DUE TUE</div>
-                    </div>
-                    <div class="intel-body">
-                        2-hour session Tuesday. Purpose: Improve offer-to-ratified selectivity.
-                    </div>
-                </div>
-                <div class="intel-item">
-                    <div class="intel-header">
-                        <div class="intel-title">#3 Approve Cleaned SC Templates</div>
-                        <div class="intel-status alert">DUE MON EOD</div>
-                    </div>
-                    <div class="intel-body">
-                        Alfred delivers spam-audited versions EOD Monday. Review, approve for deployment.
-                    </div>
-                </div>
-                <div class="intel-item">
-                    <div class="intel-header">
-                        <div class="intel-title">#4 Film Content Daily</div>
-                        <div class="intel-status">ONGOING</div>
-                    </div>
-                    <div class="intel-body">
-                        1 piece/day minimum. Follow approved Week 1 calendar.
-                    </div>
-                </div>
-                <div class="intel-item">
-                    <div class="intel-header">
-                        <div class="intel-title">#5 Approve LinkedIn Posts</div>
-                        <div class="intel-status">THIS WEEK</div>
-                    </div>
-                    <div class="intel-body">
-                        Alfred drafts 1-3, you review in Discord #quill.
-                    </div>
-                </div>
-                <div class="intel-item">
-                    <div class="intel-header">
-                        <div class="intel-title">#6 Approve YouTube Ep 1 Outline</div>
-                        <div class="intel-status">THIS WEEK</div>
-                    </div>
-                    <div class="intel-body">
-                        Alfred drafts, you review in Discord #youtube-planning.
-                    </div>
-                </div>
-                <div class="intel-item">
-                    <div class="intel-header">
-                        <div class="intel-title">#7 Review Daily Council Digests</div>
-                        <div class="intel-status">DAILY 7AM</div>
-                    </div>
-                    <div class="intel-body">
-                        5 min each morning. Surface priorities/conflicts/opportunities.
-                    </div>
-                </div>
-                <div class="intel-item">
-                    <div class="intel-header">
-                        <div class="intel-title">#8 Review Friday Board Meeting</div>
-                        <div class="intel-status">FRI 7AM</div>
-                    </div>
-                    <div class="intel-body">
-                        30 min deep analysis + recommendations from all 9 advisors (Ledger added today).
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Sub-Agent Roster -->
-            <div class="panel sub-agent-roster">
-                <div class="panel-header">
-                    <div class="panel-title">Sub-Agent Roster</div>
-                    <div class="panel-badge">0 ACTIVE</div>
-                </div>
-                <div class="agent-list">
-                    <div style="text-align: center; padding: 40px 20px; color: #6B7280; font-size: 12px;">
-                        No sub-agents spawned yet.<br>
-                        Use sessions_spawn to delegate tasks.
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Content Factory -->
-            <div class="panel content-factory">
-                <div class="panel-header">
-                    <div class="panel-title">Content Factory</div>
-                    <div class="panel-badge warning">BUILDING</div>
-                </div>
-                <div class="factory-stats">
-                    <div class="factory-stat">
-                        <div class="factory-stat-label">Faith/Agent Freedom</div>
-                        <div class="factory-stat-value">25%</div>
-                    </div>
-                    <div class="factory-stat">
-                        <div class="factory-stat-label">Documenting</div>
-                        <div class="factory-stat-value">20%</div>
-                    </div>
-                    <div class="factory-stat">
-                        <div class="factory-stat-label">Starting/Lead/Contrarian</div>
-                        <div class="factory-stat-value">10%</div>
-                    </div>
-                    <div class="factory-stat">
-                        <div class="factory-stat-label">Target/Day</div>
-                        <div class="factory-stat-value">1</div>
-                    </div>
-                </div>
-                <div class="content-queue">
-                    <div class="queue-item">
-                        <span class="queue-title">Agent Freedom = The Brand</span>
-                        <span class="queue-status" style="color: #22C55E; font-weight: 700;">Strategic Priority</span>
-                    </div>
-                    <div class="queue-item">
-                        <span class="queue-title">Week 1 Content Calendar</span>
-                        <span class="queue-status">In Progress</span>
-                    </div>
-                    <div class="queue-item">
-                        <span class="queue-title">LinkedIn Posts 1-3</span>
-                        <span class="queue-status">Queued</span>
-                    </div>
-                    <div class="queue-item">
-                        <span class="queue-title">YouTube Ep 1 Outline</span>
-                        <span class="queue-status">Queued</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- System Health -->
-            <div class="panel" style="grid-column: span 3;">
-                <div class="panel-header">
-                    <div class="panel-title">System Health</div>
-                    <div class="panel-badge success">OPERATIONAL</div>
-                </div>
-                <div class="kpi-grid" style="grid-template-columns: 1fr;">
-                    <div class="kpi-card warning">
-                        <div class="kpi-label">API Spend (Feb 1-16)</div>
-                        <div class="kpi-value">$172</div>
-                        <div class="kpi-trend down">57% of $300 monthly budget</div>
-                    </div>
-                    <div class="kpi-card good">
-                        <div class="kpi-label">System Uptime</div>
-                        <div class="kpi-value">100%</div>
-                        <div class="kpi-trend neutral">All integrations operational</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- SC Campaign Monitor -->
-            <div class="panel sc-campaign-monitor">
-                <div class="panel-header">
-                    <div class="panel-title">SC Campaign Monitor</div>
-                    <div class="panel-badge success">LIVE</div>
-                </div>
-                <div class="campaign-grid">
-                    <div class="campaign-card">
-                        <div class="campaign-header">
-                            <div class="campaign-market">MD</div>
-                            <div class="campaign-status warning">RESTING</div>
-                        </div>
-                        <div class="campaign-stats">
-                            <div class="campaign-stat">
-                                <span class="stat-label">Status</span>
-                                <span class="stat-value">4 WK</span>
-                            </div>
-                            <div class="campaign-stat">
-                                <span class="stat-label">Starts</span>
-                                <span class="stat-value">Mon</span>
-                            </div>
-                            <div class="campaign-stat">
-                                <span class="stat-label">Agents</span>
-                                <span class="stat-value">22.3K</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="campaign-card">
-                        <div class="campaign-header">
-                            <div class="campaign-market">NOVA</div>
-                            <div class="campaign-status active">SCALING</div>
-                        </div>
-                        <div class="campaign-stats">
-                            <div class="campaign-stat">
-                                <span class="stat-label">Response</span>
-                                <span class="stat-value">3.81%</span>
-                            </div>
-                            <div class="campaign-stat">
-                                <span class="stat-label">→ 6/min</span>
-                                <span class="stat-value">Tue</span>
-                            </div>
-                            <div class="campaign-stat">
-                                <span class="stat-label">Agents</span>
-                                <span class="stat-value">25.1K</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="campaign-card">
-                        <div class="campaign-header">
-                            <div class="campaign-market">Richmond</div>
-                            <div class="campaign-status active">SCALING</div>
-                        </div>
-                        <div class="campaign-stats">
-                            <div class="campaign-stat">
-                                <span class="stat-label">Response</span>
-                                <span class="stat-value">6.5%</span>
-                            </div>
-                            <div class="campaign-stat">
-                                <span class="stat-label">→ 5/min</span>
-                                <span class="stat-value">Tue</span>
-                            </div>
-                            <div class="campaign-stat">
-                                <span class="stat-label">Agents</span>
-                                <span class="stat-value">6.8K</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Implementation Roadmap -->
-            <div class="panel implementation-roadmap">
-                <div class="panel-header">
-                    <div class="panel-title">90-Day Roadmap</div>
-                    <div class="panel-badge">Q1 2026</div>
-                </div>
-                <div class="roadmap-timeline">
-                    <div class="roadmap-phase">
-                        <div class="phase-header">
-                            <div class="phase-title">Feb Week 3-4 • Foundation</div>
-                            <div class="phase-progress">4 ratified, 1 reel today</div>
-                        </div>
-                        <div class="phase-goals">
-                            <div class="goal-item complete">
-                                <span class="goal-icon">✓</span>
-                                <span>Council system deployed</span>
-                            </div>
-                            <div class="goal-item complete">
-                                <span class="goal-icon">✓</span>
-                                <span>Agent Freedom pillar added</span>
-                            </div>
-                            <div class="goal-item active">
-                                <span class="goal-icon">→</span>
-                                <span>Week 1 content calendar</span>
-                            </div>
-                            <div class="goal-item pending">
-                                <span class="goal-icon">○</span>
-                                <span>Monday spam audit + attribution</span>
-                            </div>
-                        </div>
-                        <div class="phase-target">
-                            Target: 6-8 ratifications Feb
-                        </div>
-                    </div>
-                    <div class="roadmap-phase">
-                        <div class="phase-header">
-                            <div class="phase-title">March • Scale</div>
-                            <div class="phase-progress">Seasonal lift expected</div>
-                        </div>
-                        <div class="phase-goals">
-                            <div class="goal-item pending">
-                                <span class="goal-icon">○</span>
-                                <span>Response rate to 1.5%</span>
-                            </div>
-                            <div class="goal-item pending">
-                                <span class="goal-icon">○</span>
-                                <span>Scale to 60K texts/week 1-4</span>
-                            </div>
-                            <div class="goal-item pending">
-                                <span class="goal-icon">○</span>
-                                <span>Scale to 70K texts/week 5-8</span>
-                            </div>
-                            <div class="goal-item pending">
-                                <span class="goal-icon">○</span>
-                                <span>Hit 200 off-markets/month</span>
-                            </div>
-                        </div>
-                        <div class="phase-target">
-                            Target: 10+ ratifications
-                        </div>
-                    </div>
-                    <div class="roadmap-phase">
-                        <div class="phase-header">
-                            <div class="phase-title">April-May • Proven</div>
-                            <div class="phase-progress">Not started</div>
-                        </div>
-                        <div class="phase-goals">
-                            <div class="goal-item pending">
-                                <span class="goal-icon">○</span>
-                                <span>10 deals/month sustained</span>
-                            </div>
-                            <div class="goal-item pending">
-                                <span class="goal-icon">○</span>
-                                <span>10K Instagram followers</span>
-                            </div>
-                            <div class="goal-item pending">
-                                <span class="goal-icon">○</span>
-                                <span>Houston expansion decision</span>
-                            </div>
-                        </div>
-                        <div class="phase-target">
-                            Target: Consistent 10/mo
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-            </div>
-            <!-- TASKS SECTION -->
-            <div class="content-section" id="tasks">
-                <div class="container">
-                    <header>
-                        <h1>Tasks</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Task Pipeline • Full View</span>
-                        </div>
-                    </header>
-                    <div class="panel task-board">
-                        <div class="panel-header">
-                            <div class="panel-title">All Tasks</div>
-                            <div class="panel-badge">36 ACTIVE</div>
-                        </div>
-                        <div class="task-columns">
-                            <div class="task-column">
-                                <div class="column-header">
-                                    <span>Queued</span>
-                                    <span class="column-count">8</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Week 1 content calendar</div>
-                                    <div class="task-meta">Mon-Sat scripts (6 days)</div>
-                                    <span class="task-tag tag-content">Content</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">LinkedIn posts 1-3</div>
-                                    <div class="task-meta">Draft for #quill approval</div>
-                                    <span class="task-tag tag-content">Content</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">YouTube Episode 1 outline</div>
-                                    <div class="task-meta">AI Council System story</div>
-                                    <span class="task-tag tag-content">Content</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">VA Beach campaign analysis</div>
-                                    <div class="task-meta">9.28% success factors</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                            </div>
-                            <div class="task-column">
-                                <div class="column-header">
-                                    <span>Monday Week 1</span>
-                                    <span class="column-count">4</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Spam audit ALL SC templates</div>
-                                    <div class="task-meta">Section 6 checklist — cleaned by EOD</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Attribution system deployment</div>
-                                    <div class="task-meta">MARKET-YEAR-W##-TYPE-V# convention</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Train VA on campaign naming</div>
-                                    <div class="task-meta">30 min session</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Announce MD 4-week rest</div>
-                                    <div class="task-meta">22,270 agents on pause</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                            </div>
-                            <div class="task-column">
-                                <div class="column-header">
-                                    <span>Tuesday Week 1</span>
-                                    <span class="column-count">5</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Dormant agent purge</div>
-                                    <div class="task-meta">20+ touches, zero response</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Increase send rates</div>
-                                    <div class="task-meta">NOVA 6/min, Richmond 5/min</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Monitor delivery 48h</div>
-                                    <div class="task-meta">Revert if <95%</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Deploy message variants V7-V8</div>
-                                    <div class="task-meta">20-variant library</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Train LM on 20-min review</div>
-                                    <div class="task-meta">2 hour training</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                            </div>
-                            <div class="task-column">
-                                <div class="column-header">
-                                    <span>In Flight</span>
-                                    <span class="column-count">6</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Daily Morning Brief</div>
-                                    <div class="task-meta">Mon-Fri, 6 AM EST</div>
-                                    <span class="task-tag tag-infra">Infra</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Council Digest automation</div>
-                                    <div class="task-meta">9 advisors live</div>
-                                    <span class="task-tag tag-infra">Infra</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">SC Operations Manual</div>
-                                    <div class="task-meta">108KB complete</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Mission Control</div>
-                                    <div class="task-meta">Building sections</div>
-                                    <span class="task-tag tag-infra">Infra</span>
-                                </div>
-                            </div>
-                            <div class="task-column">
-                                <div class="column-header">
-                                    <span>Done</span>
-                                    <span class="column-count">13</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Agent Freedom pillar</div>
-                                    <div class="task-meta">Strategic brand engine</div>
-                                    <span class="task-tag tag-content">Content</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Week 1 priorities</div>
-                                    <div class="task-meta">Mon/Tue mapped</div>
-                                    <span class="task-tag tag-revenue">Revenue</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Council system configured</div>
-                                    <div class="task-meta">9 advisors named</div>
-                                    <span class="task-tag tag-infra">Infra</span>
-                                </div>
-                                <div class="task-card">
-                                    <div class="task-title">Discord war room</div>
-                                    <div class="task-meta">35 channels live</div>
-                                    <span class="task-tag tag-infra">Infra</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- APPROVALS SECTION -->
-            <div class="content-section" id="approvals">
-                <div class="container">
-                    <header>
-                        <h1>Approvals</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Content Approval Queue</span>
-                        </div>
-                    </header>
-                    <div class="panel">
-                        <div class="panel-header">
-                            <div class="panel-title">Staged Content</div>
-                            <div class="panel-badge">0 PENDING</div>
-                        </div>
-                        <div style="padding: 60px 40px; text-align: center;">
-                            <h2 style="font-size: 24px; color: #1A1A2E; margin-bottom: 12px;">✅ No content pending approval</h2>
-                            <p style="font-size: 14px; color: #6B7280; line-height: 1.6;">When Quill stages posts for review, they'll appear here with captions, hashtags, and suggested posting times.<br>You can approve, reject, or edit before publishing.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- COUNCIL SECTION -->
-            <div class="content-section" id="council">
-                <div class="container">
-                    <header>
-                        <h1>Council</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>9 Advisors Active</span>
-                        </div>
-                    </header>
-                    <div class="grid">
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">🙏 Shepherd</div>
-                                <div class="panel-badge success">ACTIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Kingdom alignment, values conflicts, calling</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Authority:</strong> Veto power on values conflicts</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-top: 8px;"><strong>Focus:</strong> Obedience over outcomes, calling alignment</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">💪 Atlas</div>
-                                <div class="panel-badge success">ACTIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Health, training, recovery, coherence</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Voice:</strong> Huberman meets pastor</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-top: 8px;"><strong>Latest:</strong> Day 2 creatine loading, strong gym session</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">⚓ Harbor</div>
-                                <div class="panel-badge success">ACTIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Family, presence, Jenni's peace</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Authority:</strong> Pushback on overwork</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-top: 8px;"><strong>Mandate:</strong> Jenni's peace > profit, always</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">🦅 Hawk</div>
-                                <div class="panel-badge success">ACTIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Deal flow, SC optimization</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Focus:</strong> 200 off-markets/month (currently 130)</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-top: 8px;"><strong>Status:</strong> Elite 20:1 conversion maintained</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">🛡️ Shield</div>
-                                <div class="panel-badge success">ACTIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Operations, sustainability, risk</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Focus:</strong> Campaign execution, list health</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-top: 8px;"><strong>Week 1:</strong> Spam audit + attribution system</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">✒️ Quill</div>
-                                <div class="panel-badge success">ACTIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Content strategy, brand voice</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Mode:</strong> Content COACH, not generator</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-top: 8px;"><strong>System:</strong> Quill V2 (4 pillars, NO WAR LANGUAGE)</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">🧭 Scout</div>
-                                <div class="panel-badge">SILENT</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Long-game vision, 2027 expansion</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Mode:</strong> Silent most days</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-top: 8px;"><strong>Timing:</strong> Speaks when worth saying</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">💰 Ledger</div>
-                                <div class="panel-badge success">ACTIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Profit First, 17-unit portfolio, tax</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Voice:</strong> Dave Ramsey meets CFO</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-top: 8px;"><strong>Sit-down:</strong> Friday Feb 21, 9 AM</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">🤖 Alfred</div>
-                                <div class="panel-badge success">ONLINE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Chief of Staff, facilitator</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Mode:</strong> Observation + Compression</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-top: 8px;"><strong>Function:</strong> Reduces cognitive load, coordinates council</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- CALENDAR SECTION -->
-            <div class="content-section" id="calendar">
-                <div class="container">
-                    <header>
-                        <h1>Calendar</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Content Calendar View</span>
-                        </div>
-                    </header>
-                    <div class="panel">
-                        <div class="panel-header">
-                            <div class="panel-title">30-Day Content Calendar</div>
-                            <div class="panel-badge">ADAPTED</div>
-                        </div>
-                        <div style="padding: 24px;">
-                            <div style="margin-bottom: 24px;">
-                                <h3 style="font-size: 16px; font-weight: 600; color: #1A1A2E; margin-bottom: 12px;">Quill V2 System</h3>
-                                <p style="font-size: 13px; color: #6B7280; line-height: 1.6;">30-day calendar created Feb 17 with 3 pillars adapted from Quill research</p>
-                            </div>
-                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px;">
-                                <div style="background: #F9FAFB; padding: 16px; border-radius: 8px; border: 1px solid #E5E7EB;">
-                                    <div style="font-size: 11px; color: #6B7280; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">Agent Freedom</div>
-                                    <div style="font-size: 24px; font-weight: 700; color: #4ABDE8;">37%</div>
-                                </div>
-                                <div style="background: #F9FAFB; padding: 16px; border-radius: 8px; border: 1px solid #E5E7EB;">
-                                    <div style="font-size: 11px; color: #6B7280; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">Kingdom Business</div>
-                                    <div style="font-size: 24px; font-weight: 700; color: #22C55E;">30%</div>
-                                </div>
-                                <div style="background: #F9FAFB; padding: 16px; border-radius: 8px; border: 1px solid #E5E7EB;">
-                                    <div style="font-size: 11px; color: #6B7280; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">DTA Machine</div>
-                                    <div style="font-size: 24px; font-weight: 700; color: #F59E0B;">33%</div>
-                                </div>
-                            </div>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Files:</strong> jonathan-30-day-content-calendar-adapted.md, jonathan-calendar-quick-reference.md, week-1-filming-scripts-READY.md</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- PROJECTS SECTION -->
+            <!-- Projects Section -->
             <div class="content-section" id="projects">
-                <div class="container">
-                    <header>
-                        <h1>Projects</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Active Projects</span>
-                        </div>
-                    </header>
-                    <div class="grid">
-                        <div class="panel" style="grid-column: span 6;">
-                            <div class="panel-header">
-                                <div class="panel-title">SC Sprint 1</div>
-                                <div class="panel-badge warning">IN PROGRESS</div>
+                <div class="content-header">
+                    <h1 class="content-title">Projects</h1>
+                    <div class="status-indicator">
+                        <span style="color: #4ABDE8; font-weight: 600;">8 Active Projects</span>
+                    </div>
+                </div>
+                
+                <!-- Summary Stats -->
+                <div class="projects-summary">
+                    <div class="summary-card">
+                        <div class="summary-label">Total Projects</div>
+                        <div class="summary-value">8</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">In Progress</div>
+                        <div class="summary-value" style="color: #3B82F6;">2</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">Live</div>
+                        <div class="summary-value" style="color: #22C55E;">2</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">Queued</div>
+                        <div class="summary-value" style="color: #F59E0B;">4</div>
+                    </div>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- SC Sprint 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <div class="project-title">SC SPRINT 1</div>
                             </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Goal:</strong> Scale from 67 to 200 off-markets/month</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Current:</strong> 130 off-markets MTD (65% to target)</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Week 1 (Feb 17-18):</strong> Spam audit, attribution, dormant purge, send rate increases</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Target:</strong> 70K texts/week by Week 8 → 219 off-markets/month</p>
+                            <span class="project-status status-in-progress">IN PROGRESS</span>
                         </div>
-                        <div class="panel" style="grid-column: span 6;">
-                            <div class="panel-header">
-                                <div class="panel-title">Mission Control</div>
-                                <div class="panel-badge success">COMPLETE</div>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span>📅</span>
+                                <span>Week 1: Feb 17-18</span>
                             </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Status:</strong> Navigation system complete with 9 sections</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Deployed:</strong> GitHub Pages live</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Features:</strong> Revenue KPIs, Task Pipeline, Council, Calendar, Projects, Memory, Docs, People</p>
                         </div>
-                        <div class="panel" style="grid-column: span 6;">
-                            <div class="panel-header">
-                                <div class="panel-title">YouTube Launch</div>
-                                <div class="panel-badge">QUEUED</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Platform:</strong> Primary ministry platform (Bible + Business)</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Angle:</strong> Building in public, not lecturing</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Edge:</strong> Pastoral-level Bible knowledge + real business results</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Next:</strong> Research 4 creators, Episode 1 outline</p>
+                        <div class="project-description">
+                            Scale from 67 to 200 off-markets/month. Week 1 focus: spam audit, attribution system, dormant purge, send rate increases.
                         </div>
-                        <div class="panel" style="grid-column: span 6;">
-                            <div class="panel-header">
-                                <div class="panel-title">Council Automation</div>
-                                <div class="panel-badge success">LIVE</div>
+                        <div class="project-details">
+                            <div class="project-detail-row">
+                                <span class="detail-label">Goal:</span>
+                                <span class="detail-value">200 off-markets/month</span>
                             </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Status:</strong> 9 advisors configured, 3 digest types</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Schedule:</strong> Daily 7 AM (Mon-Fri), Friday Board, Sunday Week Ahead</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Go-live:</strong> Feb 17, 2026</p>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Current:</span>
+                                <span class="detail-value">130 MTD (65% to target)</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Target:</span>
+                                <span class="detail-value">70K texts/week by Week 8</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag tag-revenue">Revenue</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Mission Control -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <div class="project-title">MISSION CONTROL</div>
+                            </div>
+                            <span class="project-status status-live">LIVE</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span>🌐</span>
+                                <span>GitHub Pages</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            Navigation system complete with 9 sections. Revenue KPIs, Task Pipeline, Council, Calendar, Projects, Memory, Docs, People.
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail-row">
+                                <span class="detail-label">Status:</span>
+                                <span class="detail-value">Navigation + 9 sections built</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Deployed:</span>
+                                <span class="detail-value">GitHub Pages live</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag tag-automation">Infra</span>
+                        </div>
+                    </div>
+                    
+                    <!-- YouTube Launch -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <div class="project-title">YOUTUBE LAUNCH</div>
+                            </div>
+                            <span class="project-status status-queued">QUEUED</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span>📺</span>
+                                <span>Primary ministry platform</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            Longform Bible + Business content. "Building in public" approach. Pastoral-level Bible knowledge + real business results.
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail-row">
+                                <span class="detail-label">Platform:</span>
+                                <span class="detail-value">Primary ministry platform</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Angle:</span>
+                                <span class="detail-value">Building in public, not lecturing</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Next:</span>
+                                <span class="detail-value">Research 4 creators, Episode 1 outline</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag tag-brand">Brand</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Council Automation -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <div class="project-title">COUNCIL AUTOMATION</div>
+                            </div>
+                            <span class="project-status status-live">LIVE</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span>🤖</span>
+                                <span>9 advisors configured</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            9 named advisors (Shepherd, Atlas, Harbor, Hawk, Shield, Quill, Scout, Ledger, Alfred). 3 digest types automated.
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail-row">
+                                <span class="detail-label">Status:</span>
+                                <span class="detail-value">9 advisors configured</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Schedule:</span>
+                                <span class="detail-value">Daily 7 AM, Friday Board, Sunday Week Ahead</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Go-live:</span>
+                                <span class="detail-value">Feb 17, 2026</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag tag-automation">Automation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Prospecting Bot -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <div class="project-title">PROSPECTING BOT</div>
+                            </div>
+                            <span class="project-status status-queued">QUEUED</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span>🤖</span>
+                                <span>Begins next week</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            Automated prospecting bot to handle agent outreach, qualification, and relationship nurturing. Launches after SC Sprint 1 complete.
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail-row">
+                                <span class="detail-label">Timeline:</span>
+                                <span class="detail-value">Week of Feb 24 (after SC done)</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Purpose:</span>
+                                <span class="detail-value">Agent outreach automation</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag tag-revenue">Revenue</span>
+                            <span class="project-tag tag-automation">Automation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Ascension -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <div class="project-title">ASCENSION</div>
+                            </div>
+                            <span class="project-status status-queued">QUEUED</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span>👑</span>
+                                <span>By Invitation</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            Premium by-invitation program for high-performing agents ready to transition to investor-operator model. Elite coaching + deal access.
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail-row">
+                                <span class="detail-label">Format:</span>
+                                <span class="detail-value">By invitation only</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Target:</span>
+                                <span class="detail-value">Elite agents → investor-operators</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag tag-brand">Brand</span>
+                            <span class="project-tag tag-revenue">Revenue</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Agent Community Offer -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <div class="project-title">AGENT COMMUNITY OFFER</div>
+                            </div>
+                            <span class="project-status status-queued">QUEUED</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span>🤝</span>
+                                <span>Community-driven</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            Build agent community around Agent Freedom movement. Training, deal collaboration, eXp recruitment funnel. 25% of content focus.
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail-row">
+                                <span class="detail-label">Purpose:</span>
+                                <span class="detail-value">Agent Freedom movement hub</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Does 3 things:</span>
+                                <span class="detail-value">Deal sources + eXp + authority</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag tag-brand">Brand</span>
+                            <span class="project-tag tag-revenue">Revenue</span>
+                        </div>
+                    </div>
+                    
+                    <!-- AI Side Hustle -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <div class="project-title">AI SIDE HUSTLE</div>
+                            </div>
+                            <span class="project-status status-queued">QUEUED</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span>💰</span>
+                                <span>Research phase</span>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            Leverage Alfred + spawn agents to deliver Upwork services (data crunching, bot construction, automation) with minimal Jonathan involvement.
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail-row">
+                                <span class="detail-label">Model:</span>
+                                <span class="detail-value">Spawn agents → Upwork services</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Services:</span>
+                                <span class="detail-value">Data, bots, automation</span>
+                            </div>
+                            <div class="project-detail-row">
+                                <span class="detail-label">Jonathan's role:</span>
+                                <span class="detail-value">Minimal (orchestration only)</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag tag-revenue">Revenue</span>
+                            <span class="project-tag tag-research">Research</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- MEMORY SECTION -->
+            <!-- Other Sections (Placeholders) -->
+            <div class="content-section" id="tasks">
+                <div class="content-header">
+                    <h1 class="content-title">Tasks</h1>
+                </div>
+                <div style="padding: 40px; text-align: center; color: #6B7280;">
+                    Task pipeline content here
+                </div>
+            </div>
+            
+            <div class="content-section" id="approvals">
+                <div class="content-header">
+                    <h1 class="content-title">Approvals</h1>
+                </div>
+                <div style="padding: 40px; text-align: center; color: #6B7280;">
+                    Content approval queue here
+                </div>
+            </div>
+            
+            <div class="content-section" id="council">
+                <div class="content-header">
+                    <h1 class="content-title">Council</h1>
+                </div>
+                <div style="padding: 40px; text-align: center; color: #6B7280;">
+                    9 advisors + digests here
+                </div>
+            </div>
+            
+            <div class="content-section" id="calendar">
+                <div class="content-header">
+                    <h1 class="content-title">Calendar</h1>
+                </div>
+                <div style="padding: 40px; text-align: center; color: #6B7280;">
+                    Content calendar here
+                </div>
+            </div>
+            
             <div class="content-section" id="memory">
-                <div class="container">
-                    <header>
-                        <h1>Memory</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Memory Index</span>
-                        </div>
-                    </header>
-                    <div class="panel">
-                        <div class="panel-header">
-                            <div class="panel-title">Core Memory Files</div>
-                            <div class="panel-badge">ACTIVE</div>
-                        </div>
-                        <div style="padding: 20px;">
-                            <table style="width: 100%; font-size: 13px; border-collapse: collapse;">
-                                <thead>
-                                    <tr style="border-bottom: 1px solid #E5E7EB;">
-                                        <th style="text-align: left; padding: 8px; color: #6B7280; font-weight: 600;">File</th>
-                                        <th style="text-align: left; padding: 8px; color: #6B7280; font-weight: 600;">Type</th>
-                                        <th style="text-align: left; padding: 8px; color: #6B7280; font-weight: 600;">Last Updated</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr style="border-bottom: 1px solid #F3F4F6;">
-                                        <td style="padding: 8px; color: #1A1A2E; font-weight: 500;">MEMORY.md</td>
-                                        <td style="padding: 8px; color: #6B7280;">Long-term context</td>
-                                        <td style="padding: 8px; color: #6B7280;">Feb 15, 2026</td>
-                                    </tr>
-                                    <tr style="border-bottom: 1px solid #F3F4F6;">
-                                        <td style="padding: 8px; color: #1A1A2E;">2026-02-18.md</td>
-                                        <td style="padding: 8px; color: #6B7280;">Daily log</td>
-                                        <td style="padding: 8px; color: #6B7280;">Today</td>
-                                    </tr>
-                                    <tr style="border-bottom: 1px solid #F3F4F6;">
-                                        <td style="padding: 8px; color: #1A1A2E;">2026-02-17.md</td>
-                                        <td style="padding: 8px; color: #6B7280;">Daily log</td>
-                                        <td style="padding: 8px; color: #6B7280;">Yesterday</td>
-                                    </tr>
-                                    <tr style="border-bottom: 1px solid #F3F4F6;">
-                                        <td style="padding: 8px; color: #1A1A2E;">council-config.md</td>
-                                        <td style="padding: 8px; color: #6B7280;">Council system (16KB)</td>
-                                        <td style="padding: 8px; color: #6B7280;">Feb 15, 2026</td>
-                                    </tr>
-                                    <tr style="border-bottom: 1px solid #F3F4F6;">
-                                        <td style="padding: 8px; color: #1A1A2E;">quill-content-directive-v2.md</td>
-                                        <td style="padding: 8px; color: #6B7280;">Content system (6KB)</td>
-                                        <td style="padding: 8px; color: #6B7280;">Feb 15, 2026</td>
-                                    </tr>
-                                    <tr style="border-bottom: 1px solid #F3F4F6;">
-                                        <td style="padding: 8px; color: #1A1A2E;">highest-roi-analysis-feb16.md</td>
-                                        <td style="padding: 8px; color: #6B7280;">ROI analysis (8KB)</td>
-                                        <td style="padding: 8px; color: #6B7280;">Feb 16, 2026</td>
-                                    </tr>
-                                    <tr style="border-bottom: 1px solid #F3F4F6;">
-                                        <td style="padding: 8px; color: #1A1A2E;">model-routing-rules.md</td>
-                                        <td style="padding: 8px; color: #6B7280;">Cost optimization</td>
-                                        <td style="padding: 8px; color: #6B7280;">Feb 17, 2026</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding: 8px; color: #1A1A2E;">smith-letter-research-feb17.md</td>
-                                        <td style="padding: 8px; color: #6B7280;">Newsletter research</td>
-                                        <td style="padding: 8px; color: #6B7280;">Feb 17, 2026</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                <div class="content-header">
+                    <h1 class="content-title">Memory</h1>
+                </div>
+                <div style="padding: 40px; text-align: center; color: #6B7280;">
+                    Memory files index here
                 </div>
             </div>
             
-            <!-- DOCS SECTION -->
             <div class="content-section" id="docs">
-                <div class="container">
-                    <header>
-                        <h1>Docs</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Key Documents</span>
-                        </div>
-                    </header>
-                    <div class="grid">
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">SC Operations Manual</div>
-                                <div class="panel-badge success">COMPLETE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Size:</strong> 108KB comprehensive guide</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Sections:</strong> 10 main + 8 appendices</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Content:</strong> Campaign strategy, message variants, attribution system, scaling roadmap</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">Mastermind Doc</div>
-                                <div class="panel-badge success">LIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Status:</strong> GitHub Pages deployed</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Updated:</strong> Feb 17 with closed deals data</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>URL:</strong> meetjonathansmith.github.io/Mission-Control/mastermind.html</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">Smith Letter Research</div>
-                                <div class="panel-badge success">COMPLETE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Content:</strong> 6 stories with source links</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Location:</strong> Desktop + memory/smith-letter-research-feb17.md</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Status:</strong> Ready for production with Jonathan's opening/CTAs</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">Doxa Financials 2026</div>
-                                <div class="panel-badge success">SHARED</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Type:</strong> Google Sheets</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Tabs:</strong> Deals, Annual Budget, November, December</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Recent:</strong> Split Operators Paid into LM Paid + VA Paid columns</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">Content Calendar</div>
-                                <div class="panel-badge success">ADAPTED</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Files:</strong> 30-day calendar + quick reference + Week 1 scripts</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>System:</strong> Quill V2 (3 pillars, NO WAR LANGUAGE)</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Created:</strong> Feb 17, 2026</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 4;">
-                            <div class="panel-header">
-                                <div class="panel-title">Viral Scripts</div>
-                                <div class="panel-badge success">READY</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Content:</strong> 2 scripts ready to film</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Scripts:</strong> Shame reel + Why Men Stay Stuck (Belief Trap version)</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Format:</strong> 60-75 seconds, Kingdom + Neuroscience positioning</p>
-                        </div>
-                    </div>
+                <div class="content-header">
+                    <h1 class="content-title">Docs</h1>
+                </div>
+                <div style="padding: 40px; text-align: center; color: #6B7280;">
+                    Document links here
                 </div>
             </div>
             
-            <!-- PEOPLE SECTION -->
             <div class="content-section" id="people">
-                <div class="container">
-                    <header>
-                        <h1>People</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Contacts & Team</span>
-                        </div>
-                    </header>
-                    <div class="grid">
-                        <div class="panel" style="grid-column: span 3;">
-                            <div class="panel-header">
-                                <div class="panel-title">Tom (VA)</div>
-                                <div class="panel-badge success">ACTIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Virtual Assistant</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Focus:</strong> SC campaigns, list management, attribution system</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Training:</strong> Campaign naming convention (30 min Monday)</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 3;">
-                            <div class="panel-header">
-                                <div class="panel-title">LM (Lead Manager)</div>
-                                <div class="panel-badge success">ACTIVE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Lead Manager + Deal Conversion</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Training:</strong> 20-min review protocol (Tuesday 2 hours)</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Goal:</strong> Shadow next 10 closes + daily 30-min debrief</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 3;">
-                            <div class="panel-header">
-                                <div class="panel-title">Alfred</div>
-                                <div class="panel-badge success">ONLINE</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Role:</strong> Chief of Staff + Council Coordinator</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Mode:</strong> Observation + Compression</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Function:</strong> Reduces cognitive load, coordinates 9 advisors</p>
-                        </div>
-                        <div class="panel" style="grid-column: span 3;">
-                            <div class="panel-header">
-                                <div class="panel-title">Agent Network</div>
-                                <div class="panel-badge">GROWING</div>
-                            </div>
-                            <p style="font-size: 13px; color: #4B5563; line-height: 1.6; margin-bottom: 8px;"><strong>Focus:</strong> DMV market (MD, DC, NOVA, DE)</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6; margin-bottom: 8px;"><strong>Current:</strong> 54K+ contacts across all markets</p>
-                            <p style="font-size: 13px; color: #6B7280; line-height: 1.6;"><strong>Target:</strong> 200 off-markets/month (currently 130)</p>
-                        </div>
-                    </div>
+                <div class="content-header">
+                    <h1 class="content-title">People</h1>
+                </div>
+                <div style="padding: 40px; text-align: center; color: #6B7280;">
+                    Contacts/team here
                 </div>
             </div>
-            
         </div>
     </div>
+    
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.nav-item').forEach(function(item) {
-                item.addEventListener('click', function() {
-                    var sec = this.getAttribute('data-section');
-                    document.querySelectorAll('.nav-item').forEach(function(i) { i.classList.remove('active'); });
-                    this.classList.add('active');
-                    document.querySelectorAll('.content-section').forEach(function(s) { s.classList.remove('active'); });
-                    var target = document.getElementById(sec);
-                    if (target) target.classList.add('active');
+        // Navigation handler
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Update active nav item
+                document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Show corresponding content section
+                const sectionId = this.getAttribute('data-section');
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.classList.remove('active');
                 });
+                document.getElementById(sectionId).classList.add('active');
             });
         });
-        setInterval(function() {
-            var main = document.getElementById('main');
-            if (main && main.classList.contains('active')) location.reload();
-        }, 60000);
     </script>
 </body>
 </html>
