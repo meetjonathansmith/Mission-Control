@@ -4,146 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISSION CONTROL — DOXA Operating System</title>
+    <title>MISSION CONTROL — DOXA Operating System</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
-            background: #F5F7FA;
-            color: #1A1A2E;
-            line-height: 1.4;
-            overflow-x: hidden;
-        }
-        
-        /* Layout */
-        .layout {
-            display: flex;
-            min-height: 100vh;
-        }
-        
-        /* Sidebar */
-        .sidebar {
-            width: 240px;
-            background: #FFFFFF;
-            border-right: 1px solid #E5E7EB;
-            padding: 20px 0;
-            position: fixed;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            overflow-y: auto;
-            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04);
-            z-index: 1000;
-        }
-        
-        .sidebar-logo {
-            padding: 0 20px 20px 20px;
-            border-bottom: 1px solid #E5E7EB;
-            margin-bottom: 16px;
-        }
-        
-        .sidebar-logo h2 {
-            font-size: 18px;
-            font-weight: 700;
-            color: #4ABDE8;
-            letter-spacing: -0.3px;
-        }
-        
-        .sidebar-logo p {
-            font-size: 11px;
-            color: #6B7280;
-            margin-top: 2px;
-        }
-        
-        .nav-section {
-            margin-bottom: 24px;
-        }
-        
-        .nav-section-title {
-            padding: 0 20px 8px 20px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #9CA3AF;
-        }
-        
-        .nav-item {
-            padding: 10px 20px;
-            font-size: 14px;
-            color: #4B5563;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border-left: 3px solid transparent;
-        }
-        
-        .nav-item:hover {
-            background: #F9FAFB;
-            color: #1A1A2E;
-        }
-        
-        .nav-item.active {
-            background: rgba(74, 189, 232, 0.08);
-            color: #4ABDE8;
-            border-left-color: #4ABDE8;
-            font-weight: 600;
-        }
-        
-        .nav-icon {
-            font-size: 16px;
-            width: 20px;
-            text-align: center;
-        }
-        
-        /* Main Content */
-        .main-content {
-            margin-left: 240px;
-            flex: 1;
-            padding: 16px;
-        }
-        
-        /* Section switching */
-        .content-section {
-            display: none;
-        }
-        
-        .content-section.active {
-            display: block;
-        }
-        
-        /* Coming Soon */
-        .coming-soon {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 60px 40px;
-            text-align: center;
-            border: 1px solid #E5E7EB;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            margin-top: 40px;
-        }
-        
-        .coming-soon h2 {
-            font-size: 24px;
-            color: #1A1A2E;
-            margin-bottom: 12px;
-        }
-        
-        .coming-soon p {
-            font-size: 14px;
-            color: #6B7280;
-            line-height: 1.6;
-        }
         
         * {
             margin: 0;
@@ -1056,10 +919,139 @@
         }
     </style>
 </head>
+        
+        /* === NAVIGATION SYSTEM === */
+        
+        /* Layout */
+        body {
+            padding: 0 !important;
+        }
+        
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 240px;
+            background: #FFFFFF;
+            border-right: 1px solid #E5E7EB;
+            padding: 20px 0;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            overflow-y: auto;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04);
+            z-index: 1000;
+        }
+        
+        .sidebar-logo {
+            padding: 0 20px 20px 20px;
+            border-bottom: 1px solid #E5E7EB;
+            margin-bottom: 16px;
+        }
+        
+        .sidebar-logo h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #4ABDE8;
+            letter-spacing: -0.3px;
+        }
+        
+        .sidebar-logo p {
+            font-size: 11px;
+            color: #6B7280;
+            margin-top: 2px;
+        }
+        
+        .nav-section {
+            margin-bottom: 24px;
+        }
+        
+        .nav-section-title {
+            padding: 0 20px 8px 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #9CA3AF;
+        }
+        
+        .nav-item {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #4B5563;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-left: 3px solid transparent;
+        }
+        
+        .nav-item:hover {
+            background: #F9FAFB;
+            color: #1A1A2E;
+        }
+        
+        .nav-item.active {
+            background: rgba(74, 189, 232, 0.08);
+            color: #4ABDE8;
+            border-left-color: #4ABDE8;
+            font-weight: 600;
+        }
+        
+        .nav-icon {
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        /* Main Content Area */
+        .main-content {
+            margin-left: 240px;
+            flex: 1;
+            padding: 16px;
+        }
+        
+        /* Section Switching */
+        .content-section {
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        /* Coming Soon Placeholder */
+        .coming-soon {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 60px 40px;
+            text-align: center;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+        
+        .coming-soon h2 {
+            font-size: 24px;
+            color: #1A1A2E;
+            margin-bottom: 12px;
+        }
+        
+        .coming-soon p {
+            font-size: 14px;
+            color: #6B7280;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
     <div class="layout">
-        <!-- Sidebar -->
+        <!-- Sidebar Navigation -->
         <nav class="sidebar">
             <div class="sidebar-logo">
                 <h2>MISSION CONTROL</h2>
@@ -1114,9 +1106,9 @@
             </div>
         </nav>
         
-        <!-- Main Content -->
+        <!-- Main Content Area -->
         <div class="main-content">
-            <!-- Main Section -->
+            <!-- MAIN DASHBOARD SECTION -->
             <div class="content-section active" id="main">
     <div class="container">
         <header>
@@ -1746,20 +1738,10 @@
             </div>
         </div>
     </div>
-    
-    <script>
-        // Auto-refresh every 60 seconds
-        setTimeout(() => location.reload(), 60000);
-        
-        // Update last updated time
-        setInterval(() => {
-            const now = new Date();
-            const timeStr = now.toLocaleTimeString('en-US', { 
-                hour: 'numeric', 
-                minute: '2-digit',
             </div>
+            <!-- END MAIN SECTION -->
             
-            <!-- Tasks Section -->
+            <!-- TASKS SECTION -->
             <div class="content-section" id="tasks">
                 <div class="container">
                     <header>
@@ -1776,7 +1758,7 @@
                 </div>
             </div>
             
-            <!-- Approvals Section -->
+            <!-- APPROVALS SECTION -->
             <div class="content-section" id="approvals">
                 <div class="container">
                     <header>
@@ -1793,7 +1775,7 @@
                 </div>
             </div>
             
-            <!-- Council Section -->
+            <!-- COUNCIL SECTION -->
             <div class="content-section" id="council">
                 <div class="container">
                     <header>
@@ -1810,7 +1792,7 @@
                 </div>
             </div>
             
-            <!-- Calendar Section -->
+            <!-- CALENDAR SECTION -->
             <div class="content-section" id="calendar">
                 <div class="container">
                     <header>
@@ -1827,7 +1809,7 @@
                 </div>
             </div>
             
-            <!-- Projects Section -->
+            <!-- PROJECTS SECTION -->
             <div class="content-section" id="projects">
                 <div class="container">
                     <header>
@@ -1844,7 +1826,7 @@
                 </div>
             </div>
             
-            <!-- Memory Section -->
+            <!-- MEMORY SECTION -->
             <div class="content-section" id="memory">
                 <div class="container">
                     <header>
@@ -1861,7 +1843,7 @@
                 </div>
             </div>
             
-            <!-- Docs Section -->
+            <!-- DOCS SECTION -->
             <div class="content-section" id="docs">
                 <div class="container">
                     <header>
@@ -1878,7 +1860,7 @@
                 </div>
             </div>
             
-            <!-- People Section -->
+            <!-- PEOPLE SECTION -->
             <div class="content-section" id="people">
                 <div class="container">
                     <header>
@@ -1894,29 +1876,40 @@
                     </div>
                 </div>
             </div>
+            
         </div>
+        <!-- END MAIN CONTENT -->
     </div>
+    <!-- END LAYOUT -->
     
     <script>
-        // Navigation switching
-        document.querySelectorAll('.nav-item').forEach(item => {
-            item.addEventListener('click', function() {
-                const sectionName = this.getAttribute('data-section');
-                
-                // Update nav active state
-                document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
-                this.classList.add('active');
-                
-                // Switch sections
-                document.querySelectorAll('.content-section').forEach(section => {
-                    section.classList.remove('active');
+        // Navigation Switching
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.nav-item').forEach(function(item) {
+                item.addEventListener('click', function() {
+                    const sectionName = this.getAttribute('data-section');
+                    
+                    // Update nav active state
+                    document.querySelectorAll('.nav-item').forEach(function(i) {
+                        i.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Switch sections
+                    document.querySelectorAll('.content-section').forEach(function(section) {
+                        section.classList.remove('active');
+                    });
+                    
+                    const targetSection = document.getElementById(sectionName);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                    }
                 });
-                document.getElementById(sectionName).classList.add('active');
             });
         });
         
-        // Auto-refresh on Main section only
-        setInterval(() => {
+        // Auto-refresh Main section only
+        setInterval(function() {
             const mainSection = document.getElementById('main');
             if (mainSection && mainSection.classList.contains('active')) {
                 location.reload();
