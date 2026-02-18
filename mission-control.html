@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISSION CONTROL — DOXA Operating System</title>
-    <title>MISSION CONTROL — DOXA Operating System</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
@@ -916,199 +915,75 @@
         
         .text-error {
             color: #EF4444;
-        }
-    </style>
-</head>
         
         /* === NAVIGATION SYSTEM === */
+        body { padding: 0 !important; }
+        .layout { display: flex; min-height: 100vh; }
         
-        /* Layout */
-        body {
-            padding: 0 !important;
-        }
-        
-        .layout {
-            display: flex;
-            min-height: 100vh;
-        }
-        
-        /* Sidebar */
         .sidebar {
-            width: 240px;
-            background: #FFFFFF;
-            border-right: 1px solid #E5E7EB;
-            padding: 20px 0;
-            position: fixed;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            overflow-y: auto;
-            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04);
-            z-index: 1000;
+            width: 240px; background: #FFFFFF; border-right: 1px solid #E5E7EB;
+            padding: 20px 0; position: fixed; left: 0; top: 0; bottom: 0;
+            overflow-y: auto; box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04); z-index: 1000;
         }
-        
-        .sidebar-logo {
-            padding: 0 20px 20px 20px;
-            border-bottom: 1px solid #E5E7EB;
-            margin-bottom: 16px;
-        }
-        
-        .sidebar-logo h2 {
-            font-size: 18px;
-            font-weight: 700;
-            color: #4ABDE8;
-            letter-spacing: -0.3px;
-        }
-        
-        .sidebar-logo p {
-            font-size: 11px;
-            color: #6B7280;
-            margin-top: 2px;
-        }
-        
-        .nav-section {
-            margin-bottom: 24px;
-        }
-        
+        .sidebar-logo { padding: 0 20px 20px 20px; border-bottom: 1px solid #E5E7EB; margin-bottom: 16px; }
+        .sidebar-logo h2 { font-size: 18px; font-weight: 700; color: #4ABDE8; letter-spacing: -0.3px; }
+        .sidebar-logo p { font-size: 11px; color: #6B7280; margin-top: 2px; }
+        .nav-section { margin-bottom: 24px; }
         .nav-section-title {
-            padding: 0 20px 8px 20px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #9CA3AF;
+            padding: 0 20px 8px 20px; font-size: 11px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.5px; color: #9CA3AF;
         }
-        
         .nav-item {
-            padding: 10px 20px;
-            font-size: 14px;
-            color: #4B5563;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            padding: 10px 20px; font-size: 14px; color: #4B5563; cursor: pointer;
+            transition: all 0.2s ease; display: flex; align-items: center; gap: 10px;
             border-left: 3px solid transparent;
         }
-        
-        .nav-item:hover {
-            background: #F9FAFB;
-            color: #1A1A2E;
-        }
-        
+        .nav-item:hover { background: #F9FAFB; color: #1A1A2E; }
         .nav-item.active {
-            background: rgba(74, 189, 232, 0.08);
-            color: #4ABDE8;
-            border-left-color: #4ABDE8;
-            font-weight: 600;
+            background: rgba(74, 189, 232, 0.08); color: #4ABDE8;
+            border-left-color: #4ABDE8; font-weight: 600;
         }
-        
-        .nav-icon {
-            font-size: 16px;
-            width: 20px;
-            text-align: center;
-        }
-        
-        /* Main Content Area */
-        .main-content {
-            margin-left: 240px;
-            flex: 1;
-            padding: 16px;
-        }
-        
-        /* Section Switching */
-        .content-section {
-            display: none;
-        }
-        
-        .content-section.active {
-            display: block;
-        }
-        
-        /* Coming Soon Placeholder */
+        .nav-icon { font-size: 16px; width: 20px; text-align: center; }
+        .main-content { margin-left: 240px; flex: 1; padding: 16px; }
+        .content-section { display: none; }
+        .content-section.active { display: block; }
         .coming-soon {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 60px 40px;
-            text-align: center;
-            border: 1px solid #E5E7EB;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            margin-top: 40px;
+            background: #FFFFFF; border-radius: 12px; padding: 60px 40px;
+            text-align: center; border: 1px solid #E5E7EB;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); margin-top: 40px;
         }
-        
-        .coming-soon h2 {
-            font-size: 24px;
-            color: #1A1A2E;
-            margin-bottom: 12px;
-        }
-        
-        .coming-soon p {
-            font-size: 14px;
-            color: #6B7280;
-            line-height: 1.6;
-        }
+        .coming-soon h2 { font-size: 24px; color: #1A1A2E; margin-bottom: 12px; }
+        .coming-soon p { font-size: 14px; color: #6B7280; line-height: 1.6; }
     </style>
 </head>
 <body>
     <div class="layout">
-        <!-- Sidebar Navigation -->
         <nav class="sidebar">
             <div class="sidebar-logo">
                 <h2>MISSION CONTROL</h2>
                 <p>DOXA Operating System</p>
             </div>
-            
             <div class="nav-section">
                 <div class="nav-item active" data-section="main">
-                    <span class="nav-icon">🏠</span>
-                    <span>Main</span>
+                    <span class="nav-icon">🏠</span><span>Main</span>
                 </div>
             </div>
-            
             <div class="nav-section">
                 <div class="nav-section-title">Content</div>
-                <div class="nav-item" data-section="tasks">
-                    <span class="nav-icon">✓</span>
-                    <span>Tasks</span>
-                </div>
-                <div class="nav-item" data-section="approvals">
-                    <span class="nav-icon">👁</span>
-                    <span>Approvals</span>
-                </div>
-                <div class="nav-item" data-section="council">
-                    <span class="nav-icon">🎯</span>
-                    <span>Council</span>
-                </div>
-                <div class="nav-item" data-section="calendar">
-                    <span class="nav-icon">📅</span>
-                    <span>Calendar</span>
-                </div>
+                <div class="nav-item" data-section="tasks"><span class="nav-icon">✓</span><span>Tasks</span></div>
+                <div class="nav-item" data-section="approvals"><span class="nav-icon">👁</span><span>Approvals</span></div>
+                <div class="nav-item" data-section="council"><span class="nav-icon">🎯</span><span>Council</span></div>
+                <div class="nav-item" data-section="calendar"><span class="nav-icon">📅</span><span>Calendar</span></div>
             </div>
-            
             <div class="nav-section">
                 <div class="nav-section-title">Workspace</div>
-                <div class="nav-item" data-section="projects">
-                    <span class="nav-icon">📂</span>
-                    <span>Projects</span>
-                </div>
-                <div class="nav-item" data-section="memory">
-                    <span class="nav-icon">🧠</span>
-                    <span>Memory</span>
-                </div>
-                <div class="nav-item" data-section="docs">
-                    <span class="nav-icon">📄</span>
-                    <span>Docs</span>
-                </div>
-                <div class="nav-item" data-section="people">
-                    <span class="nav-icon">👥</span>
-                    <span>People</span>
-                </div>
+                <div class="nav-item" data-section="projects"><span class="nav-icon">📂</span><span>Projects</span></div>
+                <div class="nav-item" data-section="memory"><span class="nav-icon">🧠</span><span>Memory</span></div>
+                <div class="nav-item" data-section="docs"><span class="nav-icon">📄</span><span>Docs</span></div>
+                <div class="nav-item" data-section="people"><span class="nav-icon">👥</span><span>People</span></div>
             </div>
         </nav>
-        
-        <!-- Main Content Area -->
         <div class="main-content">
-            <!-- MAIN DASHBOARD SECTION -->
             <div class="content-section active" id="main">
     <div class="container">
         <header>
@@ -1560,6 +1435,64 @@
                 </div>
             </div>
             
+            <!-- Sub-Agent Roster -->
+            <div class="panel sub-agent-roster">
+                <div class="panel-header">
+                    <div class="panel-title">Sub-Agent Roster</div>
+                    <div class="panel-badge">0 ACTIVE</div>
+                </div>
+                <div class="agent-list">
+                    <div style="text-align: center; padding: 40px 20px; color: #6B7280; font-size: 12px;">
+                        No sub-agents spawned yet.<br>
+                        Use sessions_spawn to delegate tasks.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content Factory -->
+            <div class="panel content-factory">
+                <div class="panel-header">
+                    <div class="panel-title">Content Factory</div>
+                    <div class="panel-badge warning">BUILDING</div>
+                </div>
+                <div class="factory-stats">
+                    <div class="factory-stat">
+                        <div class="factory-stat-label">Faith/Agent Freedom</div>
+                        <div class="factory-stat-value">25%</div>
+                    </div>
+                    <div class="factory-stat">
+                        <div class="factory-stat-label">Documenting</div>
+                        <div class="factory-stat-value">20%</div>
+                    </div>
+                    <div class="factory-stat">
+                        <div class="factory-stat-label">Starting/Lead/Contrarian</div>
+                        <div class="factory-stat-value">10%</div>
+                    </div>
+                    <div class="factory-stat">
+                        <div class="factory-stat-label">Target/Day</div>
+                        <div class="factory-stat-value">1</div>
+                    </div>
+                </div>
+                <div class="content-queue">
+                    <div class="queue-item">
+                        <span class="queue-title">Agent Freedom = The Brand</span>
+                        <span class="queue-status" style="color: #22C55E; font-weight: 700;">Strategic Priority</span>
+                    </div>
+                    <div class="queue-item">
+                        <span class="queue-title">Week 1 Content Calendar</span>
+                        <span class="queue-status">In Progress</span>
+                    </div>
+                    <div class="queue-item">
+                        <span class="queue-title">LinkedIn Posts 1-3</span>
+                        <span class="queue-status">Queued</span>
+                    </div>
+                    <div class="queue-item">
+                        <span class="queue-title">YouTube Ep 1 Outline</span>
+                        <span class="queue-status">Queued</span>
+                    </div>
+                </div>
+            </div>
+            
             <!-- System Health -->
             <div class="panel" style="grid-column: span 3;">
                 <div class="panel-header">
@@ -1739,181 +1672,72 @@
         </div>
     </div>
             </div>
-            <!-- END MAIN SECTION -->
-            
-            <!-- TASKS SECTION -->
             <div class="content-section" id="tasks">
                 <div class="container">
-                    <header>
-                        <h1>Tasks</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Task Pipeline • Full View</span>
-                        </div>
-                    </header>
-                    <div class="coming-soon">
-                        <h2>🚧 Coming Soon</h2>
-                        <p>Full expanded task view with ALL tasks across statuses.<br>Currently showing task board on Main dashboard.</p>
-                    </div>
+                    <header><h1>Tasks</h1><div class="status-indicator"><div class="heartbeat"></div><span>Task Pipeline • Full View</span></div></header>
+                    <div class="coming-soon"><h2>🚧 Coming Soon</h2><p>Full expanded task view with ALL tasks across statuses.<br>Currently showing task board on Main dashboard.</p></div>
                 </div>
             </div>
-            
-            <!-- APPROVALS SECTION -->
             <div class="content-section" id="approvals">
                 <div class="container">
-                    <header>
-                        <h1>Approvals</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Content Approval Queue</span>
-                        </div>
-                    </header>
-                    <div class="coming-soon">
-                        <h2>🚧 In Progress</h2>
-                        <p>Content approval queue where Quill stages posts for Jonathan to approve/reject/edit.<br>Building next on priority list.</p>
-                    </div>
+                    <header><h1>Approvals</h1><div class="status-indicator"><div class="heartbeat"></div><span>Content Approval Queue</span></div></header>
+                    <div class="coming-soon"><h2>🚧 In Progress</h2><p>Content approval queue where Quill stages posts for Jonathan to approve/reject/edit.<br>Building next on priority list.</p></div>
                 </div>
             </div>
-            
-            <!-- COUNCIL SECTION -->
             <div class="content-section" id="council">
                 <div class="container">
-                    <header>
-                        <h1>Council</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>9 Advisors Active</span>
-                        </div>
-                    </header>
-                    <div class="coming-soon">
-                        <h2>🚧 Coming Soon</h2>
-                        <p>9 advisors (Shepherd, Atlas, Harbor, Hawk, Shield, Quill, Scout, Ledger, Alfred) with roles, latest digests, and status.</p>
-                    </div>
+                    <header><h1>Council</h1><div class="status-indicator"><div class="heartbeat"></div><span>9 Advisors Active</span></div></header>
+                    <div class="coming-soon"><h2>🚧 Coming Soon</h2><p>9 advisors (Shepherd, Atlas, Harbor, Hawk, Shield, Quill, Scout, Ledger, Alfred) with roles, latest digests, and status.</p></div>
                 </div>
             </div>
-            
-            <!-- CALENDAR SECTION -->
             <div class="content-section" id="calendar">
                 <div class="container">
-                    <header>
-                        <h1>Calendar</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Content Calendar View</span>
-                        </div>
-                    </header>
-                    <div class="coming-soon">
-                        <h2>🚧 Coming Soon</h2>
-                        <p>Content calendar showing what's posting when, which platform, and status (draft/approved/posted).</p>
-                    </div>
+                    <header><h1>Calendar</h1><div class="status-indicator"><div class="heartbeat"></div><span>Content Calendar View</span></div></header>
+                    <div class="coming-soon"><h2>🚧 Coming Soon</h2><p>Content calendar showing what's posting when, which platform, and status (draft/approved/posted).</p></div>
                 </div>
             </div>
-            
-            <!-- PROJECTS SECTION -->
             <div class="content-section" id="projects">
                 <div class="container">
-                    <header>
-                        <h1>Projects</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Active Projects</span>
-                        </div>
-                    </header>
-                    <div class="coming-soon">
-                        <h2>🚧 Coming Soon</h2>
-                        <p>Active projects with status: SC Sprint 1, Bot Build, YouTube Launch, etc.</p>
-                    </div>
+                    <header><h1>Projects</h1><div class="status-indicator"><div class="heartbeat"></div><span>Active Projects</span></div></header>
+                    <div class="coming-soon"><h2>🚧 Coming Soon</h2><p>Active projects with status: SC Sprint 1, Bot Build, YouTube Launch, etc.</p></div>
                 </div>
             </div>
-            
-            <!-- MEMORY SECTION -->
             <div class="content-section" id="memory">
                 <div class="container">
-                    <header>
-                        <h1>Memory</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Memory Index</span>
-                        </div>
-                    </header>
-                    <div class="coming-soon">
-                        <h2>🚧 Coming Soon</h2>
-                        <p>Index of Alfred's memory files — what's stored, last updated, file size.</p>
-                    </div>
+                    <header><h1>Memory</h1><div class="status-indicator"><div class="heartbeat"></div><span>Memory Index</span></div></header>
+                    <div class="coming-soon"><h2>🚧 Coming Soon</h2><p>Index of Alfred's memory files — what's stored, last updated, file size.</p></div>
                 </div>
             </div>
-            
-            <!-- DOCS SECTION -->
             <div class="content-section" id="docs">
                 <div class="container">
-                    <header>
-                        <h1>Docs</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Key Documents</span>
-                        </div>
-                    </header>
-                    <div class="coming-soon">
-                        <h2>🚧 Coming Soon</h2>
-                        <p>Links to key documents: SC Operations Manual, Tom's Quick Reference, Mastermind doc, etc.</p>
-                    </div>
+                    <header><h1>Docs</h1><div class="status-indicator"><div class="heartbeat"></div><span>Key Documents</span></div></header>
+                    <div class="coming-soon"><h2>🚧 Coming Soon</h2><p>Links to key documents: SC Operations Manual, Tom's Quick Reference, Mastermind doc, etc.</p></div>
                 </div>
             </div>
-            
-            <!-- PEOPLE SECTION -->
             <div class="content-section" id="people">
                 <div class="container">
-                    <header>
-                        <h1>People</h1>
-                        <div class="status-indicator">
-                            <div class="heartbeat"></div>
-                            <span>Contacts & Team</span>
-                        </div>
-                    </header>
-                    <div class="coming-soon">
-                        <h2>🚧 Coming Soon</h2>
-                        <p>Contacts and team: Tom (VA), LM, Alfred, key agents, buyers.</p>
-                    </div>
+                    <header><h1>People</h1><div class="status-indicator"><div class="heartbeat"></div><span>Contacts & Team</span></div></header>
+                    <div class="coming-soon"><h2>🚧 Coming Soon</h2><p>Contacts and team: Tom (VA), LM, Alfred, key agents, buyers.</p></div>
                 </div>
             </div>
-            
         </div>
-        <!-- END MAIN CONTENT -->
     </div>
-    <!-- END LAYOUT -->
-    
     <script>
-        // Navigation Switching
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.nav-item').forEach(function(item) {
                 item.addEventListener('click', function() {
-                    const sectionName = this.getAttribute('data-section');
-                    
-                    // Update nav active state
-                    document.querySelectorAll('.nav-item').forEach(function(i) {
-                        i.classList.remove('active');
-                    });
+                    var sec = this.getAttribute('data-section');
+                    document.querySelectorAll('.nav-item').forEach(function(i) { i.classList.remove('active'); });
                     this.classList.add('active');
-                    
-                    // Switch sections
-                    document.querySelectorAll('.content-section').forEach(function(section) {
-                        section.classList.remove('active');
-                    });
-                    
-                    const targetSection = document.getElementById(sectionName);
-                    if (targetSection) {
-                        targetSection.classList.add('active');
-                    }
+                    document.querySelectorAll('.content-section').forEach(function(s) { s.classList.remove('active'); });
+                    var target = document.getElementById(sec);
+                    if (target) target.classList.add('active');
                 });
             });
         });
-        
-        // Auto-refresh Main section only
         setInterval(function() {
-            const mainSection = document.getElementById('main');
-            if (mainSection && mainSection.classList.contains('active')) {
-                location.reload();
-            }
+            var main = document.getElementById('main');
+            if (main && main.classList.contains('active')) location.reload();
         }, 60000);
     </script>
 </body>
