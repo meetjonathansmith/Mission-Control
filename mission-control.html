@@ -1914,10 +1914,14 @@
                 document.getElementById(sectionName).classList.add('active');
             });
         });
-                timeZone: 'America/New_York'
-            });
-            document.querySelector('.status-indicator span').textContent = 
-                `System Online • Alfred Active • Last Updated: ${timeStr} EST`;
+        
+        // Auto-refresh on Main section only
+        setInterval(() => {
+            const mainSection = document.getElementById('main');
+            if (mainSection && mainSection.classList.contains('active')) {
+                location.reload();
+            }
         }, 60000);
     </script>
 </body>
+</html>
