@@ -5,786 +5,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISSION CONTROL — DOXA Operating System</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
-            background: #F5F7FA;
-            color: #1A1A2E;
-            line-height: 1.4;
-            overflow-x: hidden;
-        }
-        
-        /* Layout */
-        .app-container {
-            display: flex;
-            height: 100vh;
-        }
-        
-        /* Sidebar */
-        .sidebar {
-            width: 200px;
-            background: #FFFFFF;
-            border-right: 1px solid #E5E7EB;
-            padding: 16px 0;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .sidebar-header {
-            padding: 0 16px 16px 16px;
-            border-bottom: 1px solid #E5E7EB;
-            margin-bottom: 8px;
-        }
-        
-        .sidebar-title {
-            font-size: 16px;
-            font-weight: 700;
-            color: #4ABDE8;
-            letter-spacing: 0.5px;
-        }
-        
-        .sidebar-subtitle {
-            font-size: 11px;
-            color: #6B7280;
-            margin-top: 2px;
-        }
-        
-        .nav-section {
-            padding: 8px 0;
-        }
-        
-        .nav-section-label {
-            font-size: 10px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #9CA3AF;
-            padding: 4px 16px;
-            margin-bottom: 4px;
-        }
-        
-        .nav-item {
-            padding: 8px 16px;
-            font-size: 14px;
-            color: #4B5563;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .nav-item:hover {
-            background: #F3F4F6;
-            color: #1A1A2E;
-        }
-        
-        .nav-item.active {
-            background: #EBF8FF;
-            color: #4ABDE8;
-            font-weight: 600;
-            border-left: 3px solid #4ABDE8;
-            padding-left: 13px;
-        }
-        
-        .nav-icon {
-            font-size: 16px;
-        }
-        
-        /* Main Content */
-        .main-content {
-            flex: 1;
-            overflow-y: auto;
-            padding: 16px;
-        }
-        
-        .content-section {
-            display: none;
-        }
-        
-        .content-section.active {
-            display: block;
-        }
-        
-        /* Header */
-        .content-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 24px;
-            padding-bottom: 16px;
-            border-bottom: 2px solid #E5E7EB;
-        }
-        
-        .content-title {
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            color: #1A1A2E;
-        }
-        
-        .status-indicator {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 13px;
-            color: #6B7280;
-        }
-        
-        .heartbeat {
-            width: 8px;
-            height: 8px;
-            background: #22C55E;
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
-        }
-        
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-            gap: 16px;
-            margin-top: 24px;
-        }
-        
-        .project-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 20px;
-            border: 1px solid #E5E7EB;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s;
-        }
-        
-        .project-card:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-            transform: translateY(-2px);
-        }
-        
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: 16px;
-        }
-        
-        .project-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #1A1A2E;
-            margin-bottom: 4px;
-        }
-        
-        .project-status {
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .status-queued {
-            background: #FEF3C7;
-            color: #92400E;
-        }
-        
-        .status-in-progress {
-            background: #DBEAFE;
-            color: #1E40AF;
-        }
-        
-        .status-complete {
-            background: #D1FAE5;
-            color: #065F46;
-        }
-        
-        .status-live {
-            background: #D1FAE5;
-            color: #065F46;
-        }
-        
-        .project-meta {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 16px;
-            font-size: 13px;
-            color: #6B7280;
-        }
-        
-        .project-meta-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        
-        .project-description {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #4B5563;
-            margin-bottom: 16px;
-        }
-        
-        .project-details {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        
-        .project-detail-row {
-            display: flex;
-            justify-content: space-between;
-            font-size: 13px;
-        }
-        
-        .detail-label {
-            color: #6B7280;
-            font-weight: 500;
-        }
-        
-        .detail-value {
-            color: #1A1A2E;
-            font-weight: 600;
-        }
-        
-        .project-tags {
-            display: flex;
-            gap: 8px;
-            margin-top: 12px;
-            flex-wrap: wrap;
-        }
-        
-        .project-tag {
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 11px;
-            font-weight: 500;
-        }
-        
-        .tag-revenue {
-            background: #DCFCE7;
-            color: #166534;
-        }
-        
-        .tag-brand {
-            background: #E0E7FF;
-            color: #3730A3;
-        }
-        
-        .tag-automation {
-            background: #FEE2E2;
-            color: #991B1B;
-        }
-        
-        .tag-research {
-            background: #FCE7F3;
-            color: #831843;
-        }
-        
-        /* Summary Stats */
-        .projects-summary {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 12px;
-            margin-bottom: 24px;
-        }
-        
-        .summary-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 16px;
-            border: 1px solid #E5E7EB;
-        }
-        
-        .summary-label {
-            font-size: 12px;
-            color: #6B7280;
-            margin-bottom: 4px;
-        }
-        
-        .summary-value {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1A1A2E;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #F5F7FA; color: #1A1A2E; line-height: 1.4; overflow-x: hidden; }
+
+        /* ===== LAYOUT ===== */
+        .app-container { display: flex; height: 100vh; }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar { width: 200px; min-width: 200px; background: #FFFFFF; border-right: 1px solid #E5E7EB; padding: 16px 0; display: flex; flex-direction: column; overflow-y: auto; }
+        .sidebar-header { padding: 0 16px 16px 16px; border-bottom: 1px solid #E5E7EB; margin-bottom: 8px; }
+        .sidebar-title { font-size: 16px; font-weight: 700; color: #4ABDE8; letter-spacing: 0.5px; }
+        .sidebar-subtitle { font-size: 11px; color: #6B7280; margin-top: 2px; }
+        .nav-section { padding: 8px 0; }
+        .nav-section-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #9CA3AF; padding: 4px 16px; margin-bottom: 4px; }
+        .nav-item { padding: 8px 16px; font-size: 14px; color: #4B5563; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 8px; }
+        .nav-item:hover { background: #F3F4F6; color: #1A1A2E; }
+        .nav-item.active { background: #EBF8FF; color: #4ABDE8; font-weight: 600; border-left: 3px solid #4ABDE8; padding-left: 13px; }
+        .nav-icon { font-size: 16px; }
+
+        /* ===== MAIN CONTENT ===== */
+        .main-content { flex: 1; overflow-y: auto; padding: 16px 20px; }
+        .content-section { display: none; }
+        .content-section.active { display: block; }
+
+        /* ===== HEADER ===== */
+        .page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid #E5E7EB; }
+        .page-title { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; color: #1A1A2E; }
+        .status-bar { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6B7280; }
+        .heartbeat { width: 8px; height: 8px; background: #22C55E; border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+        /* ===== DASHBOARD GRID ===== */
+        .dashboard-grid { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 16px; margin-bottom: 20px; }
+        .card { background: #FFFFFF; border-radius: 12px; padding: 16px; border: 1px solid #E5E7EB; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .card-title { font-size: 13px; font-weight: 700; letter-spacing: 0.5px; color: #4ABDE8; }
+        .card-badge { padding: 2px 10px; border-radius: 10px; font-size: 10px; font-weight: 700; letter-spacing: 0.3px; }
+        .badge-green { background: #D1FAE5; color: #065F46; }
+        .badge-blue { background: #DBEAFE; color: #1E40AF; }
+        .badge-red { background: #FEE2E2; color: #991B1B; }
+        .badge-orange { background: #FEF3C7; color: #92400E; }
+
+        /* ===== ALFRED STATUS ===== */
+        .status-row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 13px; }
+        .status-label { color: #6B7280; }
+        .status-value { font-weight: 600; color: #1A1A2E; }
+        .status-value.green { color: #22C55E; }
+        .status-value.orange { color: #F59E0B; }
+        .status-value.blue { color: #3B82F6; }
+        .status-value.red { color: #EF4444; }
+
+        /* ===== KPI BOXES ===== */
+        .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        .kpi-box { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 8px; padding: 12px; border-left: 3px solid #4ABDE8; }
+        .kpi-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; color: #6B7280; margin-bottom: 4px; }
+        .kpi-value { font-size: 26px; font-weight: 800; color: #1A1A2E; line-height: 1.1; }
+        .kpi-value.green { color: #22C55E; }
+        .kpi-value.orange { color: #F59E0B; }
+        .kpi-value.blue { color: #3B82F6; }
+        .kpi-sub { font-size: 11px; color: #6B7280; margin-top: 2px; }
+        .kpi-sub.red { color: #EF4444; }
+        .kpi-sub.green { color: #22C55E; }
+
+        /* ===== LIVE ACTIVITY ===== */
+        .activity-item { display: flex; align-items: flex-start; gap: 8px; padding: 8px 0; border-bottom: 1px solid #F3F4F6; font-size: 12px; }
+        .activity-item:last-child { border-bottom: none; }
+        .activity-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+        .dot-green { background: #22C55E; }
+        .dot-blue { background: #3B82F6; }
+        .dot-orange { background: #F59E0B; }
+
+        /* ===== TASK PIPELINE ===== */
+        .pipeline-section { margin-top: 20px; }
+        .pipeline-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .pipeline-title { font-size: 16px; font-weight: 700; color: #EF4444; letter-spacing: 0.5px; }
+        .pipeline-count { font-size: 13px; font-weight: 600; color: #22C55E; }
     </style>
 </head>
 <body>
     <div class="app-container">
-        <!-- Sidebar -->
+        <!-- SIDEBAR -->
         <div class="sidebar">
             <div class="sidebar-header">
                 <div class="sidebar-title">MISSION CONTROL</div>
                 <div class="sidebar-subtitle">DOXA Operating System</div>
             </div>
-            
             <div class="nav-section">
                 <div class="nav-item active" data-section="main">
-                    <span class="nav-icon">🏠</span>
-                    <span>Main</span>
+                    <span class="nav-icon">🏠</span><span>Main</span>
                 </div>
             </div>
-            
             <div class="nav-section">
                 <div class="nav-section-label">Content</div>
-                <div class="nav-item" data-section="tasks">
-                    <span class="nav-icon">✓</span>
-                    <span>Tasks</span>
-                </div>
-                <div class="nav-item" data-section="approvals">
-                    <span class="nav-icon">👁</span>
-                    <span>Approvals</span>
-                </div>
-                <div class="nav-item" data-section="council">
-                    <span class="nav-icon">🎭</span>
-                    <span>Council</span>
-                </div>
-                <div class="nav-item" data-section="calendar">
-                    <span class="nav-icon">📅</span>
-                    <span>Calendar</span>
-                </div>
+                <div class="nav-item" data-section="tasks"><span class="nav-icon">✓</span><span>Tasks</span></div>
+                <div class="nav-item" data-section="approvals"><span class="nav-icon">👁</span><span>Approvals</span></div>
+                <div class="nav-item" data-section="council"><span class="nav-icon">🎭</span><span>Council</span></div>
+                <div class="nav-item" data-section="calendar"><span class="nav-icon">📅</span><span>Calendar</span></div>
             </div>
-            
             <div class="nav-section">
                 <div class="nav-section-label">Workspace</div>
-                <div class="nav-item" data-section="projects">
-                    <span class="nav-icon">🚀</span>
-                    <span>Projects</span>
-                </div>
-                <div class="nav-item" data-section="memory">
-                    <span class="nav-icon">🧠</span>
-                    <span>Memory</span>
-                </div>
-                <div class="nav-item" data-section="docs">
-                    <span class="nav-icon">📄</span>
-                    <span>Docs</span>
-                </div>
-                <div class="nav-item" data-section="people">
-                    <span class="nav-icon">👥</span>
-                    <span>People</span>
-                </div>
+                <div class="nav-item" data-section="projects"><span class="nav-icon">🚀</span><span>Projects</span></div>
+                <div class="nav-item" data-section="memory"><span class="nav-icon">🧠</span><span>Memory</span></div>
+                <div class="nav-item" data-section="docs"><span class="nav-icon">📄</span><span>Docs</span></div>
+                <div class="nav-item" data-section="people"><span class="nav-icon">👥</span><span>People</span></div>
             </div>
         </div>
-        
-        <!-- Main Content -->
+        <!-- MAIN CONTENT -->
         <div class="main-content">
-            <!-- Main Section -->
             <div class="content-section active" id="main">
-                <div class="content-header">
-                    <h1 class="content-title">Dashboard</h1>
-                    <div class="status-indicator">
+                <div class="page-header">
+                    <h1 class="page-title">MISSION CONTROL</h1>
+                    <div class="status-bar">
                         <div class="heartbeat"></div>
-                        <span>System Online • Alfred Active</span>
+                        <span>System Online • Alfred Active • Last Updated: 7:45 AM EST</span>
                     </div>
                 </div>
-                <div style="padding: 40px; text-align: center; color: #6B7280;">
-                    Main dashboard content here (KPIs, revenue, pipeline, etc.)
-                </div>
-            </div>
-            
-            <!-- Projects Section -->
-            <div class="content-section" id="projects">
-                <div class="content-header">
-                    <h1 class="content-title">Projects</h1>
-                    <div class="status-indicator">
-                        <span style="color: #4ABDE8; font-weight: 600;">8 Active Projects</span>
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">ALFRED STATUS</span>
+                            <span class="card-badge badge-green">ONLINE</span>
+                        </div>
+                        <div class="status-row"><span class="status-label">Mode</span><span class="status-value green">Observation</span></div>
+                        <div class="status-row"><span class="status-label">Model</span><span class="status-value">GPT-4o-mini</span></div>
+                        <div class="status-row"><span class="status-label">Provider</span><span class="status-value">OpenAI</span></div>
+                        <div class="status-row"><span class="status-label">Sessions</span><span class="status-value">1 active</span></div>
+                        <div class="status-row"><span class="status-label">API Spend MTD</span><span class="status-value blue">$0.20 / $120</span></div>
+                        <div class="status-row"><span class="status-label">Daily Burn Rate</span><span class="status-value">~$1/day</span></div>
+                        <div class="status-row"><span class="status-label">Projected MTD</span><span class="status-value green">$28</span></div>
+                        <div class="status-row"><span class="status-label">Last Heartbeat</span><span class="status-value">2m ago</span></div>
+                        <div class="status-row"><span class="status-label">Council Advisors</span><span class="status-value blue">9 live (Ledger added)</span></div>
+                        <div class="status-row"><span class="status-label">Jonathan's Focus</span><span class="status-value orange">Sprint 1 + Tom training</span></div>
                     </div>
-                </div>
-                
-                <!-- Summary Stats -->
-                <div class="projects-summary">
-                    <div class="summary-card">
-                        <div class="summary-label">Total Projects</div>
-                        <div class="summary-value">8</div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">REVENUE KPIs</span>
+                            <span class="card-badge badge-blue">LIVE</span>
+                        </div>
+                        <div class="kpi-grid">
+                            <div class="kpi-box">
+                                <div class="kpi-label">Response Rate (Feb MTD)</div>
+                                <div class="kpi-value orange">0.91%</div>
+                                <div class="kpi-sub red">↓ from Oct 1.82%</div>
+                            </div>
+                            <div class="kpi-box">
+                                <div class="kpi-label">Ratifications</div>
+                                <div class="kpi-value green">6</div>
+                                <div class="kpi-sub">6 ratified MTD</div>
+                            </div>
+                            <div class="kpi-box">
+                                <div class="kpi-label">Pipeline</div>
+                                <div class="kpi-value blue">5</div>
+                                <div class="kpi-sub">Active deals moving forward</div>
+                            </div>
+                            <div class="kpi-box">
+                                <div class="kpi-label">Off-Markets MTD</div>
+                                <div class="kpi-value green">130</div>
+                                <div class="kpi-sub green">Target: 200/mo (65% there)</div>
+                            </div>
+                            <div class="kpi-box">
+                                <div class="kpi-label">Conversion (Lifetime)</div>
+                                <div class="kpi-value">20:1</div>
+                                <div class="kpi-sub">Industry standard</div>
+                            </div>
+                            <div class="kpi-box">
+                                <div class="kpi-label">Target Goal</div>
+                                <div class="kpi-value blue">10</div>
+                                <div class="kpi-sub">Deals/month</div>
+                            </div>
+                            <div class="kpi-box">
+                                <div class="kpi-label">Projected Revenue (Feb)</div>
+                                <div class="kpi-value green">$103,800</div>
+                                <div class="kpi-sub">6 ratified × $17.3K avg</div>
+                            </div>
+                            <div class="kpi-box">
+                                <div class="kpi-label">Cash Collected (Feb Projected)</div>
+                                <div class="kpi-value green">$64,600</div>
+                                <div class="kpi-sub orange">Lusby moved to March</div>
+                            </div>
+                            <div class="kpi-box">
+                                <div class="kpi-label">Cash Collected (YTD)</div>
+                                <div class="kpi-value">TBD</div>
+                                <div class="kpi-sub">2026 total</div>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+                            <div class="kpi-box">
+                                <div class="kpi-label">Closed Deals (Feb)</div>
+                                <div class="kpi-value green">4</div>
+                                <div class="kpi-sub">Closed this month</div>
+                            </div>
+                            <div class="kpi-box">
+                                <div class="kpi-label">Closed Deals (YTD)</div>
+                                <div class="kpi-value green">6</div>
+                                <div class="kpi-sub">Jan: 2, Feb: 4</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="summary-card">
-                        <div class="summary-label">In Progress</div>
-                        <div class="summary-value" style="color: #3B82F6;">2</div>
-                    </div>
-                    <div class="summary-card">
-                        <div class="summary-label">Live</div>
-                        <div class="summary-value" style="color: #22C55E;">2</div>
-                    </div>
-                    <div class="summary-card">
-                        <div class="summary-label">Queued</div>
-                        <div class="summary-value" style="color: #F59E0B;">4</div>
-                    </div>
-                </div>
-                
-                <!-- Projects Grid -->
-                <div class="projects-grid">
-                    <!-- SC Sprint 1 -->
-                    <div class="project-card">
-                        <div class="project-header">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-title">LIVE ACTIVITY</span>
+                            <span class="card-badge badge-red">REAL-TIME</span>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot dot-green"></div>
                             <div>
-                                <div class="project-title">SC SPRINT 1</div>
-                            </div>
-                            <span class="project-status status-in-progress">IN PROGRESS</span>
-                        </div>
-                        <div class="project-meta">
-                            <div class="project-meta-item">
-                                <span>📅</span>
-                                <span>Week 1: Feb 17-18</span>
+                                <div class="activity-text">🎉 Deal #5 ratified — $86.5K projected February revenue</div>
+                                <div class="activity-time">Just now</div>
                             </div>
                         </div>
-                        <div class="project-description">
-                            Scale from 67 to 200 off-markets/month. Week 1 focus: spam audit, attribution system, dormant purge, send rate increases.
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail-row">
-                                <span class="detail-label">Goal:</span>
-                                <span class="detail-value">200 off-markets/month</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Current:</span>
-                                <span class="detail-value">130 MTD (65% to target)</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Target:</span>
-                                <span class="detail-value">70K texts/week by Week 8</span>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="project-tag tag-revenue">Revenue</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Mission Control -->
-                    <div class="project-card">
-                        <div class="project-header">
+                        <div class="activity-item">
+                            <div class="activity-dot dot-green"></div>
                             <div>
-                                <div class="project-title">MISSION CONTROL</div>
-                            </div>
-                            <span class="project-status status-live">LIVE</span>
-                        </div>
-                        <div class="project-meta">
-                            <div class="project-meta-item">
-                                <span>🌐</span>
-                                <span>GitHub Pages</span>
+                                <div class="activity-text">Migrated to OpenAI GPT-4o-mini — Anthropic backup only</div>
+                                <div class="activity-time">7:30 AM</div>
                             </div>
                         </div>
-                        <div class="project-description">
-                            Navigation system complete with 9 sections. Revenue KPIs, Task Pipeline, Council, Calendar, Projects, Memory, Docs, People.
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail-row">
-                                <span class="detail-label">Status:</span>
-                                <span class="detail-value">Navigation + 9 sections built</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Deployed:</span>
-                                <span class="detail-value">GitHub Pages live</span>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="project-tag tag-automation">Infra</span>
-                        </div>
-                    </div>
-                    
-                    <!-- YouTube Launch -->
-                    <div class="project-card">
-                        <div class="project-header">
+                        <div class="activity-item">
+                            <div class="activity-dot dot-green"></div>
                             <div>
-                                <div class="project-title">YOUTUBE LAUNCH</div>
+                                <div class="activity-text">Highest ROI Analysis delivered for mastermind</div>
+                                <div class="activity-time">2m ago</div>
                             </div>
-                            <span class="project-status status-queued">QUEUED</span>
-                        </div>
-                        <div class="project-meta">
-                            <div class="project-meta-item">
-                                <span>📺</span>
-                                <span>Primary ministry platform</span>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            Longform Bible + Business content. "Building in public" approach. Pastoral-level Bible knowledge + real business results.
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail-row">
-                                <span class="detail-label">Platform:</span>
-                                <span class="detail-value">Primary ministry platform</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Angle:</span>
-                                <span class="detail-value">Building in public, not lecturing</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Next:</span>
-                                <span class="detail-value">Research 4 creators, Episode 1 outline</span>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="project-tag tag-brand">Brand</span>
                         </div>
                     </div>
-                    
-                    <!-- Council Automation -->
-                    <div class="project-card">
-                        <div class="project-header">
-                            <div>
-                                <div class="project-title">COUNCIL AUTOMATION</div>
-                            </div>
-                            <span class="project-status status-live">LIVE</span>
-                        </div>
-                        <div class="project-meta">
-                            <div class="project-meta-item">
-                                <span>🤖</span>
-                                <span>9 advisors configured</span>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            9 named advisors (Shepherd, Atlas, Harbor, Hawk, Shield, Quill, Scout, Ledger, Alfred). 3 digest types automated.
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail-row">
-                                <span class="detail-label">Status:</span>
-                                <span class="detail-value">9 advisors configured</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Schedule:</span>
-                                <span class="detail-value">Daily 7 AM, Friday Board, Sunday Week Ahead</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Go-live:</span>
-                                <span class="detail-value">Feb 17, 2026</span>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="project-tag tag-automation">Automation</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Prospecting Bot -->
-                    <div class="project-card">
-                        <div class="project-header">
-                            <div>
-                                <div class="project-title">PROSPECTING BOT</div>
-                            </div>
-                            <span class="project-status status-queued">QUEUED</span>
-                        </div>
-                        <div class="project-meta">
-                            <div class="project-meta-item">
-                                <span>🤖</span>
-                                <span>Begins next week</span>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            Automated prospecting bot to handle agent outreach, qualification, and relationship nurturing. Launches after SC Sprint 1 complete.
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail-row">
-                                <span class="detail-label">Timeline:</span>
-                                <span class="detail-value">Week of Feb 24 (after SC done)</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Purpose:</span>
-                                <span class="detail-value">Agent outreach automation</span>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="project-tag tag-revenue">Revenue</span>
-                            <span class="project-tag tag-automation">Automation</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Ascension -->
-                    <div class="project-card">
-                        <div class="project-header">
-                            <div>
-                                <div class="project-title">ASCENSION</div>
-                            </div>
-                            <span class="project-status status-queued">QUEUED</span>
-                        </div>
-                        <div class="project-meta">
-                            <div class="project-meta-item">
-                                <span>👑</span>
-                                <span>By Invitation</span>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            Premium by-invitation program for high-performing agents ready to transition to investor-operator model. Elite coaching + deal access.
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail-row">
-                                <span class="detail-label">Format:</span>
-                                <span class="detail-value">By invitation only</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Target:</span>
-                                <span class="detail-value">Elite agents → investor-operators</span>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="project-tag tag-brand">Brand</span>
-                            <span class="project-tag tag-revenue">Revenue</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Agent Community Offer -->
-                    <div class="project-card">
-                        <div class="project-header">
-                            <div>
-                                <div class="project-title">AGENT COMMUNITY OFFER</div>
-                            </div>
-                            <span class="project-status status-queued">QUEUED</span>
-                        </div>
-                        <div class="project-meta">
-                            <div class="project-meta-item">
-                                <span>🤝</span>
-                                <span>Community-driven</span>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            Build agent community around Agent Freedom movement. Training, deal collaboration, eXp recruitment funnel. 25% of content focus.
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail-row">
-                                <span class="detail-label">Purpose:</span>
-                                <span class="detail-value">Agent Freedom movement hub</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Does 3 things:</span>
-                                <span class="detail-value">Deal sources + eXp + authority</span>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="project-tag tag-brand">Brand</span>
-                            <span class="project-tag tag-revenue">Revenue</span>
-                        </div>
-                    </div>
-                    
-                    <!-- AI Side Hustle -->
-                    <div class="project-card">
-                        <div class="project-header">
-                            <div>
-                                <div class="project-title">AI SIDE HUSTLE</div>
-                            </div>
-                            <span class="project-status status-queued">QUEUED</span>
-                        </div>
-                        <div class="project-meta">
-                            <div class="project-meta-item">
-                                <span>💰</span>
-                                <span>Research phase</span>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            Leverage Alfred + spawn agents to deliver Upwork services (data crunching, bot construction, automation) with minimal Jonathan involvement.
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail-row">
-                                <span class="detail-label">Model:</span>
-                                <span class="detail-value">Spawn agents → Upwork services</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Services:</span>
-                                <span class="detail-value">Data, bots, automation</span>
-                            </div>
-                            <div class="project-detail-row">
-                                <span class="detail-label">Jonathan's role:</span>
-                                <span class="detail-value">Minimal (orchestration only)</span>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="project-tag tag-revenue">Revenue</span>
-                            <span class="project-tag tag-research">Research</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Other Sections (Placeholders) -->
-            <div class="content-section" id="tasks">
-                <div class="content-header">
-                    <h1 class="content-title">Tasks</h1>
-                </div>
-                <div style="padding: 40px; text-align: center; color: #6B7280;">
-                    Task pipeline content here
-                </div>
-            </div>
-            
-            <div class="content-section" id="approvals">
-                <div class="content-header">
-                    <h1 class="content-title">Approvals</h1>
-                </div>
-                <div style="padding: 40px; text-align: center; color: #6B7280;">
-                    Content approval queue here
-                </div>
-            </div>
-            
-            <div class="content-section" id="council">
-                <div class="content-header">
-                    <h1 class="content-title">Council</h1>
-                </div>
-                <div style="padding: 40px; text-align: center; color: #6B7280;">
-                    9 advisors + digests here
-                </div>
-            </div>
-            
-            <div class="content-section" id="calendar">
-                <div class="content-header">
-                    <h1 class="content-title">Calendar</h1>
-                </div>
-                <div style="padding: 40px; text-align: center; color: #6B7280;">
-                    Content calendar here
-                </div>
-            </div>
-            
-            <div class="content-section" id="memory">
-                <div class="content-header">
-                    <h1 class="content-title">Memory</h1>
-                </div>
-                <div style="padding: 40px; text-align: center; color: #6B7280;">
-                    Memory files index here
-                </div>
-            </div>
-            
-            <div class="content-section" id="docs">
-                <div class="content-header">
-                    <h1 class="content-title">Docs</h1>
-                </div>
-                <div style="padding: 40px; text-align: center; color: #6B7280;">
-                    Document links here
-                </div>
-            </div>
-            
-            <div class="content-section" id="people">
-                <div class="content-header">
-                    <h1 class="content-title">People</h1>
-                </div>
-                <div style="padding: 40px; text-align: center; color: #6B7280;">
-                    Contacts/team here
                 </div>
             </div>
         </div>
     </div>
-    
-    <script>
-        // Navigation handler
-        document.querySelectorAll('.nav-item').forEach(item => {
-            item.addEventListener('click', function() {
-                // Update active nav item
-                document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
-                this.classList.add('active');
-                
-                // Show corresponding content section
-                const sectionId = this.getAttribute('data-section');
-                document.querySelectorAll('.content-section').forEach(section => {
-                    section.classList.remove('active');
-                });
-                document.getElementById(sectionId).classList.add('active');
-            });
-        });
-    </script>
 </body>
 </html>
