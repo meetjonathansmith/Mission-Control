@@ -1,0 +1,7 @@
+Campaign ID,Launch Date,Market,Campaign Type,Message Variant,Sender Name,Agents Contacted,Texts Sent,Delivery Rate %,Response Rate %,Conversations Generated,Off-Market Deals,Offers Sent,Ratified Deals,Closed Deals,Revenue Generated,Notes
+MD-2026-W01-Initial-V1,2/2/2026,MD,Initial,V1,Tom,22270,33146,97.0,0.78,258,72,20,3,1,"$17,000","Week 1 backfill"
+NOVA-2026-W01-Initial-V2,2/2/2026,NOVA,Initial,V2,Jenny,25055,33146,96.5,0.78,258,72,20,3,1,"$17,000","Week 1 backfill"
+RVA-2026-W01-Initial-V3,2/2/2026,RVA,Initial,V3,Stan,7332,33146,98.0,0.78,258,72,20,3,1,"$17,000","Week 1 backfill"
+MD-2026-W02-FU1-V5,2/9/2026,MD,FU1,V5,Gracie,22270,19888,97.0,1.13,224,42,13,2,0,"$0","Week 2 backfill"
+NOVA-2026-W02-FU1-V7,2/9/2026,NOVA,FU1,V7,Jade,25055,19888,96.5,1.13,224,42,13,2,0,"$0","Week 2 backfill"
+MD-2026-W03-Initial-V12,2/16/2026,MD,Initial,V12,Tom,22270,5192,97.0,0.92,48,16,2,2,0,"$0","Week 3 backfill"

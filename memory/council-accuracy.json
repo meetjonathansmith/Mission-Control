@@ -1,0 +1,135 @@
+{
+  "lastUpdated": "2026-02-15T17:31:00Z",
+  "weekStarting": "2026-02-17",
+  "advisors": {
+    "Shepherd": {
+      "domain": "Kingdom",
+      "totalRecommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "approvedOutcomes": {
+        "worked": 0,
+        "didNotWork": 0
+      },
+      "overrideOutcomes": {
+        "jonathanCorrect": 0,
+        "advisorCorrect": 0
+      },
+      "accuracyRate": null,
+      "notes": []
+    },
+    "Atlas": {
+      "domain": "Health",
+      "totalRecommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "approvedOutcomes": {
+        "worked": 0,
+        "didNotWork": 0
+      },
+      "overrideOutcomes": {
+        "jonathanCorrect": 0,
+        "advisorCorrect": 0
+      },
+      "accuracyRate": null,
+      "notes": []
+    },
+    "Harbor": {
+      "domain": "Family",
+      "totalRecommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "approvedOutcomes": {
+        "worked": 0,
+        "didNotWork": 0
+      },
+      "overrideOutcomes": {
+        "jonathanCorrect": 0,
+        "advisorCorrect": 0
+      },
+      "accuracyRate": null,
+      "notes": []
+    },
+    "Hawk": {
+      "domain": "Deal Flow",
+      "totalRecommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "approvedOutcomes": {
+        "worked": 0,
+        "didNotWork": 0
+      },
+      "overrideOutcomes": {
+        "jonathanCorrect": 0,
+        "advisorCorrect": 0
+      },
+      "accuracyRate": null,
+      "notes": []
+    },
+    "Shield": {
+      "domain": "Operations",
+      "totalRecommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "approvedOutcomes": {
+        "worked": 0,
+        "didNotWork": 0
+      },
+      "overrideOutcomes": {
+        "jonathanCorrect": 0,
+        "advisorCorrect": 0
+      },
+      "accuracyRate": null,
+      "notes": []
+    },
+    "Quill": {
+      "domain": "Content",
+      "totalRecommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "approvedOutcomes": {
+        "worked": 0,
+        "didNotWork": 0
+      },
+      "overrideOutcomes": {
+        "jonathanCorrect": 0,
+        "advisorCorrect": 0
+      },
+      "accuracyRate": null,
+      "notes": []
+    },
+    "Scout": {
+      "domain": "Growth",
+      "totalRecommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "approvedOutcomes": {
+        "worked": 0,
+        "didNotWork": 0
+      },
+      "overrideOutcomes": {
+        "jonathanCorrect": 0,
+        "advisorCorrect": 0
+      },
+      "accuracyRate": null,
+      "notes": []
+    },
+    "Alfred": {
+      "domain": "Chief of Staff",
+      "totalRecommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "approvedOutcomes": {
+        "worked": 0,
+        "didNotWork": 0
+      },
+      "overrideOutcomes": {
+        "jonathanCorrect": 0,
+        "advisorCorrect": 0
+      },
+      "accuracyRate": null,
+      "notes": []
+    }
+  },
+  "weeklyLog": []
+}

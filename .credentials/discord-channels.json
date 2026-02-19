@@ -1,0 +1,25 @@
+{
+  "guildId": "1471976044847431895",
+  "guildName": "Doxa",
+  "councilAdvisors": {
+    "shepherd": "1472278394350866646",
+    "atlas": "1472278399644078234",
+    "harbor": "1472278405130227732",
+    "hawk": "1472278410305867808",
+    "shield": "1472278416039477363",
+    "quill": "1472278421097943226",
+    "scout": "1472278426403737864",
+    "councilDigest": "1472278431440830741"
+  },
+  "categories": {
+    "kingdom": "1472283036728168500",
+    "health": "1472283042952384576",
+    "family": "1472283048988119223",
+    "business": "1472283054671265802",
+    "contentFactory": "1472283060157288529",
+    "alfred": "1472283064951374098"
+  },
+  "createdAt": "2026-02-15T17:08:00Z",
+  "updatedAt": "2026-02-15T17:31:00Z",
+  "notes": "Council advisors: Shepherd, Atlas, Harbor, Hawk, Shield, Quill, Scout (renamed from Compass). Alfred is Chief of Staff."
+}

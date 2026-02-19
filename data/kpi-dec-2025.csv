@@ -1,0 +1,69 @@
+DECEMBER,,,,,,,,
+Week 1,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,"Dec. 01, 2025","Dec. 02, 2025","Dec. 03, 2025","Dec. 04, 2025","Dec. 05, 2025","Dec. 06, 2025","Dec. 07, 2025",
+New texts,"5,851","5,722","7,978","5,416","3,841",,,"28,808"
+Conversations,56,54,87,66,19,,,282
+# of Agents into world,15,22,48,37,13,,,135
+# of On Market Properties,9,5,12,5,3,,,34
+# of Off-Market Properties,8,5,12,6,2,,,33
+# of Offers Sent,1,,2,2,,,,5
+# of Offers Ratified,,,1,2,1,,,4
+# of Deals that didn't sell,,,,1,1,,,1
+# of Deals Closed,,,,,,,,0
+Week 2,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,"Dec. 08, 2025","Dec. 09, 2025","Dec. 10, 2025","Dec. 11, 2025","Dec. 12, 2025","Dec. 13, 2025","Dec. 14, 2025",
+New texts,"5,007","5,815","5,967","5,772","5,209",,,"27,770"
+Conversations,43,59,75,68,59,,,304
+# of Agents into world,20,26,35,39,42,,,162
+# of On Market Properties,4,9,10,15,7,,,45
+# of Off-Market Properties,5,5,10,13,4,,,37
+# of Offers Sent,1,1,3,6,1,,,12
+# of Offers Ratified,,,,,,,,0
+# of Deals that didn't sell,,2,,,,,,2
+# of Deals Closed,,,,,,,,0
+Week 3,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,"Dec. 15, 2025","Dec. 16, 2025","Dec. 17, 2025","Dec. 18, 2025","Dec. 19, 2025","Dec. 20, 2025","Dec. 21, 2025",
+New texts,"6,658","6,778","6,819","6,708","4,499",,,"31,462"
+Conversations,75,86,77,87,48,,,373
+# of Agents into world,51,19,34,36,13,,,
+# of On Market Properties,8,8,11,6,11,,,44
+# of Off-Market Properties,12,3,8,13,5,,,41
+# of Offers Sent,,6,5,5,3,,,19
+# of Offers Ratified,,,,1,,,,1
+# of Deals that didn't sell,2,,,,,,,
+# of Deals Closed,,,,,,,,0
+Week 4,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,"Dec. 22, 2025","Dec. 23, 2025","Dec. 24, 2025","Dec. 25, 2025","Dec. 26, 2025","Dec. 27, 2025","Dec. 28, 2025",
+New texts,"4,445","1,539",,,,,,"5,984"
+Conversations,50,6,,,,,,56
+# of Agents into world,35,3,,,,,,
+# of On Market Properties,2,1,,,,,,3
+# of Off-Market Properties,6,1,,,,,,7
+# of Offers Sent,1,,,,,,,1
+# of Offers Ratified,,,,,,,,0
+# of Deals that didn't sell,,,,,,,,
+# of Deals Closed,,,,,,,,0
+Week 5,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,"Dec. 29, 2025","Dec. 30, 2025","Dec. 31, 2025","Jan. 01, 2026","Jan. 02, 2026","Jan. 03, 2026","Jan. 04, 2026",
+New texts,"4,428","4,997",,,"5,060",,,"14,485"
+Conversations,65,31,,,31,,,127
+# of Agents into world,23,6,,,12,,,
+# of On Market Properties,5,6,,,2,,,13
+# of Off-Market Properties,10,8,,,5,,,23
+# of Offers Sent,2,4,,,,,,6
+# of Offers Ratified,1,,,,,,,1
+# of Deals that didn't sell,,,,,,,,
+# of Deals Closed,,,,,,,,0
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+New Texts,"94,024",,,,,,,
+Conversations,1015,,,,,,,
+Agents added to the world,297,,,,,,,
+# of New Properties,,,,,,,,
+# of Off-Market Properties,125,,,,,,,
+# of Offers Sent,90,,,,,,,
+# of Deals that didn't sell,3,,,,,,,
+# of Signed Deals,6,,,,,,,

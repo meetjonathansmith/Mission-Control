@@ -1,0 +1,14 @@
+# Todoist API Credentials
+# Added: 2026-02-12 09:40 EST
+# Updated: 2026-02-12 09:59 EST
+# Purpose: Task management integration - read/create/update tasks
+
+API Token: ab69bc6c7f8bbe47986d0eef65958662e31e0cda
+
+Previous tokens (replaced):
+- 1697564f2ff798a9d1cccb921b9eb8587df12577 (09:47 EST)
+- 8b6894fe2123035f54d8a861fcbf20da564af0fd (09:40 EST)
+
+---
+
+SECURITY NOTE: This token grants access to Jonathan's Todoist account. Handle with care.

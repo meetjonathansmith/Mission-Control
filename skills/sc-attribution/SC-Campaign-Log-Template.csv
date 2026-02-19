@@ -1,0 +1,4 @@
+Campaign ID,Launch Date,Market,Campaign Type,Message Variant,Sender Name,Agents Contacted,Texts Sent,Delivery Rate %,Response Rate %,Conversations Generated,Off-Market Deals,Offers Sent,Ratified Deals,Closed Deals,Revenue Generated,Notes
+MD-2026-W08-Initial-V1,2026-02-17,MD,Initial,V1,Tom,22270,22270,97.0,4.09,910,68,25,4,2,$34000,Week 8 initial send to Maryland
+NOVA-2026-W08-Initial-V2,2026-02-17,NOVA,Initial,V2,Jenny,25055,25055,96.5,3.81,955,72,27,3,1,$17000,Week 8 initial send to Northern VA
+RVA-2026-W08-Initial-V3,2026-02-17,RVA,Initial,V3,Stan,7332,7332,98.0,9.28,680,52,19,5,2,$34000,Week 8 initial send to Richmond/VA Beach

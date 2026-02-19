@@ -1,0 +1,11 @@
+# Smarter Contact Credentials
+# Added: 2026-02-11 20:56 EST
+# Purpose: Read access for campaign analysis, automation building, monitoring
+
+Username: me@meetjonathan.co
+Password: Christ5:214os
+URL: app.smartercontact.com
+
+---
+
+SECURITY NOTE: Change password after initial setup or create dedicated API/sub-account for ongoing monitoring.

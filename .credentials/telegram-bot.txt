@@ -1,0 +1,9 @@
+# Telegram Bot Token
+# Added: 2026-02-12 10:34 EST
+# Purpose: Telegram bot integration for OpenClaw
+
+Bot Token: 8482591633:AAFFxsWXKpKR1Fo9gCSpMCFaDcNaM_VK9MM
+
+---
+
+SECURITY NOTE: This token grants control over the Telegram bot. Handle with care.

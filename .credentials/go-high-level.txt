@@ -1,0 +1,19 @@
+# Go High Level (Deal Generator) Credentials
+# Added: 2026-02-11 21:02 EST
+# Updated: 2026-02-11 21:14 EST
+# Purpose: Map lead import workflow, build SC→DG automation, monitoring
+
+Username: me@meetjonathan.co
+Password: Maverick$mith2515
+URL: app.futureproofinvestor.com
+
+API Key (Read-Only): pit-561999d0-7c23-443f-9ffe-ac205771551f
+Added: 2026-02-11 21:14 EST
+
+Sub-accounts:
+- Doxa Property Ventures (DPV) - Ellicott City, MD
+- DPV - Ellicott City, MD
+
+---
+
+SECURITY NOTE: Change password after initial setup or create dedicated API/sub-account for ongoing monitoring.

@@ -1,0 +1,98 @@
+{
+  "advisors": {
+    "shepherd": {
+      "name": "The Shepherd",
+      "domain": "Kingdom",
+      "total_recommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "outcomes_correct": 0,
+      "outcomes_incorrect": 0,
+      "override_correct": 0,
+      "override_incorrect": 0,
+      "accuracy_rate": null,
+      "last_updated": "2026-02-14"
+    },
+    "commander": {
+      "name": "The Commander",
+      "domain": "Health",
+      "total_recommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "outcomes_correct": 0,
+      "outcomes_incorrect": 0,
+      "override_correct": 0,
+      "override_incorrect": 0,
+      "accuracy_rate": null,
+      "last_updated": "2026-02-14"
+    },
+    "anchor": {
+      "name": "The Anchor",
+      "domain": "Family",
+      "total_recommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "outcomes_correct": 0,
+      "outcomes_incorrect": 0,
+      "override_correct": 0,
+      "override_incorrect": 0,
+      "accuracy_rate": null,
+      "last_updated": "2026-02-14"
+    },
+    "dealflow": {
+      "name": "DealFlowStrategist",
+      "domain": "Business",
+      "total_recommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "outcomes_correct": 0,
+      "outcomes_incorrect": 0,
+      "override_correct": 0,
+      "override_incorrect": 0,
+      "accuracy_rate": null,
+      "last_updated": "2026-02-14"
+    },
+    "operations": {
+      "name": "OperationsAdvisor",
+      "domain": "Business",
+      "total_recommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "outcomes_correct": 0,
+      "outcomes_incorrect": 0,
+      "override_correct": 0,
+      "override_incorrect": 0,
+      "accuracy_rate": null,
+      "last_updated": "2026-02-14"
+    },
+    "content": {
+      "name": "ContentArchitect",
+      "domain": "Business",
+      "total_recommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "outcomes_correct": 0,
+      "outcomes_incorrect": 0,
+      "override_correct": 0,
+      "override_incorrect": 0,
+      "accuracy_rate": null,
+      "last_updated": "2026-02-14"
+    },
+    "growth": {
+      "name": "GrowthArchitect",
+      "domain": "Business",
+      "total_recommendations": 0,
+      "approved": 0,
+      "overridden": 0,
+      "outcomes_correct": 0,
+      "outcomes_incorrect": 0,
+      "override_correct": 0,
+      "override_incorrect": 0,
+      "accuracy_rate": null,
+      "last_updated": "2026-02-14"
+    }
+  },
+  "weekly_accuracy": [],
+  "overrides_log": [],
+  "notes": "Tracks advisor recommendation accuracy. Updated when Jonathan provides feedback on outcomes."
+}

@@ -1,0 +1,11 @@
+Deal Name,Income Source,Income Amount,Ratified Date,Expected Close,Status,Actual Close Date,Net Profit,Notes
+874 Jefferson,Assignment,$16000.00,,1/23/2026,Closed,1/23/2026,$7950.00,
+N School,Assignment,$11000.00,,2/6/2026,Closed,2/6/2026,$10950.00,
+Anderson,Assignment,$3000.00,,1/28/2026,Closed,1/28/2026,$2950.00,
+Newbourne,Assignment,$6500.00,,2/10/2026,Closed,2/10/2026,$6450.00,
+Poplar,Assignment,$3000.00,,2/27/2026,Pending,,$2350.00,
+Kayak,Marketing fee,$10000.00,,2/27/2026,Inspections,,$9950.00,
+Gunther,Retail,$120000.00,,2/27/2026,Pending,,$60000.00,Big retail deal
+Lake,Assignment,$10000.00,,2/27/2026,Inspections,,$0.00,
+Bosun,Assignment,$10000.00,,2/27/2026,Couldn't Sell,,$5000.00,Deal fell through
+Lusby,Assignment,$30000.00,,3/12/2026,Inspections,,$23950.00,Expected close 3/12

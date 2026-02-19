@@ -1,0 +1,84 @@
+,,,,,,,,
+Week 1,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,"Nov. 03, 2025","Nov. 04, 2025","Nov. 05, 2025","Nov. 06, 2025","Nov. 07, 2025","Nov. 08, 2025","Nov. 09, 2025",
+New texts,"2,219",N/A,"4,720","4,829","4,801",,,"16,569"
+Conversations,107,32,22,30,23,,,214
+# of Agents into world,4,,4,3,3,,,
+# of On Market Properties,7,,0,2,0,,,9
+# of Off-Market Properties,11,5,7,8,6,,,37
+# of Offers Sent,5,2,2,0,0,,,9
+# of Offers Ratified,,,,,,,,0
+# of Buyers Added,,,,,,,,
+# of Deals that didn't sell,,,,,,,,
+# of Deals Closed,,,,,,,,0
+,,,,,,,,
+Week 2,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,"Nov. 10, 2025","Nov. 11, 2025","Nov. 12, 2025","Nov. 13, 2025","Nov.14, 2025","Nov. 15, 2025","Nov.. 16, 2025",
+New texts,"1,131","10,739","8,676","7,295","3,559",,,"31,400"
+Conversations,16,19,60,33,5,,,133
+# of Agents into world,2,9,30,71,,,,
+# of On Market Properties,0,4,6,12,5,,,27
+# of Off-Market Properties,6,8,8,12,8,,,42
+# of Offers Sent,3,3,4,3,3,,,16
+# of Offers Ratified,,,1,,,,,1
+# of Buyers Added,,,,,,,,
+# of Deals that didn't sell,,,,,,,,
+# of Deals Closed,,,,,,,,0
+Week 3,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,"Nov. 17, 2025","Nov. 18, 2025","Nov. 19, 2025","Nov. 20, 2025","Nov. 21, 2025","Nov. 22, 2025","Oct. 23, 2025",
+New texts,"9,086","9,018","6,873","2,612","7,639",,,"35,228"
+Conversations,48,45,59,81,63,,,296
+# of Agents into world,20,23,18,7,15,,,
+# of On Market Properties,11,3,8,7,9,,,38
+# of Off-Market Properties,19,9,6,3,0,,,37
+# of Offers Sent,2,3,0,4,1,,,10
+# of Offers Ratified,,,,3,1,,,4
+# of Buyers Added,,,2,,,,,
+# of Deals that didn't sell,,,,,,,,
+# of Deals Closed,,,,,,,,0
+Week 4,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,"Nov. 24, 2025","Nov. 25, 2025",Nov. 26 2025,"Nov. 27, 2025","Nov. 28, 2025","Nov. 29, 2025","Oct. 30, 2025",
+New texts,"6,824","5,516",,,,,,"12,340"
+Conversations,61,28,,,,,,89
+# of Agents into world,9,13,,,,,,
+# of On Market Properties,11,11,,,,,,22
+# of Off-Market Properties,14,3,,,,,,17
+# of Offers Sent,,,,,,,,0
+# of Offers Ratified,1,,,,,,,1
+# of Buyers Added,,1,,,,,,
+# of Deals that didn't sell,,,,,,,,
+# of Deals Closed,,,,,,,,0
+Week 5,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Total
+Date,,,,,,,,
+New texts,,,,,,,,0
+Conversations,,,,,,,,0
+# of Agents into world,,,,,,,,
+# of On Market Properties,,,,,,,,0
+# of Off-Market Properties,,,,,,,,0
+# of Offers Sent,,,,,,,,0
+# of Offers Ratified,,,,,,,,0
+# of Buyers Added,,,,,,,,
+# of Deals that didn't sell,,,,,,,,
+# of Deals Closed,,,,,,,,0
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+New Texts,"95,537",,,Ratios,,,,
+Conversations,732,,,Texts to deal ratio,10000/1,,,
+# of New Properties,,,,Offers to contract ratio,5/1,,,
+# of Off-Market Properties,124,,,Offers to deal ratio,6/1,,,
+# of Offers Sent,105,,,Texts to lead ratio,400/1,,,
+# of Deals that didn't sell,0,,,,,,,
+# of Signed Deals,5,,,,,,,
+# of Deals Closed,0,,,,,,,
+,,,,"***Every 10,000 texts → 25 leads → 6 offers → 1 contract → ~1 closing.",,,,
+,,,,,,,,
+,,,,10 deal/mo model,,,,
+,,,,"125,000–135,000 texts/month",,,,
+,,,,"4,800–5,200 texts/day",,,,
+,,,,309–330 off-market leads/month,,,,
+,,,,70–75 offers/month,,,,
+,,,,14–15 contracts/month,,,,
+,,,,10 closed deals/month,,,,

@@ -1,0 +1,14 @@
+# Credentials and secrets
+memory/credentials/
+*.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+.cache/
