@@ -81,6 +81,44 @@
         .pipeline-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
         .pipeline-title { font-size: 16px; font-weight: 700; color: #EF4444; letter-spacing: 0.5px; }
         .pipeline-count { font-size: 13px; font-weight: 600; color: #22C55E; }
+        .pipeline-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+        .pipeline-col-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 2px solid #E5E7EB; }
+        .col-title { font-size: 12px; font-weight: 700; letter-spacing: 0.5px; }
+        .col-title.orange { color: #F59E0B; }
+        .col-title.blue { color: #3B82F6; }
+        .col-title.cyan { color: #06B6D4; }
+        .col-title.red { color: #EF4444; }
+        .col-title.green { color: #22C55E; }
+        .col-count { font-size: 11px; font-weight: 600; color: #6B7280; }
+        .task-card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 6px; padding: 10px; margin-bottom: 8px; }
+        .task-name { font-size: 12px; font-weight: 600; color: #1A1A2E; margin-bottom: 4px; }
+        .task-desc { font-size: 11px; color: #6B7280; margin-bottom: 6px; }
+        .task-tag { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: 700; letter-spacing: 0.3px; }
+        .tag-content { background: #DBEAFE; color: #1E40AF; }
+        .tag-revenue { background: #D1FAE5; color: #065F46; }
+        .tag-infra { background: #FEF3C7; color: #92400E; }
+
+        /* ===== COMING SOON ===== */
+        .coming-soon { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 20px; text-align: center; }
+        .coming-soon-icon { font-size: 48px; margin-bottom: 16px; opacity: 0.5; }
+        .coming-soon-text { font-size: 18px; font-weight: 700; color: #1A1A2E; margin-bottom: 8px; }
+        .coming-soon-sub { font-size: 13px; color: #6B7280; max-width: 400px; }
+
+        /* ===== ADVISORS LIST ===== */
+        .advisors-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+        .advisor-item { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 8px; padding: 16px; font-size: 13px; color: #1A1A2E; }
+
+        /* ===== PROJECTS ===== */
+        .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .project-card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 8px; padding: 16px; }
+        .project-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .project-name { font-size: 14px; font-weight: 700; color: #1A1A2E; }
+        .project-status { padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; }
+        .status-active { background: #D1FAE5; color: #065F46; }
+        .status-planning { background: #DBEAFE; color: #1E40AF; }
+        .status-blocked { background: #FEE2E2; color: #991B1B; }
+        .project-desc { font-size: 12px; color: #6B7280; margin-bottom: 8px; }
+        .project-meta { display: flex; gap: 12px; font-size: 11px; color: #9CA3AF; }
     </style>
 </head>
 <body>
@@ -286,6 +324,77 @@
                     <div class="status-bar"><span style="color:#9CA3AF">Documentation - Coming Soon</span></div>
                 </div>
                 <div class="coming-soon"><div class="coming-soon-icon">📄</div><div class="coming-soon-text">Key Docs — Coming Soon</div><div class="coming-soon-sub">Links to SC Operations Manual, Tom Quick Reference, Brand Bible.</div></div>
+            </div>
+            <div class="content-section" id="projects">
+                <div class="page-header"><h1 class="page-title">Projects</h1>
+                    <div class="status-bar"><span style="color:#9CA3AF">8 Active Projects</span></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-name">Mission Control Dashboard</div>
+                            <span class="project-status status-active">ACTIVE</span>
+                        </div>
+                        <div class="project-desc">Real-time operating system dashboard with KPIs, Council integration, and task management</div>
+                        <div class="project-meta"><span>Owner: Alfred</span><span>Updated: Feb 19</span></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-name">SC Scale to 200/Month</div>
+                            <span class="project-status status-active">ACTIVE</span>
+                        </div>
+                        <div class="project-desc">Scale off-market submissions from 130 to 200/month via volume optimization</div>
+                        <div class="project-meta"><span>Owner: Hawk</span><span>Target: Q1 2026</span></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-name">Agent Freedom Launch</div>
+                            <span class="project-status status-active">ACTIVE</span>
+                        </div>
+                        <div class="project-desc">Launch Agent Freedom as strategic brand pillar (25% content mix)</div>
+                        <div class="project-meta"><span>Owner: Quill</span><span>Launch: Feb 2026</span></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-name">Council System V2</div>
+                            <span class="project-status status-active">ACTIVE</span>
+                        </div>
+                        <div class="project-desc">9 named advisors with automated digests and accuracy tracking</div>
+                        <div class="project-meta"><span>Owner: Alfred</span><span>Launched: Feb 15</span></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-name">Harbor (Family Advisor)</div>
+                            <span class="project-status status-planning">PLANNING</span>
+                        </div>
+                        <div class="project-desc">WhatsApp-based family advisor with calendar integration and work/life balance monitoring</div>
+                        <div class="project-meta"><span>Owner: Harbor</span><span>Status: Spec complete</span></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-name">Dispatch (Email + Calendar)</div>
+                            <span class="project-status status-blocked">BLOCKED</span>
+                        </div>
+                        <div class="project-desc">Email triage and calendar management for DOXA and Retail accounts</div>
+                        <div class="project-meta"><span>Owner: Dispatch</span><span>Blocked: App passwords</span></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-name">YouTube Ministry Platform</div>
+                            <span class="project-status status-planning">PLANNING</span>
+                        </div>
+                        <div class="project-desc">Longform Bible + Business content with building-in-public approach</div>
+                        <div class="project-meta"><span>Owner: Quill</span><span>Target: Q1 2026</span></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-name">API Cost Optimization</div>
+                            <span class="project-status status-active">ACTIVE</span>
+                        </div>
+                        <div class="project-desc">Reduce API costs 45-61% via Brains & Muscles routing model</div>
+                        <div class="project-meta"><span>Owner: Alfred</span><span>Target: $120/mo</span></div>
+                    </div>
+                </div>
             </div>
             <div class="content-section" id="people">
                 <div class="page-header"><h1 class="page-title">People</h1>
