@@ -125,6 +125,36 @@
         .status-blocked { background: #FEE2E2; color: #991B1B; }
         .project-desc { font-size: 12px; color: #6B7280; margin-bottom: 8px; }
         .project-meta { display: flex; gap: 12px; font-size: 11px; color: #9CA3AF; }
+
+        /* ===== CALENDAR ===== */
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin-bottom: 24px; }
+        .day-card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 8px; padding: 12px; min-height: 200px; }
+        .day-card.day-rest { background: #F9FAFB; opacity: 0.7; }
+        .day-header { margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #E5E7EB; }
+        .day-name { font-size: 14px; font-weight: 700; color: #1A1A2E; margin-bottom: 4px; }
+        .day-pillar { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; padding: 2px 6px; border-radius: 4px; display: inline-block; }
+        .pillar-christ { background: #DBEAFE; color: #1E40AF; }
+        .pillar-climb { background: #D1FAE5; color: #065F46; }
+        .pillar-freedom { background: #FEF3C7; color: #92400E; }
+        .pillar-tactical { background: #E0E7FF; color: #3730A3; }
+        .pillar-leadership { background: #FCE7F3; color: #9F1239; }
+        .pillar-rest { background: #F3F4F6; color: #6B7280; }
+        .post-item { background: #F9FAFB; border-radius: 6px; padding: 8px; margin-bottom: 8px; }
+        .post-platform { font-size: 10px; font-weight: 600; color: #6B7280; margin-bottom: 4px; }
+        .post-title { font-size: 12px; font-weight: 600; color: #1A1A2E; margin-bottom: 4px; }
+        .post-status { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; display: inline-block; }
+        .status-published { background: #D1FAE5; color: #065F46; }
+        .status-scheduled { background: #DBEAFE; color: #1E40AF; }
+        .status-draft { background: #FEF3C7; color: #92400E; }
+        .status-queued { background: #FEE2E2; color: #991B1B; }
+        .rest-message { font-size: 11px; color: #6B7280; font-style: italic; text-align: center; padding: 20px 0; }
+        .calendar-section { margin-top: 24px; }
+        .section-header { margin-bottom: 12px; }
+        .section-title { font-size: 16px; font-weight: 700; color: #1A1A2E; }
+        .youtube-item { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 8px; padding: 16px; border-left: 3px solid #EF4444; }
+        .video-title { font-size: 14px; font-weight: 700; color: #1A1A2E; margin-bottom: 4px; }
+        .video-desc { font-size: 12px; color: #6B7280; margin-bottom: 8px; }
+        .video-status { font-size: 11px; font-weight: 600; color: #EF4444; }
     </style>
 </head>
 <body>
@@ -486,10 +516,120 @@
                 </div>
             </div>
             <div class="content-section" id="calendar">
-                <div class="page-header"><h1 class="page-title">Calendar</h1>
-                    <div class="status-bar"><span style="color:#9CA3AF">Weekly Content Calendar</span></div>
+                <div class="page-header">
+                    <h1 class="page-title">Content Calendar</h1>
+                    <div class="status-bar"><span style="color:#22C55E">Week 1 Locked</span></div>
                 </div>
-                <div class="coming-soon"><div class="coming-soon-icon">📅</div><div class="coming-soon-text">Content Calendar — Coming Soon</div><div class="coming-soon-sub">Schedule for Instagram, LinkedIn, TikTok, YouTube.</div></div>
+                <div class="calendar-grid">
+                    <div class="day-card">
+                        <div class="day-header">
+                            <div class="day-name">Monday</div>
+                            <div class="day-pillar pillar-christ">Life In Christ</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📘 LinkedIn</div>
+                            <div class="post-title">Post #1</div>
+                            <div class="post-status status-published">Published</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📸 Instagram</div>
+                            <div class="post-title">Reel - Faith + Business</div>
+                            <div class="post-status status-scheduled">Scheduled 6 PM</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-header">
+                            <div class="day-name">Tuesday</div>
+                            <div class="day-pillar pillar-climb">Documenting The Climb</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📘 LinkedIn</div>
+                            <div class="post-title">Post #2</div>
+                            <div class="post-status status-published">Published</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📸 Instagram</div>
+                            <div class="post-title">SC Campaign Update</div>
+                            <div class="post-status status-scheduled">Scheduled 6 PM</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-header">
+                            <div class="day-name">Wednesday</div>
+                            <div class="day-pillar pillar-freedom">Agent Freedom</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📘 LinkedIn</div>
+                            <div class="post-title">Post #3 - Agent Freedom</div>
+                            <div class="post-status status-published">Published</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📸 Instagram</div>
+                            <div class="post-title">Agent Freedom Manifesto</div>
+                            <div class="post-status status-scheduled">Scheduled 6 PM</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-header">
+                            <div class="day-name">Thursday</div>
+                            <div class="day-pillar pillar-tactical">Tactical Game Plan</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📸 Instagram</div>
+                            <div class="post-title">Off-Market Strategy</div>
+                            <div class="post-status status-draft">Draft Ready</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">🎬 TikTok</div>
+                            <div class="post-title">Quick Win Tip</div>
+                            <div class="post-status status-draft">Draft Ready</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-header">
+                            <div class="day-name">Friday</div>
+                            <div class="day-pillar pillar-leadership">Leadership & Life</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📸 Instagram</div>
+                            <div class="post-title">Starting Over in 40s</div>
+                            <div class="post-status status-draft">Draft Ready</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📘 LinkedIn</div>
+                            <div class="post-title">Leadership Lesson</div>
+                            <div class="post-status status-draft">Draft Ready</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-header">
+                            <div class="day-name">Saturday</div>
+                            <div class="day-pillar pillar-freedom">Agent Freedom</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📸 Instagram</div>
+                            <div class="post-title">Weekend Contrarian Take</div>
+                            <div class="post-status status-draft">Draft Ready</div>
+                        </div>
+                    </div>
+                    <div class="day-card day-rest">
+                        <div class="day-header">
+                            <div class="day-name">Sunday</div>
+                            <div class="day-pillar pillar-rest">Sabbath Rest</div>
+                        </div>
+                        <div class="rest-message">No content scheduled - day of rest per Shepherd mandate</div>
+                    </div>
+                </div>
+                <div class="calendar-section">
+                    <div class="section-header">
+                        <span class="section-title">YouTube Pipeline</span>
+                    </div>
+                    <div class="youtube-item">
+                        <div class="video-title">Episode 1: The AI Council System</div>
+                        <div class="video-desc">How 9 AI advisors run DOXA's $100K/month operation</div>
+                        <div class="video-status status-queued">Script needed - Quill research pending</div>
+                    </div>
+                </div>
             </div>
             <div class="content-section" id="memory">
                 <div class="page-header"><h1 class="page-title">Memory</h1>
