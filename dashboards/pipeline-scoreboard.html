@@ -193,23 +193,12 @@
     </div>
 
     <script>
-        const GHL_TOKEN = 'pit-34f02155-ae81-4f06-95aa-0bcb4239518d';
-        const LOCATION_ID = 'ZsNsqaZULO6gGQhingYC';
-        const PIPELINE_ID = 'gkBz7GpqzEUAsZVfWBu7';
-
         let previousData = null;
 
         async function fetchPipelineData() {
             try {
-                // Fetch all opportunities from the pipeline
-                const response = await fetch(`https://services.leadconnectorhq.com/opportunities/search?location_id=${LOCATION_ID}&pipelineId=${PIPELINE_ID}&limit=1000`, {
-                    method: 'GET',
-                    headers: {
-                        'Authorization': `Bearer ${GHL_TOKEN}`,
-                        'Version': '2021-07-28'
-                    }
-                });
-
+                // Fetch from pre-generated JSON (updated hourly by GitHub Actions)
+                const response = await fetch('./data/pipeline-data.json');
                 const data = await response.json();
                 return data.opportunities || [];
             } catch (error) {

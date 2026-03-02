@@ -1,0 +1,6271 @@
+{
+  "opportunities": [
+    {
+      "id": "7d7pINC95PAm3zgyWWQp",
+      "name": "Robert Watts",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "pipelineStageUId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T18:21:32.287Z",
+      "lastStageChangeAt": "2026-03-02T18:21:32.288Z",
+      "createdAt": "2026-03-02T18:21:32.287Z",
+      "updatedAt": "2026-03-02T18:21:32.287Z",
+      "contactId": "Cz9VX1psMMZE74umqFPM",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "7d7pINC95PAm3zgyWWQp",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "Cz9VX1psMMZE74umqFPM",
+          "fullName": "Robert Watts",
+          "contactName": "Robert Watts",
+          "companyName": null,
+          "email": "bobwattsi@comcast.net",
+          "phone": "+18048743304",
+          "tags": [
+            "tier 1"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "Cz9VX1psMMZE74umqFPM",
+        "name": "Robert Watts",
+        "companyName": null,
+        "email": "bobwattsi@comcast.net",
+        "phone": "+18048743304",
+        "tags": [
+          "tier 1"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772475692287,
+        "Cz9VX1psMMZE74umqFPM"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "V4J2bh5xCf8953umyuyC",
+      "name": "Frank Besosa",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "pipelineStageUId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T18:07:20.631Z",
+      "lastStageChangeAt": "2026-03-02T18:07:20.631Z",
+      "createdAt": "2026-03-02T18:07:20.631Z",
+      "updatedAt": "2026-03-02T18:07:20.631Z",
+      "contactId": "8IaNw5QWUHJ6rTywj9e0",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "V4J2bh5xCf8953umyuyC",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "8IaNw5QWUHJ6rTywj9e0",
+          "fullName": "Frank Besosa",
+          "contactName": "Frank Besosa",
+          "companyName": null,
+          "email": "frankb40@comcast.net",
+          "phone": "+18045036042",
+          "tags": [
+            "tier 1",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "8IaNw5QWUHJ6rTywj9e0",
+        "name": "Frank Besosa",
+        "companyName": null,
+        "email": "frankb40@comcast.net",
+        "phone": "+18045036042",
+        "tags": [
+          "tier 1",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772474840631,
+        "8IaNw5QWUHJ6rTywj9e0"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "vBMJUTKqgQACMedvsPE7",
+      "name": "1809 Sussex St, Richmond, VA 23223",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "pipelineStageUId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T18:06:37.902Z",
+      "lastStageChangeAt": "2026-03-02T18:06:37.902Z",
+      "createdAt": "2026-03-02T18:06:37.902Z",
+      "updatedAt": "2026-03-02T18:06:37.902Z",
+      "indexVersion": 1,
+      "contactId": "8IaNw5QWUHJ6rTywj9e0",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "vBMJUTKqgQACMedvsPE7",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "8IaNw5QWUHJ6rTywj9e0",
+          "fullName": "Frank Besosa",
+          "contactName": "Frank Besosa",
+          "companyName": null,
+          "email": "frankb40@comcast.net",
+          "phone": "+18045036042",
+          "tags": [
+            "tier 1",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "8IaNw5QWUHJ6rTywj9e0",
+        "name": "Frank Besosa",
+        "companyName": null,
+        "email": "frankb40@comcast.net",
+        "phone": "+18045036042",
+        "tags": [
+          "tier 1",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772474797902,
+        "8IaNw5QWUHJ6rTywj9e0"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "CvriPuhtxHi8LCTOFKBn",
+      "name": "8612 Village Way, Alexandria, VA 22309",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "pipelineStageUId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T17:31:31.662Z",
+      "lastStageChangeAt": "2026-03-02T17:31:31.662Z",
+      "createdAt": "2026-03-02T17:31:31.661Z",
+      "updatedAt": "2026-03-02T17:31:31.661Z",
+      "indexVersion": 1,
+      "contactId": "DxFJuodOgdVBF5C42ZxJ",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "CvriPuhtxHi8LCTOFKBn",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "DxFJuodOgdVBF5C42ZxJ",
+          "fullName": "Chuck Senatre",
+          "contactName": "Chuck Senatre",
+          "companyName": null,
+          "email": null,
+          "phone": "+17035875525",
+          "tags": [
+            "tier 1"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "DxFJuodOgdVBF5C42ZxJ",
+        "name": "Chuck Senatre",
+        "companyName": null,
+        "phone": "+17035875525",
+        "tags": [
+          "tier 1"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772472691661,
+        "DxFJuodOgdVBF5C42ZxJ"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "xmCzA48b1F4XseohE4U9",
+      "name": "Chuck Senatre",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "pipelineStageUId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T17:31:26.295Z",
+      "lastStageChangeAt": "2026-03-02T17:31:26.295Z",
+      "createdAt": "2026-03-02T17:31:26.295Z",
+      "updatedAt": "2026-03-02T17:31:26.295Z",
+      "contactId": "DxFJuodOgdVBF5C42ZxJ",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "xmCzA48b1F4XseohE4U9",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "DxFJuodOgdVBF5C42ZxJ",
+          "fullName": "Chuck Senatre",
+          "contactName": "Chuck Senatre",
+          "companyName": null,
+          "email": null,
+          "phone": "+17035875525",
+          "tags": [
+            "tier 1"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "DxFJuodOgdVBF5C42ZxJ",
+        "name": "Chuck Senatre",
+        "companyName": null,
+        "email": null,
+        "phone": "+17035875525",
+        "tags": [
+          "tier 1"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772472686295,
+        "DxFJuodOgdVBF5C42ZxJ"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "mBWTgcD8zmuQs7mT2zfp",
+      "name": "4599 Logsdon Dr, Annandale, VA 22003",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "pipelineStageUId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T17:27:13.209Z",
+      "lastStageChangeAt": "2026-03-02T17:27:13.209Z",
+      "createdAt": "2026-03-02T17:27:13.209Z",
+      "updatedAt": "2026-03-02T17:27:13.209Z",
+      "indexVersion": 1,
+      "contactId": "fYVkdsNHEjn6P4XE0SB7",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "mBWTgcD8zmuQs7mT2zfp",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "fYVkdsNHEjn6P4XE0SB7",
+          "fullName": "Pia Reyes",
+          "contactName": "Pia Reyes",
+          "companyName": null,
+          "email": null,
+          "phone": "+17035772944",
+          "tags": [
+            "tier 1",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "fYVkdsNHEjn6P4XE0SB7",
+        "name": "Pia Reyes",
+        "companyName": null,
+        "phone": "+17035772944",
+        "tags": [
+          "tier 1",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772472433209,
+        "fYVkdsNHEjn6P4XE0SB7"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "fVvE4mTmqKkodMq8BzIQ",
+      "name": "Pia Reyes",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "pipelineStageUId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T17:27:03.243Z",
+      "lastStageChangeAt": "2026-03-02T17:27:03.243Z",
+      "createdAt": "2026-03-02T17:27:03.243Z",
+      "updatedAt": "2026-03-02T17:27:03.243Z",
+      "contactId": "fYVkdsNHEjn6P4XE0SB7",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "fVvE4mTmqKkodMq8BzIQ",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "fYVkdsNHEjn6P4XE0SB7",
+          "fullName": "Pia Reyes",
+          "contactName": "Pia Reyes",
+          "companyName": null,
+          "email": null,
+          "phone": "+17035772944",
+          "tags": [
+            "tier 1",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "fYVkdsNHEjn6P4XE0SB7",
+        "name": "Pia Reyes",
+        "companyName": null,
+        "email": null,
+        "phone": "+17035772944",
+        "tags": [
+          "tier 1",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772472423243,
+        "fYVkdsNHEjn6P4XE0SB7"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "zdH7rFmKxebEekXSdmG7",
+      "name": "910 27th St, Newport News, VA 23607",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "pipelineStageUId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T16:59:55.041Z",
+      "lastStageChangeAt": "2026-03-02T16:59:55.041Z",
+      "createdAt": "2026-03-02T16:59:55.041Z",
+      "updatedAt": "2026-03-02T16:59:55.041Z",
+      "indexVersion": 1,
+      "contactId": "Pgjd3MAMDGboZZSgvA8N",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "zdH7rFmKxebEekXSdmG7",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "Pgjd3MAMDGboZZSgvA8N",
+          "fullName": "Tamara Bahadar-Cue",
+          "contactName": "Tamara Bahadar-Cue",
+          "companyName": null,
+          "email": "tsells757@gmail.com",
+          "phone": "+17573055882",
+          "tags": [
+            "tier 1",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "Pgjd3MAMDGboZZSgvA8N",
+        "name": "Tamara Bahadar-Cue",
+        "companyName": null,
+        "email": "tsells757@gmail.com",
+        "phone": "+17573055882",
+        "tags": [
+          "tier 1",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772470795041,
+        "Pgjd3MAMDGboZZSgvA8N"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "4DIqhQJDSv1Kr2EAV6DE",
+      "name": "Tamara Bahadar-Cue",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "pipelineStageUId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T16:59:46.197Z",
+      "lastStageChangeAt": "2026-03-02T16:59:46.197Z",
+      "createdAt": "2026-03-02T16:59:46.197Z",
+      "updatedAt": "2026-03-02T16:59:46.197Z",
+      "contactId": "Pgjd3MAMDGboZZSgvA8N",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "4DIqhQJDSv1Kr2EAV6DE",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "Pgjd3MAMDGboZZSgvA8N",
+          "fullName": "Tamara Bahadar-Cue",
+          "contactName": "Tamara Bahadar-Cue",
+          "companyName": null,
+          "email": "tsells757@gmail.com",
+          "phone": "+17573055882",
+          "tags": [
+            "tier 1",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "Pgjd3MAMDGboZZSgvA8N",
+        "name": "Tamara Bahadar-Cue",
+        "companyName": null,
+        "email": "tsells757@gmail.com",
+        "phone": "+17573055882",
+        "tags": [
+          "tier 1",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772470786197,
+        "Pgjd3MAMDGboZZSgvA8N"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "9pUd2VqVYKpn0joHv9fu",
+      "name": "19001 Indian Rd, South Prince George, VA 23805",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "pipelineStageUId": "6e23bc62-0806-4d6b-809b-d92af8afa0b5",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T16:46:10.441Z",
+      "lastStageChangeAt": "2026-03-02T16:46:10.441Z",
+      "createdAt": "2026-03-02T16:46:10.441Z",
+      "updatedAt": "2026-03-02T16:46:10.441Z",
+      "indexVersion": 1,
+      "contactId": "P2PYd7Uch35DHq7lVBvD",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "9pUd2VqVYKpn0joHv9fu",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "P2PYd7Uch35DHq7lVBvD",
+          "fullName": "Dustin Olverson",
+          "contactName": "Dustin Olverson",
+          "companyName": null,
+          "email": "dustin@olversons.com",
+          "phone": "+18083441740",
+          "tags": [
+            "tier 1",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "P2PYd7Uch35DHq7lVBvD",
+        "name": "Dustin Olverson",
+        "companyName": null,
+        "email": "dustin@olversons.com",
+        "phone": "+18083441740",
+        "tags": [
+          "tier 1",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772469970441,
+        "P2PYd7Uch35DHq7lVBvD"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "BrKLRSzkKIQMf2Nx3TVm",
+      "name": "Dustin Olverson",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "pipelineStageUId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T16:45:59.321Z",
+      "lastStageChangeAt": "2026-03-02T16:45:59.321Z",
+      "createdAt": "2026-03-02T16:45:59.321Z",
+      "updatedAt": "2026-03-02T16:45:59.321Z",
+      "contactId": "P2PYd7Uch35DHq7lVBvD",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "BrKLRSzkKIQMf2Nx3TVm",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "P2PYd7Uch35DHq7lVBvD",
+          "fullName": "Dustin Olverson",
+          "contactName": "Dustin Olverson",
+          "companyName": null,
+          "email": "dustin@olversons.com",
+          "phone": "+18083441740",
+          "tags": [
+            "tier 1",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "P2PYd7Uch35DHq7lVBvD",
+        "name": "Dustin Olverson",
+        "companyName": null,
+        "email": "dustin@olversons.com",
+        "phone": "+18083441740",
+        "tags": [
+          "tier 1",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772469959321,
+        "P2PYd7Uch35DHq7lVBvD"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "0kKaSLvm8kui8ehDB8Wv",
+      "name": "31 Orchard Rd, Lovingston, VA 22949",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T16:40:48.486Z",
+      "lastStageChangeAt": "2026-03-02T18:21:38.689Z",
+      "createdAt": "2026-03-02T16:40:48.486Z",
+      "updatedAt": "2026-03-02T18:21:38.703Z",
+      "indexVersion": 2,
+      "contactId": "wVGkdrnYjlOOu7OpYGfz",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "0kKaSLvm8kui8ehDB8Wv",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "wVGkdrnYjlOOu7OpYGfz",
+          "fullName": "Megan Miller",
+          "contactName": "Megan Miller",
+          "companyName": null,
+          "email": "megan@simplyelitehometeam.com",
+          "phone": "+15026551597",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "wVGkdrnYjlOOu7OpYGfz",
+        "name": "Megan Miller",
+        "companyName": null,
+        "email": "megan@simplyelitehometeam.com",
+        "phone": "+15026551597",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772469648486,
+        "wVGkdrnYjlOOu7OpYGfz"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "cBVbZtH9ELEOtSuuHH1j",
+      "name": "Megan Miller",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T16:40:20.433Z",
+      "lastStageChangeAt": "2026-03-02T18:21:39.241Z",
+      "createdAt": "2026-03-02T16:40:20.433Z",
+      "updatedAt": "2026-03-02T18:21:39.405Z",
+      "contactId": "wVGkdrnYjlOOu7OpYGfz",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "cBVbZtH9ELEOtSuuHH1j",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "wVGkdrnYjlOOu7OpYGfz",
+          "fullName": "Megan Miller",
+          "contactName": "Megan Miller",
+          "companyName": null,
+          "email": "megan@simplyelitehometeam.com",
+          "phone": "+15026551597",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "wVGkdrnYjlOOu7OpYGfz",
+        "name": "Megan Miller",
+        "companyName": null,
+        "email": "megan@simplyelitehometeam.com",
+        "phone": "+15026551597",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772469620433,
+        "wVGkdrnYjlOOu7OpYGfz"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "veG3Xu3LuanXuZvRVVRe",
+      "name": "Mike Alexander",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T15:52:43.169Z",
+      "lastStageChangeAt": "2026-03-02T15:52:43.169Z",
+      "createdAt": "2026-03-02T15:52:43.169Z",
+      "updatedAt": "2026-03-02T15:52:43.169Z",
+      "contactId": "SfHvCCXfsm8Gli9Lf3qN",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "veG3Xu3LuanXuZvRVVRe",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "SfHvCCXfsm8Gli9Lf3qN",
+          "fullName": "Mike Alexander",
+          "contactName": "Mike Alexander",
+          "companyName": null,
+          "email": "mikealexander65@gmail.com",
+          "phone": "+18045642976",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "SfHvCCXfsm8Gli9Lf3qN",
+        "name": "Mike Alexander",
+        "companyName": null,
+        "email": "mikealexander65@gmail.com",
+        "phone": "+18045642976",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772466763169,
+        "SfHvCCXfsm8Gli9Lf3qN"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "6U4FTNq93Kutyrqua8GR",
+      "name": "16240 Lee Hwy, Gainesville, VA 20155",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T15:51:26.565Z",
+      "lastStageChangeAt": "2026-03-02T16:27:07.254Z",
+      "createdAt": "2026-03-02T15:51:26.565Z",
+      "updatedAt": "2026-03-02T16:27:07.267Z",
+      "indexVersion": 2,
+      "contactId": "d0v9K3m8O154FSWjJwfe",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "6U4FTNq93Kutyrqua8GR",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "d0v9K3m8O154FSWjJwfe",
+          "fullName": "Kyle Carnegie",
+          "contactName": "Kyle Carnegie",
+          "companyName": null,
+          "email": "kyle@crgnova.com",
+          "phone": "+12024608518",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "d0v9K3m8O154FSWjJwfe",
+        "name": "Kyle Carnegie",
+        "companyName": null,
+        "email": "kyle@crgnova.com",
+        "phone": "+12024608518",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772466686565,
+        "d0v9K3m8O154FSWjJwfe"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "Z6e5cp4BuxOnA2gvVBxp",
+      "name": "Kyle Carnegie",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T15:51:17.544Z",
+      "lastStageChangeAt": "2026-03-02T16:27:07.556Z",
+      "createdAt": "2026-03-02T15:51:17.544Z",
+      "updatedAt": "2026-03-02T16:27:07.682Z",
+      "contactId": "d0v9K3m8O154FSWjJwfe",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "Z6e5cp4BuxOnA2gvVBxp",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "d0v9K3m8O154FSWjJwfe",
+          "fullName": "Kyle Carnegie",
+          "contactName": "Kyle Carnegie",
+          "companyName": null,
+          "email": "kyle@crgnova.com",
+          "phone": "+12024608518",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "d0v9K3m8O154FSWjJwfe",
+        "name": "Kyle Carnegie",
+        "companyName": null,
+        "email": "kyle@crgnova.com",
+        "phone": "+12024608518",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772466677544,
+        "d0v9K3m8O154FSWjJwfe"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "MnfBBLlbTRKtGOUbJwTO",
+      "name": "Lee McLaughlin",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T15:29:01.544Z",
+      "lastStageChangeAt": "2026-03-02T15:29:01.544Z",
+      "createdAt": "2026-03-02T15:29:01.544Z",
+      "updatedAt": "2026-03-02T15:29:01.544Z",
+      "contactId": "nhcs2KpC0dW36blXnMjQ",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "MnfBBLlbTRKtGOUbJwTO",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "nhcs2KpC0dW36blXnMjQ",
+          "fullName": "Lee McLaughlin",
+          "contactName": "Lee McLaughlin",
+          "companyName": null,
+          "email": "lee@corcoranwiley.com",
+          "phone": "+15404602730",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "nhcs2KpC0dW36blXnMjQ",
+        "name": "Lee McLaughlin",
+        "companyName": null,
+        "email": "lee@corcoranwiley.com",
+        "phone": "+15404602730",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772465341544,
+        "nhcs2KpC0dW36blXnMjQ"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "rKX8ieZD2BY9DqdBDhF9",
+      "name": "1704 Dinwiddie Ave, Richmond, VA 23224",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T15:12:16.634Z",
+      "lastStageChangeAt": "2026-03-02T16:20:46.056Z",
+      "createdAt": "2026-03-02T15:12:16.634Z",
+      "updatedAt": "2026-03-02T16:20:46.069Z",
+      "indexVersion": 2,
+      "contactId": "SSyuCpmBnapdgQTARd8u",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "rKX8ieZD2BY9DqdBDhF9",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "SSyuCpmBnapdgQTARd8u",
+          "fullName": "Sean Gould",
+          "contactName": "Sean Gould",
+          "companyName": null,
+          "email": "sgould@htrsi.com",
+          "phone": "+15405976073",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "SSyuCpmBnapdgQTARd8u",
+        "name": "Sean Gould",
+        "companyName": null,
+        "email": "sgould@htrsi.com",
+        "phone": "+15405976073",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772464336634,
+        "SSyuCpmBnapdgQTARd8u"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "jL62H4pOb1xOV2MFwXfD",
+      "name": "Sean Gould",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T15:12:08.025Z",
+      "lastStageChangeAt": "2026-03-02T16:20:46.996Z",
+      "createdAt": "2026-03-02T15:12:08.024Z",
+      "updatedAt": "2026-03-02T16:20:47.118Z",
+      "contactId": "SSyuCpmBnapdgQTARd8u",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "jL62H4pOb1xOV2MFwXfD",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "SSyuCpmBnapdgQTARd8u",
+          "fullName": "Sean Gould",
+          "contactName": "Sean Gould",
+          "companyName": null,
+          "email": "sgould@htrsi.com",
+          "phone": "+15405976073",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "SSyuCpmBnapdgQTARd8u",
+        "name": "Sean Gould",
+        "companyName": null,
+        "email": "sgould@htrsi.com",
+        "phone": "+15405976073",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772464328024,
+        "SSyuCpmBnapdgQTARd8u"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "JNedGayDdZVKOpqFZ72b",
+      "name": "600 Smithfield Ave Winchester, VA 22601",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "pipelineStageUId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T14:46:21.159Z",
+      "lastStageChangeAt": "2026-03-02T16:15:59.303Z",
+      "createdAt": "2026-03-02T14:46:21.159Z",
+      "updatedAt": "2026-03-02T16:15:59.322Z",
+      "indexVersion": 2,
+      "contactId": "D07xhNlFg3z9JpGTRwEC",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "JNedGayDdZVKOpqFZ72b",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "D07xhNlFg3z9JpGTRwEC",
+          "fullName": "Marie Dilorenzo",
+          "contactName": "Marie Dilorenzo",
+          "companyName": null,
+          "email": "marie.dilorenzo@oakcrestcommercial.com",
+          "phone": "+15405337064",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "D07xhNlFg3z9JpGTRwEC",
+        "name": "Marie Dilorenzo",
+        "companyName": null,
+        "email": "marie.dilorenzo@oakcrestcommercial.com",
+        "phone": "+15405337064",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772462781159,
+        "D07xhNlFg3z9JpGTRwEC"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "C9ebjiPoGdrLW3l3UCRr",
+      "name": "Marie Dilorenzo",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T14:46:09.800Z",
+      "lastStageChangeAt": "2026-03-02T16:16:14.509Z",
+      "createdAt": "2026-03-02T14:46:09.800Z",
+      "updatedAt": "2026-03-02T16:16:14.678Z",
+      "contactId": "D07xhNlFg3z9JpGTRwEC",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "C9ebjiPoGdrLW3l3UCRr",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "D07xhNlFg3z9JpGTRwEC",
+          "fullName": "Marie Dilorenzo",
+          "contactName": "Marie Dilorenzo",
+          "companyName": null,
+          "email": "marie.dilorenzo@oakcrestcommercial.com",
+          "phone": "+15405337064",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "D07xhNlFg3z9JpGTRwEC",
+        "name": "Marie Dilorenzo",
+        "companyName": null,
+        "email": "marie.dilorenzo@oakcrestcommercial.com",
+        "phone": "+15405337064",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772462769800,
+        "D07xhNlFg3z9JpGTRwEC"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "9LbvOHkmrHdLlcefKpU5",
+      "name": "Deanne Butler",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "pipelineStageUId": "8b758bdf-370f-4246-98d9-005fb79a5c1c",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T14:24:19.312Z",
+      "lastStageChangeAt": "2026-03-02T14:24:19.312Z",
+      "createdAt": "2026-03-02T14:24:19.312Z",
+      "updatedAt": "2026-03-02T14:24:19.312Z",
+      "contactId": "f80ZmA2IjKorsknQzcob",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "9LbvOHkmrHdLlcefKpU5",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "f80ZmA2IjKorsknQzcob",
+          "fullName": "Deanne Butler",
+          "contactName": "Deanne Butler",
+          "companyName": null,
+          "email": "dbutler@gohtr.com",
+          "phone": "+18046905048",
+          "tags": [
+            "tier 1",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "f80ZmA2IjKorsknQzcob",
+        "name": "Deanne Butler",
+        "companyName": null,
+        "email": "dbutler@gohtr.com",
+        "phone": "+18046905048",
+        "tags": [
+          "tier 1",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772461459312,
+        "f80ZmA2IjKorsknQzcob"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "6tNJ3nU0tZ5qA0phVpoJ",
+      "name": "339 Laurel Ave 20707",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "d335d033-f23e-4052-a149-b9d8b707be1c",
+      "pipelineStageUId": "d335d033-f23e-4052-a149-b9d8b707be1c",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T14:19:24.560Z",
+      "lastStageChangeAt": "2026-03-02T14:19:24.560Z",
+      "createdAt": "2026-03-02T14:19:24.560Z",
+      "updatedAt": "2026-03-02T14:19:33.382Z",
+      "indexVersion": 1,
+      "contactId": "oHk7TYPHt7tfOmp4CkXV",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "6tNJ3nU0tZ5qA0phVpoJ",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "oHk7TYPHt7tfOmp4CkXV",
+          "fullName": "Michelle Boucher",
+          "contactName": "Michelle Boucher",
+          "companyName": null,
+          "email": "michelleboucher@boblucidoteam.com",
+          "phone": "+14435468440",
+          "tags": [
+            "tier 1 vip",
+            "probate",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "oHk7TYPHt7tfOmp4CkXV",
+        "name": "Michelle Boucher",
+        "companyName": null,
+        "email": "michelleboucher@boblucidoteam.com",
+        "phone": "+14435468440",
+        "tags": [
+          "tier 1 vip",
+          "probate",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772461164560,
+        "oHk7TYPHt7tfOmp4CkXV"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "M51cpuUKtafXtHnJWqHE",
+      "name": "789 Barnaby St SE, Washington, DC 20032",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T14:13:14.837Z",
+      "lastStageChangeAt": "2026-03-02T16:16:43.014Z",
+      "createdAt": "2026-03-02T14:13:14.836Z",
+      "updatedAt": "2026-03-02T16:16:43.027Z",
+      "indexVersion": 2,
+      "contactId": "QJZ6MsimxdPyZZhelC7y",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "M51cpuUKtafXtHnJWqHE",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "QJZ6MsimxdPyZZhelC7y",
+          "fullName": "Jon Tripp",
+          "contactName": "Jon Tripp",
+          "companyName": null,
+          "email": "jon@thedomusgroup.com",
+          "phone": "+17038649652",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "QJZ6MsimxdPyZZhelC7y",
+        "name": "Jon Tripp",
+        "companyName": null,
+        "email": "jon@thedomusgroup.com",
+        "phone": "+17038649652",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772460794836,
+        "QJZ6MsimxdPyZZhelC7y"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "49p1W8ToUQChm89EurTk",
+      "name": "Jon Tripp",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T14:12:55.485Z",
+      "lastStageChangeAt": "2026-03-02T16:17:15.394Z",
+      "createdAt": "2026-03-02T14:12:55.485Z",
+      "updatedAt": "2026-03-02T16:17:15.979Z",
+      "contactId": "QJZ6MsimxdPyZZhelC7y",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "49p1W8ToUQChm89EurTk",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "QJZ6MsimxdPyZZhelC7y",
+          "fullName": "Jon Tripp",
+          "contactName": "Jon Tripp",
+          "companyName": null,
+          "email": "jon@thedomusgroup.com",
+          "phone": "+17038649652",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "QJZ6MsimxdPyZZhelC7y",
+        "name": "Jon Tripp",
+        "companyName": null,
+        "email": "jon@thedomusgroup.com",
+        "phone": "+17038649652",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772460775485,
+        "QJZ6MsimxdPyZZhelC7y"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "CEw7NFvrqYPG9GOUfWoe",
+      "name": "3511 Reisterstown Rd, Baltimore, MD 21215",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T13:15:27.646Z",
+      "lastStageChangeAt": "2026-03-02T15:47:25.927Z",
+      "createdAt": "2026-03-02T13:15:27.646Z",
+      "updatedAt": "2026-03-02T15:47:25.938Z",
+      "indexVersion": 2,
+      "contactId": "B5N49lxHQgV1zzmHRoW0",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "CEw7NFvrqYPG9GOUfWoe",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "B5N49lxHQgV1zzmHRoW0",
+          "fullName": "Adeola Adeyeye",
+          "contactName": "Adeola Adeyeye",
+          "companyName": null,
+          "email": "dladeyeye@yahoo.com",
+          "phone": "+13015184015",
+          "tags": [
+            "ai off",
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "B5N49lxHQgV1zzmHRoW0",
+        "name": "Adeola Adeyeye",
+        "companyName": null,
+        "email": "dladeyeye@yahoo.com",
+        "phone": "+13015184015",
+        "tags": [
+          "ai off",
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772457327646,
+        "B5N49lxHQgV1zzmHRoW0"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "dekCZZIaWqZFP2rRdQGO",
+      "name": "3207 Clarence Ave, Baltimore, MD 21213",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T13:11:35.170Z",
+      "lastStageChangeAt": "2026-03-02T15:46:19.631Z",
+      "createdAt": "2026-03-02T13:11:35.170Z",
+      "updatedAt": "2026-03-02T15:46:19.643Z",
+      "indexVersion": 2,
+      "contactId": "1tx6Z9qd50sleFpJa4md",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "dekCZZIaWqZFP2rRdQGO",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "1tx6Z9qd50sleFpJa4md",
+          "fullName": "Ms. Penny Areevong",
+          "contactName": "Ms. Penny Areevong",
+          "companyName": null,
+          "email": "propertieswithpenny@gmail.com",
+          "phone": "+15713820885",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "1tx6Z9qd50sleFpJa4md",
+        "name": "Ms. Penny Areevong",
+        "companyName": null,
+        "email": "propertieswithpenny@gmail.com",
+        "phone": "+15713820885",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772457095170,
+        "1tx6Z9qd50sleFpJa4md"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "8V18zGyAlhzJHTfpqeDZ",
+      "name": "505 Cherry Hill Rd, Baltimore, MD 21225",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T13:11:15.308Z",
+      "lastStageChangeAt": "2026-03-02T15:46:33.333Z",
+      "createdAt": "2026-03-02T13:11:15.308Z",
+      "updatedAt": "2026-03-02T15:46:33.344Z",
+      "indexVersion": 2,
+      "contactId": "1tx6Z9qd50sleFpJa4md",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "8V18zGyAlhzJHTfpqeDZ",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "1tx6Z9qd50sleFpJa4md",
+          "fullName": "Ms. Penny Areevong",
+          "contactName": "Ms. Penny Areevong",
+          "companyName": null,
+          "email": "propertieswithpenny@gmail.com",
+          "phone": "+15713820885",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "1tx6Z9qd50sleFpJa4md",
+        "name": "Ms. Penny Areevong",
+        "companyName": null,
+        "email": "propertieswithpenny@gmail.com",
+        "phone": "+15713820885",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772457075308,
+        "1tx6Z9qd50sleFpJa4md"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "7xJf97UNNmhdw4yeRn6S",
+      "name": "Ms. Penny Areevong",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T13:11:01.365Z",
+      "lastStageChangeAt": "2026-03-02T15:46:19.857Z",
+      "createdAt": "2026-03-02T13:11:01.365Z",
+      "updatedAt": "2026-03-02T15:46:20.597Z",
+      "contactId": "1tx6Z9qd50sleFpJa4md",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "7xJf97UNNmhdw4yeRn6S",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "1tx6Z9qd50sleFpJa4md",
+          "fullName": "Ms. Penny Areevong",
+          "contactName": "Ms. Penny Areevong",
+          "companyName": null,
+          "email": "propertieswithpenny@gmail.com",
+          "phone": "+15713820885",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "1tx6Z9qd50sleFpJa4md",
+        "name": "Ms. Penny Areevong",
+        "companyName": null,
+        "email": "propertieswithpenny@gmail.com",
+        "phone": "+15713820885",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772457061365,
+        "1tx6Z9qd50sleFpJa4md"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "NTEgwM1c1Y5lJijQQf9E",
+      "name": "3733 Ravenwood Ave, Baltimore, MD 21213",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T13:05:39.755Z",
+      "lastStageChangeAt": "2026-03-02T15:43:22.269Z",
+      "createdAt": "2026-03-02T13:05:39.755Z",
+      "updatedAt": "2026-03-02T15:43:22.282Z",
+      "indexVersion": 2,
+      "contactId": "kzIS5TsZTnghqFYUI1lg",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "NTEgwM1c1Y5lJijQQf9E",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "kzIS5TsZTnghqFYUI1lg",
+          "fullName": "Ryan Dacy",
+          "contactName": "Ryan Dacy",
+          "companyName": null,
+          "email": "ryan@garnerandco.com",
+          "phone": "+18087798645",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "kzIS5TsZTnghqFYUI1lg",
+        "name": "Ryan Dacy",
+        "companyName": null,
+        "email": "ryan@garnerandco.com",
+        "phone": "+18087798645",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772456739755,
+        "kzIS5TsZTnghqFYUI1lg"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "kckOhibqYeQx2U2Eh2RW",
+      "name": "Ryan Dacy",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-03-02T13:05:23.307Z",
+      "lastStageChangeAt": "2026-03-02T15:43:22.292Z",
+      "createdAt": "2026-03-02T13:05:23.307Z",
+      "updatedAt": "2026-03-02T15:43:22.488Z",
+      "contactId": "kzIS5TsZTnghqFYUI1lg",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "kckOhibqYeQx2U2Eh2RW",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "kzIS5TsZTnghqFYUI1lg",
+          "fullName": "Ryan Dacy",
+          "contactName": "Ryan Dacy",
+          "companyName": null,
+          "email": "ryan@garnerandco.com",
+          "phone": "+18087798645",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "kzIS5TsZTnghqFYUI1lg",
+        "name": "Ryan Dacy",
+        "companyName": null,
+        "email": "ryan@garnerandco.com",
+        "phone": "+18087798645",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772456723307,
+        "kzIS5TsZTnghqFYUI1lg"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "WAwhZGGbeTJql1uEfJuy",
+      "name": "2925 E Monument St, Baltimore, MD 21205",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T21:24:06.089Z",
+      "lastStageChangeAt": "2026-03-02T15:41:26.012Z",
+      "createdAt": "2026-02-27T21:24:06.089Z",
+      "updatedAt": "2026-03-02T15:41:26.024Z",
+      "indexVersion": 2,
+      "contactId": "Y7ewhrfNv9b9sl27svy2",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "WAwhZGGbeTJql1uEfJuy",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "Y7ewhrfNv9b9sl27svy2",
+          "fullName": "Ayodeji Jarrett",
+          "contactName": "Ayodeji Jarrett",
+          "companyName": null,
+          "email": "markabllc@hotmail.com",
+          "phone": "+12404729436",
+          "tags": [
+            "cash buyer prospecting",
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "Y7ewhrfNv9b9sl27svy2",
+        "name": "Ayodeji Jarrett",
+        "companyName": null,
+        "email": "markabllc@hotmail.com",
+        "phone": "+12404729436",
+        "tags": [
+          "cash buyer prospecting",
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772227446089,
+        "Y7ewhrfNv9b9sl27svy2"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "csv_import"
+        }
+      ]
+    },
+    {
+      "id": "bGWNRPdaENnCBZmmp8xH",
+      "name": "Ayodeji Jarrett",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T21:23:54.105Z",
+      "lastStageChangeAt": "2026-03-02T15:41:26.417Z",
+      "createdAt": "2026-02-27T21:23:54.105Z",
+      "updatedAt": "2026-03-02T15:41:26.649Z",
+      "contactId": "Y7ewhrfNv9b9sl27svy2",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "bGWNRPdaENnCBZmmp8xH",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "Y7ewhrfNv9b9sl27svy2",
+          "fullName": "Ayodeji Jarrett",
+          "contactName": "Ayodeji Jarrett",
+          "companyName": null,
+          "email": "markabllc@hotmail.com",
+          "phone": "+12404729436",
+          "tags": [
+            "cash buyer prospecting",
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "Y7ewhrfNv9b9sl27svy2",
+        "name": "Ayodeji Jarrett",
+        "companyName": null,
+        "email": "markabllc@hotmail.com",
+        "phone": "+12404729436",
+        "tags": [
+          "cash buyer prospecting",
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772227434105,
+        "Y7ewhrfNv9b9sl27svy2"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "csv_import"
+        }
+      ]
+    },
+    {
+      "id": "WA7VZKcdHbBMpm8sNLOd",
+      "name": "208 S Catherine St, Baltimore, MD 21223",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "pipelineStageUId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T21:20:22.421Z",
+      "lastStageChangeAt": "2026-03-02T15:37:10.820Z",
+      "createdAt": "2026-02-27T21:20:22.421Z",
+      "updatedAt": "2026-03-02T15:37:10.831Z",
+      "indexVersion": 2,
+      "contactId": "kaRzhQAzIWqzcRQx2SiM",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "WA7VZKcdHbBMpm8sNLOd",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "kaRzhQAzIWqzcRQx2SiM",
+          "fullName": "Monica Truesdale",
+          "contactName": "Monica Truesdale",
+          "companyName": null,
+          "email": "mtruesdale@roguniversal.com",
+          "phone": "+14104192849",
+          "tags": [
+            "ai off",
+            "active in bot",
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "kaRzhQAzIWqzcRQx2SiM",
+        "name": "Monica Truesdale",
+        "companyName": null,
+        "email": "mtruesdale@roguniversal.com",
+        "phone": "+14104192849",
+        "tags": [
+          "ai off",
+          "active in bot",
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772227222421,
+        "kaRzhQAzIWqzcRQx2SiM"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "csv_import"
+        }
+      ]
+    },
+    {
+      "id": "jYEsf2sHyZvsR6VqALGF",
+      "name": "608 Kentland Dr, Great Falls, VA 22066",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T21:15:36.933Z",
+      "lastStageChangeAt": "2026-03-02T15:31:42.661Z",
+      "createdAt": "2026-02-27T21:15:36.933Z",
+      "updatedAt": "2026-03-02T15:31:42.720Z",
+      "indexVersion": 2,
+      "contactId": "xGv5LLxoTtIK45UztWe8",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "jYEsf2sHyZvsR6VqALGF",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "xGv5LLxoTtIK45UztWe8",
+          "fullName": "Megan Fass",
+          "contactName": "Megan Fass",
+          "companyName": null,
+          "email": "sold@fassresults.com",
+          "phone": "+17032096809",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "xGv5LLxoTtIK45UztWe8",
+        "name": "Megan Fass",
+        "companyName": null,
+        "email": "sold@fassresults.com",
+        "phone": "+17032096809",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772226936933,
+        "xGv5LLxoTtIK45UztWe8"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "3W52aqnabSOVs8NAalbq",
+      "name": "Megan Fass",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T21:15:26.490Z",
+      "lastStageChangeAt": "2026-03-02T15:31:42.998Z",
+      "createdAt": "2026-02-27T21:15:26.490Z",
+      "updatedAt": "2026-03-02T15:31:43.485Z",
+      "contactId": "xGv5LLxoTtIK45UztWe8",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "3W52aqnabSOVs8NAalbq",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "xGv5LLxoTtIK45UztWe8",
+          "fullName": "Megan Fass",
+          "contactName": "Megan Fass",
+          "companyName": null,
+          "email": "sold@fassresults.com",
+          "phone": "+17032096809",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "xGv5LLxoTtIK45UztWe8",
+        "name": "Megan Fass",
+        "companyName": null,
+        "email": "sold@fassresults.com",
+        "phone": "+17032096809",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772226926490,
+        "xGv5LLxoTtIK45UztWe8"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "l341Tblaefr9Jv4kmEtF",
+      "name": "20827 Primrose Ct, Lexington Park, MD 20653",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T20:42:36.301Z",
+      "lastStageChangeAt": "2026-03-02T15:25:54.559Z",
+      "createdAt": "2026-02-27T20:42:36.301Z",
+      "updatedAt": "2026-03-02T15:25:54.568Z",
+      "indexVersion": 2,
+      "contactId": "ghlbZpQfzV783fOyPN35",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "l341Tblaefr9Jv4kmEtF",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "ghlbZpQfzV783fOyPN35",
+          "fullName": "Altagrace Casimir",
+          "contactName": "Altagrace Casimir",
+          "companyName": null,
+          "email": "alta@md.metrocast.net",
+          "phone": "+13012471322",
+          "tags": [
+            "ai off",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "ghlbZpQfzV783fOyPN35",
+        "name": "Altagrace Casimir",
+        "companyName": null,
+        "email": "alta@md.metrocast.net",
+        "phone": "+13012471322",
+        "tags": [
+          "ai off",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772224956301,
+        "ghlbZpQfzV783fOyPN35"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "SlB84NYVkTrGUNnvx6ew",
+      "name": "8412 Highland Ln, Alexandria, VA 22309",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T20:39:24.645Z",
+      "lastStageChangeAt": "2026-02-27T20:42:40.755Z",
+      "createdAt": "2026-02-27T20:39:24.645Z",
+      "updatedAt": "2026-02-27T20:42:40.768Z",
+      "indexVersion": 2,
+      "contactId": "e48UUktPEwulbtJN6Phh",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "SlB84NYVkTrGUNnvx6ew",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "e48UUktPEwulbtJN6Phh",
+          "fullName": "Javier Moreno",
+          "contactName": "Javier Moreno",
+          "companyName": null,
+          "email": "javier@twinshousesinc.com",
+          "phone": "+17035930948",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "e48UUktPEwulbtJN6Phh",
+        "name": "Javier Moreno",
+        "companyName": null,
+        "email": "javier@twinshousesinc.com",
+        "phone": "+17035930948",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772224764645,
+        "e48UUktPEwulbtJN6Phh"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "P8De27MeTpV7woxhEMnB",
+      "name": "Javier Moreno",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T20:39:13.826Z",
+      "lastStageChangeAt": "2026-02-27T20:42:41.023Z",
+      "createdAt": "2026-02-27T20:39:13.826Z",
+      "updatedAt": "2026-02-27T20:42:41.199Z",
+      "contactId": "e48UUktPEwulbtJN6Phh",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "P8De27MeTpV7woxhEMnB",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "e48UUktPEwulbtJN6Phh",
+          "fullName": "Javier Moreno",
+          "contactName": "Javier Moreno",
+          "companyName": null,
+          "email": "javier@twinshousesinc.com",
+          "phone": "+17035930948",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "e48UUktPEwulbtJN6Phh",
+        "name": "Javier Moreno",
+        "companyName": null,
+        "email": "javier@twinshousesinc.com",
+        "phone": "+17035930948",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772224753826,
+        "e48UUktPEwulbtJN6Phh"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "FS022fLJfCO4yAMbwWFm",
+      "name": "256 E Liberty St, Martinsburg, WV 25404",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T19:21:57.149Z",
+      "lastStageChangeAt": "2026-02-27T20:10:25.340Z",
+      "createdAt": "2026-02-27T19:21:57.149Z",
+      "updatedAt": "2026-02-27T20:10:25.351Z",
+      "indexVersion": 2,
+      "contactId": "d1iNUTj1jFszzg7Q30Jk",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "FS022fLJfCO4yAMbwWFm",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "d1iNUTj1jFszzg7Q30Jk",
+          "fullName": "Braden Miller",
+          "contactName": "Braden Miller",
+          "companyName": null,
+          "email": "bradenwmillerrealtor@gmail.com",
+          "phone": "+15403351205",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "d1iNUTj1jFszzg7Q30Jk",
+        "name": "Braden Miller",
+        "companyName": null,
+        "email": "bradenwmillerrealtor@gmail.com",
+        "phone": "+15403351205",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772220117149,
+        "d1iNUTj1jFszzg7Q30Jk"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "b5GYyikelGfqPNzmAGRp",
+      "name": "Braden Miller",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T19:21:41.831Z",
+      "lastStageChangeAt": "2026-02-27T20:10:25.293Z",
+      "createdAt": "2026-02-27T19:21:41.831Z",
+      "updatedAt": "2026-02-27T20:10:25.462Z",
+      "contactId": "d1iNUTj1jFszzg7Q30Jk",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "b5GYyikelGfqPNzmAGRp",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "d1iNUTj1jFszzg7Q30Jk",
+          "fullName": "Braden Miller",
+          "contactName": "Braden Miller",
+          "companyName": null,
+          "email": "bradenwmillerrealtor@gmail.com",
+          "phone": "+15403351205",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "d1iNUTj1jFszzg7Q30Jk",
+        "name": "Braden Miller",
+        "companyName": null,
+        "email": "bradenwmillerrealtor@gmail.com",
+        "phone": "+15403351205",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772220101831,
+        "d1iNUTj1jFszzg7Q30Jk"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "EtQ1ihOnhgIeHEpb8sWr",
+      "name": "211 S Bouldin St, Baltimore, MD 21224",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "c9f855a9-6b7f-4e37-b4fd-32299f72d940",
+      "pipelineStageUId": "c9f855a9-6b7f-4e37-b4fd-32299f72d940",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T18:18:30.606Z",
+      "lastStageChangeAt": "2026-02-27T20:06:43.248Z",
+      "createdAt": "2026-02-27T18:18:30.606Z",
+      "updatedAt": "2026-02-27T20:06:43.260Z",
+      "indexVersion": 2,
+      "contactId": "vdFZbVLRjG0oOeDxvLsn",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "EtQ1ihOnhgIeHEpb8sWr",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "vdFZbVLRjG0oOeDxvLsn",
+          "fullName": "Thomas Valkenet",
+          "contactName": "Thomas Valkenet",
+          "companyName": null,
+          "email": "thomas@valkenet.realestate",
+          "phone": "+14109524512",
+          "tags": [
+            "manual estimate",
+            "ai off",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "vdFZbVLRjG0oOeDxvLsn",
+        "name": "Thomas Valkenet",
+        "companyName": null,
+        "email": "thomas@valkenet.realestate",
+        "phone": "+14109524512",
+        "tags": [
+          "manual estimate",
+          "ai off",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772216310606,
+        "vdFZbVLRjG0oOeDxvLsn"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "Er4XzvsVSpCDif9PnYOU",
+      "name": "4120 Alto Rd, Baltimore, MD 21216",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "d335d033-f23e-4052-a149-b9d8b707be1c",
+      "pipelineStageUId": "d335d033-f23e-4052-a149-b9d8b707be1c",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T17:39:51.448Z",
+      "lastStageChangeAt": "2026-03-02T14:48:15.692Z",
+      "createdAt": "2026-02-27T17:39:51.447Z",
+      "updatedAt": "2026-03-02T14:48:15.702Z",
+      "indexVersion": 3,
+      "contactId": "ZT1V33etjRqHc3PylTwn",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "Er4XzvsVSpCDif9PnYOU",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "ZT1V33etjRqHc3PylTwn",
+          "fullName": "Altavia Little",
+          "contactName": "Altavia Little",
+          "companyName": null,
+          "email": "ctahomes1@gmail.com",
+          "phone": "+14432710653",
+          "tags": [
+            "ai off",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "ZT1V33etjRqHc3PylTwn",
+        "name": "Altavia Little",
+        "companyName": null,
+        "email": "ctahomes1@gmail.com",
+        "phone": "+14432710653",
+        "tags": [
+          "ai off",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772213991447,
+        "ZT1V33etjRqHc3PylTwn"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "csv_import"
+        }
+      ]
+    },
+    {
+      "id": "RO1WVouVYJgXQAsPNl7N",
+      "name": "4147 Lander Rd, Jefferson, MD 21755",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T17:24:15.241Z",
+      "lastStageChangeAt": "2026-02-27T19:27:56.736Z",
+      "createdAt": "2026-02-27T17:24:15.241Z",
+      "updatedAt": "2026-02-27T19:27:56.749Z",
+      "indexVersion": 2,
+      "contactId": "amNsHYnfFqv3zTiWTReQ",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "RO1WVouVYJgXQAsPNl7N",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "amNsHYnfFqv3zTiWTReQ",
+          "fullName": "Kimberly Drapeau Drapeau",
+          "contactName": "Kimberly Drapeau Drapeau",
+          "companyName": null,
+          "email": "kimberly.drapeau@yahoo.com",
+          "phone": "+13014019398",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "amNsHYnfFqv3zTiWTReQ",
+        "name": "Kimberly Drapeau Drapeau",
+        "companyName": null,
+        "email": "kimberly.drapeau@yahoo.com",
+        "phone": "+13014019398",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772213055241,
+        "amNsHYnfFqv3zTiWTReQ"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "KMfdkuqy5qu31xtFbCSH",
+      "name": "6411 Recreation Ln, Falls Church, VA 22041",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T17:21:37.233Z",
+      "lastStageChangeAt": "2026-02-27T18:40:06.002Z",
+      "createdAt": "2026-02-27T17:21:37.233Z",
+      "updatedAt": "2026-02-27T18:40:06.025Z",
+      "indexVersion": 2,
+      "contactId": "VvsoYPcgehli9mR8M0VC",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "KMfdkuqy5qu31xtFbCSH",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "VvsoYPcgehli9mR8M0VC",
+          "fullName": "Leonardo Camacho-Jaldin",
+          "contactName": "Leonardo Camacho-Jaldin",
+          "companyName": null,
+          "email": "leonardo@camachorealestate.com",
+          "phone": "+17036750329",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "VvsoYPcgehli9mR8M0VC",
+        "name": "Leonardo Camacho-Jaldin",
+        "companyName": null,
+        "email": "leonardo@camachorealestate.com",
+        "phone": "+17036750329",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772212897233,
+        "VvsoYPcgehli9mR8M0VC"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "oh8k6VeQexfx1Bk5aVR7",
+      "name": "Leonardo Camacho-Jaldin",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T17:20:30.612Z",
+      "lastStageChangeAt": "2026-02-27T18:40:06.710Z",
+      "createdAt": "2026-02-27T17:20:30.612Z",
+      "updatedAt": "2026-02-27T18:40:06.898Z",
+      "contactId": "VvsoYPcgehli9mR8M0VC",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "oh8k6VeQexfx1Bk5aVR7",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "VvsoYPcgehli9mR8M0VC",
+          "fullName": "Leonardo Camacho-Jaldin",
+          "contactName": "Leonardo Camacho-Jaldin",
+          "companyName": null,
+          "email": "leonardo@camachorealestate.com",
+          "phone": "+17036750329",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "VvsoYPcgehli9mR8M0VC",
+        "name": "Leonardo Camacho-Jaldin",
+        "companyName": null,
+        "email": "leonardo@camachorealestate.com",
+        "phone": "+17036750329",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772212830612,
+        "VvsoYPcgehli9mR8M0VC"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "hXKZolFTeWD7Yr0ejUnr",
+      "name": "Deborah Lake-Hinkle",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T16:45:32.126Z",
+      "lastStageChangeAt": "2026-02-27T16:45:32.126Z",
+      "createdAt": "2026-02-27T16:45:32.126Z",
+      "updatedAt": "2026-02-27T16:45:32.126Z",
+      "contactId": "JD7ZSZLwqkS0u0mqxqzx",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "hXKZolFTeWD7Yr0ejUnr",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "JD7ZSZLwqkS0u0mqxqzx",
+          "fullName": "Deborah Lake-Hinkle",
+          "contactName": "Deborah Lake-Hinkle",
+          "companyName": null,
+          "email": "dlhink62@yahoo.com",
+          "phone": "+12024416722",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "JD7ZSZLwqkS0u0mqxqzx",
+        "name": "Deborah Lake-Hinkle",
+        "companyName": null,
+        "email": "dlhink62@yahoo.com",
+        "phone": "+12024416722",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772210732126,
+        "JD7ZSZLwqkS0u0mqxqzx"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "WblQJWoehg24pYfbvkcb",
+      "name": "Peter Walling",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T16:06:32.187Z",
+      "lastStageChangeAt": "2026-02-27T18:32:17.706Z",
+      "createdAt": "2026-02-27T16:06:32.187Z",
+      "updatedAt": "2026-02-27T18:32:17.947Z",
+      "contactId": "30wSH7TbbQ1T1bcrifLI",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "WblQJWoehg24pYfbvkcb",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "30wSH7TbbQ1T1bcrifLI",
+          "fullName": "Peter Walling",
+          "contactName": "Peter Walling",
+          "companyName": null,
+          "email": "petewallingrealtor@hotmail.com",
+          "phone": "+13022491946",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "30wSH7TbbQ1T1bcrifLI",
+        "name": "Peter Walling",
+        "companyName": null,
+        "email": "petewallingrealtor@hotmail.com",
+        "phone": "+13022491946",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772208392187,
+        "30wSH7TbbQ1T1bcrifLI"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "1Y3ne0oUzwgL6nZ9Dfuu",
+      "name": "3512 30th St NW, Washington, DC 20008",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T16:05:49.899Z",
+      "lastStageChangeAt": "2026-02-27T18:32:16.126Z",
+      "createdAt": "2026-02-27T16:05:49.899Z",
+      "updatedAt": "2026-02-27T18:32:16.138Z",
+      "indexVersion": 2,
+      "contactId": "30wSH7TbbQ1T1bcrifLI",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "1Y3ne0oUzwgL6nZ9Dfuu",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "30wSH7TbbQ1T1bcrifLI",
+          "fullName": "Peter Walling",
+          "contactName": "Peter Walling",
+          "companyName": null,
+          "email": "petewallingrealtor@hotmail.com",
+          "phone": "+13022491946",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "30wSH7TbbQ1T1bcrifLI",
+        "name": "Peter Walling",
+        "companyName": null,
+        "email": "petewallingrealtor@hotmail.com",
+        "phone": "+13022491946",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772208349899,
+        "30wSH7TbbQ1T1bcrifLI"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "PZvSFTUOC8z2B5lQ9tmg",
+      "name": " 600 Baker Avenue Abingdon",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "pipelineStageUId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T15:44:31.226Z",
+      "lastStageChangeAt": "2026-02-27T15:44:31.226Z",
+      "createdAt": "2026-02-27T15:44:31.226Z",
+      "updatedAt": "2026-02-27T15:44:31.226Z",
+      "indexVersion": 1,
+      "contactId": "atEdoSKDzI8VZkJsGoAw",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "PZvSFTUOC8z2B5lQ9tmg",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "atEdoSKDzI8VZkJsGoAw",
+          "fullName": "Larry Marshall",
+          "contactName": "Larry Marshall",
+          "companyName": null,
+          "email": null,
+          "phone": "+14106523024",
+          "tags": [
+            "tier 2",
+            "jon vcf/buy box shared",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "atEdoSKDzI8VZkJsGoAw",
+        "name": "Larry Marshall",
+        "companyName": null,
+        "phone": "+14106523024",
+        "tags": [
+          "tier 2",
+          "jon vcf/buy box shared",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772207071226,
+        "atEdoSKDzI8VZkJsGoAw"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Other",
+          "medium": "other",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "7B3ZTFFCDI6WpGCmh7gO",
+      "name": "8191 Fox St, Manassas, VA 20112 ",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "pipelineStageUId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T15:42:41.911Z",
+      "lastStageChangeAt": "2026-02-27T15:42:41.911Z",
+      "createdAt": "2026-02-27T15:42:41.911Z",
+      "updatedAt": "2026-02-27T15:42:41.911Z",
+      "indexVersion": 1,
+      "contactId": "UvwWOR33h03ojTAy7mGf",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "7B3ZTFFCDI6WpGCmh7gO",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "UvwWOR33h03ojTAy7mGf",
+          "fullName": "Rich DiGiovanna",
+          "contactName": "Rich DiGiovanna",
+          "companyName": null,
+          "email": "rommel@isellvirginia.com",
+          "phone": "+17037835750",
+          "tags": [
+            "name via lookup",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "UvwWOR33h03ojTAy7mGf",
+        "name": "Rich DiGiovanna",
+        "companyName": null,
+        "email": "rommel@isellvirginia.com",
+        "phone": "+17037835750",
+        "tags": [
+          "name via lookup",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772206961911,
+        "UvwWOR33h03ojTAy7mGf"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Other",
+          "medium": "conversation",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "sEWv7OoXzjavDu3kIqR2",
+      "name": "5414 Hillburn Ave",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "pipelineStageUId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T15:38:02.046Z",
+      "lastStageChangeAt": "2026-02-27T15:38:02.047Z",
+      "createdAt": "2026-02-27T15:38:02.046Z",
+      "updatedAt": "2026-02-27T15:38:02.046Z",
+      "indexVersion": 1,
+      "contactId": "2FhpKS8pqaoeV0NJ17zf",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "sEWv7OoXzjavDu3kIqR2",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "2FhpKS8pqaoeV0NJ17zf",
+          "fullName": "Parker Colonell",
+          "contactName": "Parker Colonell",
+          "companyName": null,
+          "email": null,
+          "phone": "+14439003041",
+          "tags": [
+            "jon vcf/buy box shared",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "2FhpKS8pqaoeV0NJ17zf",
+        "name": "Parker Colonell",
+        "companyName": null,
+        "phone": "+14439003041",
+        "tags": [
+          "jon vcf/buy box shared",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772206682046,
+        "2FhpKS8pqaoeV0NJ17zf"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Other",
+          "medium": "other",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "lHy7HIin1234ntLA4VUT",
+      "name": "Aimee Jacobs",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T15:15:02.507Z",
+      "lastStageChangeAt": "2026-02-27T15:15:02.507Z",
+      "createdAt": "2026-02-27T15:15:02.507Z",
+      "updatedAt": "2026-02-27T15:15:02.507Z",
+      "contactId": "VHPGfEnT9xw2sPIOlqxd",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "lHy7HIin1234ntLA4VUT",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "VHPGfEnT9xw2sPIOlqxd",
+          "fullName": "Aimee Jacobs",
+          "contactName": "Aimee Jacobs",
+          "companyName": null,
+          "email": "irent4you@outlook.com",
+          "phone": "+18047123998",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "VHPGfEnT9xw2sPIOlqxd",
+        "name": "Aimee Jacobs",
+        "companyName": null,
+        "email": "irent4you@outlook.com",
+        "phone": "+18047123998",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772205302507,
+        "VHPGfEnT9xw2sPIOlqxd"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "1Bsg7aCAQB1X0WrRJqi1",
+      "name": "David Bruyer",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": null,
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T15:13:09.433Z",
+      "lastStageChangeAt": "2026-02-27T15:13:09.433Z",
+      "createdAt": "2026-02-27T15:13:09.433Z",
+      "updatedAt": "2026-02-27T15:13:09.433Z",
+      "contactId": "vLhElqi02bDgHAQgLpXX",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "1Bsg7aCAQB1X0WrRJqi1",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "vLhElqi02bDgHAQgLpXX",
+          "fullName": "David Bruyer",
+          "contactName": "David Bruyer",
+          "companyName": null,
+          "email": "david@monumentalteam.com",
+          "phone": "+15714270419",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "vLhElqi02bDgHAQgLpXX",
+        "name": "David Bruyer",
+        "companyName": null,
+        "email": "david@monumentalteam.com",
+        "phone": "+15714270419",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772205189433,
+        "vLhElqi02bDgHAQgLpXX"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "KfZfyvnfXSQyOVweU78D",
+      "name": "Mr. Bahta Gide",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T15:03:55.295Z",
+      "lastStageChangeAt": "2026-02-27T15:03:55.295Z",
+      "createdAt": "2026-02-27T15:03:55.295Z",
+      "updatedAt": "2026-02-27T15:03:55.295Z",
+      "contactId": "NYkbIRxzla2yFIJ7pHR8",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "KfZfyvnfXSQyOVweU78D",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "NYkbIRxzla2yFIJ7pHR8",
+          "fullName": "Mr. Bahta Gide",
+          "contactName": "Mr. Bahta Gide",
+          "companyName": null,
+          "email": "bahtagt@gmail.com",
+          "phone": "+17032209246",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "NYkbIRxzla2yFIJ7pHR8",
+        "name": "Mr. Bahta Gide",
+        "companyName": null,
+        "email": "bahtagt@gmail.com",
+        "phone": "+17032209246",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772204635295,
+        "NYkbIRxzla2yFIJ7pHR8"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "QcoLFh7YQ3r9n5gTfFM9",
+      "name": "Niya Banks",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T14:55:59.054Z",
+      "lastStageChangeAt": "2026-02-27T14:55:59.054Z",
+      "createdAt": "2026-02-27T14:55:59.054Z",
+      "updatedAt": "2026-02-27T14:55:59.054Z",
+      "contactId": "LVs0hVJRUxNWUaULqRG5",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "QcoLFh7YQ3r9n5gTfFM9",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "LVs0hVJRUxNWUaULqRG5",
+          "fullName": "Niya Banks",
+          "contactName": "Niya Banks",
+          "companyName": null,
+          "email": "niyazbanks@gmail.com",
+          "phone": "+13016536241",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "LVs0hVJRUxNWUaULqRG5",
+        "name": "Niya Banks",
+        "companyName": null,
+        "email": "niyazbanks@gmail.com",
+        "phone": "+13016536241",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772204159054,
+        "LVs0hVJRUxNWUaULqRG5"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "yo5KiGyWEfdTPUxSxHAi",
+      "name": "Pierre Saez",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T14:43:26.973Z",
+      "lastStageChangeAt": "2026-02-27T14:43:26.973Z",
+      "createdAt": "2026-02-27T14:43:26.972Z",
+      "updatedAt": "2026-02-27T14:43:26.972Z",
+      "contactId": "tl9WbDliEGqu9RAgW9Aa",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "yo5KiGyWEfdTPUxSxHAi",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "tl9WbDliEGqu9RAgW9Aa",
+          "fullName": "Pierre Saez",
+          "contactName": "Pierre Saez",
+          "companyName": null,
+          "email": "pierre@expcoastal.com",
+          "phone": "+17322082432",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "tl9WbDliEGqu9RAgW9Aa",
+        "name": "Pierre Saez",
+        "companyName": null,
+        "email": "pierre@expcoastal.com",
+        "phone": "+17322082432",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772203406972,
+        "tl9WbDliEGqu9RAgW9Aa"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "7qDWXl9DgDRKgX4GdOQD",
+      "name": "Michael Combs",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T14:36:13.694Z",
+      "lastStageChangeAt": "2026-02-27T14:36:13.694Z",
+      "createdAt": "2026-02-27T14:36:13.694Z",
+      "updatedAt": "2026-02-27T14:36:13.694Z",
+      "contactId": "nQ8pKP4IjzArkqSDJx9r",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "7qDWXl9DgDRKgX4GdOQD",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "nQ8pKP4IjzArkqSDJx9r",
+          "fullName": "Michael Combs",
+          "contactName": "Michael Combs",
+          "companyName": null,
+          "email": "mdavidc123@outlook.com",
+          "phone": "+15402777348",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "nQ8pKP4IjzArkqSDJx9r",
+        "name": "Michael Combs",
+        "companyName": null,
+        "email": "mdavidc123@outlook.com",
+        "phone": "+15402777348",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772202973694,
+        "nQ8pKP4IjzArkqSDJx9r"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "86tFiN50iuiFD3Of6Pvn",
+      "name": "Antonio Romero",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T14:35:03.777Z",
+      "lastStageChangeAt": "2026-02-27T14:35:03.777Z",
+      "createdAt": "2026-02-27T14:35:03.777Z",
+      "updatedAt": "2026-02-27T14:35:03.777Z",
+      "contactId": "SW0lNQ6SagG5FMCe1kIe",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "86tFiN50iuiFD3Of6Pvn",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "SW0lNQ6SagG5FMCe1kIe",
+          "fullName": "Antonio Romero",
+          "contactName": "Antonio Romero",
+          "companyName": null,
+          "email": "antonio.romero@penfedrealty.com",
+          "phone": "+12403545336",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "SW0lNQ6SagG5FMCe1kIe",
+        "name": "Antonio Romero",
+        "companyName": null,
+        "email": "antonio.romero@penfedrealty.com",
+        "phone": "+12403545336",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772202903777,
+        "SW0lNQ6SagG5FMCe1kIe"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "EwEuQf69oCjf85sIPSwS",
+      "name": "1918 W Pacific St, Philadelphia, PA 19140",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T14:33:07.238Z",
+      "lastStageChangeAt": "2026-02-27T18:26:49.996Z",
+      "createdAt": "2026-02-27T14:33:07.238Z",
+      "updatedAt": "2026-02-27T18:26:50.006Z",
+      "indexVersion": 2,
+      "contactId": "038t1HLMArT5chSpcgOn",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "EwEuQf69oCjf85sIPSwS",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "038t1HLMArT5chSpcgOn",
+          "fullName": "Mrs. Keina Eubanks",
+          "contactName": "Mrs. Keina Eubanks",
+          "companyName": null,
+          "email": "kg3realestate@gmail.com",
+          "phone": "+12673123837",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "038t1HLMArT5chSpcgOn",
+        "name": "Mrs. Keina Eubanks",
+        "companyName": null,
+        "email": "kg3realestate@gmail.com",
+        "phone": "+12673123837",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772202787238,
+        "038t1HLMArT5chSpcgOn"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "3nNCi3sKc3oEiJnpLIle",
+      "name": "Mrs. Keina Eubanks",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T14:32:53.649Z",
+      "lastStageChangeAt": "2026-02-27T18:26:50.362Z",
+      "createdAt": "2026-02-27T14:32:53.649Z",
+      "updatedAt": "2026-02-27T18:26:50.641Z",
+      "contactId": "038t1HLMArT5chSpcgOn",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "3nNCi3sKc3oEiJnpLIle",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "038t1HLMArT5chSpcgOn",
+          "fullName": "Mrs. Keina Eubanks",
+          "contactName": "Mrs. Keina Eubanks",
+          "companyName": null,
+          "email": "kg3realestate@gmail.com",
+          "phone": "+12673123837",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "038t1HLMArT5chSpcgOn",
+        "name": "Mrs. Keina Eubanks",
+        "companyName": null,
+        "email": "kg3realestate@gmail.com",
+        "phone": "+12673123837",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772202773649,
+        "038t1HLMArT5chSpcgOn"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "LAHNRe39WyYTZbQsZilj",
+      "name": "1432 N 56th St, Philadelphia, PA 19131",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "e148e12f-824a-450a-a4fc-32f35096fdd8",
+      "pipelineStageUId": "e148e12f-824a-450a-a4fc-32f35096fdd8",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T14:08:03.751Z",
+      "lastStageChangeAt": "2026-02-27T18:14:45.434Z",
+      "createdAt": "2026-02-27T14:08:03.751Z",
+      "updatedAt": "2026-02-27T18:14:45.461Z",
+      "indexVersion": 2,
+      "contactId": "CCVwEg1ZokveCnaoqImN",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "LAHNRe39WyYTZbQsZilj",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "CCVwEg1ZokveCnaoqImN",
+          "fullName": "Paul Snipes",
+          "contactName": "Paul Snipes",
+          "companyName": null,
+          "email": "psnipesjr@aol.com",
+          "phone": "+13022873163",
+          "tags": [
+            "ai off",
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "CCVwEg1ZokveCnaoqImN",
+        "name": "Paul Snipes",
+        "companyName": null,
+        "email": "psnipesjr@aol.com",
+        "phone": "+13022873163",
+        "tags": [
+          "ai off",
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772201283751,
+        "CCVwEg1ZokveCnaoqImN"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "Ocfpp9m426qWr6lJ3J07",
+      "name": "1341 Fillmore St, Philadelphia, PA 19124",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "e148e12f-824a-450a-a4fc-32f35096fdd8",
+      "pipelineStageUId": "e148e12f-824a-450a-a4fc-32f35096fdd8",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T14:07:31.381Z",
+      "lastStageChangeAt": "2026-02-27T18:15:22.659Z",
+      "createdAt": "2026-02-27T14:07:31.381Z",
+      "updatedAt": "2026-02-27T18:15:22.673Z",
+      "indexVersion": 2,
+      "contactId": "CCVwEg1ZokveCnaoqImN",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "Ocfpp9m426qWr6lJ3J07",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "CCVwEg1ZokveCnaoqImN",
+          "fullName": "Paul Snipes",
+          "contactName": "Paul Snipes",
+          "companyName": null,
+          "email": "psnipesjr@aol.com",
+          "phone": "+13022873163",
+          "tags": [
+            "ai off",
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "CCVwEg1ZokveCnaoqImN",
+        "name": "Paul Snipes",
+        "companyName": null,
+        "email": "psnipesjr@aol.com",
+        "phone": "+13022873163",
+        "tags": [
+          "ai off",
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772201251381,
+        "CCVwEg1ZokveCnaoqImN"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "MKMUXoK8UnnXUyyZZ1Uc",
+      "name": "Andrea Wilson",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T13:58:30.929Z",
+      "lastStageChangeAt": "2026-02-27T13:58:30.929Z",
+      "createdAt": "2026-02-27T13:58:30.928Z",
+      "updatedAt": "2026-02-27T13:58:30.928Z",
+      "contactId": "inLYqu55cAZBR4lgEfDR",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "MKMUXoK8UnnXUyyZZ1Uc",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "inLYqu55cAZBR4lgEfDR",
+          "fullName": "Andrea Wilson",
+          "contactName": "Andrea Wilson",
+          "companyName": null,
+          "email": "andrealmwilson@hotmail.com",
+          "phone": "+15166684124",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "inLYqu55cAZBR4lgEfDR",
+        "name": "Andrea Wilson",
+        "companyName": null,
+        "email": "andrealmwilson@hotmail.com",
+        "phone": "+15166684124",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772200710928,
+        "inLYqu55cAZBR4lgEfDR"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "5buhcODMTNjbpU5CHL7H",
+      "name": "136 N Beaverdam Rd, Waverly, VA 23890",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "e148e12f-824a-450a-a4fc-32f35096fdd8",
+      "pipelineStageUId": "e148e12f-824a-450a-a4fc-32f35096fdd8",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T12:58:43.805Z",
+      "lastStageChangeAt": "2026-02-27T18:06:23.027Z",
+      "createdAt": "2026-02-27T12:58:43.805Z",
+      "updatedAt": "2026-02-27T18:06:23.048Z",
+      "indexVersion": 2,
+      "contactId": "zxZ0zvyBAPj9bQKl5ubo",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "5buhcODMTNjbpU5CHL7H",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "zxZ0zvyBAPj9bQKl5ubo",
+          "fullName": "Jackie McMillon",
+          "contactName": "Jackie McMillon",
+          "companyName": null,
+          "email": "jrm1realtor@aol.com",
+          "phone": "+18045364942",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "zxZ0zvyBAPj9bQKl5ubo",
+        "name": "Jackie McMillon",
+        "companyName": null,
+        "email": "jrm1realtor@aol.com",
+        "phone": "+18045364942",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772197123805,
+        "zxZ0zvyBAPj9bQKl5ubo"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "1if0ju38nLJf0jcPtn3f",
+      "name": "123 S Price St, Pottstown, PA 19464",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-27T12:55:12.398Z",
+      "lastStageChangeAt": "2026-02-27T17:44:54.543Z",
+      "createdAt": "2026-02-27T12:55:12.398Z",
+      "updatedAt": "2026-02-27T17:44:54.553Z",
+      "indexVersion": 2,
+      "contactId": "87Uyfnmivl1EzlBeVSzd",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "1if0ju38nLJf0jcPtn3f",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "87Uyfnmivl1EzlBeVSzd",
+          "fullName": "Steven Anzulewicz",
+          "contactName": "Steven Anzulewicz",
+          "companyName": null,
+          "email": "steveanzul@kw.com",
+          "phone": "+13023793523",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "87Uyfnmivl1EzlBeVSzd",
+        "name": "Steven Anzulewicz",
+        "companyName": null,
+        "email": "steveanzul@kw.com",
+        "phone": "+13023793523",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772196912398,
+        "87Uyfnmivl1EzlBeVSzd"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "CmaX0LTtoyywJWDMTxV0",
+      "name": "6 Rosehaven St, Stafford, VA 22556",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T20:21:49.617Z",
+      "lastStageChangeAt": "2026-02-27T17:20:42.567Z",
+      "createdAt": "2026-02-26T20:21:49.617Z",
+      "updatedAt": "2026-02-27T17:20:42.578Z",
+      "indexVersion": 2,
+      "contactId": "PcSoNDhlVFSGuqTjQxkY",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "CmaX0LTtoyywJWDMTxV0",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "PcSoNDhlVFSGuqTjQxkY",
+          "fullName": "Melisa Casacuberta",
+          "contactName": "Melisa Casacuberta",
+          "companyName": null,
+          "email": "lifestylesbymelisa@gmail.com",
+          "phone": "+15407354122",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "PcSoNDhlVFSGuqTjQxkY",
+        "name": "Melisa Casacuberta",
+        "companyName": null,
+        "email": "lifestylesbymelisa@gmail.com",
+        "phone": "+15407354122",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772137309617,
+        "PcSoNDhlVFSGuqTjQxkY"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "h6RR7KRSEEpPP0Bif7T8",
+      "name": "Melisa Casacuberta",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T20:21:35.346Z",
+      "lastStageChangeAt": "2026-02-27T17:20:42.918Z",
+      "createdAt": "2026-02-26T20:21:35.346Z",
+      "updatedAt": "2026-02-27T17:20:43.102Z",
+      "contactId": "PcSoNDhlVFSGuqTjQxkY",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "h6RR7KRSEEpPP0Bif7T8",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "PcSoNDhlVFSGuqTjQxkY",
+          "fullName": "Melisa Casacuberta",
+          "contactName": "Melisa Casacuberta",
+          "companyName": null,
+          "email": "lifestylesbymelisa@gmail.com",
+          "phone": "+15407354122",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "PcSoNDhlVFSGuqTjQxkY",
+        "name": "Melisa Casacuberta",
+        "companyName": null,
+        "email": "lifestylesbymelisa@gmail.com",
+        "phone": "+15407354122",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772137295346,
+        "PcSoNDhlVFSGuqTjQxkY"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "eTq7e9jAvCLLXVYBDNIU",
+      "name": "Brendan Wilson",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T18:05:09.524Z",
+      "lastStageChangeAt": "2026-02-27T17:11:06.463Z",
+      "createdAt": "2026-02-26T18:05:09.524Z",
+      "updatedAt": "2026-02-27T17:11:06.663Z",
+      "contactId": "jIB4KJMgTlQT6qRiecjr",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "eTq7e9jAvCLLXVYBDNIU",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "jIB4KJMgTlQT6qRiecjr",
+          "fullName": "Brendan Wilson",
+          "contactName": "Brendan Wilson",
+          "companyName": null,
+          "email": "brendanwilson@kw.com",
+          "phone": "+18043356553",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "jIB4KJMgTlQT6qRiecjr",
+        "name": "Brendan Wilson",
+        "companyName": null,
+        "email": "brendanwilson@kw.com",
+        "phone": "+18043356553",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772129109524,
+        "jIB4KJMgTlQT6qRiecjr"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "R449M9UY3qQOulzZEbWn",
+      "name": "713 W Holly Ave, Sterling, VA 20164",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T16:45:12.287Z",
+      "lastStageChangeAt": "2026-02-27T16:56:46.772Z",
+      "createdAt": "2026-02-26T16:45:12.287Z",
+      "updatedAt": "2026-02-27T16:56:46.783Z",
+      "indexVersion": 2,
+      "contactId": "6Ap3nCyiGMKhgeSc4miG",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "R449M9UY3qQOulzZEbWn",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "6Ap3nCyiGMKhgeSc4miG",
+          "fullName": "Nancy Tessman",
+          "contactName": "Nancy Tessman",
+          "companyName": null,
+          "email": "nancy@nancytessman.com",
+          "phone": "+17033285306",
+          "tags": [
+            "ai off",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "6Ap3nCyiGMKhgeSc4miG",
+        "name": "Nancy Tessman",
+        "companyName": null,
+        "email": "nancy@nancytessman.com",
+        "phone": "+17033285306",
+        "tags": [
+          "ai off",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772124312287,
+        "6Ap3nCyiGMKhgeSc4miG"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "nywcx90K4yCJZA0PiYEL",
+      "name": "Nancy Tessman",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T16:45:02.844Z",
+      "lastStageChangeAt": "2026-02-27T16:56:47.307Z",
+      "createdAt": "2026-02-26T16:45:02.844Z",
+      "updatedAt": "2026-02-27T16:56:47.524Z",
+      "contactId": "6Ap3nCyiGMKhgeSc4miG",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "nywcx90K4yCJZA0PiYEL",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "6Ap3nCyiGMKhgeSc4miG",
+          "fullName": "Nancy Tessman",
+          "contactName": "Nancy Tessman",
+          "companyName": null,
+          "email": "nancy@nancytessman.com",
+          "phone": "+17033285306",
+          "tags": [
+            "ai off",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "6Ap3nCyiGMKhgeSc4miG",
+        "name": "Nancy Tessman",
+        "companyName": null,
+        "email": "nancy@nancytessman.com",
+        "phone": "+17033285306",
+        "tags": [
+          "ai off",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772124302844,
+        "6Ap3nCyiGMKhgeSc4miG"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "8ZV5XBsvrKopbfZGyTQN",
+      "name": "12408 W Old Baltimore Rd, Boyds, MD 20841",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T16:40:24.614Z",
+      "lastStageChangeAt": "2026-02-26T20:34:03.502Z",
+      "createdAt": "2026-02-26T16:40:24.614Z",
+      "updatedAt": "2026-02-26T20:34:03.515Z",
+      "indexVersion": 2,
+      "contactId": "NlhZmpfbbIMDN4eZKUYJ",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "8ZV5XBsvrKopbfZGyTQN",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "NlhZmpfbbIMDN4eZKUYJ",
+          "fullName": "Audrey Doukoure",
+          "contactName": "Audrey Doukoure",
+          "companyName": null,
+          "email": "aptdoukoure@gmail.com",
+          "phone": "+13014047445",
+          "tags": [
+            "ai off",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "NlhZmpfbbIMDN4eZKUYJ",
+        "name": "Audrey Doukoure",
+        "companyName": null,
+        "email": "aptdoukoure@gmail.com",
+        "phone": "+13014047445",
+        "tags": [
+          "ai off",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772124024614,
+        "NlhZmpfbbIMDN4eZKUYJ"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "pnkxEMnaUpQAGvXa8oRX",
+      "name": "3733 Ravenwood Ave, Baltimore, MD 21213",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T16:08:32.374Z",
+      "lastStageChangeAt": "2026-02-27T16:48:02.277Z",
+      "createdAt": "2026-02-26T16:08:32.373Z",
+      "updatedAt": "2026-02-27T16:48:02.302Z",
+      "indexVersion": 2,
+      "contactId": "H1CEK3zzwmN0Q5Fy1vCi",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "pnkxEMnaUpQAGvXa8oRX",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "H1CEK3zzwmN0Q5Fy1vCi",
+          "fullName": "Deyana Falahatpishe",
+          "contactName": "Deyana Falahatpishe",
+          "companyName": null,
+          "email": "deyanafalahatpishe@gmail.com",
+          "phone": "+14438823501",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "H1CEK3zzwmN0Q5Fy1vCi",
+        "name": "Deyana Falahatpishe",
+        "companyName": null,
+        "email": "deyanafalahatpishe@gmail.com",
+        "phone": "+14438823501",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772122112373,
+        "H1CEK3zzwmN0Q5Fy1vCi"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "Vv0FOOcxAzWZZhH4a7LA",
+      "name": "Deyana Falahatpishe",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T16:08:28.407Z",
+      "lastStageChangeAt": "2026-02-27T16:48:02.631Z",
+      "createdAt": "2026-02-26T16:08:28.407Z",
+      "updatedAt": "2026-02-27T16:48:02.882Z",
+      "contactId": "H1CEK3zzwmN0Q5Fy1vCi",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "Vv0FOOcxAzWZZhH4a7LA",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "H1CEK3zzwmN0Q5Fy1vCi",
+          "fullName": "Deyana Falahatpishe",
+          "contactName": "Deyana Falahatpishe",
+          "companyName": null,
+          "email": "deyanafalahatpishe@gmail.com",
+          "phone": "+14438823501",
+          "tags": [
+            "smartercontact",
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "H1CEK3zzwmN0Q5Fy1vCi",
+        "name": "Deyana Falahatpishe",
+        "companyName": null,
+        "email": "deyanafalahatpishe@gmail.com",
+        "phone": "+14438823501",
+        "tags": [
+          "smartercontact",
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772122108407,
+        "H1CEK3zzwmN0Q5Fy1vCi"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "VvXEWoYBAdR9VFMdnb1H",
+      "name": "Tim Faust",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": null,
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T15:56:39.226Z",
+      "lastStageChangeAt": "2026-02-26T15:56:39.226Z",
+      "createdAt": "2026-02-26T15:56:39.226Z",
+      "updatedAt": "2026-02-26T15:56:39.226Z",
+      "contactId": "YJkOrXr0XL2WenUwPcH7",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "VvXEWoYBAdR9VFMdnb1H",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "YJkOrXr0XL2WenUwPcH7",
+          "fullName": "Tim Faust",
+          "contactName": "Tim Faust",
+          "companyName": null,
+          "email": "titantim@yahoo.com",
+          "phone": "+17322399367",
+          "tags": [
+            "ai off",
+            "tier 2",
+            "active in bot"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "YJkOrXr0XL2WenUwPcH7",
+        "name": "Tim Faust",
+        "companyName": null,
+        "email": "titantim@yahoo.com",
+        "phone": "+17322399367",
+        "tags": [
+          "ai off",
+          "tier 2",
+          "active in bot"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772121399226,
+        "YJkOrXr0XL2WenUwPcH7"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "CQwmqtqwMOiGSHAjPt3l",
+      "name": "Tommy Waterworth",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T15:54:14.904Z",
+      "lastStageChangeAt": "2026-02-26T15:54:14.904Z",
+      "createdAt": "2026-02-26T15:54:14.904Z",
+      "updatedAt": "2026-02-26T15:54:14.904Z",
+      "contactId": "T5IMW9c3OFdWBNttCYYj",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "CQwmqtqwMOiGSHAjPt3l",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "T5IMW9c3OFdWBNttCYYj",
+          "fullName": "Tommy Waterworth",
+          "contactName": "Tommy Waterworth",
+          "companyName": null,
+          "email": "info@ruckartre.com",
+          "phone": "+18045179093",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "T5IMW9c3OFdWBNttCYYj",
+        "name": "Tommy Waterworth",
+        "companyName": null,
+        "email": "info@ruckartre.com",
+        "phone": "+18045179093",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772121254904,
+        "T5IMW9c3OFdWBNttCYYj"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "HWxlzBIAqhtp55V0H39U",
+      "name": "Senthil Nath Mohan Kumar",
+      "monetaryValue": 0,
+      "pipelineId": "qzJwFrIYqTDyFtCPdkKv",
+      "pipelineStageId": "c52196f6-ddda-4466-91c4-eedbbe30fbda",
+      "pipelineStageUId": "c52196f6-ddda-4466-91c4-eedbbe30fbda",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T15:53:17.246Z",
+      "lastStageChangeAt": "2026-02-26T15:53:17.246Z",
+      "createdAt": "2026-02-26T15:53:17.246Z",
+      "updatedAt": "2026-02-26T15:53:17.246Z",
+      "indexVersion": 1,
+      "contactId": "LyaGVsC2rVOP9HawCuAr",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "HWxlzBIAqhtp55V0H39U",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "LyaGVsC2rVOP9HawCuAr",
+          "fullName": "Senthil Nath Mohan Kumar",
+          "contactName": "Senthil Nath Mohan Kumar",
+          "companyName": null,
+          "email": "senthildba@gmail.com",
+          "phone": "+14042004857",
+          "tags": [],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "LyaGVsC2rVOP9HawCuAr",
+        "name": "Senthil Nath Mohan Kumar",
+        "companyName": null,
+        "email": "senthildba@gmail.com",
+        "phone": "+14042004857",
+        "tags": [],
+        "score": []
+      },
+      "sort": [
+        1772121197246,
+        "LyaGVsC2rVOP9HawCuAr"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "X5LgJIOXTCsrSgc0kqcc",
+      "name": "7613 Fort Hunt Rd, Alexandria, VA 22308",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T15:23:53.157Z",
+      "lastStageChangeAt": "2026-02-27T16:41:41.616Z",
+      "createdAt": "2026-02-26T15:23:53.157Z",
+      "updatedAt": "2026-02-27T16:41:41.627Z",
+      "indexVersion": 2,
+      "contactId": "0mWTtf3IU1XVtLqlG8XL",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "X5LgJIOXTCsrSgc0kqcc",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "0mWTtf3IU1XVtLqlG8XL",
+          "fullName": "Mary Smith",
+          "contactName": "Mary Smith",
+          "companyName": null,
+          "email": "marysmithhomes@gmail.com",
+          "phone": "+17036269207",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "0mWTtf3IU1XVtLqlG8XL",
+        "name": "Mary Smith",
+        "companyName": null,
+        "email": "marysmithhomes@gmail.com",
+        "phone": "+17036269207",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772119433157,
+        "0mWTtf3IU1XVtLqlG8XL"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "xSgwHVC7wzX1ScJ7MQqz",
+      "name": "Mary Smith",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T15:23:38.793Z",
+      "lastStageChangeAt": "2026-02-27T16:41:42.106Z",
+      "createdAt": "2026-02-26T15:23:38.793Z",
+      "updatedAt": "2026-02-27T16:41:42.573Z",
+      "contactId": "0mWTtf3IU1XVtLqlG8XL",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "xSgwHVC7wzX1ScJ7MQqz",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "0mWTtf3IU1XVtLqlG8XL",
+          "fullName": "Mary Smith",
+          "contactName": "Mary Smith",
+          "companyName": null,
+          "email": "marysmithhomes@gmail.com",
+          "phone": "+17036269207",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "0mWTtf3IU1XVtLqlG8XL",
+        "name": "Mary Smith",
+        "companyName": null,
+        "email": "marysmithhomes@gmail.com",
+        "phone": "+17036269207",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772119418793,
+        "0mWTtf3IU1XVtLqlG8XL"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "0oNavYNCjbNI3ttsXM1e",
+      "name": "Adrian Small",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T15:13:11.769Z",
+      "lastStageChangeAt": "2026-02-27T20:39:27.834Z",
+      "createdAt": "2026-02-26T15:13:11.769Z",
+      "updatedAt": "2026-02-27T20:39:28.018Z",
+      "contactId": "d9DiUG3iEYzEEDfkmuQ1",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "0oNavYNCjbNI3ttsXM1e",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "d9DiUG3iEYzEEDfkmuQ1",
+          "fullName": "Adrian Small",
+          "contactName": "Adrian Small",
+          "companyName": null,
+          "email": "asmall@ttrsir.com",
+          "phone": "+12023605418",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "d9DiUG3iEYzEEDfkmuQ1",
+        "name": "Adrian Small",
+        "companyName": null,
+        "email": "asmall@ttrsir.com",
+        "phone": "+12023605418",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772118791769,
+        "d9DiUG3iEYzEEDfkmuQ1"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "t8UTfWXljkTQJTe3GTpd",
+      "name": "927 Ingraham St NW, Washington, DC 20011",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "pipelineStageUId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T15:12:36.424Z",
+      "lastStageChangeAt": "2026-02-27T20:39:27.268Z",
+      "createdAt": "2026-02-26T15:12:36.424Z",
+      "updatedAt": "2026-02-27T20:39:27.280Z",
+      "indexVersion": 2,
+      "contactId": "d9DiUG3iEYzEEDfkmuQ1",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "t8UTfWXljkTQJTe3GTpd",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "d9DiUG3iEYzEEDfkmuQ1",
+          "fullName": "Adrian Small",
+          "contactName": "Adrian Small",
+          "companyName": null,
+          "email": "asmall@ttrsir.com",
+          "phone": "+12023605418",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "d9DiUG3iEYzEEDfkmuQ1",
+        "name": "Adrian Small",
+        "companyName": null,
+        "email": "asmall@ttrsir.com",
+        "phone": "+12023605418",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772118756424,
+        "d9DiUG3iEYzEEDfkmuQ1"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "DyzvzIoVskuzLwUjwd4P",
+      "name": "925 Ingraham St NW, Washington, DC 20011",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "pipelineStageUId": "7a7a87a4-8216-42dc-877b-f4ed0cddf8fb",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T15:12:18.844Z",
+      "lastStageChangeAt": "2026-02-27T20:41:17.438Z",
+      "createdAt": "2026-02-26T15:12:18.844Z",
+      "updatedAt": "2026-02-27T20:41:17.453Z",
+      "indexVersion": 2,
+      "contactId": "d9DiUG3iEYzEEDfkmuQ1",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "DyzvzIoVskuzLwUjwd4P",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "d9DiUG3iEYzEEDfkmuQ1",
+          "fullName": "Adrian Small",
+          "contactName": "Adrian Small",
+          "companyName": null,
+          "email": "asmall@ttrsir.com",
+          "phone": "+12023605418",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "d9DiUG3iEYzEEDfkmuQ1",
+        "name": "Adrian Small",
+        "companyName": null,
+        "email": "asmall@ttrsir.com",
+        "phone": "+12023605418",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772118738844,
+        "d9DiUG3iEYzEEDfkmuQ1"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "eGXo3kjgngXZceboTokz",
+      "name": "Ian MacDougall",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T15:03:30.900Z",
+      "lastStageChangeAt": "2026-02-26T15:03:30.900Z",
+      "createdAt": "2026-02-26T15:03:30.900Z",
+      "updatedAt": "2026-02-26T15:03:30.900Z",
+      "contactId": "tANmDmBHVXba8lUxP2LC",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "eGXo3kjgngXZceboTokz",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "tANmDmBHVXba8lUxP2LC",
+          "fullName": "Ian MacDougall",
+          "contactName": "Ian MacDougall",
+          "companyName": null,
+          "email": "ian.macdougall@newwestern.com",
+          "phone": "+12023747297",
+          "tags": [
+            "tier 2",
+            "smartercontact"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "tANmDmBHVXba8lUxP2LC",
+        "name": "Ian MacDougall",
+        "companyName": null,
+        "email": "ian.macdougall@newwestern.com",
+        "phone": "+12023747297",
+        "tags": [
+          "tier 2",
+          "smartercontact"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772118210900,
+        "tANmDmBHVXba8lUxP2LC"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "bK55hSxomN0odf7SvlE0",
+      "name": "4119 Dawn Valley Ct, Chantilly, VA 20151",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T14:59:05.874Z",
+      "lastStageChangeAt": "2026-02-27T16:10:44.142Z",
+      "createdAt": "2026-02-26T14:59:05.874Z",
+      "updatedAt": "2026-02-27T16:10:44.152Z",
+      "indexVersion": 2,
+      "contactId": "kVU2cQ6XCx8nWfgPrFh9",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "bK55hSxomN0odf7SvlE0",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "kVU2cQ6XCx8nWfgPrFh9",
+          "fullName": "Shannon Calvery",
+          "contactName": "Shannon Calvery",
+          "companyName": null,
+          "email": "shannon@shannoncalvery.com",
+          "phone": "+17032821892",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "kVU2cQ6XCx8nWfgPrFh9",
+        "name": "Shannon Calvery",
+        "companyName": null,
+        "email": "shannon@shannoncalvery.com",
+        "phone": "+17032821892",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772117945874,
+        "kVU2cQ6XCx8nWfgPrFh9"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "yHLxvKmW3xp5PreziJqC",
+      "name": "Shannon Calvery",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T14:58:58.048Z",
+      "lastStageChangeAt": "2026-02-27T16:10:44.024Z",
+      "createdAt": "2026-02-26T14:58:58.048Z",
+      "updatedAt": "2026-02-27T16:10:44.398Z",
+      "contactId": "kVU2cQ6XCx8nWfgPrFh9",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "yHLxvKmW3xp5PreziJqC",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "kVU2cQ6XCx8nWfgPrFh9",
+          "fullName": "Shannon Calvery",
+          "contactName": "Shannon Calvery",
+          "companyName": null,
+          "email": "shannon@shannoncalvery.com",
+          "phone": "+17032821892",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "kVU2cQ6XCx8nWfgPrFh9",
+        "name": "Shannon Calvery",
+        "companyName": null,
+        "email": "shannon@shannoncalvery.com",
+        "phone": "+17032821892",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772117938048,
+        "kVU2cQ6XCx8nWfgPrFh9"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "ZJB9ThbwrTahDFdLs8rx",
+      "name": "Raymond Bacon",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T14:44:22.526Z",
+      "lastStageChangeAt": "2026-02-27T16:08:14.976Z",
+      "createdAt": "2026-02-26T14:44:22.526Z",
+      "updatedAt": "2026-02-27T16:08:15.218Z",
+      "contactId": "zlWgzDouSKFcQ8KyGVAO",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "ZJB9ThbwrTahDFdLs8rx",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "zlWgzDouSKFcQ8KyGVAO",
+          "fullName": "Raymond Bacon",
+          "contactName": "Raymond Bacon",
+          "companyName": null,
+          "email": "baconandassoc@gmail.com",
+          "phone": "+17039284044",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "zlWgzDouSKFcQ8KyGVAO",
+        "name": "Raymond Bacon",
+        "companyName": null,
+        "email": "baconandassoc@gmail.com",
+        "phone": "+17039284044",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772117062526,
+        "zlWgzDouSKFcQ8KyGVAO"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "N8n6xpzN3aIyibKbY9g9",
+      "name": "9045 Continental Pl, Landover, MD 20785",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "a46c230b-a5b2-4328-9c09-fa62ac2a8cf6",
+      "pipelineStageUId": "a46c230b-a5b2-4328-9c09-fa62ac2a8cf6",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T14:33:09.565Z",
+      "lastStageChangeAt": "2026-02-27T16:03:13.489Z",
+      "createdAt": "2026-02-26T14:33:09.565Z",
+      "updatedAt": "2026-02-27T16:03:13.506Z",
+      "indexVersion": 2,
+      "contactId": "tghHMM2E5qhL6CmeeMKR",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "N8n6xpzN3aIyibKbY9g9",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "tghHMM2E5qhL6CmeeMKR",
+          "fullName": "Barb Scheeler",
+          "contactName": "Barb Scheeler",
+          "companyName": null,
+          "email": "barbara.scheeler@cbmove.com",
+          "phone": "+17038870891",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "tghHMM2E5qhL6CmeeMKR",
+        "name": "Barb Scheeler",
+        "companyName": null,
+        "email": "barbara.scheeler@cbmove.com",
+        "phone": "+17038870891",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772116389565,
+        "tghHMM2E5qhL6CmeeMKR"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "yblC3DaPp7TSIQdYcrvo",
+      "name": "Barb Scheeler",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-26T14:32:50.321Z",
+      "lastStageChangeAt": "2026-02-27T16:03:36.313Z",
+      "createdAt": "2026-02-26T14:32:50.321Z",
+      "updatedAt": "2026-02-27T16:03:36.948Z",
+      "contactId": "tghHMM2E5qhL6CmeeMKR",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "yblC3DaPp7TSIQdYcrvo",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "tghHMM2E5qhL6CmeeMKR",
+          "fullName": "Barb Scheeler",
+          "contactName": "Barb Scheeler",
+          "companyName": null,
+          "email": "barbara.scheeler@cbmove.com",
+          "phone": "+17038870891",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "tghHMM2E5qhL6CmeeMKR",
+        "name": "Barb Scheeler",
+        "companyName": null,
+        "email": "barbara.scheeler@cbmove.com",
+        "phone": "+17038870891",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772116370321,
+        "tghHMM2E5qhL6CmeeMKR"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "gmKcmtWk9vGi2ghLHw8O",
+      "name": "1313 N Walnut St, Wilmington, DE 19801",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T20:59:36.566Z",
+      "lastStageChangeAt": "2026-02-26T20:50:11.704Z",
+      "createdAt": "2026-02-25T20:59:36.566Z",
+      "updatedAt": "2026-02-26T20:50:12.053Z",
+      "indexVersion": 2,
+      "contactId": "gFlnekv4TkFH8QfWrqmN",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "gmKcmtWk9vGi2ghLHw8O",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "gFlnekv4TkFH8QfWrqmN",
+          "fullName": "Margaret Poisson",
+          "contactName": "Margaret Poisson",
+          "companyName": null,
+          "email": "maggiepoisson@gmail.com",
+          "phone": "+13023996835",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "gFlnekv4TkFH8QfWrqmN",
+        "name": "Margaret Poisson",
+        "companyName": null,
+        "email": "maggiepoisson@gmail.com",
+        "phone": "+13023996835",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772053176566,
+        "gFlnekv4TkFH8QfWrqmN"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "0UocCmOyuCaegpiZUYUy",
+      "name": "Margaret Poisson",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T20:59:31.291Z",
+      "lastStageChangeAt": "2026-02-26T20:50:11.753Z",
+      "createdAt": "2026-02-25T20:59:31.290Z",
+      "updatedAt": "2026-02-26T20:50:12.205Z",
+      "contactId": "gFlnekv4TkFH8QfWrqmN",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "0UocCmOyuCaegpiZUYUy",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "gFlnekv4TkFH8QfWrqmN",
+          "fullName": "Margaret Poisson",
+          "contactName": "Margaret Poisson",
+          "companyName": null,
+          "email": "maggiepoisson@gmail.com",
+          "phone": "+13023996835",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "gFlnekv4TkFH8QfWrqmN",
+        "name": "Margaret Poisson",
+        "companyName": null,
+        "email": "maggiepoisson@gmail.com",
+        "phone": "+13023996835",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772053171290,
+        "gFlnekv4TkFH8QfWrqmN"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "85Gk4KofZBlZnxthL36P",
+      "name": "32384 Boston Rd, Painter, VA 23420",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "c9f855a9-6b7f-4e37-b4fd-32299f72d940",
+      "pipelineStageUId": "c9f855a9-6b7f-4e37-b4fd-32299f72d940",
+      "assignedTo": "RnHYJ1ChxIX3pauFGRs2",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T20:46:57.084Z",
+      "lastStageChangeAt": "2026-02-26T16:56:23.493Z",
+      "createdAt": "2026-02-25T20:46:57.084Z",
+      "updatedAt": "2026-02-26T16:56:23.519Z",
+      "indexVersion": 4,
+      "contactId": "Ty9yAVSJ6KH8Ukjp5NN5",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "85Gk4KofZBlZnxthL36P",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "Ty9yAVSJ6KH8Ukjp5NN5",
+          "fullName": "Raquel Strand",
+          "contactName": "Raquel Strand",
+          "companyName": null,
+          "email": "raquelstrand@gmail.com",
+          "phone": "+16782326566",
+          "tags": [
+            "tier 2",
+            "ai off"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "Ty9yAVSJ6KH8Ukjp5NN5",
+        "name": "Raquel Strand",
+        "companyName": null,
+        "email": "raquelstrand@gmail.com",
+        "phone": "+16782326566",
+        "tags": [
+          "tier 2",
+          "ai off"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772052417084,
+        "Ty9yAVSJ6KH8Ukjp5NN5"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "40BcMoPoKLmha5Nm2clw",
+      "name": "454 Broadneck Rd, Annapolis, MD 21409",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "a46c230b-a5b2-4328-9c09-fa62ac2a8cf6",
+      "pipelineStageUId": "a46c230b-a5b2-4328-9c09-fa62ac2a8cf6",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T20:19:20.577Z",
+      "lastStageChangeAt": "2026-02-27T15:11:20.404Z",
+      "createdAt": "2026-02-25T20:19:20.577Z",
+      "updatedAt": "2026-02-27T15:11:20.419Z",
+      "indexVersion": 3,
+      "contactId": "xVe0OlQYZO0ulLpRzNll",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "40BcMoPoKLmha5Nm2clw",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "xVe0OlQYZO0ulLpRzNll",
+          "fullName": "Dorene Mont",
+          "contactName": "Dorene Mont",
+          "companyName": null,
+          "email": "montdorene@gmail.com",
+          "phone": "+14102416230",
+          "tags": [
+            "ai off",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "xVe0OlQYZO0ulLpRzNll",
+        "name": "Dorene Mont",
+        "companyName": null,
+        "email": "montdorene@gmail.com",
+        "phone": "+14102416230",
+        "tags": [
+          "ai off",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772050760577,
+        "xVe0OlQYZO0ulLpRzNll"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "CRM UI",
+          "isFirst": true,
+          "medium": "manual"
+        }
+      ]
+    },
+    {
+      "id": "89rt0tRojAqtCoD1W4c5",
+      "name": "Brendan Easter",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T20:01:07.423Z",
+      "lastStageChangeAt": "2026-02-25T20:01:07.423Z",
+      "createdAt": "2026-02-25T20:01:07.423Z",
+      "updatedAt": "2026-02-25T20:01:07.423Z",
+      "contactId": "tgd7o17pCHrYP6QsPKVs",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "89rt0tRojAqtCoD1W4c5",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "tgd7o17pCHrYP6QsPKVs",
+          "fullName": "Brendan Easter",
+          "contactName": "Brendan Easter",
+          "companyName": null,
+          "email": "brendan@proximityrealty.com",
+          "phone": "+18042399665",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "tgd7o17pCHrYP6QsPKVs",
+        "name": "Brendan Easter",
+        "companyName": null,
+        "email": "brendan@proximityrealty.com",
+        "phone": "+18042399665",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772049667423,
+        "tgd7o17pCHrYP6QsPKVs"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "Vu1l5ZSdPfBlWEG8Oszl",
+      "name": "Mary Beth Johnson",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T19:56:55.943Z",
+      "lastStageChangeAt": "2026-02-25T20:29:02.941Z",
+      "createdAt": "2026-02-25T19:56:55.943Z",
+      "updatedAt": "2026-02-25T20:29:03.085Z",
+      "contactId": "y4R2P43uC0DrTGkq9RMC",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "Vu1l5ZSdPfBlWEG8Oszl",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "y4R2P43uC0DrTGkq9RMC",
+          "fullName": "Mary Beth Johnson",
+          "contactName": "Mary Beth Johnson",
+          "companyName": null,
+          "email": "marybeth@kerishullteam.com",
+          "phone": "+18043504865",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "y4R2P43uC0DrTGkq9RMC",
+        "name": "Mary Beth Johnson",
+        "companyName": null,
+        "email": "marybeth@kerishullteam.com",
+        "phone": "+18043504865",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772049415943,
+        "y4R2P43uC0DrTGkq9RMC"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "yzoUhnBEteKEKB4NfYuY",
+      "name": "Abby Otu",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T18:50:00.964Z",
+      "lastStageChangeAt": "2026-02-25T18:50:00.964Z",
+      "createdAt": "2026-02-25T18:50:00.964Z",
+      "updatedAt": "2026-02-25T18:50:00.964Z",
+      "contactId": "4CpvJhvZAKDVTw0kTujh",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "yzoUhnBEteKEKB4NfYuY",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "4CpvJhvZAKDVTw0kTujh",
+          "fullName": "Abby Otu",
+          "contactName": "Abby Otu",
+          "companyName": null,
+          "email": "abasiamaotu.realtor@gmail.com",
+          "phone": "+13017322736",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "4CpvJhvZAKDVTw0kTujh",
+        "name": "Abby Otu",
+        "companyName": null,
+        "email": "abasiamaotu.realtor@gmail.com",
+        "phone": "+13017322736",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772045400964,
+        "4CpvJhvZAKDVTw0kTujh"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "MWPzIfhfH8NbspPQgAxO",
+      "name": "Bryce Ford",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T18:33:33.156Z",
+      "lastStageChangeAt": "2026-02-25T18:33:33.156Z",
+      "createdAt": "2026-02-25T18:33:33.156Z",
+      "updatedAt": "2026-02-25T18:33:33.156Z",
+      "contactId": "08n7GlfCcPrtJHyGhuNv",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "MWPzIfhfH8NbspPQgAxO",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "08n7GlfCcPrtJHyGhuNv",
+          "fullName": "Bryce Ford",
+          "contactName": "Bryce Ford",
+          "companyName": null,
+          "email": "bryce@thestrumgroup.com",
+          "phone": "+18049013451",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "08n7GlfCcPrtJHyGhuNv",
+        "name": "Bryce Ford",
+        "companyName": null,
+        "email": "bryce@thestrumgroup.com",
+        "phone": "+18049013451",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772044413156,
+        "08n7GlfCcPrtJHyGhuNv"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "tsC64iXgbuEfKoLpkG11",
+      "name": "Leigh Hampton Porch",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T18:28:43.920Z",
+      "lastStageChangeAt": "2026-02-25T18:28:43.920Z",
+      "createdAt": "2026-02-25T18:28:43.920Z",
+      "updatedAt": "2026-02-25T18:28:43.920Z",
+      "contactId": "YeRuAs3769STnCXSIgvA",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "tsC64iXgbuEfKoLpkG11",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "YeRuAs3769STnCXSIgvA",
+          "fullName": "Leigh Hampton Porch",
+          "contactName": "Leigh Hampton Porch",
+          "companyName": null,
+          "email": "leighporch@yahoo.com",
+          "phone": "+18049557663",
+          "tags": [
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "YeRuAs3769STnCXSIgvA",
+        "name": "Leigh Hampton Porch",
+        "companyName": null,
+        "email": "leighporch@yahoo.com",
+        "phone": "+18049557663",
+        "tags": [
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772044123920,
+        "YeRuAs3769STnCXSIgvA"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "medium": "zapier",
+          "isFirst": true
+        }
+      ]
+    },
+    {
+      "id": "wvCkQze6KsOVmpI4NDhZ",
+      "name": "3018 E Fayette St, Baltimore, MD 21224",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "pipelineStageUId": "db535900-dcd7-4450-9bc4-fa4bd56ecc7d",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T18:17:39.119Z",
+      "lastStageChangeAt": "2026-02-27T18:55:19.021Z",
+      "createdAt": "2026-02-25T18:17:39.119Z",
+      "updatedAt": "2026-02-27T18:55:19.037Z",
+      "indexVersion": 2,
+      "contactId": "yBw692qaoeMFKag0QAbK",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "wvCkQze6KsOVmpI4NDhZ",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "yBw692qaoeMFKag0QAbK",
+          "fullName": "Ken Noroozi",
+          "contactName": "Ken Noroozi",
+          "companyName": null,
+          "email": "ken@vantagecr.com",
+          "phone": "+13017286037",
+          "tags": [
+            "smartercontact",
+            "ai off",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "yBw692qaoeMFKag0QAbK",
+        "name": "Ken Noroozi",
+        "companyName": null,
+        "email": "ken@vantagecr.com",
+        "phone": "+13017286037",
+        "tags": [
+          "smartercontact",
+          "ai off",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772043459119,
+        "yBw692qaoeMFKag0QAbK"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "RVtsVMViOAxgaZcmTmyU",
+      "name": "Ken Noroozi",
+      "monetaryValue": 0,
+      "pipelineId": "x1pZVDQFRx1bYCoYzN7l",
+      "pipelineStageId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "pipelineStageUId": "63955889-ce5c-46ec-91e6-8c4dbb7907a7",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T18:17:20.532Z",
+      "lastStageChangeAt": "2026-02-27T18:55:19.728Z",
+      "createdAt": "2026-02-25T18:17:20.532Z",
+      "updatedAt": "2026-02-27T18:55:19.956Z",
+      "contactId": "yBw692qaoeMFKag0QAbK",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "RVtsVMViOAxgaZcmTmyU",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "yBw692qaoeMFKag0QAbK",
+          "fullName": "Ken Noroozi",
+          "contactName": "Ken Noroozi",
+          "companyName": null,
+          "email": "ken@vantagecr.com",
+          "phone": "+13017286037",
+          "tags": [
+            "smartercontact",
+            "ai off",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "yBw692qaoeMFKag0QAbK",
+        "name": "Ken Noroozi",
+        "companyName": null,
+        "email": "ken@vantagecr.com",
+        "phone": "+13017286037",
+        "tags": [
+          "smartercontact",
+          "ai off",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772043440532,
+        "yBw692qaoeMFKag0QAbK"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    },
+    {
+      "id": "eoQQnPf1jDQ1Ms52nk5J",
+      "name": "1639 Appleton St, Baltimore, MD 21217",
+      "monetaryValue": 0,
+      "pipelineId": "gkBz7GpqzEUAsZVfWBu7",
+      "pipelineStageId": "e148e12f-824a-450a-a4fc-32f35096fdd8",
+      "pipelineStageUId": "e148e12f-824a-450a-a4fc-32f35096fdd8",
+      "assignedTo": "JHAYHRpqFETy5U4jVSqB",
+      "status": "open",
+      "source": null,
+      "lastStatusChangeAt": "2026-02-25T18:14:23.111Z",
+      "lastStageChangeAt": "2026-02-25T19:05:28.966Z",
+      "createdAt": "2026-02-25T18:14:23.111Z",
+      "updatedAt": "2026-02-25T19:05:28.978Z",
+      "indexVersion": 2,
+      "contactId": "VjHlkw0w66NG00xqS3Lb",
+      "locationId": "ZsNsqaZULO6gGQhingYC",
+      "customFields": [],
+      "lostReasonId": null,
+      "followers": [],
+      "relations": [
+        {
+          "associationId": "OPPORTUNITIES_CONTACTS_ASSOCIATION",
+          "relationId": "eoQQnPf1jDQ1Ms52nk5J",
+          "primary": true,
+          "objectKey": "contact",
+          "recordId": "VjHlkw0w66NG00xqS3Lb",
+          "fullName": "Ashley Dunbar",
+          "contactName": "Ashley Dunbar",
+          "companyName": null,
+          "email": "ashley@blue-casa.com",
+          "phone": "+14439166701",
+          "tags": [
+            "smartercontact",
+            "tier 2"
+          ],
+          "attributed": null
+        }
+      ],
+      "contact": {
+        "id": "VjHlkw0w66NG00xqS3Lb",
+        "name": "Ashley Dunbar",
+        "companyName": null,
+        "email": "ashley@blue-casa.com",
+        "phone": "+14439166701",
+        "tags": [
+          "smartercontact",
+          "tier 2"
+        ],
+        "score": []
+      },
+      "sort": [
+        1772043263111,
+        "VjHlkw0w66NG00xqS3Lb"
+      ],
+      "attributions": [
+        {
+          "utmSessionSource": "Third Party",
+          "isFirst": true,
+          "medium": "zapier"
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2026-03-02T18:21:43.419Z",
+  "total": 4071
+}

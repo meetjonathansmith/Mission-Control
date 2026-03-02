@@ -292,12 +292,6 @@
     <div class="last-updated" id="last-updated">Loading...</div>
 
     <script>
-        const GHL_TOKEN = 'pit-34f02155-ae81-4f06-95aa-0bcb4239518d';
-        const LOCATION_ID = 'ZsNsqaZULO6gGQhingYC';
-        const PIPELINE_ID = 'gkBz7GpqzEUAsZVfWBu7';
-
-        // SC Campaign data structure (from your actual campaigns)
-        // We'll track based on tags and opportunity sources
         const MARKETS = {
             'NOVA': { name: 'Northern Virginia', target: 200 },
             'Richmond': { name: 'Richmond/VA Beach', target: 150 },
@@ -307,14 +301,8 @@
 
         async function fetchOpportunities() {
             try {
-                const response = await fetch(`https://services.leadconnectorhq.com/opportunities/search?location_id=${LOCATION_ID}&pipelineId=${PIPELINE_ID}&limit=1000`, {
-                    method: 'GET',
-                    headers: {
-                        'Authorization': `Bearer ${GHL_TOKEN}`,
-                        'Version': '2021-07-28'
-                    }
-                });
-
+                // Fetch from pre-generated JSON (updated hourly by GitHub Actions)
+                const response = await fetch('./data/sc-campaign-data.json');
                 const data = await response.json();
                 return data.opportunities || [];
             } catch (error) {

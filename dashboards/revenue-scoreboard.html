@@ -235,23 +235,12 @@
     <div class="last-updated" id="last-updated">Loading...</div>
 
     <script>
-        const GHL_TOKEN = 'pit-34f02155-ae81-4f06-95aa-0bcb4239518d';
-        const LOCATION_ID = 'ZsNsqaZULO6gGQhingYC';
-        const PIPELINE_ID = 'gkBz7GpqzEUAsZVfWBu7';
-        const CLOSED_STAGE_ID = 'd37d75d3-688f-4cc2-8541-ad516bcde91b';
-
         async function fetchClosedDeals() {
             try {
-                const response = await fetch(`https://services.leadconnectorhq.com/opportunities/search?location_id=${LOCATION_ID}&pipelineId=${PIPELINE_ID}&pipelineStageId=${CLOSED_STAGE_ID}&limit=1000`, {
-                    method: 'GET',
-                    headers: {
-                        'Authorization': `Bearer ${GHL_TOKEN}`,
-                        'Version': '2021-07-28'
-                    }
-                });
-
+                // Fetch from pre-generated JSON (updated hourly by GitHub Actions)
+                const response = await fetch('./data/revenue-data.json');
                 const data = await response.json();
-                return data.opportunities || [];
+                return data.deals || [];
             } catch (error) {
                 console.error('Error fetching closed deals:', error);
                 return [];
