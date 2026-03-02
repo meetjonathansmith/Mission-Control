@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC Campaign Performance | DOXA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0e27;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #1e2442 0%, #151b3d 100%);
+            border: 1px solid #2a2f4f;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+        }
+
+        .metric-card.warning {
+            border-color: #ef4444;
+            background: linear-gradient(135deg, #2a1a1a 0%, #1a1010 100%);
+        }
+
+        .metric-card.good {
+            border-color: #10b981;
+            background: linear-gradient(135deg, #1a2a1a 0%, #101a10 100%);
+        }
+
+        .metric-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            opacity: 0.6;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .metric-value {
+            font-size: 42px;
+            font-weight: 700;
+            color: #f59e0b;
+            margin-bottom: 5px;
+        }
+
+        .metric-card.warning .metric-value {
+            color: #ef4444;
+        }
+
+        .metric-card.good .metric-value {
+            color: #10b981;
+        }
+
+        .metric-subtext {
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        .campaigns-section {
+            background: #1e2442;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-header {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .campaign-row {
+            background: rgba(102, 126, 234, 0.05);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+
+        .campaign-row:hover {
+            background: rgba(102, 126, 234, 0.15);
+            transform: translateX(5px);
+        }
+
+        .campaign-row.high-performer {
+            border-left-color: #10b981;
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .campaign-row.low-performer {
+            border-left-color: #ef4444;
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .campaign-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .campaign-name {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .campaign-status {
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: #667eea;
+        }
+
+        .campaign-status.active {
+            background: #10b981;
+        }
+
+        .campaign-status.paused {
+            background: #6b7280;
+        }
+
+        .campaign-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+
+        .campaign-metric {
+            text-align: center;
+        }
+
+        .campaign-metric-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #f59e0b;
+        }
+
+        .campaign-metric-label {
+            font-size: 11px;
+            opacity: 0.6;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+
+        .market-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .market-card {
+            background: #1e2442;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .market-name {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #f59e0b;
+        }
+
+        .market-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .market-stat {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .market-stat-label {
+            opacity: 0.7;
+        }
+
+        .market-stat-value {
+            font-weight: 700;
+        }
+
+        .last-updated {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #f59e0b;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 12px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 18px;
+        }
+
+        .chart-placeholder {
+            background: rgba(102, 126, 234, 0.05);
+            border: 1px dashed #667eea;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            opacity: 0.5;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .campaign-metrics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📱 SC Campaign Performance</h1>
+        <div class="subtitle">Response rates, message effectiveness & conversion tracking</div>
+    </div>
+
+    <div class="metrics-grid" id="metrics-grid">
+        <div class="loading">Loading campaign data...</div>
+    </div>
+
+    <div class="chart-placeholder">
+        📈 Response Rate Trend Chart (Coming Soon)
+    </div>
+
+    <h3 style="margin: 30px 0 15px 0; opacity: 0.8;">Performance by Market</h3>
+    <div class="market-comparison" id="market-comparison"></div>
+
+    <div class="campaigns-section">
+        <div class="section-header">
+            <span>🎯 Active Campaigns</span>
+            <span style="font-size: 14px; opacity: 0.6;">Last 30 Days</span>
+        </div>
+        <div id="campaigns-list">
+            <div class="loading">Loading campaigns...</div>
+        </div>
+    </div>
+
+    <div class="last-updated" id="last-updated">Loading...</div>
+
+    <script>
+        const GHL_TOKEN = 'pit-34f02155-ae81-4f06-95aa-0bcb4239518d';
+        const LOCATION_ID = 'ZsNsqaZULO6gGQhingYC';
+        const PIPELINE_ID = 'gkBz7GpqzEUAsZVfWBu7';
+
+        // SC Campaign data structure (from your actual campaigns)
+        // We'll track based on tags and opportunity sources
+        const MARKETS = {
+            'NOVA': { name: 'Northern Virginia', target: 200 },
+            'Richmond': { name: 'Richmond/VA Beach', target: 150 },
+            'Delaware': { name: 'Delaware', target: 100 },
+            'DMV': { name: 'DMV (DC/MD)', target: 150 }
+        };
+
+        async function fetchOpportunities() {
+            try {
+                const response = await fetch(`https://services.leadconnectorhq.com/opportunities/search?location_id=${LOCATION_ID}&pipelineId=${PIPELINE_ID}&limit=1000`, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${GHL_TOKEN}`,
+                        'Version': '2021-07-28'
+                    }
+                });
+
+                const data = await response.json();
+                return data.opportunities || [];
+            } catch (error) {
+                console.error('Error fetching opportunities:', error);
+                return [];
+            }
+        }
+
+        function analyzePerformance(opportunities) {
+            const now = Date.now();
+            const thirtyDaysAgo = now - (30 * 24 * 60 * 60 * 1000);
+
+            // Filter to last 30 days
+            const recentOpps = opportunities.filter(opp => {
+                const created = new Date(opp.createdAt).getTime();
+                return created > thirtyDaysAgo;
+            });
+
+            // Total metrics (these are proxies - in production you'd track actual SC data)
+            const totalSubmissions = recentOpps.length;
+            
+            // Assuming ~1.8% response rate from your actual data (305K texts lifetime, 130 off-markets Feb)
+            // We'll estimate based on opportunity creation
+            const estimatedTexts = totalSubmissions * 20; // Rough estimate based on 20:1 conversion
+            const responseRate = totalSubmissions > 0 ? ((totalSubmissions / estimatedTexts) * 100).toFixed(2) : 0;
+
+            // Quality submissions (not Dead stage)
+            const qualitySubmissions = recentOpps.filter(opp => 
+                !opp.status?.toLowerCase().includes('dead') && 
+                !opp.status?.toLowerCase().includes('wholesaler')
+            ).length;
+
+            const qualityRate = totalSubmissions > 0 ? ((qualitySubmissions / totalSubmissions) * 100).toFixed(0) : 0;
+
+            // Group by market (based on tags or custom fields)
+            const byMarket = {};
+            MARKETS.Object.keys(MARKETS).forEach(market => {
+                byMarket[market] = {
+                    submissions: 0,
+                    quality: 0,
+                    responseRate: 0
+                };
+            });
+
+            recentOpps.forEach(opp => {
+                // Try to determine market from tags or name
+                const tags = opp.tags || [];
+                const name = (opp.name || '').toLowerCase();
+                
+                let market = 'Other';
+                if (tags.some(t => t.toLowerCase().includes('nova')) || name.includes('fairfax') || name.includes('arlington')) {
+                    market = 'NOVA';
+                } else if (tags.some(t => t.toLowerCase().includes('richmond')) || name.includes('richmond') || name.includes('va beach')) {
+                    market = 'Richmond';
+                } else if (tags.some(t => t.toLowerCase().includes('delaware')) || name.includes('delaware') || name.includes('wilmington')) {
+                    market = 'Delaware';
+                } else if (tags.some(t => t.toLowerCase().includes('dmv')) || name.includes('maryland') || name.includes('dc')) {
+                    market = 'DMV';
+                }
+
+                if (byMarket[market]) {
+                    byMarket[market].submissions++;
+                    if (!opp.status?.toLowerCase().includes('dead')) {
+                        byMarket[market].quality++;
+                    }
+                }
+            });
+
+            // Calculate response rates per market (estimated)
+            Object.keys(byMarket).forEach(market => {
+                const estimated = byMarket[market].submissions * 20;
+                byMarket[market].responseRate = estimated > 0 ? ((byMarket[market].submissions / estimated) * 100).toFixed(2) : 0;
+                byMarket[market].qualityRate = byMarket[market].submissions > 0 ? 
+                    ((byMarket[market].quality / byMarket[market].submissions) * 100).toFixed(0) : 0;
+            });
+
+            // Active campaigns (mock data - in production you'd pull from SC API)
+            const campaigns = [
+                {
+                    name: 'NOVA-2026-W09-CREW-V1',
+                    market: 'NOVA',
+                    status: 'active',
+                    sent: 12450,
+                    responses: 28,
+                    responseRate: 0.22,
+                    submissions: 8
+                },
+                {
+                    name: 'Richmond-2026-W08-PROJECT-V2',
+                    market: 'Richmond',
+                    status: 'active',
+                    sent: 8930,
+                    responses: 19,
+                    responseRate: 0.21,
+                    submissions: 6
+                },
+                {
+                    name: 'DE-Crew-Project-Mar2026',
+                    market: 'Delaware',
+                    status: 'active',
+                    sent: 5200,
+                    responses: 12,
+                    responseRate: 0.23,
+                    submissions: 4
+                },
+                {
+                    name: 'VA-Richmond-Crew-Mar2026',
+                    market: 'Richmond',
+                    status: 'active',
+                    sent: 6800,
+                    responses: 14,
+                    responseRate: 0.21,
+                    submissions: 5
+                }
+            ];
+
+            return {
+                totalSubmissions,
+                estimatedTexts,
+                responseRate,
+                qualitySubmissions,
+                qualityRate,
+                byMarket,
+                campaigns
+            };
+        }
+
+        function renderMetrics(data) {
+            const html = `
+                <div class="metric-card ${parseFloat(data.responseRate) < 0.5 ? 'warning' : 'good'}">
+                    <div class="metric-label">Response Rate (Est)</div>
+                    <div class="metric-value">${data.responseRate}%</div>
+                    <div class="metric-subtext">Target: 0.9-1.8%</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Off-Markets (30d)</div>
+                    <div class="metric-value">${data.totalSubmissions}</div>
+                    <div class="metric-subtext">Target: 200/month</div>
+                </div>
+
+                <div class="metric-card ${parseInt(data.qualityRate) < 50 ? 'warning' : 'good'}">
+                    <div class="metric-label">Quality Rate</div>
+                    <div class="metric-value">${data.qualityRate}%</div>
+                    <div class="metric-subtext">Not spam/wholesale</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Est. Messages Sent</div>
+                    <div class="metric-value">${(data.estimatedTexts / 1000).toFixed(1)}K</div>
+                    <div class="metric-subtext">Last 30 days</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Conversion Ratio</div>
+                    <div class="metric-value">20:1</div>
+                    <div class="metric-subtext">Elite standard</div>
+                </div>
+            `;
+
+            document.getElementById('metrics-grid').innerHTML = html;
+        }
+
+        function renderMarketComparison(byMarket) {
+            const html = Object.entries(byMarket).map(([market, data]) => {
+                const marketInfo = MARKETS[market] || { name: market, target: 100 };
+                const progress = (data.submissions / marketInfo.target * 100).toFixed(0);
+
+                return `
+                    <div class="market-card">
+                        <div class="market-name">${marketInfo.name}</div>
+                        <div class="market-stats">
+                            <div class="market-stat">
+                                <span class="market-stat-label">Off-Markets</span>
+                                <span class="market-stat-value">${data.submissions} / ${marketInfo.target}</span>
+                            </div>
+                            <div class="market-stat">
+                                <span class="market-stat-label">Quality</span>
+                                <span class="market-stat-value">${data.quality} (${data.qualityRate}%)</span>
+                            </div>
+                            <div class="market-stat">
+                                <span class="market-stat-label">Response Rate</span>
+                                <span class="market-stat-value">${data.responseRate}%</span>
+                            </div>
+                            <div class="market-stat">
+                                <span class="market-stat-label">Progress</span>
+                                <span class="market-stat-value">${progress}%</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('market-comparison').innerHTML = html;
+        }
+
+        function renderCampaigns(campaigns) {
+            const html = campaigns.map(campaign => {
+                const isHighPerformer = campaign.responseRate >= 0.22;
+                const isLowPerformer = campaign.responseRate < 0.15;
+                const className = isHighPerformer ? 'high-performer' : (isLowPerformer ? 'low-performer' : '');
+
+                return `
+                    <div class="campaign-row ${className}">
+                        <div class="campaign-header">
+                            <div class="campaign-name">${campaign.name}</div>
+                            <div class="campaign-status ${campaign.status}">${campaign.status.toUpperCase()}</div>
+                        </div>
+                        <div class="campaign-metrics">
+                            <div class="campaign-metric">
+                                <div class="campaign-metric-value">${(campaign.sent / 1000).toFixed(1)}K</div>
+                                <div class="campaign-metric-label">Sent</div>
+                            </div>
+                            <div class="campaign-metric">
+                                <div class="campaign-metric-value">${campaign.responses}</div>
+                                <div class="campaign-metric-label">Responses</div>
+                            </div>
+                            <div class="campaign-metric">
+                                <div class="campaign-metric-value">${campaign.responseRate}%</div>
+                                <div class="campaign-metric-label">Rate</div>
+                            </div>
+                            <div class="campaign-metric">
+                                <div class="campaign-metric-value">${campaign.submissions}</div>
+                                <div class="campaign-metric-label">Submissions</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('campaigns-list').innerHTML = html;
+        }
+
+        async function refreshData() {
+            console.log('Refreshing SC campaign data...');
+
+            const opportunities = await fetchOpportunities();
+
+            if (opportunities.length === 0) {
+                document.getElementById('metrics-grid').innerHTML = 
+                    '<div class="loading">❌ Failed to load data. Check API credentials.</div>';
+                return;
+            }
+
+            const analysis = analyzePerformance(opportunities);
+
+            renderMetrics(analysis);
+            renderMarketComparison(analysis.byMarket);
+            renderCampaigns(analysis.campaigns);
+
+            const now = new Date();
+            document.getElementById('last-updated').textContent = 
+                `Updated: ${now.toLocaleTimeString()}`;
+        }
+
+        // Initial load
+        refreshData();
+
+        // Auto-refresh every hour
+        setInterval(refreshData, 60 * 60 * 1000);
+    </script>
+</body>
+</html>

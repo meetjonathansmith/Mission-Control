@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOXA Agent Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0a0e27;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .header .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .stats-bar {
+            background: #151b3d;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 10px;
+            min-width: 100px;
+        }
+
+        .stat-card .label {
+            font-size: 11px;
+            text-transform: uppercase;
+            opacity: 0.6;
+            letter-spacing: 1px;
+        }
+
+        .stat-card .value {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 5px;
+            color: #667eea;
+        }
+
+        .controls {
+            background: #151b3d;
+            padding: 15px 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            border-bottom: 1px solid #2a2f4f;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px 15px;
+            background: #0a0e27;
+            border: 1px solid #2a2f4f;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            background: #2a2f4f;
+            border: 1px solid #667eea;
+            border-radius: 8px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .agent-grid {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .agent-card {
+            background: linear-gradient(135deg, #1e2442 0%, #151b3d 100%);
+            border: 1px solid #2a2f4f;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .agent-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .agent-card.vip {
+            border: 2px solid #ffd700;
+            background: linear-gradient(135deg, #2a2410 0%, #1e1c0f 100%);
+        }
+
+        .agent-card.vip::before {
+            content: "👑 VIP";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ffd700;
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .rank {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #667eea;
+            color: #fff;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .agent-name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .temperature-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .temp-hot { background: #10b981; }
+        .temp-warm { background: #3b82f6; }
+        .temp-cooling { background: #f59e0b; }
+        .temp-cold { background: #8b5cf6; }
+        .temp-frozen { background: #ef4444; }
+        .temp-unknown { background: #6b7280; }
+
+        .recency-bar-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .recency-bar {
+            height: 100%;
+            transition: width 0.3s;
+        }
+
+        .last-touch-info {
+            font-size: 13px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .metric {
+            text-align: center;
+            padding: 10px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 8px;
+        }
+
+        .metric .value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .metric .label {
+            font-size: 10px;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-top: 3px;
+            letter-spacing: 0.5px;
+        }
+
+        .deals-breakdown {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #2a2f4f;
+            font-size: 12px;
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        .refresh-indicator {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #667eea;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .ticker {
+            background: #10b981;
+            color: #fff;
+            padding: 8px;
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .ticker-content {
+            display: inline-block;
+            padding-left: 100%;
+            animation: ticker 30s linear infinite;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @media (max-width: 768px) {
+            .agent-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .stats-bar {
+                padding: 10px;
+            }
+
+            .stat-card {
+                min-width: 80px;
+            }
+
+            .stat-card .value {
+                font-size: 18px;
+            }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 18px;
+        }
+
+        .pagination {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticker">
+        <div class="ticker-content">
+            🔥 LIVE AGENT RANKINGS • Revenue + Quality + Last Touch Scoring • Top 200 Agents • Auto-refresh every 5 min • $682K+ Total Revenue
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>🎯 DOXA AGENT DASHBOARD</h1>
+        <div class="subtitle">Live Rankings • Revenue + Quality + Recency (Top 200)</div>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-card">
+            <div class="label">Total Agents</div>
+            <div class="value" id="stat-total">200</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">🔥 Hot</div>
+            <div class="value" id="stat-hot">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">✅ Warm</div>
+            <div class="value" id="stat-warm">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">⚠️ Cooling</div>
+            <div class="value" id="stat-cooling">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">🧊 Cold</div>
+            <div class="value" id="stat-cold">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">💀 Frozen</div>
+            <div class="value" id="stat-frozen">0</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <input type="text" class="search-box" id="search" placeholder="🔍 Search agents...">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="needsAttention">🚨 Needs Attention</button>
+        <button class="filter-btn" data-filter="vip">VIP Only</button>
+        <button class="filter-btn" data-filter="hot">🔥 Hot</button>
+        <button class="filter-btn" data-filter="frozen">💀 Frozen</button>
+        <button class="filter-btn" data-filter="topRevenue">💰 Top Revenue</button>
+    </div>
+
+    <div class="agent-grid" id="agent-grid">
+        <div class="loading">Loading 200 agents...</div>
+    </div>
+
+    <div class="pagination" id="pagination"></div>
+
+    <div class="refresh-indicator">
+        🔄 Next refresh: <span id="countdown">5:00</span>
+    </div>
+
+    <script>
+        let agentData = [];
+        let currentFilter = 'all';
+        let searchTerm = '';
+        let countdown = 300;
+
+        // Load agent data from JSON file (REAL conversation data)
+        const timestamp = new Date().getTime(); // Cache buster
+        fetch(`./agent-dashboard-full-200-REAL.json?v=${timestamp}`)
+            .then(res => {
+                if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+                return res.json();
+            })
+            .then(data => {
+                agentData = data;
+                console.log(`✅ Loaded ${agentData.length} agents with REAL conversation data`);
+                renderAgents();
+                updateStats();
+            })
+            .catch(err => {
+                console.error('Failed to load agent data:', err);
+                document.getElementById('agent-grid').innerHTML = 
+                    `<div class="loading">❌ Failed to load data: ${err.message}<br><br>File: agent-dashboard-full-200-REAL.json<br>URL: http://192.168.1.188:8888/agent-dashboard-full-200-REAL.json</div>`;
+            });
+
+        function formatCurrency(num) {
+            if (num >= 1000) return '$' + (num / 1000).toFixed(0) + 'K';
+            return '$' + num.toLocaleString();
+        }
+
+        function getTempClass(temp) {
+            if (temp.includes('HOT')) return 'temp-hot';
+            if (temp.includes('WARM')) return 'temp-warm';
+            if (temp.includes('COOLING')) return 'temp-cooling';
+            if (temp.includes('COLD')) return 'temp-cold';
+            if (temp.includes('FROZEN')) return 'temp-frozen';
+            return 'temp-unknown';
+        }
+
+        function getRecencyColor(score) {
+            if (score >= 80) return '#10b981';
+            if (score >= 50) return '#f59e0b';
+            if (score >= 25) return '#8b5cf6';
+            return '#ef4444';
+        }
+
+        function renderAgents() {
+            if (agentData.length === 0) return;
+
+            const grid = document.getElementById('agent-grid');
+            let filtered = [...agentData];
+
+            // Apply filter
+            if (currentFilter === 'needsAttention') {
+                filtered.sort((a, b) => b.daysAgo - a.daysAgo);
+            } else if (currentFilter === 'vip') {
+                filtered = filtered.filter(a => a.vip);
+            } else if (currentFilter === 'hot') {
+                filtered = filtered.filter(a => a.temperature.includes('HOT'));
+            } else if (currentFilter === 'frozen') {
+                filtered = filtered.filter(a => a.temperature.includes('FROZEN'));
+            } else if (currentFilter === 'topRevenue') {
+                filtered = filtered.filter(a => a.revenue >= 10000);
+            }
+
+            // Apply search
+            if (searchTerm) {
+                filtered = filtered.filter(a => 
+                    a.name.toLowerCase().includes(searchTerm.toLowerCase())
+                );
+            }
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="loading">No agents found</div>';
+                document.getElementById('pagination').textContent = '';
+                return;
+            }
+
+            grid.innerHTML = filtered.map(agent => `
+                <div class="agent-card ${agent.vip ? 'vip' : ''}">
+                    <div class="rank">#${agent.rank}</div>
+                    <div class="agent-name">${agent.name}</div>
+                    
+                    <div class="temperature-badge ${getTempClass(agent.temperature)}">
+                        ${agent.temperature}
+                    </div>
+                    
+                    <div class="last-touch-info">
+                        Last Touch: ${agent.lastTouch} (${agent.daysAgo}d ago)
+                    </div>
+                    
+                    <div class="recency-bar-container">
+                        <div class="recency-bar" style="width: ${agent.recencyScore}%; background: ${getRecencyColor(agent.recencyScore)};"></div>
+                    </div>
+                    <div style="font-size: 11px; opacity: 0.7; text-align: center; margin-top: 5px;">
+                        Recency Score: ${agent.recencyScore}/100
+                    </div>
+                    
+                    <div class="metrics">
+                        <div class="metric">
+                            <div class="value">${formatCurrency(agent.revenue)}</div>
+                            <div class="label">Revenue</div>
+                        </div>
+                        <div class="metric">
+                            <div class="value">${agent.totalDeals}</div>
+                            <div class="label">Total Deals</div>
+                        </div>
+                        <div class="metric">
+                            <div class="value">${agent.qualityDeals}</div>
+                            <div class="label">Quality</div>
+                        </div>
+                    </div>
+                    
+                    <div class="deals-breakdown">
+                        ${agent.stages}
+                    </div>
+                    
+                    ${agent.qualityDeals === agent.totalDeals && agent.totalDeals > 0 ? 
+                        '<div style="margin-top:10px; color:#10b981; font-size:11px; font-weight:700;">✓ 100% CONVERSION</div>' : ''}
+                </div>
+            `).join('');
+
+            document.getElementById('pagination').textContent = 
+                `Showing ${filtered.length} of ${agentData.length} agents`;
+        }
+
+        function updateStats() {
+            if (agentData.length === 0) return;
+            
+            document.getElementById('stat-total').textContent = agentData.length;
+            document.getElementById('stat-hot').textContent = agentData.filter(a => a.temperature.includes('HOT')).length;
+            document.getElementById('stat-warm').textContent = agentData.filter(a => a.temperature.includes('WARM')).length;
+            document.getElementById('stat-cooling').textContent = agentData.filter(a => a.temperature.includes('COOLING')).length;
+            document.getElementById('stat-cold').textContent = agentData.filter(a => a.temperature.includes('COLD')).length;
+            document.getElementById('stat-frozen').textContent = agentData.filter(a => a.temperature.includes('FROZEN')).length;
+        }
+
+        // Search functionality
+        document.getElementById('search').addEventListener('input', (e) => {
+            searchTerm = e.target.value;
+            renderAgents();
+        });
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderAgents();
+            });
+        });
+
+        // Countdown timer
+        function updateCountdown() {
+            countdown--;
+            const mins = Math.floor(countdown / 60);
+            const secs = countdown % 60;
+            document.getElementById('countdown').textContent = 
+                `${mins}:${secs.toString().padStart(2, '0')}`;
+            
+            if (countdown <= 0) {
+                countdown = 300;
+                // Reload data (REAL conversation data)
+                const timestamp = new Date().getTime();
+                fetch(`./agent-dashboard-full-200-REAL.json?v=${timestamp}`)
+                    .then(res => {
+                        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                        return res.json();
+                    })
+                    .then(data => {
+                        agentData = data;
+                        renderAgents();
+                        updateStats();
+                        console.log('🔄 Data refreshed');
+                    })
+                    .catch(err => console.error('Refresh failed:', err));
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

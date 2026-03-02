@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOXA Dashboards | Mission Control</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0e27;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .dashboards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .dashboard-card {
+            background: linear-gradient(135deg, #1e2442 0%, #151b3d 100%);
+            border: 1px solid #2a2f4f;
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+            border-color: #667eea;
+        }
+
+        .dashboard-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .dashboard-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+
+        .dashboard-description {
+            font-size: 14px;
+            opacity: 0.7;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .dashboard-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 12px;
+            opacity: 0.5;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-section {
+            background: #1e2442;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .info-section h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .info-section p {
+            font-size: 14px;
+            line-height: 1.8;
+            opacity: 0.8;
+        }
+
+        .cost-badge {
+            display: inline-block;
+            background: #10b981;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .dashboards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 DOXA Dashboards</h1>
+            <div class="subtitle">Self-running intelligence • Zero AI cost after build</div>
+        </div>
+
+        <div class="info-section">
+            <h2>How This Works</h2>
+            <p>
+                Each dashboard auto-refreshes hourly with fresh data from GHL. Built once with AI, then runs FREE forever. 
+                You only pay for AI when it's <strong>thinking</strong>, not when it's <strong>fetching</strong>.
+            </p>
+            <span class="cost-badge">AI COST: $0/month</span>
+        </div>
+
+        <div class="dashboards-grid">
+            <a href="./agent-dashboard.html" class="dashboard-card">
+                <div class="dashboard-icon">👥</div>
+                <div class="dashboard-title">Agent Dashboard</div>
+                <div class="dashboard-description">
+                    Top 200 agents ranked by Revenue + Quality + Recency. Real-time relationship health tracking with last touch dates and temperature scores.
+                </div>
+                <div class="dashboard-meta">
+                    <span>📊 200 Agents</span>
+                    <span>♻️ Auto-refresh</span>
+                </div>
+            </a>
+
+            <a href="./pipeline-scoreboard.html" class="dashboard-card">
+                <div class="dashboard-icon">📊</div>
+                <div class="dashboard-title">Pipeline Scoreboard</div>
+                <div class="dashboard-description">
+                    Total deals, pipeline value, hot deals, stale deals, movement velocity, and breakdown by stage. Real-time deal flow monitoring.
+                </div>
+                <div class="dashboard-meta">
+                    <span>💰 Pipeline Value</span>
+                    <span>♻️ Hourly</span>
+                </div>
+            </a>
+
+            <a href="./revenue-scoreboard.html" class="dashboard-card">
+                <div class="dashboard-icon">💰</div>
+                <div class="dashboard-title">Revenue Scoreboard</div>
+                <div class="dashboard-description">
+                    Closed deals, agent leaderboard, MTD vs YTD revenue, month-over-month trends, and average deal size. Performance tracking at a glance.
+                </div>
+                <div class="dashboard-meta">
+                    <span>🏆 Top 20</span>
+                    <span>♻️ Hourly</span>
+                </div>
+            </a>
+
+            <a href="./sc-campaign-performance.html" class="dashboard-card">
+                <div class="dashboard-icon">📱</div>
+                <div class="dashboard-title">SC Campaign Performance</div>
+                <div class="dashboard-description">
+                    Response rates by market, message effectiveness, conversion tracking, and campaign-level metrics across all active markets.
+                </div>
+                <div class="dashboard-meta">
+                    <span>📊 4 Markets</span>
+                    <span>♻️ Hourly</span>
+                </div>
+            </a>
+
+            <div class="dashboard-card" style="opacity: 0.5; cursor: not-allowed;">
+                <div class="dashboard-icon">⚙️</div>
+                <div class="dashboard-title">Operations Monitor</div>
+                <div class="dashboard-description">
+                    Lead manager capacity, deal assignment distribution, workload analysis. Coming soon.
+                </div>
+                <div class="dashboard-meta">
+                    <span>🚧 Coming Soon</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Cost Optimization Model</h2>
+            <p style="margin-bottom: 15px;">
+                <strong>Before:</strong> Ask Alfred a question → AI call → $0.10 per query<br>
+                <strong>After:</strong> View dashboard → Zero cost → Unlimited views
+            </p>
+            <p>
+                <strong>Savings per dashboard:</strong> ~$9/month<br>
+                <strong>Current dashboards:</strong> 4 active = $36/month saved<br>
+                <strong>ROI:</strong> Each dashboard pays for itself in 2 days
+            </p>
+        </div>
+
+        <div style="text-align: center; padding: 40px 20px; opacity: 0.5; font-size: 12px;">
+            Built by Alfred • Updated automatically • Zero maintenance
+        </div>
+    </div>
+</body>
+</html>
